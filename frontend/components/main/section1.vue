@@ -4,23 +4,25 @@
         <h1 class="text-3xl md:text-5xl text-center font-bold my-10" data-aos="fade-up">ابرآوران سوپرسرویس آنلاین کسب‌وکارها</h1>
         <p class="text-lg md:text-2xl py-10" data-aos="fade-up">ساخت سایت فروشگاهی با تمام امکانات لازم برای مدیریت سایت و سفارشات مانند خدمات پرداخت و ارسال ابزارهای جذب ترافیک و مشتری و افزایش فروش تضمینی<br> ابرآوران</p>
 
+        <div class="flex justify-center">
         <div class="card">
             <div class="content">
               <span class="logo-bottom-text">avarancloud</span>
               <div class="border"></div>
             </div>
-        </div><br>
+        </div>
+      </div><br>
 
-        <div class="mx-40">
-          <div class="relative top-20 inline-block group mt-2 right-78 z-10">
+        <div class="mx-15 md:mx-40">
+          <div class="relative top-20 inline-block group mt-2 right-20 md:right-78 z-10">
           <button
-            class="relative px-10 py-3 text-sm font-semibol bg-slate-200 rounded-3xl border-2 border-slate-300 hover:border-3 hover:border-blue-200 transition-all duration-300 overflow-hidden"
+            class="relative px-2 py-1 md:px-10 md:py-3 text-xs md:text-sm font-semibol bg-slate-200 rounded-3xl border-2 border-slate-300 hover:border-3 hover:border-blue-200 transition-all duration-300 overflow-hidden"
           >
             <div
               class="absolute inset-0 bg-gradient-to-r group-hover:opacity-75 transition-opacity"
             ></div>
 
-            <span class="relative flex items-center gap-2">
+            <span class="relative flex items-center gap-1 md:gap-2">
               <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
               </svg>
@@ -39,7 +41,7 @@
           </div>
         </div>
         <div class="">
-          <button class="faq-button  border-2 border-slate-300 hover:border-3 hover:border-blue-200inline-block z-10">
+          <button class="faq-button right-6 md:right-[30px] md:top-[100px] border-2 border-slate-300 hover:border-3 hover:border-blue-200 inline-block z-10">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
             </svg>
@@ -84,7 +86,6 @@ export default defineComponent({
 .card {
   width: 220px;
   height: 100px;
-  left: 39%;
   background: #243137;
   position: relative;
   display: flex;
@@ -253,8 +254,6 @@ export default defineComponent({
 .faq-button {
   width: 70px;
   height: 70px;
-  top: 100px;
-  right: 30px;
   border-radius: 50%;
   border: none;
   background-color: #ffe53b;

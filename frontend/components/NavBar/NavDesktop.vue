@@ -38,9 +38,7 @@
 </script>
 
 <style>
-.rtl{
-    direction: rtl;
-}
+
 
 .fade-in{
     opacity: 0;
