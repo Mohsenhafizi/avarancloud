@@ -14,7 +14,7 @@
       </div><br>
 
         <div class="mx-15 md:mx-40">
-          <div class="relative top-20 inline-block group mt-2 right-20 md:right-78 z-10">
+          <div class="relative top-13 inline-block group mt-2 right-20 md:right-78 z-10">
           <button
             class="relative px-2 py-1 md:px-10 md:py-3 text-xs md:text-sm font-semibol bg-slate-200 rounded-3xl border-2 border-slate-300 hover:border-3 hover:border-blue-200 transition-all duration-300 overflow-hidden"
           >
@@ -41,17 +41,21 @@
           </div>
         </div>
         <div class="">
-          <button class="faq-button right-6 md:right-[30px] md:top-[100px] border-2 border-slate-300 hover:border-3 hover:border-blue-200 inline-block z-10">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
-            </svg>
-            <span class="tooltip px-4">خدمات وفادارسازی مشتری و جذب بازدید کننده</span>
+          <button class="faq-button -left-9 sm:left-15 md:-left-10 lg:left-15 top-[70px] sm:top-[90px] border-2 border-slate-300 hover:border-3 hover:border-blue-200 inline-block z-10">
+            <div class="p-2 md:p-4">
+              <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
+             </svg>
+            </div>
+            <span class="tooltip px-2 text-xs md:text-lg md:px-4">خدمات وفادارسازی مشتری و جذب بازدید کننده</span>
           </button>
         </div>
 
         <div class="relative inline-block group z-0">
-          <div class="">
-            <img class="hover:border-r-2 hover:border-r-blue-500 hover:border-l-2 hover:border-l-blue-500 hover:border-t-2 hover:border-t-blue-500 rounded-t-3xl rounded-b-4xl" src="../../assets/ghahve.png" alt="error">
+          <div class="md:w-[400px] lg:w-[700px]">
+            <img class="hidden md:inline-block hover:border-r-2 hover:border-r-blue-500 hover:border-l-2 hover:border-l-blue-500 hover:border-t-2 hover:border-t-blue-500 rounded-t-3xl rounded-b-4xl" src="../../assets/photos/ghahve.png" alt="error">
+            <img class="inline-block md:hidden w-[300px]" src="../../assets/photos/mobile-screen.png" alt="error">
+            <img src="../../assets/photos/sample.png" alt="">
           </div>
           <div
             class="absolute invisible opacity-0 group-hover:visible group-hover:opacity-100 bottom-86 right-10 -translate-x-1/2 w-20 transition-all duration-300 ease-out transform group-hover:translate-y-0 translate-y-2"
@@ -252,8 +256,6 @@ export default defineComponent({
   }
 }
 .faq-button {
-  width: 70px;
-  height: 70px;
   border-radius: 50%;
   border: none;
   background-color: #ffe53b;
@@ -268,6 +270,11 @@ export default defineComponent({
 .faq-button svg {
   height: 2em;
   fill: white;
+}
+@media (min-width: 500px) and (max-width: 645px) {
+  .faq-button {
+    left: 10px;
+  }
 }
 .faq-button:hover svg {
   animation: jello-vertical 0.7s both;
@@ -298,7 +305,7 @@ export default defineComponent({
 
 .tooltip {
   position: absolute;
-  top: -20px;
+  top: 20px;
   opacity: 0;
   background-color: #a2a2a2;
   /* background-image: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%); */
@@ -321,6 +328,12 @@ export default defineComponent({
   right: 57px;
   opacity: 1;
   transition-duration: 0.3s;
+}
+@media (max-width: 768px) {
+  .faq-button:hover .tooltip {
+    top: 40px;
+    right: 30px;
+  }
 }
 
 </style>
