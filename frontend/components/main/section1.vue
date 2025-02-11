@@ -55,7 +55,7 @@
           <div class="md:w-[400px] lg:w-[700px]">
             <img class="hidden md:inline-block hover:border-r-2 hover:border-r-blue-500 hover:border-l-2 hover:border-l-blue-500 hover:border-t-2 hover:border-t-blue-500 rounded-t-3xl rounded-b-4xl" src="../../assets/photos/ghahve.png" alt="error">
             <img class="inline-block md:hidden w-[300px]" src="../../assets/photos/mobile-screen.png" alt="error">
-            <img src="../../assets/photos/sample.png" alt="">
+            <img src="../../assets/photos/sample-screen.png" alt="">
           </div>
           <div
             class="absolute invisible opacity-0 group-hover:visible group-hover:opacity-100 bottom-86 right-10 -translate-x-1/2 w-20 transition-all duration-300 ease-out transform group-hover:translate-y-0 translate-y-2"
