@@ -26,8 +26,6 @@
     </div>
 
 
-
-
     <div class="flex items-center bg-orange-200/20 text-orange-300 mb-4 pr-2.5 h-10 rounded-md">
         <NuxtLink to="/" class="flex items-center gap-x-2">
             <svg class="w-5 h-5">
