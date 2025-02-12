@@ -7,19 +7,19 @@
     <div class="flex items-center w-full justify-between">
     <nav class="flex items-center gap-x-6 lg:gap-x-9 h-14">
         <ul class="flex gap-x-3 items-center lg:gap-x-9 h-full text-lg text-gray-800 tracking-tightest child:leading-[56px]">
-            <li class="hover:bg-emerald-300 rounded-2xl p-3">
+            <li class="hover:bg-emerald-300 rounded-2xl p-3 transition-all">
                 <NuxtLink to="/">صفحه اصلی</NuxtLink>
             </li>
-            <li class="hover:bg-emerald-300 rounded-2xl p-3">
+            <li class="hover:bg-emerald-300 rounded-2xl p-3 transition-all">
                 <Nuxtlink to="/">دیکشنری</Nuxtlink>
             </li>
-            <li class="hover:bg-emerald-300 rounded-2xl p-3">
+            <li class="hover:bg-emerald-300 rounded-2xl p-3 transition-all">
                 <Nuxtlink to="/">بلاگ</Nuxtlink>
             </li>
-            <li class="hover:bg-emerald-300 rounded-2xl p-3">
+            <li class="hover:bg-emerald-300 rounded-2xl p-3 transition-all">
                 <Nuxtlink to="/">درباره ما</Nuxtlink>
             </li>
-            <li class="hover:bg-emerald-300 rounded-2xl p-3">
+            <li class="hover:bg-emerald-300 rounded-2xl p-3 transition-all">
                 <Nuxtlink to="/">تماس با ما</Nuxtlink>
             </li>
         </ul>
