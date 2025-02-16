@@ -137,6 +137,7 @@
           </div>
           </div>
         </div>
+        <Chart />
       </div>
     </div>
   </div>
@@ -348,7 +349,7 @@ export default defineComponent({
   border-radius: 50%;
   border: none;
   background-color: #ffe53b;
-  background-image: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
+  background-image: linear-gradient(147deg, #ffe53b 0%, #fe2626 74%);
   display: flex;
   align-items: center;
   justify-content: center;
