@@ -3,6 +3,7 @@
     class="md:mx-20 pb-10 mt-5 md:mt-30 flex items-center justify-center min-h-screen bg-blue-50 rounded-3xl"
   >
     <div class="text-center p-8">
+      <div class="mx-40 sm:mx-20 md:mx-50">
       <h1
         class="text-3xl md:text-5xl text-center font-bold my-10"
         data-aos="fade-up"
@@ -23,12 +24,14 @@
           </div>
         </div>
       </div>
+    </div>
       <br />
 
       <div class="flex justify-center">
       <div class="mt-4 mx-20 sm:mx-30 md:mx-40">
+        <div class="mx-28">
         <div
-          class="relative etesal sm:top-14 md:top-24 inline-block group mt-2 right-16 md:right-50 z-10"
+          class="relative etesal sm:top-14 md:top-24 inline-block group mt-2 right-16 md:right-22 z-10"
         >
           <button
             class="relative md:left-4 bottom-1.5 md:bottom-8 px-2 py-1 sm:px-5 sm:py-2 md:px-6 lg:px-8 md:py-2 text-xs md:text-sm font-semibol bg-slate-200 rounded-3xl border-2 border-slate-300 hover:border-3 hover:border-blue-200 transition-all duration-300 overflow-hidden"
@@ -101,7 +104,7 @@
               />
            </div>
             <img
-              class="inline-block md:hidden"
+              class="inline-block md:hidden border-1 rounded-lg border-gray-500"
               src="../../assets/photos/mobile-screen.png"
               alt="error"
             />
@@ -117,7 +120,7 @@
           </div>
         </div>
         <div>
-          <div class="relative group hidden md:inline-block button rounded-2xl float-right bottom-30 lg:bottom-65 left-26">
+          <div class="relative group z-10 hidden md:inline-block button rounded-2xl float-right bottom-30 lg:bottom-65 left-26">
           <div class="button-wrapper rounded-2xl">
             <div class="text rounded-2xl">
               <img src="../../assets/photos/sample-screen.png" alt="">
@@ -137,7 +140,60 @@
           </div>
           </div>
         </div>
-        <Chart />
+
+
+
+      <div class="md:hidden relative mx-20 sm:mx-30 h-10 border-l-1 border-dashed border-l-gray-500"></div>
+
+    </div>
+
+        <div class="z-10 flex justify-center"> 
+          
+          <div class="relative group z-10 md:left-66 lg:left-70 rounded-xl my-22 lg:my-26 p-2 bg-gray-500">
+            <svg class="w-6 md:6.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path strokelinecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z" />
+            </svg> 
+           <div
+            class="bottom-11 left-1 absolute invisible opacity-0 group-hover:visible group-hover:opacity-100 -translate-x-1/2 w-14 transition-all duration-300 ease-out transform group-hover:translate-y-0 translate-y-2"
+          >
+            <div
+              class="rounded-bl-3xl rounded-t-3xl text-xs bg-stone-300 p-1 md:p-2"
+            >
+                پرداخت
+            </div>
+          </div>
+          </div>   
+          <div class="md:hidden w-6 mt-27 border-t-1 border-dashed border-t-gray-500"></div> 
+
+          <div class="hidden md:inline-block relative mt-27 lg:mt-31 left-30 w-30 border-t-1 border-dashed border-t-gray-500"></div>
+
+          <Chart class="" />
+
+          <div class="md:hidden w-6 mt-27 border-t-1 border-dashed border-t-gray-500"></div> 
+
+          <div class="hidden md:inline-block lg:mt-31 mt-27 w-20 border-t-1 border-dashed border-t-gray-500"></div>
+
+          <div class="relative group z-10 rounded-xl my-22 lg:my-26 p-2 bg-gray-500">
+            <svg class="w-6 md:w-6.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
+            </svg>
+            
+            <div
+            class="bottom-11 left-9 absolute invisible opacity-0 group-hover:visible group-hover:opacity-100 -translate-x-1/2 w-14 transition-all duration-300 ease-out transform group-hover:translate-y-0 translate-y-2"
+          >
+            <div
+              class="rounded-br-3xl rounded-t-3xl text-xs bg-stone-300 p-1 md:p-2"
+            >
+                ارسال
+            </div>
+          </div>
+          </div>           
+
+        </div>  
+        <div class="hidden md:inline-block border1 bottom-[182px] lg:bottom-[323px] left-30 lg:left-50 relative w-30 lg:w-74 border-t-1 border-dashed border-t-gray-500"></div>
+        <div class="hidden md:inline-block border2 relative left-30 lg:left-50 bottom-46 lg:bottom-81 h-19 lg:h-50 border-l-1 border-dashed border-l-gray-500"></div>
+
+
       </div>
     </div>
   </div>
@@ -411,14 +467,14 @@ export default defineComponent({
 
 .tooltip {
   position: absolute;
-  top: 20px;
+  bottom: 52px;
   opacity: 0;
   background-color: #a2a2a2;
   /* background-image: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%); */
   color: white; 
   border-top-left-radius: 40px;
   border-bottom-left-radius: 40px;
-  border-bottom-right-radius: 40px;
+  border-top-right-radius: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -428,15 +484,18 @@ export default defineComponent({
 }
 
 .faq-button:hover .tooltip {
-  top: 60px;
-  right: 40px;
+  right: 34px;
   opacity: 1;
   transition-duration: 0.3s;
 }
 @media (max-width: 768px) {
   .faq-button:hover .tooltip {
-    top: 40px;
+    bottom: -80px;
     right: 30px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;  
   }
 }
 
@@ -462,6 +521,15 @@ export default defineComponent({
     --height: 230px;
     left: 80px;
   }
+}
+@media (min-width: 1100px) {
+ .border1{
+  left: 369px;
+ } 
+.border2{
+  bottom: 323px;
+  left: 370px;
+}
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .button {
