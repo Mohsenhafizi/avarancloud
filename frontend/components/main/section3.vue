@@ -110,8 +110,10 @@
 </div>
 </template>
 
-<script>
-
+<script lang="ts">
+export default defineComponent({
+    name: 'Section3',
+});
 </script>
 
 <style>

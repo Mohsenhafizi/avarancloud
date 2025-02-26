@@ -212,7 +212,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 export default defineComponent({
-    name: 'NavDesktop',
+    name: 'Section1',
     setup() {
         onMounted(() => {
             AOS.init();
