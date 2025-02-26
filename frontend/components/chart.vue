@@ -1,5 +1,5 @@
 <template>
-    <div class="w-34 h-50 lg:w-40 lg:h-60 md:relative top-10 md:-top-10 right-20 lg:right-40 bg-white rounded-lg shadow-sm dark:bg-gray-800 p-4">
+    <div class="cursor-pointer w-34 h-50 lg:w-40 lg:h-60 md:relative top-10 md:-top-10 right-20 lg:right-40 bg-white rounded-lg shadow-sm dark:bg-gray-800 p-4">
       <div class="flex justify-between md:gap-2 py-0">
         <div class="gap-1">
           <h5 class="leading-none text-[10px] font-bold text-gray-900 dark:text-white">۲۰</h5>
@@ -21,7 +21,7 @@
             id="dropdownDefaultButton"
             data-dropdown-toggle="lastDaysdropdown"
             data-dropdown-placement="bottom"
-            class="relative group text-[7px] lg:text-[10px] font-medium rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 p-1 text-gray-500 dark:text-gray-400 hover:text-gray-900 text-center inline-flex items-center dark:hover:text-white"
+            class="relative cursor-pointer group text-[7px] lg:text-[10px] font-medium rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 p-1 text-gray-500 dark:text-gray-400 hover:text-gray-900 text-center inline-flex items-center dark:hover:text-white"
             type="button">
             یک سال اخیر
             <svg class="w-2.5 m-2.5 mx-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">

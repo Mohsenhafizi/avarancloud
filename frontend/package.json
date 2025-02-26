@@ -10,21 +10,25 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.0.3",
     "@types/vue": "^1.0.31",
     "@vue/runtime-core": "^3.5.13",
     "@vue/runtime-dom": "^3.5.13",
     "aos": "^2.3.4",
     "apexcharts": "^4.4.0",
-    "nuxt": "^3.15.4",
-    "tailwindcss": "^4.0.3",
+    "nuxt": "^3.6.0",
+    "nuxt-svg": "^0.1.4",
+    "swiper": "^11.2.4",
     "vue": "^3.5.13",
     "vue-router": "latest"
   },
   "devDependencies": {
+    "@nuxt/devtools": "^2.1.0",
     "@nuxt/types": "^2.18.1",
     "@nuxt/typescript-build": "^3.0.2",
+    "@tailwindcss/vite": "^4.0.7",
     "@types/aos": "^3.0.7",
-    "typescript": "^5.7.3"
+    "@types/node": "^22.13.4",
+    "typescript": "^5.7.3",
+    "vue-svg-loader": "^0.12.0"
   }
 }

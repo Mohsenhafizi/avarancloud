@@ -145,15 +145,20 @@
   <NavBarNavDesktop />
   <NavBarNavMobile />
   <MainSection1 />
+  <MainSection2 />
+  <MainSection3 />
+  <MainSection4 />
+  <EndFooter />
 </div>
 </template>
 
 <script lang="ts">
+import { EndFooter, MainSection2, MainSection3, MainSection4 } from '#components';
+
 
 
 </script>
 
 <style scoped>
-
 
 </style>

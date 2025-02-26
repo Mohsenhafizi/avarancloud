@@ -1,16 +1,21 @@
 <template>
   <div
-    class="md:mx-20 pb-10 mt-5 md:mt-30 flex items-center justify-center min-h-screen bg-blue-50 rounded-3xl"
+    class="md:mx-20 md:h-[950px] lg:h-[1050px] mt-5 md:mt-30 flex items-center justify-center min-h-screen bg-blue-50 rounded-3xl"
   >
     <div class="text-center p-8">
-      <div class="mx-40 sm:mx-20 md:mx-50">
+      <div class="mx-40 md:mt-40 lg:mt-70 sm:mx-20 md:mx-50">
       <h1
-        class="text-3xl md:text-5xl text-center font-bold my-10"
+        class="relative text-3xl md:text-5xl text-center font-bold py-4 my-5"
         data-aos="fade-up"
       >
+      <span class="2xl:flex 2xl:justify-center z-10">
         ابرآوران سوپرسرویس آنلاین کسب‌وکارها
+        <span class="absolute top-13 mx-10 flex -z-10">
+        <img class="w-80" src="../../assets/vector-7.svg" alt="">
+        </span>
+      </span>
       </h1>
-      <p class="text-lg md:text-2xl py-10" data-aos="fade-up">
+      <p class="text-lg md:text-xl pb-10" data-aos="fade-up">
         ساخت سایت فروشگاهی با تمام امکانات لازم برای مدیریت سایت و سفارشات مانند
         خدمات پرداخت و ارسال ابزارهای جذب ترافیک و مشتری و افزایش فروش تضمینی<br />
         ابرآوران
@@ -94,7 +99,7 @@
             >
           </button>
         </div>
-        <div class="relative inline-block group z-0">
+        <div class="relative cursor-pointer inline-block group z-0">
           <div class="md:w-[400px] lg:w-[700px]">
            <div class="mx-10">
               <img
@@ -120,7 +125,7 @@
           </div>
         </div>
         <div>
-          <div class="relative group z-10 hidden md:inline-block button rounded-2xl float-right bottom-30 lg:bottom-65 left-26">
+          <div class="relative cursor-pointer group z-10 hidden md:inline-block button rounded-2xl float-right bottom-30 lg:bottom-65 left-26">
           <div class="button-wrapper rounded-2xl">
             <div class="text rounded-2xl">
               <img src="../../assets/photos/sample-screen.png" alt="">
@@ -149,7 +154,7 @@
 
         <div class="z-10 flex justify-center"> 
           
-          <div class="relative group z-10 md:left-66 lg:left-70 rounded-xl my-22 lg:my-26 p-2 bg-gray-500">
+          <div class="relative cursor-pointer group z-10 md:left-66 lg:left-70 rounded-xl my-22 lg:my-26 p-2 bg-gray-500">
             <svg class="w-6 md:6.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
               <path strokelinecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z" />
             </svg> 
@@ -173,7 +178,7 @@
 
           <div class="hidden md:inline-block lg:mt-31 mt-27 w-20 border-t-1 border-dashed border-t-gray-500"></div>
 
-          <div class="relative group z-10 rounded-xl my-22 lg:my-26 p-2 bg-gray-500">
+          <div class="relative cursor-pointer group z-10 rounded-xl my-22 lg:my-26 p-2 bg-gray-500">
             <svg class="w-6 md:w-6.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
             </svg>
@@ -198,6 +203,7 @@
     </div>
   </div>
 </div>
+<br>
 </template>
 
 <script lang="ts">
