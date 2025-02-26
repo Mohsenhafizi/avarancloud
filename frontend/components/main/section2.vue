@@ -63,22 +63,22 @@
 </template>
 
 <script lang="ts">
-import Swiper from 'swiper';
-import 'swiper/swiper-bundle.css';
-import { Navigation, Pagination } from 'swiper/modules';
+// import Swiper from 'swiper';
+// import 'swiper/swiper-bundle.css';
+// import { Navigation, Pagination } from 'swiper/modules';
 
-const swiper = new Swiper('.swiper-container', {
-  loop: true,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  modules: [Navigation, Pagination],
-});
+// const swiper = new Swiper('.swiper-container', {
+//   loop: true,
+//   pagination: {
+//     el: '.swiper-pagination',
+//     clickable: true,
+//   },
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+//   modules: [Navigation, Pagination],
+// });
 
 
 

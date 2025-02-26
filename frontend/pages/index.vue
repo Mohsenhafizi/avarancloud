@@ -152,7 +152,6 @@
 </template>
 
 <script lang="ts">
-import { EndFooter, MainSection2, MainSection3, MainSection4 } from '#components';
 
 
 
