@@ -67,7 +67,6 @@ import Swiper from 'swiper';
 import 'swiper/swiper-bundle.css';
 import { Navigation, Pagination } from 'swiper/modules';
 
-// Initialize Swiper
 const swiper = new Swiper('.swiper-container', {
   loop: true,
   pagination: {
