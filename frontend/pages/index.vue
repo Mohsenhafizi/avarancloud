@@ -148,7 +148,6 @@
   <MainSection2 />
   <MainSection3 />
   <MainSection4 />
-  <EndFooter />
 </div>
 </template>
 
