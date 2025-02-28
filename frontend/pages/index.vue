@@ -154,10 +154,6 @@
 </template>
 
 <script lang="ts">
-import { EndFooter, MainSwiperSection2 } from '#components';
-
-
-
 
 </script>
 
