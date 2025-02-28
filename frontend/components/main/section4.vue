@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <div class="container mb-4 lg:mb-0 lg:mx-20 float-right" data-aos="fade-up">
+    <div class="rtl mb-4 lg:mb-0 lg:mx-20" data-aos="fade-up">
             <div class="flex flex-col md:flex-row items-center">
               <img src="../../assets/photos/site.webp" class="w-[296px] relative bottom-10" alt="contact">
                 <div class="text-zinc-700 md:mr-10 mx-4 md:mx-0 lg:mx-10 xl:mx-14">
@@ -36,7 +36,7 @@
                       <img class="w-70 h-70 -rotate-25" src="../../assets/photos/arrrow1.png" alt="" data-aos="fade-up">
                   </div>
         </div>
-        <div class="container mb-16 lg:mb-0 lg:relative lg:bottom-38 z-10 md:mx-20 float-right" data-aos="fade-up">
+        <div class="rtl mb-16 lg:mb-0 lg:relative lg:bottom-38 z-10 md:mx-20" data-aos="fade-up">
             <div class="flex flex-col md:flex-row items-center">
               <img src="../../assets/svg/card1.svg" class="lg:hidden w-[340px]" alt="contact">
                 <div class="text-zinc-700 mx-4 md:mx-0">
@@ -74,7 +74,7 @@
                 <img class="w-80 h-80 -scale-x-120 rotate-14" src="../../assets/photos/arrrow3.png" alt="" data-aos="fade-up">
             </div>
         </div>
-        <div class="container mb-20 lg:mb-0 lg:relative lg:bottom-62 lg:z-10 lg:mx-20 float-right" data-aos="fade-up">
+        <div class="rtl mb-20 lg:mb-0 lg:relative lg:bottom-62 lg:z-10 lg:mx-20" data-aos="fade-up">
             <div class="flex flex-col md:flex-row items-center">
               <img src="../../assets/photos/support.webp" class="w-[296px] relative bottom-10" alt="contact">
                 <div class="text-zinc-700 md:mr-10 mx-4 md:mx-0 lg:mx-10 xl:mx-16">
@@ -127,6 +127,9 @@ export default defineComponent({
 </script>
 
 <style>
+.rtl{
+  direction: rtl;
+}
 .klid {
   --h-klid: 48px;
   --w-klid: 102px;

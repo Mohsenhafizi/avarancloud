@@ -1,10 +1,10 @@
 <template>
-<div class="mb-20">
+<div class="mb-20 hidden lg:block">
 <div class="text-center font-bold text-2xl sm:text-3xl my-6">
-    :ابرآوران بهترین انتخاب برای کسب‌وکار شماست، چون
+   ابرآوران بهترین انتخاب برای کسب‌وکار شماست، چون:
 </div>
 
-<div class="mb-10 mt-10 gap-18 flex flex-col lg:flex-row items-center justify-center">
+<div class="flex flex-col lg:flex-row items-center justify-center mb-10 mt-10 gap-18">
   <div class="cart">
           <div class="flex justify-center my-2">
             <img class="w-70 h-50 border-2 border-slate-200 rounded-3xl" src="../../assets/svg/card1.svg" alt="">
@@ -60,14 +60,14 @@
 </button>
 </div>
 </div>
+
+
 </template>
 
 <script lang="ts">
 
-export default defineComponent({
-    name: 'Section2',
-});
 </script>
+
 
 <style>
 .cart {

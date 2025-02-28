@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@types/swiper": "^6.0.0",
     "@types/vue": "^1.0.31",
     "@vue/runtime-core": "^3.5.13",
     "@vue/runtime-dom": "^3.5.13",
@@ -17,6 +18,7 @@
     "apexcharts": "^4.4.0",
     "nuxt": "^3.6.0",
     "nuxt-svg": "^0.1.4",
+    "nuxt-swiper": "^2.0.0",
     "swiper": "^11.2.4",
     "vue": "^3.5.13",
     "vue-router": "latest"
