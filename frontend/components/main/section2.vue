@@ -116,6 +116,17 @@
   transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
 }
 
+@media (max-width: 800px) {
+  .cart{
+    width: 230px;
+    height: 320px;
+  }
+  .cart::before {
+    width: 210px;
+    height: 270px;
+  }
+}
+
 .swiper-wrapper {
 width: 100%;
 height: max-content !important;

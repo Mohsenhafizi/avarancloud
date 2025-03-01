@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "fontak";
+    src: local("fontak"),
+     url(~/assets/font/font.woff2) format("truetype");
+}
+
+html {
+    font-family: "fontak";
+}

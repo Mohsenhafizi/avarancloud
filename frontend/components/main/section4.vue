@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <div class="rtl mb-4 lg:mb-0 lg:mx-20" data-aos="fade-up">
+    <div class="rtl mb-16 lg:mb-0 lg:mx-20" data-aos="fade-up">
             <div class="flex flex-col md:flex-row items-center">
               <img src="../../assets/photos/site.webp" class="w-[296px] relative bottom-10" alt="contact">
                 <div class="text-zinc-700 md:mr-10 mx-4 md:mx-0 lg:mx-10 xl:mx-14">
@@ -25,7 +25,7 @@
                 <i class="point"></i>
             </div>
 
-            <span class="inner pt-1">
+            <span class="inner">
                 مشاهده خدمات ویژه‌
             </span>
             </div> 
@@ -61,7 +61,7 @@
                 <i class="point"></i>
             </div>
 
-            <span class="inner pt-1">
+            <span class="inner">
                 مشاهده بسته ها
             </span>
             </div> 
@@ -99,7 +99,7 @@
                 <i class="point"></i>
             </div>
 
-            <span class="inner pt-1">
+            <span class="inner">
                 مشاهده بسته ها
             </span>
             </div> 

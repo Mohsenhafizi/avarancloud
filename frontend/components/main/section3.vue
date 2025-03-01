@@ -12,7 +12,7 @@
                         ثبت‌نام
                     </span>
                     <span class="flex text-sm md:text-lg p-1 md:px-2">
-                        <span class="absolute inline-block -top-[16px] md:top[3px] lg:top-[1px] 2xl:-top-[14px] right-50 md:right-20 2xl:right-60 -z-10 text-gray-300 font-bold text-[100px] md:text-[140px]">
+                        <span class="absolute inline-block -top-[30px] md:top[3px] lg:top-[1px] 2xl:-top-[14px] right-50 md:right-20 2xl:right-60 -z-10 text-gray-300 font-bold text-[100px] md:text-[140px]">
                         1
                          </span>
                         رایگان ثبت‌نام کنید و یکی از پکیج‌های ساخت سایت رو انتخاب کنید
@@ -26,7 +26,7 @@
                         شخصی‌سازی                      
                     </span>
                     <span class="flex text-sm md:text-lg p-1 md:px-2">
-                        <span class="absolute inline-block -top-[16px] md:top[3px] lg:top-[1px] 2xl:-top-[14px] right-50 md:right-20 2xl:right-60 -z-10 text-gray-300 font-bold text-[100px] md:text-[140px]">
+                        <span class="absolute inline-block -top-[30px] md:top[3px] lg:top-[1px] 2xl:-top-[14px] right-50 md:right-20 2xl:right-60 -z-10 text-gray-300 font-bold text-[100px] md:text-[140px]">
                         2
                          </span>
                         تم مورد نظرتون رو انتخاب و محصولاتتون رو اضافه کنید
@@ -40,7 +40,7 @@
                         پیش‌نیازها          
                     </span>
                     <span class="flex text-sm md:text-lg p-1 md:px-2">
-                        <span class="absolute inline-block -top-[16px] md:top[3px] lg:top-[1px] 2xl:-top-[14px] right-50 md:right-20 2xl:right-60 -z-10 text-gray-300 font-bold text-[100px] md:text-[140px]">
+                        <span class="absolute inline-block -top-[30px] md:top[3px] lg:top-[1px] 2xl:-top-[14px] right-50 md:right-20 2xl:right-60 -z-10 text-gray-300 font-bold text-[100px] md:text-[140px]">
                         3
                          </span>
                         کارهای عملیاتی مثل انتخاب اسم دامنه و دریافت اینماد رو پیش ببرید
@@ -56,7 +56,7 @@
                     </span>
                     </span>
                     <span class="flex text-sm md:text-lg p-1 md:px-2">
-                        <span class="absolute inline-block -top-[16px] md:top[3px] lg:top-[1px] 2xl:-top-[14px] right-50 md:right-20 2xl:right-60 -z-10 text-gray-300 font-bold text-[100px] md:text-[140px]">
+                        <span class="absolute inline-block -top-[30px] md:top[3px] lg:top-[1px] 2xl:-top-[14px] right-50 md:right-20 2xl:right-60 -z-10 text-gray-300 font-bold text-[100px] md:text-[140px]">
                         4
                          </span>
                         با ایجاد درگاه پرداخت و تعریف روش‌ ارسال، آماده‌ی فروش بشید
@@ -71,7 +71,7 @@
                     رونمایی از سایت
                     </span>
                     <span class="flex text-sm md:text-lg p-1 md:px-2">
-                        <span class="absolute -top-[0px] md:top[3px] lg:top-[1px] 2xl:-top-[14px] right-50 md:right-20 2xl:right-60 -z-10 text-gray-300 font-bold text-[100px] md:text-[140px]">
+                        <span class="absolute -top-[20px] md:top[3px] lg:top-[1px] 2xl:-top-[14px] right-50 md:right-20 2xl:right-60 -z-10 text-gray-300 font-bold text-[100px] md:text-[140px]">
                         5
                          </span>
                         سایتتون آماده است؛ فقط باید به همه بگید که از طریق سایت ازتون خرید کنن
@@ -88,7 +88,7 @@
                         </span>
                     </div>
                     <span class="flex text-sm md:text-lg p-1 md:px-2">
-                        <span class="absolute inline-block -top-[16px] md:top[3px] lg:top-[1px] 2xl:-top-[14px] right-50 md:right-20 2xl:right-60 -z-10 text-gray-300 font-bold text-[100px] md:text-[140px]">
+                        <span class="absolute inline-block -top-[30px] md:top[3px] lg:top-[1px] 2xl:-top-[14px] right-50 md:right-20 2xl:right-60 -z-10 text-gray-300 font-bold text-[100px] md:text-[140px]">
                         6
                          </span>
                         با بسته‌های ترافیک و دیزاین ابرآوران، بازدیدکننده‌های بیشتری رو به سایتتون بکشونید
