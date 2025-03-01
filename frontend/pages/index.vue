@@ -1,5 +1,5 @@
 <template>
-<div class="overflow-x-hidden font">
+<div class="overflow-x-hidden font z-10">
   <svg class="hidden">
 
 <symbol id="shopping-cart" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
@@ -158,6 +158,5 @@
 </script>
 
 <style scoped>
-
 
 </style>

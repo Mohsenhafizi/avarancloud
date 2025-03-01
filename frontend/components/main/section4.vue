@@ -71,7 +71,7 @@
 
             </div>
             <div class="hidden lg:flex justify-center relative bottom-10 left-56 -z-10">
-                <img class="w-80 h-80 -scale-x-120 rotate-14" src="../../assets/photos/arrrow3.png" alt="" data-aos="fade-up">
+                <img class="w-80 h-80 -scale-x-120 rotate-16" src="../../assets/photos/arrrow3.png" alt="" data-aos="fade-up">
             </div>
         </div>
         <div class="rtl mb-20 lg:mb-0 lg:relative lg:bottom-62 lg:z-10 lg:mx-20" data-aos="fade-up">

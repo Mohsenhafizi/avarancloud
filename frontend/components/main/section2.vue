@@ -6,22 +6,22 @@
 
 <div class="flex flex-col lg:flex-row items-center justify-center mb-10 mt-10 gap-18">
   <div class="cart">
-          <div class="flex justify-center my-2">
-            <img class="w-70 h-50 border-2 border-slate-200 rounded-3xl" src="../../assets/svg/card1.svg" alt="">
+          <div class="flex justify-center my-5">
+            <img class="w-60 h-36 px-8 border-2 border-slate-200 rounded-3xl" src="../../assets/svg/icon2.svg" alt="">
           </div>
           <div class="px-4.5">
             <p class="font-bold pb-5 text-lg">
-                قابل توسعه‌ست
+              بدون هزینه‌ی اولیه‌ست
             </p>
-            <p class="pb-8">
-                با بسته‌های مکمل ابرآوران می‌تونید کسب‌وکار آنلاین خودتون رو مرحله به مرحله، رشد و توسعه بدید
+            <p class="pb-3">
+              می‌تونید بدون هزینه‌ی اولیه و ریسک مالی، سایت داشته باشید و از امکاناتش بدون محدودیت استفاده کنید
             </p>
           </div>
   </div>
 
   <div class="cart">
-          <div class="flex justify-center my-2">
-            <img class="w-60 h-45 px-8 border-2 border-slate-200 rounded-3xl" src="../../assets/svg/card3.svg" alt="">
+          <div class="flex justify-center my-6">
+            <img class="w-60 h-36 px-8 border-2 border-slate-200 rounded-3xl" src="../../assets/svg/icon.svg" alt="">
           </div>
           <div class="px-4.5">
             <p class="font-bold pb-5 text-lg">
@@ -39,10 +39,10 @@
           </div>
           <div class="px-4.5">
             <p class="font-bold pb-5 text-lg">
-                در دسترسه
+              قابل توسعه‌ست
             </p>
             <p class="pb-8">
-                از هر جایی و در هر زمانی از شبانه‌روز به سایتتون دسترسی دارید و می‌تونید مدیریتش کنید
+              با بسته‌های مکمل ابرآوران می‌تونید کسب‌وکار آنلاین خودتون رو مرحله به مرحله، رشد و توسعه بدید
             </p>
           </div>
   </div>
@@ -72,9 +72,9 @@
 <style>
 .cart {
   position: relative;
+  background-color: white;
   width: 290px;
   height: 350px;
-  background-color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -119,7 +119,7 @@
 @media (max-width: 800px) {
   .cart{
     width: 230px;
-    height: 320px;
+    height: 300px;
   }
   .cart::before {
     width: 210px;

@@ -4,7 +4,7 @@
         :ابرآوران بهترین انتخاب برای کسب‌وکار شماست، چون
       </div> 
         <ClientOnly>
-          <div class="button-container absolute z-10 ">
+          <div class="button-container absolute z-10">
               <button class="button-3d top-36" @click="swiper.prev()">
                 <div class="button-top">
                   <span class="material-icons">❮</span>
@@ -16,12 +16,12 @@
       <swiper-container class="z-0" ref="containerRef">
         <swiper-slide class="flex justify-center mb-14 mt-10">
           <div class="cart">
-            <div class="flex justify-center my-2">
-              <img class="w-50 h-40 border-2 border-slate-200 rounded-3xl" src="../../assets/svg/card1.svg" alt="">
+            <div class="flex justify-center my-4 md:my-6">
+              <img class="w-50 h-30 md:w-60 md:h-36 border-2 border-slate-200 rounded-3xl" src="../../assets/photos/card.png" alt="">
             </div>
             <div class="px-4.5">
-              <p class="font-bold pb-2 md:pb-4 text-md md:text-lg">قابل توسعه‌ست</p>
-              <p class="pb-4 md:pb-4 text-sm md:text-[16px]">
+              <p class="font-bold pt-2 text-md md:text-lg">قابل توسعه‌ست</p>
+              <p class="py-4 md:pb-9 text-sm md:text-[16px]">
                 با بسته‌های مکمل ابرآوران می‌تونید کسب‌وکار آنلاین خودتون رو مرحله به مرحله، رشد و توسعه بدید
               </p>
             </div>
@@ -29,14 +29,14 @@
         </swiper-slide>
         <swiper-slide class="flex justify-center mb-14 mt-10">
           <div class="cart">
-          <div class="w-60 h-30 my-12">
-            <img class="mx-4.5 px-8 border-2 border-slate-200 rounded-3xl" src="../../assets/photos/card.png" alt="">
+          <div class="pb-3 md:pb-5">
+            <img class="mx-2 md:mx-5 w-50 h-30 md:w-60 md:h-36 border-2 border-slate-200 rounded-3xl" src="../../assets/svg/icon.svg" alt="">
           </div>
           <div class="px-4.5">
-            <p class="font-bold pb-2 md:pb-4 text-md md:text-lg">
+            <p class="font-bold pb-4 pt-3 text-md md:text-lg">
                 در دسترسه
             </p>
-            <p class="pb-4 md:pb-4 text-sm md:text-[16px]">
+            <p class="pb-9 text-sm md:text-[16px]">
                 از هر جایی و در هر زمانی از شبانه‌روز به سایتتون دسترسی دارید و می‌تونید مدیریتش کنید
             </p>
           </div>
@@ -44,22 +44,22 @@
         </swiper-slide>
         <swiper-slide class="flex justify-center mb-14 mt-10">
           <div class="cart">
-          <div class="flex justify-center my-2">
-            <img class="w-60 h-45 px-8 border-2 border-slate-200 rounded-3xl" src="../../assets/svg/card3.svg" alt="">
+          <div class="flex justify-center my-4 md:my-5">
+            <img class="w-50 h-30 md:w-60 md:h-36 px-8 border-2 border-slate-200 rounded-3xl" src="../../assets/svg/icon2.svg" alt="">
           </div>
           <div class="px-4.5">
-            <p class="font-bold pb-2 md:pb-4 text-md md:text-lg">
-                در دسترسه
+            <p class="font-bold pt-2 text-md md:text-lg">
+              بدون هزینه‌ی اولیه‌ست
             </p>
-            <p class="pb-4 md:pb-4 text-sm md:text-[16px]">
-                از هر جایی و در هر زمانی از شبانه‌روز به سایتتون دسترسی دارید و می‌تونید مدیریتش کنید
+            <p class="py-4 text-sm md:text-[16px]">
+              می‌تونید بدون هزینه‌ی اولیه و ریسک مالی، سایت داشته باشید و از امکاناتش بدون محدودیت استفاده کنید
             </p>
           </div>
           </div>
         </swiper-slide>
       </swiper-container>
       <div class="button-container relative z-10 flex justify-end">
-          <button class="button-3d bottom-[272px] md:bottom-[300px]" @click="swiper.next()">
+          <button class="button-3d bottom-[252px] md:bottom-[300px]" @click="swiper.next()">
                 <div class="button-top">
                   <span class="material-icons">❯</span>
                 </div>
