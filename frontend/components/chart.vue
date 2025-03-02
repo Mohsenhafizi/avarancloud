@@ -37,9 +37,8 @@
             </div>
           </div>
           </button>
-          <a
-            href="#"
-            class="uppercase relative group text-[7px] lg:text-[10px] inline-flex items-center rounded-lg text-orange-400 hover:bg-gray-100 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700  px-3 py-2 lg:py-3">
+          <button
+            class="relative group text-[7px] lg:text-[10px] inline-flex items-center rounded-lg text-orange-400 hover:bg-gray-100 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700  px-3 py-2 lg:py-3">
             گزارش مشتریان
             <svg class="w-2.5 h-2.5 md:h-1.5 md:w-1.5 ms-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
@@ -53,7 +52,7 @@
                 گزارش مشتریان
             </div>
           </div>
-          </a>
+        </button>
         </div>
       </div>
     </div>

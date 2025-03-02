@@ -16,8 +16,8 @@
       <swiper-container class="z-0" ref="containerRef">
         <swiper-slide class="flex justify-center mb-14 mt-10">
           <div class="cart">
-            <div class="flex justify-center my-2 md:my-5">
-              <img class="w-50 h-34 md:w-60 md:h-38 border-2 border-slate-200 rounded-3xl" src="../../assets/photos/card.png" alt="">
+            <div class="flex justify-center md:my-1">
+              <img class="w-50 h-36 md:w-60 md:h-44 border-2 border-slate-200 rounded-3xl" src="../../assets/photos/card.png" alt="">
             </div>
             <div class="px-4.5">
               <p class="font-bold pt-2 text-md md:text-lg">قابل توسعه‌ست</p>
@@ -29,11 +29,11 @@
         </swiper-slide>
         <swiper-slide class="flex justify-center mb-14 mt-10">
           <div class="cart">
-          <div class="pb-1 md:pb-4">
-            <img class="mx-2 md:mx-5 w-50 h-34 md:w-60 md:h-38 border-2 border-slate-200 rounded-3xl" src="../../assets/svg/icon.svg" alt="">
+          <div class="md:pb-3">
+            <img class="mx-2 md:mx-5 w-50 h-36 md:w-60 md:h-44 border-2 border-slate-200 rounded-3xl" src="../../assets/svg/icon.svg" alt="">
           </div>
           <div class="px-4.5">
-            <p class="font-bold pb-4 pt-3 text-md md:text-lg">
+            <p class="font-bold pb-4 text-md md:text-lg">
                 در دسترسه
             </p>
             <p class="pb-9 text-sm md:text-[16px]">
@@ -44,11 +44,11 @@
         </swiper-slide>
         <swiper-slide class="flex justify-center mb-14 mt-10">
           <div class="cart">
-          <div class="flex justify-center my-2 md:my-4">
-            <img class="w-50 h-34 md:w-60 md:h-38 px-8 border-2 border-slate-200 rounded-3xl" src="../../assets/svg/icon2.svg" alt="">
+          <div class="flex justify-center">
+            <img class="w-50 h-36 md:w-60 md:h-44 px-8 border-2 border-slate-200 rounded-3xl" src="../../assets/svg/icon2.svg" alt="">
           </div>
           <div class="px-4.5">
-            <p class="font-bold pt-2 text-md md:text-lg">
+            <p class="font-bold pt-2.5 text-md md:text-lg">
               بدون هزینه‌ی اولیه‌ست
             </p>
             <p class="py-4 text-sm md:text-[16px]">

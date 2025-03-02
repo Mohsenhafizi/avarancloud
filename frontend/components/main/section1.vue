@@ -1,6 +1,6 @@
 <template>
   <div
-    class="color relative bottom-5 md:bottom-0 md:mx-30 md:h-[950px] lg:h-[970px] 2xl:h-[900px] mt-5 md:mt-30 flex items-center justify-center min-h-screen bg-blue-50 md:rounded-3xl"
+    class="color relative bottom-5 md:bottom-0 md:mx-30 md:h-[860px] lg:h-[970px] 2xl:h-[900px] mt-5 md:mt-30 flex items-center justify-center min-h-screen bg-blue-50 md:rounded-3xl"
   >
     <div class="text-center p-8">
       <div class="mx-30 md:mt-40 lg:mt-70 sm:mx-20 md:mx-52">

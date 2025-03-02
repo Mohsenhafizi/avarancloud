@@ -5,7 +5,7 @@ export default defineNuxtConfig({
     head:{
       title: 'Home',
       link: [
-        { rel: 'icon', type: 'image/png', href: '~/assets/photos/card.png' }
+        { rel: 'icon', type: 'svg', href: '~/assets/svg/cloud.svg' }
       ]
     }
   },
