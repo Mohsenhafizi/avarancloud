@@ -19,7 +19,7 @@
       <p class="text-lg md:text-xl pb-10 px-10">
         ساخت سایت فروشگاهی با تمام امکانات لازم برای مدیریت سایت و سفارشات مانند
         خدمات پرداخت و ارسال ابزارهای جذب ترافیک و مشتری و افزایش فروش تضمینی<br />
-        <span class="relative top-4" data-aos="fade-up" data-aos-duration="1500">ابرآوران</span>
+        <span class="relative top-4">ابرآوران</span>
       </p>
       </div>
 <div class="relative bottom-19 flex justify-center mb-6 2xl:mb-10">
