@@ -4,7 +4,7 @@
         :ابرآوران بهترین انتخاب برای کسب‌وکار شماست، چون
       </div> 
         <ClientOnly>
-          <div class="button-container absolute z-10">
+          <div class="button-container pt-0.5 absolute z-10">
               <button class="button-3d top-36" @click="swiper.prev()">
                 <div class="button-top">
                   <span class="material-icons">❮</span>
@@ -29,7 +29,7 @@
         </swiper-slide>
         <swiper-slide class="flex justify-center mb-14 mt-10">
           <div class="cart">
-          <div class="md:pb-3">
+          <div class="pb-2 md:pb-3">
             <img class="mx-2 md:mx-5 w-50 h-36 md:w-60 md:h-44 border-2 border-slate-200 rounded-3xl" src="../../assets/svg/icon.svg" alt="">
           </div>
           <div class="px-4.5">
@@ -48,7 +48,7 @@
             <img class="w-50 h-36 md:w-60 md:h-44 px-8 border-2 border-slate-200 rounded-3xl" src="../../assets/svg/icon2.svg" alt="">
           </div>
           <div class="px-4.5">
-            <p class="font-bold pt-2.5 text-md md:text-lg">
+            <p class="font-bold pt-2 text-md md:text-lg">
               بدون هزینه‌ی اولیه‌ست
             </p>
             <p class="py-4 text-sm md:text-[16px]">
@@ -58,7 +58,7 @@
           </div>
         </swiper-slide>
       </swiper-container>
-      <div class="button-container relative z-10 flex justify-end">
+      <div class="button-container pt-0.5 relative z-10 flex justify-end">
           <button class="button-3d bottom-[252px] md:bottom-[300px]" @click="swiper.next()">
                 <div class="button-top">
                   <span class="material-icons">❯</span>
