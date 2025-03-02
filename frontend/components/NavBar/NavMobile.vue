@@ -1,5 +1,7 @@
 <template>
 <div class="bg-white p-4 rtl block md:hidden">    
+<!-- Overlay -->
+<div class="overlay" :class="{ 'overlay--visible': overlayVisible }" @click="closeOverlay"></div>
 <!-- nav Icon -->
 <div class="flex justify-between m-2">
 <div class="nav-icon inline-block" @click="openNav">
@@ -7,15 +9,15 @@
         <use href="#bars-3"></use>
     </svg>
 </div>
-<div class="inline-block">
+<div class="inline-block pt-1 font-bold">
     avarancloud
 </div>
 </div>
 
 <!-- nav -->
 <div class="nav fixed top-0 bottom-0 -right-64 w-64 pt-3 px-4 bg-white z-20 overflow-y-auto transition-all" :class="{ '-right-64': !navOpen, 'right-0': navOpen }">
-    <div class="flex items-center justify-between pb-5 mb-6 border-b border-b-gray-100">
-        <div class="flex gap-x-3.5">
+    <div class="flex items-center justify-between pb-5 mb-4 border-b border-b-gray-100">
+        <div class="flex pt-2 pr-1 font-bold">
             avarancloud
         </div>
         <div class="nav-Close-Btn" @click="closeNav">
@@ -26,21 +28,21 @@
     </div>
 
 
-    <div class="flex items-center bg-orange-200/20 text-orange-300 mb-4 pr-2.5 h-10 rounded-md">
+    <div class="flex items-center bg-orange-200/20 text-orange-300 mb-5 pr-2.5 h-10 rounded-md">
         <NuxtLink to="/" class="flex items-center gap-x-2">
             <svg class="w-5 h-5">
                 <use xlink:href="#home"></use>
             </svg>
-            صفحه اصلی
+            <span class="pt-1">صفحه اصلی</span>
         </NuxtLink>
     </div>
 
 
-    <ul class="child:pr-2.5 space-y-6 text-zinc-600">
+    <ul class="space-y-6 text-zinc-600">
 
         <li>
             <div class="flex items-center justify-between submenu-open-btn" @click="toggleSubmenu">
-                <NuxtLink to="/" class="flex items-center gap-x-2">
+                <NuxtLink to="/" class="flex items-center gap-x-2 pr-2.5">
                     <svg class="w-5 h-5">
                         <use xlink:href="#shopping-cart"></use>
                     </svg>
@@ -69,7 +71,7 @@
 
 
         <li>
-            <NuxtLink to="/" class="flex items-center gap-x-2">
+            <NuxtLink to="/" class="flex items-center gap-x-2 pr-2.5">
                 <svg class="w-5 h-5">
                     <use xlink:href="#chat-bubble"></use>
                 </svg>
@@ -77,7 +79,7 @@
             </NuxtLink>
         </li>
         <li>
-            <NuxtLink to="/" class="flex items-center gap-x-2">
+            <NuxtLink to="/" class="flex items-center gap-x-2 pr-2.5">
                 <svg class="w-5 h-5">
                     <use xlink:href="#briefcase"></use>
                 </svg>
@@ -85,7 +87,7 @@
             </NuxtLink>
         </li>
         <li>
-            <NuxtLink to="/" class="flex items-center gap-x-2">
+            <NuxtLink to="/" class="flex items-center gap-x-2 pr-2.5">
                 <svg class="w-5 h-5">
                     <use xlink:href="#document-text"></use>
                 </svg>
@@ -93,7 +95,7 @@
             </NuxtLink>
         </li>
         <li>
-            <NuxtLink to="/" class="flex items-center gap-x-2">
+            <NuxtLink to="/" class="flex items-center gap-x-2 pr-2.5">
                 <svg class="w-5 h-5">
                     <use xlink:href="#phone-arrow-up-right"></use>
                 </svg>
@@ -195,21 +197,22 @@ export default defineComponent({
 }
 
 .overlay {
-    display: none; /* md:hidden */
-    position: fixed;
-    visibility: hidden;
-    opacity: 0;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* bg-black/40 */
-    z-index: 10;
-    transition: all;
+  display: none;
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* تاریک کردن پس‌زمینه */
+  z-index: 10;
+  transition: all 0.3s;
 }
 
 .overlay--visible {
-    visibility: visible;
-    opacity: 1;
+  display: block;
+  visibility: visible;
+  opacity: 1;
 }
 
 .rtl{

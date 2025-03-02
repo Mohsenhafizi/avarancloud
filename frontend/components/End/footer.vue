@@ -5,16 +5,16 @@
     <div class="mx-auto w-full max-w-screen-xl">
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mx-10 xl:mx-0 gap-6 lg:gap-28 px-4 py-10 lg:pt-20">
         <div class="">
-            <h2 class="mb-8 text-lg font-semibold text-gray-900 uppercase dark:text-white">ابرآوران</h2>
-            <ul class="text-gray-500 dark:text-gray-400 lg:w-70">
+            <h2 class="mb-8 text-lg font-semibold uppercase text-white">ابرآوران</h2>
+            <ul class="text-gray-400 lg:w-70">
                 <li class="mb-10">
                     ابرآوران پلتفرمی یکپارچه برای ساختن وب‌سایته. با استفاده از ابرآوران همه می‌تونن با هر سطحی از دانش فنی، برای کسب‌وکارشون یه سایت بسازن و فقط با استفاده از پنل ابرآوران، سفارشات خودشون رو از مرحله‌ی پرداخت تا ارسال و وفادارسازی مشتری مدیریت کنن. به‌علاوه، با استفاده از بسته‌های مکمل ابرآوران، هر کسب‌وکاری می‌تونه ترافیک سایتش رو افزایش بده و یه ظاهر زیبا و چشم‌گیر برای سایتش ایجاد کنه.
                 </li>
             </ul>
         </div>
         <div>
-            <h2 class="mb-10 text-md font-semibold text-gray-900 uppercase dark:text-white">ارتباط با ما</h2>
-            <ul class="text-gray-500 dark:text-gray-400">
+            <h2 class="mb-10 text-md font-semibold uppercase text-white">ارتباط با ما</h2>
+            <ul class="text-gray-400">
                 <li class="mb-4">
                 خیابان شاهزاده قاسم میثاق ششم
             </li>
@@ -103,8 +103,8 @@
             </ul>
         </div>
         <div>
-            <h2 class="mb-10 text-md font-semibold text-gray-900 uppercase dark:text-white">سرویس ها</h2>
-            <ul class="text-gray-500 dark:text-gray-400">
+            <h2 class="mb-10 text-md font-semibold uppercase text-white">سرویس ها</h2>
+            <ul class="text-gray-400">
                 <li class="mb-4">
                     فروشگاه ساز
                 </li>
@@ -117,8 +117,8 @@
             </ul>
         </div>
         <div>
-            <h2 class="mb-10 text-md font-semibold text-gray-900 uppercase dark:text-white">لینک های مفید</h2>
-            <ul class="text-gray-500 dark:text-gray-400">
+            <h2 class="mb-10 text-md font-semibold uppercase text-white">لینک های مفید</h2>
+            <ul class="text-gray-400">
             <li class="mb-4">
                 پنل مدیریت فروشگاه اینترنتی
             </li>

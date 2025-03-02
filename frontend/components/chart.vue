@@ -28,7 +28,7 @@
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
             </svg>
             <div
-            class="top-10.5 left-12 md:left-16 md:top-10-5 lg:top-16 absolute invisible opacity-0 group-hover:visible group-hover:opacity-100 -translate-x-1/2 w-20 md:w-30 transition-all duration-300 ease-out transform group-hover:translate-y-0 translate-y-2"
+            class="top-10.5 left-12 md:left-16 md:top-10-5 lg:top-16 absolute invisible opacity-0 group-focus:visible group-hover:visible group-focus:opacity-100 group-hover:opacity-100 -translate-x-1/2 w-20 md:w-30 transition-all duration-300 ease-out transform group-focus:translate-y-0 group-hover:translate-y-0 translate-y-2"
           >
             <div
               class="rounded-b-3xl rounded-tr-3xl md:text-xs text-zinc-500 bg-stone-300 p-1 lg:p-2"
@@ -37,31 +37,11 @@
             </div>
           </div>
           </button>
-          <!-- Dropdown menu -->
-          <div id="lastDaysdropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700">
-            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
-              <li>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Yesterday</a>
-              </li>
-              <li>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Today</a>
-              </li>
-              <li>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Last 7 days</a>
-              </li>
-              <li>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Last 30 days</a>
-              </li>
-              <li>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Last 90 days</a>
-              </li>
-            </ul>
-          </div>
           <a
             href="#"
-            class="uppercase relative group text-[7px] lg:text-[10px] font-semibold inline-flex items-center rounded-lg text-orange-400 hover:bg-gray-100 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700  px-3 py-2 lg:py-3">
+            class="uppercase relative group text-[7px] lg:text-[10px] inline-flex items-center rounded-lg text-orange-400 hover:bg-gray-100 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700  px-3 py-2 lg:py-3">
             گزارش مشتریان
-            <svg class="w-2.5 h-2.5 md:h-1.5 md:w-1.5 ms-1.5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <svg class="w-2.5 h-2.5 md:h-1.5 md:w-1.5 ms-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
             </svg>
             <div

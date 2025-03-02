@@ -1,9 +1,10 @@
 <template>
   <div
-    class="color relative bottom-5 md:bottom-0 md:mx-30 md:h-[950px] lg:h-[1050px] mt-5 md:mt-30 flex items-center justify-center min-h-screen bg-blue-50 md:rounded-3xl"
+    class="color relative bottom-5 md:bottom-0 md:mx-30 md:h-[950px] lg:h-[970px] 2xl:h-[900px] mt-5 md:mt-30 flex items-center justify-center min-h-screen bg-blue-50 md:rounded-3xl"
   >
     <div class="text-center p-8">
-      <div class="mx-30 md:mt-40 lg:mt-70 sm:mx-20 md:mx-50">
+      <div class="mx-30 md:mt-40 lg:mt-70 sm:mx-20 md:mx-52">
+        <div data-aos="fade-up">
       <h1
         class="relative text-3xl md:text-5xl text-center font-bold py-4 my-5"
         data-aos="fade-up"
@@ -15,12 +16,13 @@
         </span>
       </span>
       </h1>
-      <p class="text-lg md:text-xl pb-10" data-aos="fade-up">
+      <p class="text-lg md:text-xl pb-10 px-10">
         ساخت سایت فروشگاهی با تمام امکانات لازم برای مدیریت سایت و سفارشات مانند
         خدمات پرداخت و ارسال ابزارهای جذب ترافیک و مشتری و افزایش فروش تضمینی<br />
-        <span class="relative top-4">ابرآوران</span>
+        <span class="relative top-4" data-aos="fade-up" data-aos-duration="1500">ابرآوران</span>
       </p>
-<div class="relative bottom-19 flex justify-center mb-6">
+      </div>
+<div class="relative bottom-19 flex justify-center mb-6 2xl:mb-10">
 <svg class="absolute" xmlns="http://www.w3.org/2000/svg" height="200" width="200">
   <g style="order: -1;">
     <polygon
@@ -150,10 +152,10 @@
       <br />
 
       <div class="flex justify-center">
-      <div class="mt-4 mx-20 sm:mx-30 md:mx-40">
+      <div class="mt-6 mx-20 sm:mx-30 md:mx-40">
         <div class="mx-28">
         <div
-          class="relative etesal sm:top-14 md:top-24 inline-block group mt-2 right-16 md:right-22 z-10"
+          class="relative etesal sm:top-14 md:top-24 2xl:top-12 inline-block group mt-2 right-16 md:right-22 2xl:right-34 z-10"
         >
           <button
             class="relative md:left-4 bottom-1.5 md:bottom-8 px-2 py-1 sm:px-5 sm:py-2 md:px-6 lg:px-8 md:py-2 text-xs md:text-sm font-semibol bg-slate-200 rounded-3xl border-2 border-slate-300 hover:border-3 hover:border-blue-200 transition-all duration-300 overflow-hidden"
@@ -176,16 +178,15 @@
                   d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"
                 />
               </svg>
-
-              https://your-website.ir
+              <span class="mt-1">https://your-website.ir</span>
             </span>
           </button>
 
           <div
-            class="absolute invisible opacity-0 group-hover:visible group-hover:opacity-100 bottom-full left-45 -translate-x-1/2 mb-3 w-20 md:w-30 transition-all duration-300 ease-out transform group-hover:translate-y-0 translate-y-2"
+            class="absolute invisible opacity-0 group-focus:visible group-focus:opacity-100 group-hover:visible group-hover:opacity-100 bottom-full left-45 -translate-x-1/2 mb-3 w-20 md:w-30 transition-all duration-300 ease-out transform group-focus:translate-y-0 group-hover:translate-y-0 translate-y-2"
           >
             <div
-              class="rounded-br-3xl rounded-t-3xl bg-stone-200 md:mb-7 p-1.5 text-xs md:text-md"
+              class="relative rounded-br-3xl rounded-t-3xl bg-stone-200 md:mb-7 top-2 md:top-0 p-1.5 text-xs md:text-md"
             >
               اتصال دامنه
             </div>
@@ -194,7 +195,7 @@
         <br>
         <div class="float-left">
           <button
-            class="faq-button transition-all right-7 md:right-0 top-[70px] sm:top-[90px] border-2 border-slate-300 hover:border-3 hover:border-blue-200 inline-block z-10 xl:left-10 xl:right-0"
+            class="faq-button transition-all right-7 md:right-0 top-[70px] sm:top-[90px] border-2 border-slate-300 focus:border-3 focus:border-blue-200 hover:border-3 hover:border-blue-200 inline-block z-10 xl:left-10 xl:right-0"
           >
             <div class="p-1 sm:p-2 md:p-3">
               <svg
@@ -220,7 +221,7 @@
           <div class="md:w-[400px] lg:w-[700px]">
            <div class="mx-10">
               <img
-                class="hidden md:inline-block hover:border-r-2 hover:border-r-blue-500 hover:border-l-2 hover:border-l-blue-500 hover:border-t-2 hover:border-t-blue-500 rounded-t-3xl rounded-b-4xl"
+                class="hidden md:inline-block focus:border-r-2 hover:border-r-2 focus:border-r-blue-500 hover:border-r-blue-500 focus:border-l-2 hover:border-l-2 focus:border-l-blue-500 hover:border-l-blue-500 focus:border-t-2 hover:border-t-2 focus:border-t-blue-500 hover:border-t-blue-500 rounded-t-3xl rounded-b-4xl"
                 src="../../assets/photos/ghahve.png"
                 alt="error"
               />
@@ -232,7 +233,7 @@
             />
           </div>
           <div
-            class="nemone sm:-top-12 absolute invisible opacity-0 group-hover:visible group-hover:opacity-100 bottom-70 md:bottom-86 -right-24 md:right-0 -translate-x-1/2 w-20 transition-all duration-300 ease-out transform group-hover:translate-y-0 translate-y-2"
+            class="nemone sm:-top-12 absolute invisible opacity-0 group-focus:visible group-hover:visible group-focus:opacity-100 group-hover:opacity-100 bottom-70 md:bottom-86 -right-24 md:right-0 -translate-x-1/2 w-20 transition-all duration-300 ease-out transform group-focus:translate-y-0 group-hover:translate-y-0 translate-y-2"
           >
             <div
               class="rounded-br-3xl rounded-t-3xl text-xs sm:text-md bg-stone-300 p-1 sm:px-2 sm:py-3"
@@ -252,7 +253,7 @@
             </span>
             </div>
             <div
-            class="md:-top-8 lg:-top-10 absolute invisible opacity-0 group-hover:visible group-hover:opacity-100 md:-right-30 lg:-right-16 -translate-x-1/2 w-30 transition-all duration-300 ease-out transform group-hover:translate-y-0 translate-y-2"
+            class="md:-top-8 lg:-top-10 absolute invisible opacity-0 group-focus:visible group-hover:visible group-focus:opacity-100 group-hover:opacity-100 md:-right-30 lg:-right-16 -translate-x-1/2 w-30 transition-all duration-300 ease-out transform group-focus:translate-y-0 group-hover:translate-y-0 translate-y-2"
           >
             <div
               class="rounded-br-3xl rounded-t-3xl md:text-xs lg:text-md bg-stone-300 md:p-1 lg:p-2"
@@ -276,7 +277,7 @@
               <path strokelinecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z" />
             </svg> 
            <div
-            class="bottom-11 left-1 absolute invisible opacity-0 group-hover:visible group-hover:opacity-100 -translate-x-1/2 w-14 transition-all duration-300 ease-out transform group-hover:translate-y-0 translate-y-2"
+            class="bottom-11 left-1 absolute invisible opacity-0 group-focus:visible group-hover:visible group-focus:opacity-100 group-hover:opacity-100 -translate-x-1/2 w-14 transition-all duration-300 ease-out transform group-focus:translate-y-0 group-hover:translate-y-0 translate-y-2"
           >
             <div
               class="rounded-bl-3xl rounded-t-3xl text-xs bg-stone-300 p-1 md:p-2"
@@ -301,7 +302,7 @@
             </svg>
             
             <div
-            class="bottom-11 left-9 absolute invisible opacity-0 group-hover:visible group-hover:opacity-100 -translate-x-1/2 w-14 transition-all duration-300 ease-out transform group-hover:translate-y-0 translate-y-2"
+            class="bottom-11 left-9 absolute invisible opacity-0 group-focus:visible group-hover:visible group-focus:opacity-100 group-hover:opacity-100 -translate-x-1/2 w-14 transition-all duration-300 ease-out transform group-focus:translate-y-0 group-hover:translate-y-0 translate-y-2"
           >
             <div
               class="rounded-br-3xl rounded-t-3xl text-xs bg-stone-300 p-1 md:p-2"
@@ -332,7 +333,11 @@ export default defineComponent({
     name: 'Section1',
     setup() {
         onMounted(() => {
-            AOS.init();
+            AOS.init({
+                duration: 1000, // مدت زمان انیمیشن به میلی‌ثانیه
+                easing: 'ease-in-out',
+                once: true,
+            });
         });
     }
 });
