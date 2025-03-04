@@ -1,5 +1,5 @@
 <template>
-<div class="mb-20">
+<div class="relative top-20 mb-20">
     <div class="text-center text-2xl md:text-3xl font-bold">
         چطور می‌تونید با ابرآوران، یک سایت فروشگاهی بسازید؟
     </div>
@@ -106,6 +106,9 @@
     <span class="lightRotation3"></span>
     <span class="lightRotation4"></span>
 </button>
+</div>
+<div class="hidden lg:flex lg:justify-center">
+  <img class=" absolute -z-10 w-70 h-70 rotate-70" src="../../assets/photos/arrrow6.png" alt="" data-aos="fade-up">
 </div>
 </div>
 </template>

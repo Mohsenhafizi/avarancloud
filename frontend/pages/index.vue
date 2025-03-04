@@ -142,18 +142,21 @@
             
         
   </svg>
-  <NavBarNavDesktop />
-  <NavBarNavMobile />
-  <MainSection1 />
-  <MainSection2 />
-  <MainSwiperSection2 />
-  <MainSection3 />
-  <MainSection4 />
-  <EndFooter />
+    <NavBarNavDesktop />
+    <NavBarNavMobile />
+    <MainSection1 />
+    <MainSection2 />
+    <MainSwiperSection2 />
+    <MainSection3 />
+    <MainSection4 />
+    <MainSection5 />
+    <EndFooter />
 </div>
 </template>
 
 <script lang="ts">
+import { MainSection5 } from '#components';
+
 
 </script>
 

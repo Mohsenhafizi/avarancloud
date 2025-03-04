@@ -1,9 +1,7 @@
 <template>
-
-
-<footer class="bg-gray-900">
+<footer class="bg-gray-800">
     <div class="mx-auto w-full max-w-screen-xl">
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mx-10 xl:mx-0 gap-6 lg:gap-28 px-4 py-10 lg:pt-20">
+      <div class="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mx-10 xl:mx-0 gap-6 lg:gap-28 px-4 bottom-4 lg:pt-20">
         <div class="">
             <h2 class="mb-8 text-lg font-semibold uppercase text-white">ابرآوران</h2>
             <ul class="text-gray-400 lg:w-70">
@@ -142,7 +140,7 @@
 </script>
 
 <style>
-.bg-gray-900{
+.bg-gray-800{
     direction: rtl;
 }
 
