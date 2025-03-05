@@ -28,7 +28,7 @@
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
             </svg>
             <div
-            class="top-10.5 left-12 md:left-16 md:top-10-5 lg:top-16 absolute invisible opacity-0 group-focus:visible group-hover:visible group-focus:opacity-100 group-hover:opacity-100 -translate-x-1/2 w-20 md:w-30 transition-all duration-300 ease-out transform group-focus:translate-y-0 group-hover:translate-y-0 translate-y-2"
+            class="top-10.5 left-12 md:left-16 lg:top-16 absolute invisible opacity-0 group-focus:visible group-hover:visible group-focus:opacity-100 group-hover:opacity-100 -translate-x-1/2 w-20 md:w-30 transition-all duration-300 ease-out transform group-focus:translate-y-0 group-hover:translate-y-0 translate-y-2"
           >
             <div
               class="rounded-b-3xl rounded-tr-3xl md:text-xs text-zinc-500 bg-stone-300 p-1 lg:p-2"

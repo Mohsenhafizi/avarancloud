@@ -1,12 +1,12 @@
 <template>
   <div
-    class="color relative bottom-5 md:bottom-0 md:mx-30 md:h-[860px] lg:h-[970px] 2xl:h-[900px] mt-5 md:mt-30 flex items-center justify-center min-h-screen bg-blue-50 md:rounded-3xl"
+    class="color relative bottom-5 md:bottom-0 md:mx-38 md:h-[860px] lg:h-[970px] 2xl:h-[960px] mt-5 md:mt-30 flex items-center justify-center min-h-screen bg-blue-50 md:rounded-3xl"
   >
     <div class="text-center p-8">
-      <div class="mx-30 md:mt-40 lg:mt-70 sm:mx-20 md:mx-52">
+      <div class="mx-30 md:mt-40 lg:mt-60 sm:mx-20 md:mx-52 2xl:mx-34">
         <div data-aos="fade-up">
       <h1
-        class="relative text-3xl md:text-5xl text-center font-bold py-4 my-5"
+        class="relative text-3xl md:text-5xl 2xl:text-6xl text-center font-bold py-4 my-5"
         data-aos="fade-up"
       >
       <span class="2xl:flex 2xl:justify-center z-10">
@@ -16,7 +16,7 @@
         </span>
       </span>
       </h1>
-      <p class="text-lg md:text-xl pb-10 px-10">
+      <p class="text-lg md:text-xl 2xl:text-2xl pb-10 px-10">
         ساخت سایت فروشگاهی با تمام امکانات لازم برای مدیریت سایت و سفارشات مانند
         خدمات پرداخت و ارسال ابزارهای جذب ترافیک و مشتری و افزایش فروش تضمینی<br />
         <span class="relative top-4">ابرآوران</span>

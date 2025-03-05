@@ -2,10 +2,10 @@
     <div class="hidden lg:flex justify-center mt-6 mr-30">
         <img class="absulote inline-block w-90 h-60 rotate-12" src="../../assets/photos/arrrow4.png" data-aos="fade-up" alt="">
     </div>
-    <div class="gradient w-full h-66 lg:h-80" data-aos="fade-up">
-        <div class="relative block text-center lg:top-14 text-3xl">
+    <div class="gradient w-full h-66 lg:h-80">
+        <div class="relative block text-center lg:top-14 text-3xl" data-aos="fade-up">
             آیا برای راه اندازی سایت خودتان اماده اید؟
-        <div class="flex justify-center mt-10 lg:mt-15">
+        <div class="flex justify-center mt-10 lg:mt-15" data-aos="fade-up">
         <button class="uiverse">
           <div class="wrapper">
                 <span>شروع کنید</span>
