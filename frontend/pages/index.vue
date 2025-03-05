@@ -155,9 +155,22 @@
 </template>
 
 <script lang="ts">
-import { MainSection5 } from '#components';
+import { MainSection5, NavBarNavDesktop, NavBarNavMobile, MainSection1, MainSection2, MainSwiperSection2, MainSection3, MainSection4, EndFooter } from '#components';
 
-
+export default {
+  name: 'IndexPage',
+  components: {
+    MainSection5,
+    NavBarNavDesktop,
+    NavBarNavMobile,
+    MainSection1,
+    MainSection2,
+    MainSwiperSection2,
+    MainSection3,
+    MainSection4,
+    EndFooter
+  }
+}
 </script>
 
 <style scoped>

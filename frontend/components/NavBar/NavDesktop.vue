@@ -27,6 +27,8 @@
     <div class="flex gap-x-4 lg:gap-x-10 xs:gap-x-10 font-bold">
         <div class="flex text-xl items-center gap-x-2.5 text-sky-600">
             avarancloud
+            <img class="w-14 h-16" src="../../assets/svg/cloud2.svg" alt="">
+
         </div>
     </div>
     </div>

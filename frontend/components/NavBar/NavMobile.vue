@@ -1,16 +1,17 @@
 <template>
-<div class="bg-white p-4 rtl block md:hidden">    
+<div class="bg-white rtl block md:hidden p-2">    
 <!-- Overlay -->
 <div class="overlay" :class="{ 'overlay--visible': overlayVisible }" @click="closeOverlay"></div>
 <!-- nav Icon -->
 <div class="flex justify-between m-2">
-<div class="nav-icon inline-block" @click="openNav">
+<div class="nav-icon inline-block p-2" @click="openNav">
     <svg class="w-6 h-6 text-zinc-700">
         <use href="#bars-3"></use>
     </svg>
 </div>
-<div class="inline-block pt-1 font-bold">
+<div class="font-bold">
     avarancloud
+    <img class="inline-block w-12 h-12" src="../../assets/svg/cloud2.svg" alt="">
 </div>
 </div>
 
