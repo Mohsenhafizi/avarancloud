@@ -1,5 +1,5 @@
 <template>
-  <div class="relative top-60">
+  <div class="relative lg:top-60">
     <div class="rtl mb-16 lg:mb-0 lg:mx-20" data-aos="fade-up">
             <div class="flex flex-col md:flex-row items-center">
               <img src="../../assets/photos/site.webp" class="w-[296px] relative bottom-10" alt="contact">
@@ -74,7 +74,7 @@
                 <img class="w-80 h-80 -scale-x-120 rotate-16" src="../../assets/photos/arrrow3.png" alt="" data-aos="fade-up">
             </div>
         </div>
-        <div class="rtl mb-20 lg:mb-0 lg:relative lg:bottom-62 lg:z-10 lg:mx-20" data-aos="fade-up">
+        <div class="rtl mb-24 lg:mb-0 lg:relative lg:bottom-62 lg:z-10 lg:mx-20" data-aos="fade-up">
             <div class="flex flex-col md:flex-row items-center">
               <img src="../../assets/photos/support.webp" class="w-[296px] relative bottom-10" alt="contact">
                 <div class="text-zinc-700 md:mr-10 mx-4 md:mx-0 lg:mx-10 xl:mx-16">

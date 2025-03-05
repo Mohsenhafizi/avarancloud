@@ -1,27 +1,27 @@
 <template>
-    <div class="flex justify-center mt-6 mr-30">
+    <div class="hidden lg:flex justify-center mt-6 mr-30">
         <img class="absulote inline-block w-90 h-60 rotate-12" src="../../assets/photos/arrrow4.png" data-aos="fade-up" alt="">
     </div>
-    <div class="gradient w-full h-80">
-        <div class="relative block text-center top-14 text-3xl">
+    <div class="gradient w-full h-66 lg:h-80" data-aos="fade-up">
+        <div class="relative block text-center lg:top-14 text-3xl">
             آیا برای راه اندازی سایت خودتان اماده اید؟
-            <div class="flex justify-center mt-15">
-            <button class="uiverse">
-        <div class="wrapper">
-            <span>شروع کنید</span>
-            <div class="circle circle-12"></div>
-            <div class="circle circle-11"></div>
-            <div class="circle circle-10"></div>
-            <div class="circle circle-9"></div>
-            <div class="circle circle-8"></div>
-            <div class="circle circle-7"></div>
-            <div class="circle circle-6"></div>
-            <div class="circle circle-5"></div>
-            <div class="circle circle-4"></div>
-            <div class="circle circle-3"></div>
-            <div class="circle circle-2"></div>
-            <div class="circle circle-1"></div>
-        </div>
+        <div class="flex justify-center mt-10 lg:mt-15">
+        <button class="uiverse">
+          <div class="wrapper">
+                <span>شروع کنید</span>
+                <div class="circle circle-12"></div>
+                <div class="circle circle-11"></div>
+                <div class="circle circle-10"></div>
+                <div class="circle circle-9"></div>
+                <div class="circle circle-8"></div>
+                <div class="circle circle-7"></div>
+                <div class="circle circle-6"></div>
+                <div class="circle circle-5"></div>
+                <div class="circle circle-4"></div>
+                <div class="circle circle-3"></div>
+                <div class="circle circle-2"></div>
+                <div class="circle circle-1"></div>
+          </div>
         </button>
     </div>
         </div>

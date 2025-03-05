@@ -10,7 +10,6 @@
                   <span class="material-icons">❮</span>
                 </div> 
                 <div class="button-bottom"></div>
-                
                 <div class="button-base"></div>
               </button>
         </div>

@@ -1,5 +1,5 @@
 <template>
-<div class="relative top-20 mb-20">
+<div class="relative lg:top-20 mb-24">
     <div class="text-center text-2xl md:text-3xl font-bold">
         چطور می‌تونید با ابرآوران، یک سایت فروشگاهی بسازید؟
     </div>
@@ -120,6 +120,9 @@ export default defineComponent({
 </script>
 
 <style>
+.mb-24{
+   direction: rtl;
+}
 .div {
   --sunGradient: linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%);
   --moonGradient: linear-gradient(to top, #cc208e 0%, #6713d2 100%);
