@@ -5,7 +5,7 @@
       </div> 
         <ClientOnly>
           <div class="button-container pt-0.5 absolute z-10">
-              <button class="button-3d top-36" @click="swiper.prev()">
+              <button class="button-3d top-36" @click="prevSlide">
                 <div class="button-top">
                   <span class="material-icons">❮</span>
                 </div> 
@@ -59,7 +59,7 @@
         </swiper-slide>
       </swiper-container>
       <div class="button-container pt-0.5 relative z-10 flex justify-end">
-          <button class="button-3d bottom-[252px] md:bottom-[300px]" @click="swiper.next()">
+          <button class="button-3d bottom-[252px] md:bottom-[300px]" @click="nextSlide">
                 <div class="button-top">
                   <span class="material-icons">❯</span>
                 </div>
@@ -82,12 +82,78 @@
 </template>
 
 <script setup lang="ts">
-const containerRef = ref(null)
+import { ref, onMounted, onBeforeUnmount } from 'vue'
 
+const containerRef = ref(null)
 const swiper = useSwiper(containerRef)
+const autoplayInterval = ref<number | null>(null)
+const autoplayDelay = 4000 // 5 seconds delay between slides
+const currentIndex = ref(0)
+const totalSlides = ref(3) // We have 3 slides in the template
+
+// Function to go to the next slide
+const nextSlide = () => {
+  if (swiper) {
+    // Check if we're at the last slide
+    if (currentIndex.value >= totalSlides.value - 1) {
+      // If at the last slide, go back to the first slide
+      swiper.to(0)
+      currentIndex.value = 0
+    } else {
+      // Otherwise, go to the next slide
+      swiper.next()
+      currentIndex.value++
+    }
+  }
+}
+
+// Function to go to the previous slide
+const prevSlide = () => {
+  if (swiper) {
+    // Check if we're at the first slide
+    if (currentIndex.value <= 0) {
+      // If at the first slide, go to the last slide
+      swiper.to(totalSlides.value - 1)
+      currentIndex.value = totalSlides.value - 1
+    } else {
+      // Otherwise, go to the previous slide
+      swiper.prev()
+      currentIndex.value--
+    }
+  }
+}
+
+// Start autoplay
+const startAutoplay = () => {
+  // Clear any existing interval
+  if (autoplayInterval.value) {
+    clearInterval(autoplayInterval.value)
+  }
+  
+  // Set a new interval
+  autoplayInterval.value = window.setInterval(() => {
+    nextSlide()
+  }, autoplayDelay)
+}
+
+// Stop autoplay
+const stopAutoplay = () => {
+  if (autoplayInterval.value) {
+    clearInterval(autoplayInterval.value)
+    autoplayInterval.value = null
+  }
+}
 
 onMounted(() => {
   console.log(swiper.instance)
+  
+  // Start autoplay when component is mounted
+  startAutoplay()
+})
+
+onBeforeUnmount(() => {
+  // Clean up interval when component is unmounted
+  stopAutoplay()
 })
 </script>
 
