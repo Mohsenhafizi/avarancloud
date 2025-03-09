@@ -148,9 +148,7 @@
         <StoreFeatures />
         <StoreTovihat />
         <StorePackages />
-        <div class="opacity-0">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi velit obcaecati magnam officia expedita. Error, explicabo eos ducimus sequi alias vero unde beatae corporis, tempora voluptatibus repellendus rem! Unde labore quae cumque officia, libero laboriosam praesentium omnis numquam amet deserunt quam temporibus architecto! Ipsum voluptatem similique nesciunt provident, enim sunt vel ut eum ullam! Perspiciatis et earum neque tempore maxime quaerat eligendi mollitia, officia ullam ipsa ipsum, nostrum, ab cumque dolore incidunt quia? Quod tempore ipsum consequatur accusantium impedit esse nemo perspiciatis libero accusamus amet eos pariatur fuga deleniti ad sed, itaque nobis doloremque, ex odio? Veniam dolorem dolor illum tempora id modi recusandae fuga ab pariatur quos tempore officiis deleniti repellendus minus, obcaecati quas autem necessitatibus consequuntur fugit amet illo, maiores eum error! Suscipit quae, iusto deleniti impedit nam natus doloremque assumenda ipsam facere, obcaecati totam, aliquam voluptatem rem esse blanditiis tenetur provident mollitia repellat iste nemo minima? Similique nostrum quia exercitationem sed enim minima sapiente saepe ipsa esse. At corporis fugit quia neque excepturi placeat, eos explicabo unde dolor ratione aut quas minus, officia, illum aspernatur facere earum sunt. Mollitia culpa atque voluptatibus quasi qui sit similique facilis nesciunt, explicabo omnis totam, quia iure suscipit eum? Libero aut sed, vitae temporibus ipsum quae? Amet veniam excepturi voluptates repellat eaque deleniti, non sed eligendi unde quia porro dignissimos voluptatem labore eveniet molestiae deserunt numquam quod minima maiores doloribus architecto exercitationem ipsa ullam commodi! Sit velit repellat, mollitia quas ex at ipsa numquam reiciendis blanditiis cupiditate deleniti tenetur ad eum perferendis officiis iusto sunt? Commodi delectus eveniet distinctio vitae nesciunt dolorum optio in tempora laudantium neque! Quas aperiam ab, tempora architecto culpa vero impedit neque numquam aspernatur sequi tempore commodi eaque et mollitia assumenda dolor repudiandae dolorem nam repellat doloremque non dolore placeat nobis! Veritatis eos doloremque atque ad fuga?
-        </div>
+        <StoreSubmenu />
         <StoreFooter />
         <EndFooter />
     </div>
@@ -160,11 +158,13 @@
 import StoreHeader from '~/components/Store/header.vue';
 import StoreTovihat from '~/components/Store/tovihat.vue';
 import StorePackages from '~/components/Store/packages.vue';
+import StoreSubmenu from '~/components/Store/submenu.vue';
 export default {
   components: {
     StoreHeader,
     StoreTovihat,
-    StorePackages
+    StorePackages,
+    StoreSubmenu
   }
 }
 </script>

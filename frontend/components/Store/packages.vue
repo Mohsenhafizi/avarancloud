@@ -1,5 +1,5 @@
 <template>
-<div class="flex justify-center items-center">
+<div class="flex justify-center items-center mt-10 mb-70">
 <div class="container flex lg:inline-block items-center flex-col lg:flex-row text-center" data-aos="fade-up">
     <div class="bronze">
     <div class="card__border"></div>
@@ -464,7 +464,7 @@
     <button class="click-to-call"> تماس بگیرید </button>
     </div>
     </div>
-    </div>
+</div>
 </div>
 
 </template>
