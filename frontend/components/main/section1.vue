@@ -9,7 +9,7 @@
         class="relative text-3xl md:text-5xl 2xl:text-6xl text-center font-bold py-4 my-5"
         data-aos="fade-up"
       >
-      <span class="2xl:flex 2xl:justify-center z-10">
+      <span class="2xl:flex text-purple-950 2xl:justify-center z-10">
         ابرآوران سوپرسرویس آنلاین کسب‌وکارها
         <span class="absolute top-18 sm:top-13 mx-10 flex -z-10">
         <img class="w-80" src="../../assets/svg/vector-7.svg" alt="">
@@ -344,9 +344,6 @@ export default defineComponent({
 </script>
 
 <style>
-.container {
-  background-color: #414141;
-}
 @keyframes bounce {
   0%,
   100% {

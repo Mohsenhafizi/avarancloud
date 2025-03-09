@@ -29,11 +29,9 @@
     </div>
 
 
-    <div class="flex items-center bg-orange-200/20 text-orange-300 mb-5 pr-2.5 h-10 rounded-md">
-        <NuxtLink to="/" class="flex items-center gap-x-2">
-            <svg class="w-5 h-5">
-                <use xlink:href="#home"></use>
-            </svg>
+    <div class="flex items-center mb-5 pr-2.5 h-10 rounded-md">
+        <NuxtLink to="/" class="flex items-center gap-x-2" active-class="active-link">
+            <div class="w-3 h-3 rounded-full border-2 border-green-500 bg-white"></div>
             <span class="pt-1">صفحه اصلی</span>
         </NuxtLink>
     </div>
@@ -43,11 +41,9 @@
 
         <li>
             <div class="flex items-center justify-between submenu-open-btn" @click="toggleSubmenu">
-                <NuxtLink to="/" class="flex items-center gap-x-2 pr-2.5">
-                    <svg class="w-5 h-5">
-                        <use xlink:href="#shopping-cart"></use>
-                    </svg>
-                     فروشگاه      
+                <NuxtLink to="/store" class="flex items-center gap-x-2 pr-2.5" active-class="active-link">
+                    <div class="w-3 h-3 rounded-full border-2 border-green-500 bg-white"></div>
+                      فروشگاه ساز  
                 </NuxtLink>
                 <span class="">
                     <svg class="w-4 h-4">
@@ -72,34 +68,26 @@
 
 
         <li>
-            <NuxtLink to="/" class="flex items-center gap-x-2 pr-2.5">
-                <svg class="w-5 h-5">
-                    <use xlink:href="#chat-bubble"></use>
-                </svg>
+            <NuxtLink to="/blog" class="flex items-center gap-x-2 pr-2.5" active-class="active-link">
+                <div class="w-3 h-3 rounded-full border-2 border-green-500 bg-white"></div>
                  دیکشنری
             </NuxtLink>
         </li>
         <li>
-            <NuxtLink to="/" class="flex items-center gap-x-2 pr-2.5">
-                <svg class="w-5 h-5">
-                    <use xlink:href="#briefcase"></use>
-                </svg>
+            <NuxtLink to="/about" class="flex items-center gap-x-2 pr-2.5" active-class="active-link">
+                <div class="w-3 h-3 rounded-full border-2 border-green-500 bg-white"></div>
                  درباره ما
             </NuxtLink>
         </li>
         <li>
-            <NuxtLink to="/" class="flex items-center gap-x-2 pr-2.5">
-                <svg class="w-5 h-5">
-                    <use xlink:href="#document-text"></use>
-                </svg>
+            <NuxtLink to="/blog" class="flex items-center gap-x-2 pr-2.5" active-class="active-link">
+                <div class="w-3 h-3 rounded-full border-2 border-green-500 bg-white"></div>
                 بلاگ 
             </NuxtLink>
         </li>
         <li>
-            <NuxtLink to="/" class="flex items-center gap-x-2 pr-2.5">
-                <svg class="w-5 h-5">
-                    <use xlink:href="#phone-arrow-up-right"></use>
-                </svg>
+            <NuxtLink to="/contact" class="flex items-center gap-x-2 pr-2.5" active-class="active-link">
+                <div class="w-3 h-3 rounded-full border-2 border-green-500 bg-white"></div>
                  تماس با ما
             </NuxtLink>
         </li>
@@ -218,5 +206,15 @@ export default defineComponent({
 
 .rtl{
     direction: rtl;
+}
+
+/* استایل برای لینک فعال */
+.active-link div.rounded-full {
+    background-color: #22c55e !important;
+}
+
+/* استایل برای هاور روی لینک‌ها */
+.nav a:hover div.rounded-full {
+    background-color: rgba(34, 197, 94, 0.3) !important;
 }
 </style>

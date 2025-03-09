@@ -351,7 +351,4 @@ export default defineComponent({
   }
 }
 
-.container{
-    direction: rtl;
-}
 </style>
