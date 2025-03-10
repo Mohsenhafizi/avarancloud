@@ -1,5 +1,5 @@
 <template>
-    <div class="mx-auto py-10 px-4">
+    <div class="mx-auto relative bottom-6 pb-10 px-4">
 
         <div class="flex justify-end flex-col md:flex-row mb-10 lg:mr-30 lg:ml-70" data-aos="fade-up">
             <div class="flex flex-col md:flex-row lg:py-12 lg:px-12 py-8 px-4 backdrop-blur-sm shadow-2xl rounded-xl">

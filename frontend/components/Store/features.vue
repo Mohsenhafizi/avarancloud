@@ -1,6 +1,9 @@
 <template>
-    <div class="relative mb-20" data-aos="fade-up">
-        <div class="text-center text-purple-950 py-10 lg:py-20 text-4xl md:text-6xl font-bold">
+<div class="flex justify-center">
+  <img class="relative left-2 bottom-20 lg:bottom-10 w-80 h-60 rotate-20" src="../../assets/photos/arrrow6.png" alt="" data-aos="fade-up">
+</div>
+    <div class="relative bottom-30 z-0" data-aos="fade-up">
+        <div class="text-center text-purple-950 py-10 lg:py-20 text-4xl md:text-6xl font-bold mx-4">
             چرا با ابرآوران سایت بسازید؟
         </div>
         <div class="text-center text-xl md:text-2xl mx-10 md:mx-20 xl:mx-100">

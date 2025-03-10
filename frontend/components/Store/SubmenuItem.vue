@@ -10,7 +10,7 @@
                 </svg>
             </span>
         </div>
-        <div class="submenu-content-wrapper" :class="{ 'open': isOpen }">
+        <div class="submenu-content-wrapper rounded-t-lg" :class="{ 'open': isOpen }">
             <div class="submenu-content">
                 <slot name="content">محتوای منو</slot>
             </div>
@@ -95,6 +95,7 @@ export default {
 
 .submenu-content-wrapper.open {
     max-height: 2000px;
+
 }
 
 .submenu-content {
