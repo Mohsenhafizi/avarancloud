@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="gradient w-full py-10"></div>
+        <div class="gradient w-full h-30 md:h-0 md:py-10"></div>
     </div>
 </template>
 
