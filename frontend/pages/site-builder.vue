@@ -147,7 +147,9 @@
         <StoreHeader />
         <StoreFeatures />
         <StoreTovihat />
-        <StorePackages />
+        <div id="packages">
+          <StorePackages />
+        </div>
         <StoreSubmenu />
         <StoreFooter />
         <EndFooter />
@@ -159,12 +161,57 @@ import StoreHeader from '~/components/Store/header.vue';
 import StoreTovihat from '~/components/Store/tovihat.vue';
 import StorePackages from '~/components/Store/packages.vue';
 import StoreSubmenu from '~/components/Store/submenu.vue';
+import StoreFeatures from '~/components/Store/features.vue';
+import StoreFooter from '~/components/Store/footer.vue';
+import EndFooter from '~/components/End/footer.vue';
+import NavBarNavDesktop from '~/components/NavBar/NavDesktop.vue';
+import NavBarNavMobile from '~/components/NavBar/NavMobile.vue';
+
 export default {
   components: {
     StoreHeader,
     StoreTovihat,
     StorePackages,
-    StoreSubmenu
+    StoreSubmenu,
+    StoreFeatures,
+    StoreFooter,
+    EndFooter,
+    NavBarNavDesktop,
+    NavBarNavMobile
+  },
+  mounted() {
+    // Check if there's a hash in the URL
+    if (window.location.hash) {
+      // Get the target element ID from the hash (remove the # character)
+      let targetId = window.location.hash.substring(1);
+      
+      // Handle common typo
+      if (targetId === 'packeges') {
+        targetId = 'packages';
+      }
+      
+      // Find the target element
+      const targetElement = document.getElementById(targetId);
+      
+      // If the element exists, scroll to it
+      if (targetElement) {
+        // Use setTimeout to ensure the DOM is fully loaded
+        setTimeout(() => {
+          // Prevent default hash jump behavior
+          window.scrollTo(0, 0);
+          
+          // Get the element's position
+          const elementPosition = targetElement.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.scrollY - 80; // 80px offset for header
+          
+          // Smooth scroll to the element
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }, 300);
+      }
+    }
   }
 }
 </script>

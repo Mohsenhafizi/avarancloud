@@ -18,8 +18,11 @@
 <!-- nav -->
 <div class="nav fixed top-0 bottom-0 -right-64 w-64 pt-3 px-4 bg-white z-20 overflow-y-auto transition-all" :class="{ '-right-64': !navOpen, 'right-0': navOpen }">
     <div class="flex items-center justify-between pb-5 mb-4 border-b border-b-gray-100">
-        <div class="flex pt-2 pr-1 font-bold">
+        <div class="flex pt-1 font-bold">
+            <img class="inline-block w-12 h-12" src="../../assets/svg/cloud2.svg" alt="">
+            <span class="pt-3 pr-1">
             avarancloud
+            </span>
         </div>
         <div class="nav-Close-Btn" @click="closeNav">
             <svg class="w-5 h-5 text-zinc-600">
