@@ -4,6 +4,8 @@
     </div>
 <div class="flex justify-center items-center mb-56 lg:mb-22 relative -bottom-10 md:bottom-60">
 <div class="container flex lg:inline-block items-center flex-col lg:flex-row text-center" data-aos="fade-up">
+  <div class="text-3xl mb-10 text-purple-950">بسته ها</div>
+
     <div class="bronze">
     <div class="card__border"></div>
     <div class="card_title__container">
