@@ -1,5 +1,7 @@
 <template>
+    <div>
         <div class="gradient w-full py-10"></div>
+    </div>
 </template>
 
 <script>
