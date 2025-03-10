@@ -33,9 +33,22 @@
 </template>
 
 <script>
-export default {
-    name: 'StoreHeader'
-}
+import { defineComponent, onMounted } from 'vue';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+export default defineComponent({
+    name: 'StoreHeader',
+    setup() {
+        onMounted(() => {
+            AOS.init({
+                duration: 1000, // مدت زمان انیمیشن به میلی‌ثانیه
+                easing: 'ease-in-out',
+                once: true,
+            });
+        });
+    }
+});
 </script>
 
 <style>
