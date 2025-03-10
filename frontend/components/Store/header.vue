@@ -1,9 +1,9 @@
 <template>
-    <div class="z-0 shop color relative mb-16 md:mb-40 md:top-30 lg:mx-38 flex items-center justify-center bg-blue-50 md:rounded-3xl">
-      <div class="mx-auto py-20">
+    <div class="z-0 shop color relative mb-36 md:mb-40 md:top-30 lg:mx-38 flex items-center justify-center bg-blue-50 md:rounded-3xl">
+      <div class="mx-auto py-10 md:py-20">
         <div class="flex flex-col md:flex-row items-center justify-between gap-8 px-4">
           <div class="md:w-1/2 mx-20 relative">
-            <div class="mt-10">
+            <div class="md:mt-10">
               <span class="text-center text-purple-950 md:text-right text-3xl md:text-5xl 2xl:text-6xl font-bold block" data-aos="fade-up">
                   فروشگاه‌ساز ابرآوران,
                   سایت‌ساز کسب‌وکار شما 

@@ -1,5 +1,5 @@
 <template>
-<div class="flex justify-center">
+<div class="hidden md:flex justify-center">
   <img class="relative left-2 bottom-20 lg:bottom-10 w-80 h-60 rotate-20" src="../../assets/photos/arrrow6.png" alt="" data-aos="fade-up">
 </div>
     <div class="relative bottom-30 z-0" data-aos="fade-up">
