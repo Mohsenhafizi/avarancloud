@@ -144,48 +144,97 @@
         </svg>
         <NavBarNavDesktop />
         <NavBarNavMobile />
-        <StoreHeader />
-        <StoreFeatures />
-        <StoreTovihat />
-        <div id="packages">
-          <StorePackages />
+        <SiteHeader />
+        <div id="features">
+          <SiteFeatures />
         </div>
-        <StoreSubmenu />
-        <StoreFooter />
+        <div id="tozihat">
+          <SiteTozihat />
+        </div>
+        <div id="packages">
+          <SitePackages />
+        </div>
+        <div id="submenu">
+          <SiteSubmenu />
+        </div>
+        <SiteFooter />
         <EndFooter />
     </div>
 </template>
 
 <script lang="ts">
-import StoreHeader from '~/components/Store/header.vue';
-import StoreTovihat from '~/components/Store/tovihat.vue';
-import StorePackages from '~/components/Store/packages.vue';
-import StoreSubmenu from '~/components/Store/submenu.vue';
-import StoreFeatures from '~/components/Store/features.vue';
-import StoreFooter from '~/components/Store/footer.vue';
+import SiteHeader from '~/components/Site/header.vue';
+import SiteTozihat from '~/components/Site/tozihat.vue';
+import SitePackages from '~/components/Site/packages.vue';
+import SiteSubmenu from '~/components/Site/submenu.vue';
+import SiteFeatures from '~/components/Site/features.vue';
+import SiteFooter from '~/components/Site/footer.vue';
 import EndFooter from '~/components/End/footer.vue';
 import NavBarNavDesktop from '~/components/NavBar/NavDesktop.vue';
 import NavBarNavMobile from '~/components/NavBar/NavMobile.vue';
 
 export default {
   components: {
-    StoreHeader,
-    StoreTovihat,
-    StorePackages,
-    StoreSubmenu,
-    StoreFeatures,
-    StoreFooter,
+    SiteHeader,
+    SiteTozihat,
+    SitePackages,
+    SiteSubmenu,
+    SiteFeatures,
+    SiteFooter,
     EndFooter,
     NavBarNavDesktop,
     NavBarNavMobile
   },
+  data() {
+    return {
+      observer: null as MutationObserver | null
+    };
+  },
   mounted() {
-    // Check if there's a hash in the URL
-    if (window.location.hash) {
-      // Get the target element ID from the hash (remove the # character)
-      let targetId = window.location.hash.substring(1);
+    this.$nextTick(() => {
+      // Initial scroll based on hash if present
+      this.handleHashScroll();
       
-      // Handle common typo
+      // Use MutationObserver to monitor hash changes without relying on hashchange event
+      this.observer = new MutationObserver(() => {
+        if (window.location.hash) {
+          this.handleHashScroll();
+        }
+      });
+      
+      // Observe the URL for changes
+      this.observer.observe(document, { subtree: true, childList: true });
+      
+      // Also add hashchange listener as a fallback
+      window.addEventListener('hashchange', this.handleHashScroll);
+      
+      // Add click event listeners to all anchor links that point to sections on the same page
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', (e) => {
+          e.preventDefault();
+          const targetId = anchor.getAttribute('href')?.substring(1) || '';
+          this.scrollToElement(targetId);
+          window.location.hash = targetId; // Update the URL hash without triggering default scroll
+        });
+      });
+    });
+  },
+  beforeDestroy() {
+    // Clean up
+    if (this.observer) {
+      this.observer.disconnect();
+    }
+    window.removeEventListener('hashchange', this.handleHashScroll);
+  },
+  methods: {
+    handleHashScroll() {
+      if (window.location.hash) {
+        const targetId = window.location.hash.substring(1);
+        this.scrollToElement(targetId);
+      }
+    },
+    scrollToElement(targetId: string) {
+      // Handle common typos
       if (targetId === 'packeges') {
         targetId = 'packages';
       }
@@ -195,21 +244,30 @@ export default {
       
       // If the element exists, scroll to it
       if (targetElement) {
-        // Use setTimeout to ensure the DOM is fully loaded
-        setTimeout(() => {
-          // Prevent default hash jump behavior
-          window.scrollTo(0, 0);
-          
+        // Cancel any previous scroll animations
+        window.scrollTo(0, 0);
+        
+        // Use requestAnimationFrame for smoother performance
+        requestAnimationFrame(() => {
           // Get the element's position
           const elementPosition = targetElement.getBoundingClientRect().top;
-          const offsetPosition = elementPosition + window.scrollY - 80; // 80px offset for header
+          
+          // Dynamic offset based on device width
+          let headerOffset = 80; // Default offset for desktop
+          
+          // If mobile device (width less than 768px)
+          if (window.innerWidth < 768) {
+            headerOffset = 300; // Even smaller offset for mobile devices
+          }
+          
+          const offsetPosition = elementPosition + window.scrollY - headerOffset;
           
           // Smooth scroll to the element
           window.scrollTo({
             top: offsetPosition,
             behavior: 'smooth'
           });
-        }, 300);
+        });
       }
     }
   }

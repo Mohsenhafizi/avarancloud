@@ -1,5 +1,5 @@
 <template>
-<div class="bg-white rtl block md:hidden p-2">    
+<div class="bg-white rtl fixed w-full z-20 md:hidden p-2">  
 <!-- Overlay -->
 <div class="overlay" :class="{ 'overlay--visible': overlayVisible }" @click="closeOverlay"></div>
 <!-- nav Icon -->
@@ -55,17 +55,13 @@
                 </span>
             </div>
             <div class="submenu" :class="{ 'submenu--open': submenuOpen }">
-                <NuxtLink to="/">قهوه ویژه</NuxtLink>
+                <NuxtLink to="/site-builder#features" class="submenu__item--active" @click="closeNav">ویژگی ها</NuxtLink>
                 <br>
-                <NuxtLink to="/" class="submenu__item--active">ویژه در سطح جهانی</NuxtLink>
+                <NuxtLink to="/site-builder#tozihat" class="submenu__item--active" @click="closeNav">توضیحات</NuxtLink>
                 <br>
-                <NuxtLink to="/">قهوه درجه یک</NuxtLink>
+                <NuxtLink to="/site-builder#packages" class="submenu__item--active" @click="closeNav">بسته ها</NuxtLink>
                 <br>
-                <NuxtLink to="/">ترکیبات تجاری</NuxtLink>
-                <br>
-                <NuxtLink to="/">کپسول قهوه</NuxtLink>
-                <br>
-                <NuxtLink to="/">قهوه زینو برزیلی</NuxtLink>
+                <NuxtLink to="/site-builder#submenu" class="submenu__item--active" @click="closeNav">سوالات متداول</NuxtLink>
             </div>
         </li>
 
@@ -124,9 +120,6 @@ export default defineComponent({
 
     const toggleSubmenu = (e: Event) => {
       submenuOpen.value = !submenuOpen.value;
-      if (e.currentTarget) {
-        (e.currentTarget as HTMLElement).parentElement?.classList.toggle("text-orange-300");
-      }
     };
 
     const closeOverlay = () => {
@@ -155,7 +148,7 @@ export default defineComponent({
 <style>
 .submenu__item--active {
     position: relative;
-    color: #FDBA74;
+    color: #22c55e;
     padding-right: 0.625rem; /* 2.5 */
 }
 
@@ -165,7 +158,7 @@ export default defineComponent({
     width: 4px;
     height: 4px;
     border-radius: 100px;
-    background-color: #FDBA74;
+    background-color: #22c55e;
     position: absolute;
     top: 0;
     right: 0;

@@ -1,5 +1,5 @@
 <template>
-    <div class="lg:hidden">   
+    <div class="relative top-20 lg:hidden">   
       <div class="text-center font-bold text-2xl sm:text-3xl mx-2 mt-6">
         :ابرآوران بهترین انتخاب برای کسب‌وکار شماست، چون
       </div> 

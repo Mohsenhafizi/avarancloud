@@ -1,5 +1,5 @@
 <template>
-  <div class="relative lg:top-60">
+  <div class="relative top-20 lg:top-60">
     <div class="rtl mb-16 lg:mb-0 lg:mx-20" data-aos="fade-up">
             <div class="flex flex-col md:flex-row items-center">
               <img src="../../assets/photos/site.webp" class="w-[296px] relative bottom-10" alt="contact">

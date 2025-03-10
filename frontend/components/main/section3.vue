@@ -1,5 +1,5 @@
 <template>
-<div class="relative lg:top-20 mb-24">
+<div class="relative top-20 top-20 mb-24">
     <div class="text-center text-2xl md:text-3xl font-bold">
         چطور می‌تونید با ابرآوران، یک سایت فروشگاهی بسازید؟
     </div>

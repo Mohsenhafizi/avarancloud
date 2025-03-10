@@ -2,7 +2,7 @@
   <div class="hidden md:flex justify-center items-center mb-6 relative bottom-20 md:bottom-30 lg:bottom-20 right-10 lg:right-50">
     <img class="absolute w-80 h-80 lg:w-100 lg:h-100 rotate-10 lg:-rotate-4" src="../../assets/photos/arrrow7.png" data-aos="fade-up" alt="">
   </div>
-  <div class="faq-container rtl pb-6 sm:pb-8 md:pb-10">
+  <div class="faq-container relative rtl top-20 md:top-0 pb-6 sm:pb-8 md:pb-10">
     <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-6 sm:mb-8 md:mb-16 text-purple-950" data-aos="fade-up">سوالات متداول</h2>
     
     <div class="flex flex-col items-center w-full sm:w-11/12 md:w-10/12 lg:w-9/12 xl:w-8/12 mx-auto gap-3 sm:gap-4 md:gap-5 lg:gap-6">
