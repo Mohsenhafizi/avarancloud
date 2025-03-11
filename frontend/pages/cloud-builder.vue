@@ -1,4 +1,5 @@
 <template>
+    <div class="min-h-screen overflow-x-hidden">
       <svg class="hidden">
 
 <symbol id="shopping-cart" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
@@ -141,7 +142,6 @@
             
         
       </svg>
-    <div class="overflow-x-hidden">
         <NavBarNavDesktop />
         <NavBarNavMobile />
         <CloudHeader />
@@ -152,15 +152,76 @@
         <CloudFooter />
         <EndFooter />
     </div>
-</template> 
+</template>
 
-<script>
+
+<script lang="ts">
 export default {
-    name: 'CloudBuilder'
+    name: 'CloudBuilder',
+    data() {
+        return {
+            observer: null as MutationObserver | null
+        };
+    },
+    mounted() {
+        this.$nextTick(() => {
+            // Enable smooth scrolling
+            document.documentElement.style.scrollBehavior = 'smooth';
+            
+            // Make sure page is scrollable on mobile
+            document.body.style.overflow = 'auto';
+            document.body.style.overscrollBehavior = 'auto';
+            
+            // Handle hash-based navigation
+            this.handleHashScroll();
+            
+            // Add event listeners for navigation
+            window.addEventListener('hashchange', this.handleHashScroll);
+            
+            // Add click handlers for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = anchor.getAttribute('href')?.substring(1) || '';
+                    this.scrollToElement(targetId);
+                    window.location.hash = targetId;
+                });
+            });
+        });
+    },
+    beforeDestroy() {
+        // Clean up event listeners
+        window.removeEventListener('hashchange', this.handleHashScroll);
+        if (this.observer) {
+            this.observer.disconnect();
+        }
+    },
+    methods: {
+        handleHashScroll() {
+            if (window.location.hash) {
+                const targetId = window.location.hash.substring(1);
+                this.scrollToElement(targetId);
+            }
+        },
+        scrollToElement(targetId: string) {
+            // Find the target element
+            const targetElement = document.getElementById(targetId);
+            
+            // If the element exists, scroll to it
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    }
 }
 </script>       
 
 
 <style scoped>
-
+/* Ensure content is scrollable on mobile */
+html, body {
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-y: auto;
+}
 </style>

@@ -275,5 +275,10 @@ export default {
 </script>
 
 <style scoped>
-
+/* Ensure content is scrollable on mobile */
+html, body {
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-y: auto;
+}
 </style>
