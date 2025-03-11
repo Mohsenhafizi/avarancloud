@@ -191,17 +191,25 @@ export default {
     };
   },
   mounted() {
+    // Fix for mobile scrolling - apply immediately without nextTick to ensure it works
+    document.documentElement.style.scrollBehavior = 'smooth';
+    document.body.style.overflow = 'auto';
+    document.body.style.overscrollBehavior = 'auto';
+    document.body.style.height = 'auto';
+    document.documentElement.style.height = 'auto';
+    document.body.style.position = 'relative';
+    document.documentElement.style.position = 'relative';
+    
+    // Force enable scrolling on mobile
+    this.enableMobileScroll();
+    
+    // Apply these changes more aggressively
+    window.addEventListener('DOMContentLoaded', this.enableMobileScroll);
+    window.addEventListener('load', this.enableMobileScroll);
+    window.addEventListener('resize', this.enableMobileScroll);
+    window.addEventListener('orientationchange', this.enableMobileScroll);
+    
     this.$nextTick(() => {
-      // Enable smooth scrolling
-      document.documentElement.style.scrollBehavior = 'smooth';
-      
-      // Make sure page is scrollable on mobile
-      document.body.style.overflow = 'auto';
-      document.body.style.overscrollBehavior = 'auto';
-      
-      // Force enable scrolling on mobile
-      this.enableMobileScroll();
-      
       // Initial scroll based on hash if present
       this.handleHashScroll();
       
@@ -220,28 +228,51 @@ export default {
     });
   },
   beforeDestroy() {
-    // Clean up
+    // Clean up all event listeners
     if (this.observer) {
       this.observer.disconnect();
     }
     window.removeEventListener('hashchange', this.handleHashScroll);
+    window.removeEventListener('DOMContentLoaded', this.enableMobileScroll);
+    window.removeEventListener('load', this.enableMobileScroll);
+    window.removeEventListener('resize', this.enableMobileScroll);
+    window.removeEventListener('orientationchange', this.enableMobileScroll);
   },
   methods: {
     enableMobileScroll() {
       // Force enable scrolling immediately for mobile devices
       const forceScroll = () => {
-        window.scrollTo(0, 1);
-        window.scrollTo(0, 0);
+        // Set various style properties to ensure scrolling works
         document.body.style.overflow = 'auto';
         document.body.style.height = 'auto';
         document.documentElement.style.overflow = 'auto';
         document.documentElement.style.height = 'auto';
+        document.body.style.position = 'relative';
+        document.documentElement.style.position = 'relative';
+        document.body.style.touchAction = 'manipulation';
+        (document.body.style as any)['-webkit-overflow-scrolling'] = 'touch';
+        
+        // Force a small scroll to "wake up" the browser's scroll mechanism
+        window.scrollTo(0, 1);
+        setTimeout(() => window.scrollTo(0, 0), 0);
+        
+        // Fix for iOS Safari
+        (document.body.style as any)['-webkit-overflow-scrolling'] = 'touch';
+        
+        // Try to force layout recalculation
+        const scrollHeight = document.body.scrollHeight;
+        document.body.style.height = scrollHeight + 'px';
+        setTimeout(() => {
+          document.body.style.height = 'auto';
+        }, 10);
       };
       
-      // Run immediately and then again after a short delay
+      // Run immediately and several times with increasing delays
       forceScroll();
       setTimeout(forceScroll, 100);
       setTimeout(forceScroll, 500);
+      setTimeout(forceScroll, 1000);
+      setTimeout(forceScroll, 2000);
     },
     handleHashScroll() {
       if (window.location.hash) {
@@ -262,6 +293,15 @@ export default {
       if (targetElement) {
         // Simple smooth scroll that works better on mobile
         targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        
+        // For iOS Safari which sometimes doesn't work with scrollIntoView
+        setTimeout(() => {
+          const offset = targetElement.getBoundingClientRect().top + window.pageYOffset;
+          window.scrollTo({
+            top: offset,
+            behavior: 'smooth'
+          });
+        }, 100);
       }
     }
   }
@@ -274,5 +314,21 @@ html, body {
     overflow-y: auto !important;
     -webkit-overflow-scrolling: touch;
     overscroll-behavior-y: auto;
+    height: auto !important;
+    position: relative !important;
+    touch-action: manipulation;
+}
+
+/* Force scrolling for mobile browsers */
+:deep(*) {
+    -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 767px) {
+    .min-h-screen {
+        min-height: 100vh;
+        height: auto !important;
+        overflow-y: auto !important;
+    }
 }
 </style>
