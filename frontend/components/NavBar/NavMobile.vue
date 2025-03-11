@@ -40,9 +40,9 @@
     </div>
 
 
-    <ul class="space-y-6 text-zinc-600">
+    <ul class="text-zinc-600">
 
-        <li>
+        <li class="mb-1">
             <div class="flex items-center justify-between submenu-open-btn" @click="toggleSubmenu">
                 <NuxtLink to="/site-builder" class="flex items-center gap-x-2 pr-2.5" active-class="active-link">
                     <div class="w-3 h-3 rounded-full border-2 border-green-500 bg-white"></div>
@@ -66,25 +66,25 @@
         </li>
 
 
-        <li>
+        <li class="mb-4">
             <NuxtLink to="/cloud-builder" class="flex items-center gap-x-2 pr-2.5" active-class="active-link">
                 <div class="w-3 h-3 rounded-full border-2 border-green-500 bg-white"></div>
                  ابر ساز
             </NuxtLink>
         </li>
-        <li>
+        <li class="mb-4">
             <NuxtLink to="/about" class="flex items-center gap-x-2 pr-2.5" active-class="active-link">
                 <div class="w-3 h-3 rounded-full border-2 border-green-500 bg-white"></div>
                  درباره ما
             </NuxtLink>
         </li>
-        <li>
+        <li class="mb-4">
             <NuxtLink to="/blog" class="flex items-center gap-x-2 pr-2.5" active-class="active-link">
                 <div class="w-3 h-3 rounded-full border-2 border-green-500 bg-white"></div>
                 بلاگ 
             </NuxtLink>
         </li>
-        <li>
+        <li class="mb-4">
             <NuxtLink to="/contact" class="flex items-center gap-x-2 pr-2.5" active-class="active-link">
                 <div class="w-3 h-3 rounded-full border-2 border-green-500 bg-white"></div>
                  تماس با ما
