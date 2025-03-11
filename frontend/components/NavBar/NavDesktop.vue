@@ -37,10 +37,10 @@
                     <div class="safe-area"></div>
                 </div>
             </div>
-            <NuxtLink to="/blog" class="hover:bg-emerald-300 rounded-2xl p-3 transition-all flex items-center" active-class="active-link">
+            <NuxtLink to="/cloud-builder" class="hover:bg-emerald-300 rounded-2xl p-3 transition-all flex items-center" active-class="active-link">
                 <div class="circle mx-2 w-3 h-3 mb-1 shadow-xl rounded-full transition-all duration-300"></div>
                 <li>
-                    بلاگ
+                    ابر ساز
                 </li>
             </NuxtLink>
             <NuxtLink to="/about" class="hover:bg-emerald-300 rounded-2xl p-3 transition-all flex items-center" active-class="active-link">

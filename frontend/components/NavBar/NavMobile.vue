@@ -1,7 +1,7 @@
 <template>
 <div class="bg-white rtl fixed w-full z-20 md:hidden p-2">  
 <!-- Overlay -->
-<div class="overlay" :class="{ 'overlay--visible': overlayVisible }" @click="closeOverlay"></div>
+<div class="overlay fixed inset-0 bg-black/60 bg-opacity-75 z-10 transition-opacity duration-500 ease-in-out" :class="{ 'opacity-0 invisible': !overlayVisible, 'opacity-100 visible': overlayVisible }" @click="closeOverlay"></div>
 <!-- nav Icon -->
 <div class="flex justify-between m-2">
 <div class="nav-icon inline-block p-2" @click="openNav">
@@ -16,7 +16,7 @@
 </div>
 
 <!-- nav -->
-<div class="nav fixed top-0 bottom-0 -right-64 w-64 pt-3 px-4 bg-white z-20 overflow-y-auto transition-all" :class="{ '-right-64': !navOpen, 'right-0': navOpen }">
+<div class="nav fixed top-0 bottom-0 right-0 w-64 pt-3 px-4 bg-white z-20 overflow-y-auto transform transition-transform duration-500 ease-in-out" :class="{ 'translate-x-full': !navOpen, 'translate-x-0': navOpen }">
     <div class="flex items-center justify-between pb-5 mb-4 border-b border-b-gray-100">
         <div class="flex pt-1 font-bold">
             <img class="inline-block w-12 h-12" src="../../assets/svg/cloud2.svg" alt="">
@@ -67,9 +67,9 @@
 
 
         <li>
-            <NuxtLink to="/blog" class="flex items-center gap-x-2 pr-2.5" active-class="active-link">
+            <NuxtLink to="/cloud-builder" class="flex items-center gap-x-2 pr-2.5" active-class="active-link">
                 <div class="w-3 h-3 rounded-full border-2 border-green-500 bg-white"></div>
-                 دیکشنری
+                 ابر ساز
             </NuxtLink>
         </li>
         <li>
@@ -92,7 +92,6 @@
         </li>
     </ul>
 </div>
-<div class="overlay" :class="{ 'overlay--visible': overlayVisible }" @click="closeOverlay"></div>
 </div>
 </template>
 
@@ -111,14 +110,17 @@ export default defineComponent({
     const openNav = (e : Event) => {
       navOpen.value = true;
       overlayVisible.value = true;
+      document.body.style.overflow = 'hidden'; // Prevenir scroll cuando el menú está abierto
     };
 
     const closeNav = () => {
       navOpen.value = false;
       overlayVisible.value = false;
+      document.body.style.overflow = ''; // Restaurar scroll
     };
 
     const toggleSubmenu = (e: Event) => {
+      e.preventDefault();
       submenuOpen.value = !submenuOpen.value;
     };
 
@@ -168,36 +170,26 @@ export default defineComponent({
 }
 
 .submenu {
-    display: none;
+    /* display: none; */
+    display: flex;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-10px);
     flex-direction: column;
     /* gap: 0.75rem;  */
     padding-right: 0.75rem; /* 3 */
     margin-top: 0.75rem; /* 3 */
     font-size: 0.875rem; /* text-sm */
     color: #3f3f46; /* text-zinc-600 */
+    transition: max-height 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
 }
 
 .submenu--open {
-    display: flex;
-}
-
-.overlay {
-  display: none;
-  position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4); /* تاریک کردن پس‌زمینه */
-  z-index: 10;
-  transition: all 0.3s;
-}
-
-.overlay--visible {
-  display: block;
-  visibility: visible;
-  opacity: 1;
+    /* display: flex; */
+    max-height: 200px; /* Valor suficiente para mostrar todos los elementos */
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .rtl{

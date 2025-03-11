@@ -1,15 +1,14 @@
 <template>
-    <footer>
-        <p>تمامی حقوق محفوظ است © خدمات ابری</p>
-    </footer>
+        <div class="gradient w-full h-40 md:h-30"></div>
 </template>
 
-<script lang="ts">
+<script>
 export default {
-    name: 'CloudFooter',
-};
+    name: 'StoreFooter'
+}
 </script>
 
-<style scoped>
-/* Add styles for CloudFooter here */
-</style> 
+<style scoped>  
+
+</style>
+
