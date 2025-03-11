@@ -141,7 +141,7 @@
             
         
       </svg>
-    <div>
+    <div class="overflow-x-hidden">
         <NavBarNavDesktop />
         <NavBarNavMobile />
         <CloudHeader />
