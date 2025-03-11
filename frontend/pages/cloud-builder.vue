@@ -172,6 +172,9 @@ export default {
             document.body.style.overflow = 'auto';
             document.body.style.overscrollBehavior = 'auto';
             
+            // Force enable scrolling on mobile
+            this.enableMobileScroll();
+            
             // Handle hash-based navigation
             this.handleHashScroll();
             
@@ -197,6 +200,22 @@ export default {
         }
     },
     methods: {
+        enableMobileScroll() {
+            // Force enable scrolling immediately for mobile devices
+            const forceScroll = () => {
+                window.scrollTo(0, 1);
+                window.scrollTo(0, 0);
+                document.body.style.overflow = 'auto';
+                document.body.style.height = 'auto';
+                document.documentElement.style.overflow = 'auto';
+                document.documentElement.style.height = 'auto';
+            };
+            
+            // Run immediately and then again after a short delay
+            forceScroll();
+            setTimeout(forceScroll, 100);
+            setTimeout(forceScroll, 500);
+        },
         handleHashScroll() {
             if (window.location.hash) {
                 const targetId = window.location.hash.substring(1);

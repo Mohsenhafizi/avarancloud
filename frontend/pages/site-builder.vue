@@ -1,5 +1,5 @@
 <template>
-    <div class="min-h-screen font z-10">
+    <div class="min-h-screen overflow-x-hidden">
         <svg class="hidden">
 
   <symbol id="shopping-cart" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
@@ -190,20 +190,20 @@ export default {
       observer: null as MutationObserver | null
     };
   },
-  onMounted() {
+  mounted() {
     this.$nextTick(() => {
+      // Enable smooth scrolling
+      document.documentElement.style.scrollBehavior = 'smooth';
+      
+      // Make sure page is scrollable on mobile
+      document.body.style.overflow = 'auto';
+      document.body.style.overscrollBehavior = 'auto';
+      
+      // Force enable scrolling on mobile
+      this.enableMobileScroll();
+      
       // Initial scroll based on hash if present
       this.handleHashScroll();
-      
-      // Use MutationObserver to monitor hash changes without relying on hashchange event
-      this.observer = new MutationObserver(() => {
-        if (window.location.hash) {
-          this.handleHashScroll();
-        }
-      });
-      
-      // Observe the URL for changes
-      this.observer.observe(document, { subtree: true, childList: true });
       
       // Also add hashchange listener as a fallback
       window.addEventListener('hashchange', this.handleHashScroll);
@@ -227,6 +227,22 @@ export default {
     window.removeEventListener('hashchange', this.handleHashScroll);
   },
   methods: {
+    enableMobileScroll() {
+      // Force enable scrolling immediately for mobile devices
+      const forceScroll = () => {
+        window.scrollTo(0, 1);
+        window.scrollTo(0, 0);
+        document.body.style.overflow = 'auto';
+        document.body.style.height = 'auto';
+        document.documentElement.style.overflow = 'auto';
+        document.documentElement.style.height = 'auto';
+      };
+      
+      // Run immediately and then again after a short delay
+      forceScroll();
+      setTimeout(forceScroll, 100);
+      setTimeout(forceScroll, 500);
+    },
     handleHashScroll() {
       if (window.location.hash) {
         const targetId = window.location.hash.substring(1);
@@ -244,30 +260,8 @@ export default {
       
       // If the element exists, scroll to it
       if (targetElement) {
-        // Cancel any previous scroll animations
-        window.scrollTo(0, 0);
-        
-        // Use requestAnimationFrame for smoother performance
-        requestAnimationFrame(() => {
-          // Get the element's position
-          const elementPosition = targetElement.getBoundingClientRect().top;
-          
-          // Dynamic offset based on device width
-          let headerOffset = 80; // Default offset for desktop
-          
-          // If mobile device (width less than 768px)
-          if (window.innerWidth < 768) {
-            headerOffset = 300; // Even smaller offset for mobile devices
-          }
-          
-          const offsetPosition = elementPosition + window.scrollY - headerOffset;
-          
-          // Smooth scroll to the element
-          window.scrollTo({
-            top: offsetPosition,
-            behavior: 'smooth'
-          });
-        });
+        // Simple smooth scroll that works better on mobile
+        targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
     }
   }
