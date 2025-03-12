@@ -6,7 +6,7 @@
 <div class="container flex lg:inline-block items-center flex-col lg:flex-row text-center" data-aos="fade-up">
   <div class="text-3xl mb-10 text-purple-950">بسته ها</div>
 
-    <div class="bronze">
+    <div class="tem">
     <div class="card__border"></div>
     <div class="card_title__container">
         <span class="card_title">پکیج برنزی </span>
@@ -88,7 +88,7 @@
     </ul>
     <button class="click-to-call">تماس بگیرید</button>
     <div class="hidden lg:flex justify-center items-center relative top-36">
-    <div class="costom">
+    <div class="custom">
     <div class="card__border"></div>
     <div class="card_title__container">
         <span class="card_title">پکیج سفارشی</span>
@@ -120,7 +120,7 @@
     </div>
     </div>
     </div>
-    <div class="silver my-8 lg:my-0 lg:mx-12">
+    <div class="silver-abr my-8 lg:my-0 lg:mx-12">
     <div class="card__border"></div>
     <div class="card_title__container">
         <span class="card_title">پکیج نقره ای</span>
@@ -270,7 +270,7 @@
     </ul>
     <button class="click-to-call">تماس بگیرید</button>
     </div>
-    <div class="golden mb-8 lg:mb-0">
+    <div class="golden-abr mb-8 lg:mb-0">
     <div class="card__border"></div>
     <div class="card_title__container">
         <span class="card_title">پکیج طلایی</span>
@@ -438,7 +438,7 @@
     <button class="click-to-call">تماس بگیرید</button>
     </div>
     <div class="lg:hidden flex justify-center">
-    <div class="costom">
+    <div class="custom">
     <div class="card__border"></div>
     <div class="card_title__container">
         <span class="card_title">پکیج سفارشی</span>
@@ -481,7 +481,7 @@ export default {
 </script>
 
 <style scoped>
-.costom {
+.custom {
     direction: rtl;
   --white: hsl(0, 5%, 8%);
   --black: hsl(240, 15%, 9%);
@@ -501,10 +501,10 @@ export default {
   background-color: rgb(138, 138, 159);
   background-image: radial-gradient(
       at 88% 40%,
-      rgba(148, 201, 233, 1) 40%,
+      rgb(129, 177, 209) 40%,
       transparent 85%
     ),
-    radial-gradient(at 49% 30%, rgb(103, 98, 231) 65%, transparent 85%),
+    radial-gradient(at 49% 30%, rgb(98, 93, 74) 65%, transparent 85%),
     radial-gradient(at 14% 26%, rgb(157, 173, 183) 100%, transparent 85%),
     radial-gradient(at 0% 64%, hsla(263, 93%, 56%, 1) 0px, transparent 85%),
     radial-gradient(at 41% 94%, hsla(284, 100%, 84%, 1) 0px, transparent 85%),
@@ -513,7 +513,7 @@ export default {
   border-radius: 1rem;
   box-shadow: 0px -16px 24px 0px rgba(255, 255, 255, 0.25) inset;
 }
-.costom .card__border {
+.custom .card__border {
   overflow: hidden;
   pointer-events: none;
 
@@ -534,7 +534,7 @@ export default {
   border-radius: 1rem;
 }
 
-.costom .card__border::before {
+.custom .card__border::before {
   content: "";
   pointer-events: none;
 
@@ -564,12 +564,12 @@ export default {
   }
 }
 
-.costom .card_title__container .card_title {
+.custom .card_title__container .card_title {
   font-size: 1rem;
   color: var(--white);
 }
 
-.costom .card_title__container .card_paragraph {
+.custom .card_title__container .card_paragraph {
   margin-top: 0.5rem;
   width: 100%;
 
@@ -577,7 +577,7 @@ export default {
   color: var(--paragraph);
 }
 
-.costom .line {
+.custom .line {
   width: 100%;
   height: 0.1rem;
   background-color: var(--line);
@@ -585,19 +585,19 @@ export default {
   border: none;
 }
 
-.costom .card__list {
+.custom .card__list {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-.costom .card__list .card__list_item {
+.custom .card__list .card__list_item {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
-.costom .card__list .card__list_item .check {
+.custom .card__list .card__list_item .check {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -609,19 +609,19 @@ export default {
   border-radius: 50%;
 }
 
-.costom .card__list .card__list_item .check .check_svg {
+.custom .card__list .card__list_item .check .check_svg {
   width: 0.8rem;
   height: 0.8rem;
 
   fill: var(--black);
 }
 
-.costom .card__list .card__list_item .list_text {
+.custom .card__list .card__list_item .list_text {
   font-size: 0.75rem;
   color: var(--white);
 }
 
-.costom .click-to-call {
+.custom .click-to-call {
   cursor: pointer;
 
   padding: 0.5rem;
@@ -639,7 +639,7 @@ export default {
   border-radius: 9999px;
   box-shadow: inset 0 -2px 25px -4px var(--white);
 }
-.silver {
+.silver-abr {
     direction: rtl;
   --white: hsl(0, 5%, 8%);
   --black: hsl(240, 15%, 9%);
@@ -659,10 +659,10 @@ export default {
   background-color: rgb(138, 138, 159);
   background-image: radial-gradient(
       at 88% 40%,
-      rgba(202, 179, 214, 1) 65%,
+      rgba(108, 95, 164) 55%,
       transparent 85%
     ),
-    radial-gradient(at 49% 30%, rgb(170, 153, 181) 65%, transparent 85%),
+    radial-gradient(at 49% 30%, rgb(	134, 166, 222) 65%, transparent 85%),
     radial-gradient(at 14% 26%, rgb(157, 173, 183) 100%, transparent 85%),
     radial-gradient(at 0% 64%, hsla(263, 93%, 56%, 1) 0px, transparent 85%),
     radial-gradient(at 41% 94%, hsla(284, 100%, 84%, 1) 0px, transparent 85%),
@@ -671,7 +671,7 @@ export default {
   border-radius: 1rem;
   box-shadow: 0px -16px 24px 0px rgba(255, 255, 255, 0.25) inset;
 }
-.silver .card__border {
+.silver-abr .card__border {
   overflow: hidden;
   pointer-events: none;
 
@@ -692,7 +692,7 @@ export default {
   border-radius: 1rem;
 }
 
-.silver .card__border::before {
+.silver-abr .card__border::before {
   content: "";
   pointer-events: none;
 
@@ -722,12 +722,12 @@ export default {
   }
 }
 
-.silver .card_title__container .card_title {
+.silver-abr .card_title__container .card_title {
   font-size: 1rem;
   color: var(--white);
 }
 
-.silver .card_title__container .card_paragraph {
+.silver-abr .card_title__container .card_paragraph {
   margin-top: 0.5rem;
   width: 100%;
 
@@ -735,7 +735,7 @@ export default {
   color: var(--paragraph);
 }
 
-.silver .line {
+.silver-abr .line {
   width: 100%;
   height: 0.1rem;
   background-color: var(--line);
@@ -743,19 +743,19 @@ export default {
   border: none;
 }
 
-.silver .card__list {
+.silver-abr .card__list {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-.silver .card__list .card__list_item {
+.silver-abr .card__list .card__list_item {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
-.silver .card__list .card__list_item .check {
+.silver-abr .card__list .card__list_item .check {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -767,19 +767,19 @@ export default {
   border-radius: 50%;
 }
 
-.silver .card__list .card__list_item .check .check_svg {
+.silver-abr .card__list .card__list_item .check .check_svg {
   width: 0.8rem;
   height: 0.8rem;
 
   fill: var(--black);
 }
 
-.silver .card__list .card__list_item .list_text {
+.silver-abr .card__list .card__list_item .list_text {
   font-size: 0.75rem;
   color: var(--white);
 }
 
-.silver .click-to-call {
+.silver-abr .click-to-call {
   cursor: pointer;
 
   padding: 0.5rem;
@@ -797,7 +797,7 @@ export default {
   border-radius: 9999px;
   box-shadow: inset 0 -2px 25px -4px var(--white);
 }
-.bronze {
+.tem {
     direction: rtl;
   --white: hsl(0, 5%, 8%);
   --black: hsl(240, 15%, 9%);
@@ -817,10 +817,10 @@ export default {
   background-color: rgb(138, 138, 159);
   background-image: radial-gradient(
       at 88% 40%,
-      rgb(209, 154, 99) 65%,
+      rgb(131,232,90) 50%,
       transparent 85%
     ),
-    radial-gradient(at 49% 30%, rgb(213, 123, 34) 100%, transparent 85%),
+    radial-gradient(at 49% 30%, rgb(145,245,213) 100%, transparent 85%),
     radial-gradient(at 14% 26%, rgba(148, 201, 233, 1) 100%, transparent 85%),
     radial-gradient(at 0% 64%, hsla(263, 93%, 56%, 1) 0px, transparent 85%),
     radial-gradient(at 41% 94%, hsla(284, 100%, 84%, 1) 0px, transparent 85%),
@@ -829,7 +829,7 @@ export default {
   border-radius: 1rem;
   box-shadow: 0px -16px 24px 0px rgba(255, 255, 255, 0.25) inset;
 }
-.bronze .card__border {
+.tem .card__border {
   overflow: hidden;
   pointer-events: none;
 
@@ -850,7 +850,7 @@ export default {
   border-radius: 1rem;
 }
 
-.bronze .card__border::before {
+.tem .card__border::before {
   content: "";
   pointer-events: none;
 
@@ -880,12 +880,12 @@ export default {
   }
 }
 
-.bronze .card_title__container .card_title {
+.tem .card_title__container .card_title {
   font-size: 1rem;
   color: var(--white);
 }
 
-.bronze .card_title__container .card_paragraph {
+.tem .card_title__container .card_paragraph {
   margin-top: 0.5rem;
   width: 100%;
 
@@ -893,7 +893,7 @@ export default {
   color: var(--paragraph);
 }
 
-.bronze .line {
+.tem .line {
   width: 100%;
   height: 0.1rem;
   background-color: var(--line);
@@ -901,19 +901,19 @@ export default {
   border: none;
 }
 
-.bronze .card__list {
+.tem .card__list {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-.bronze .card__list .card__list_item {
+.tem .card__list .card__list_item {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
-.bronze .card__list .card__list_item .check {
+.tem .card__list .card__list_item .check {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -925,19 +925,19 @@ export default {
   border-radius: 50%;
 }
 
-.bronze .card__list .card__list_item .check .check_svg {
+.tem .card__list .card__list_item .check .check_svg {
   width: 1rem;
   height: 0.8rem;
 
   fill: var(--black);
 }
 
-.bronze .card__list .card__list_item .list_text {
+.tem .card__list .card__list_item .list_text {
   font-size: 0.8rem;
   color: var(--white);
 }
 
-.bronze .click-to-call {
+.tem .click-to-call {
   cursor: pointer;
 
   padding: 0.5rem;
@@ -955,7 +955,7 @@ export default {
   border-radius: 9999px;
   box-shadow: inset 0 -2px 25px -4px var(--white);
 }
-.golden {
+.golden-abr {
     direction: rtl;
   --white: hsl(0, 5%, 8%);
   --black: hsl(240, 15%, 9%);
@@ -975,11 +975,11 @@ export default {
   background-color: rgb(138, 138, 159);
   background-image: radial-gradient(
       at 88% 40%,
-      rgb(233, 198, 81) 65%,
+      rgb(239, 136, 62) 65%,
       transparent 85%
     ),
-    radial-gradient(at 49% 30%, rgb(192, 178, 59) 65%, transparent 85%),
-    radial-gradient(at 14% 26%, rgb(190, 175, 18) 65%, transparent 85%),
+    radial-gradient(at 49% 30%, rgb(255, 192, 97) 65%, transparent 85%),
+    radial-gradient(at 14% 26%, rgb(255, 202, 97) 65%, transparent 85%),
     radial-gradient(at 0% 64%, hsla(263, 93%, 56%, 1) 0px, transparent 85%),
     radial-gradient(at 41% 94%, hsla(284, 100%, 84%, 1) 0px, transparent 85%),
     radial-gradient(at 100% 99%, hsla(306, 100%, 57%, 1) 0px, transparent 85%);
@@ -988,7 +988,7 @@ export default {
   box-shadow: 0px -16px 24px 0px rgba(255, 255, 255, 0.25) inset;
 }
 
-.golden .card__border {
+.golden-abr .card__border {
   overflow: hidden;
   pointer-events: none;
 
@@ -1009,7 +1009,7 @@ export default {
   border-radius: 1rem;
 }
 
-.golden .card__border::before {
+.golden-abr .card__border::before {
   content: "";
   pointer-events: none;
 
@@ -1039,12 +1039,12 @@ export default {
   }
 }
 
-.golden .card_title__container .card_title {
+.golden-abr .card_title__container .card_title {
   font-size: 1rem;
   color: var(--white);
 }
 
-.golden .card_title__container .card_paragraph {
+.golden-abr .card_title__container .card_paragraph {
     margin-top: 0.5rem;
     width: 100%;
 
@@ -1052,7 +1052,7 @@ export default {
   color: var(--paragraph);
 }
 
-.golden .line {
+.golden-abr .line {
   width: 100%;
   height: 0.1rem;
   background-color: var(--line);
@@ -1060,19 +1060,19 @@ export default {
   border: none;
 }
 
-.golden .card__list {
+.golden-abr .card__list {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-.golden .card__list .card__list_item {
+.golden-abr .card__list .card__list_item {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
-.golden .card__list .card__list_item .check {
+.golden-abr .card__list .card__list_item .check {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1084,19 +1084,19 @@ export default {
   border-radius: 50%;
 }
 
-.golden .card__list .card__list_item .check .check_svg {
+.golden-abr .card__list .card__list_item .check .check_svg {
   width: 0.8rem;
   height: 0.8rem;
 
   fill: var(--black);
 }
 
-.golden .card__list .card__list_item .list_text {
+.golden-abr .card__list .card__list_item .list_text {
   font-size: 0.75rem;
   color: var(--white);
 }
 
-.golden .click-to-call {
+.golden-abr .click-to-call {
   cursor: pointer;
 
   padding: 0.5rem;
