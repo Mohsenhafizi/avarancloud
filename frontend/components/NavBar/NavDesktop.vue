@@ -23,7 +23,7 @@
                     </li>
                 </NuxtLink>
                 <div :class="['dropdown-menu absolute top-full right-0 mt-1 w-44 py-2 bg-gradient-to-br from-emerald-50 to-teal-100 rounded-lg shadow-xl transition-all duration-300 ease-in-out', {'menu-visible': isMenuOpen, 'menu-hidden': !isMenuOpen}]" 
-                    ref="submenu" 
+                    ref="submenuSite" 
                     @mouseenter="submenuMouseEnter"
                     @mouseleave="scheduleClose">
                     <div class="arrow-up"></div>
@@ -37,12 +37,33 @@
                     <div class="safe-area"></div>
                 </div>
             </div>
-            <NuxtLink to="/cloud-builder" class="hover:bg-emerald-300 rounded-2xl p-3 transition-all flex items-center" active-class="active-link">
-                <div class="circle mx-2 w-3 h-3 mb-1 shadow-xl rounded-full transition-all duration-300"></div>
-                <li>
-                    ابر ساز
-                </li>
-            </NuxtLink>
+            <div class="dropdown-container relative" ref="menuContainers">
+                <NuxtLink to="/cloud-builder" class="hover:bg-emerald-300 cursor-pointer rounded-2xl p-3 transition-all flex items-center" @mouseenter="menuMouseEnters" active-class="active-link">
+                    <div class="circle mx-2 w-3 h-3 mb-1 shadow-xl rounded-full transition-all duration-300"></div>
+                    <li class="flex items-center">
+                        ابر ساز
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                            :class="['h-4 w-4 mr-1 transform transition-transform duration-300', {'rotate-180': isMenuOpenContainer}]" 
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </li>
+                </NuxtLink>
+                <div :class="['dropdown-menu absolute top-full right-0 mt-1 w-44 py-2 bg-gradient-to-br from-emerald-50 to-teal-100 rounded-lg shadow-xl transition-all duration-300 ease-in-out', {'menu-visible': isMenuOpenContainer, 'menu-hidden': !isMenuOpenContainer}]" 
+                    ref="submenuCloud" 
+                    @mouseenter="submenuMouseEnters"
+                    @mouseleave="scheduleCloses">
+                    <div class="arrow-up"></div>
+                    <div class="safe-area"></div>
+                    <ul class="text-right">
+                        <li><NuxtLink to="/cloud-builder#features" class="submenu-item block py-2 px-4 text-gray-800 text-base">ویژگی ها</NuxtLink></li>
+                        <li><NuxtLink to="/cloud-builder#tozihat" class="submenu-item block py-2 px-4 text-gray-800 text-base">توضیحات</NuxtLink></li>
+                        <li><NuxtLink to="/cloud-builder#packages" class="submenu-item block py-2 px-4 text-gray-800 text-base">بسته ها</NuxtLink></li>
+                        <li><NuxtLink to="/cloud-builder#submenu" class="submenu-item block py-2 px-4 text-gray-800 text-base">سوالات متداول</NuxtLink></li>
+                    </ul>
+                    <div class="safe-area"></div>
+                </div>
+            </div>
             <NuxtLink to="/about" class="hover:bg-emerald-300 rounded-2xl p-3 transition-all flex items-center" active-class="active-link">
                 <div class="circle mx-2 w-3 h-3 mb-1 shadow-xl rounded-full transition-all duration-300"></div>
                 <li>
@@ -73,38 +94,66 @@ export default {
   data() {
     return {
       isMenuOpen: false,
+      isMenuOpenContainer: false,
       closeTimeout: null as number | null,
       mouseInSubmenu: false,
-      mouseInMainLink: false
+      mouseInMainLink: false,
+      mouseInSubmenuContainer: false,
+      mouseInMainLinkContainer: false
     }
   },
   
   methods: {
     menuMouseEnter() {
-      // پاک کردن هر تایمر بستن قبلی
       this.clearCloseTimeout();
       this.mouseInMainLink = true;
+      this.mouseInMainLinkContainer = false;
       this.isMenuOpen = true;
+      this.isMenuOpenContainer = false;
+    },
+    
+    menuMouseEnters() {
+      this.clearCloseTimeout();
+      this.mouseInMainLinkContainer = true;
+      this.mouseInMainLink = false;
+      this.isMenuOpenContainer = true;
+      this.isMenuOpen = false;
     },
     
     submenuMouseEnter() {
-      // پاک کردن هر تایمر بستن قبلی
       this.clearCloseTimeout();
       this.mouseInSubmenu = true;
+      this.mouseInSubmenuContainer = false;
+    },
+    
+    submenuMouseEnters() {
+      this.clearCloseTimeout();
+      this.mouseInSubmenuContainer = true;
+      this.mouseInSubmenu = false;
     },
     
     scheduleClose() {
-      // ابتدا پاکسازی هر گونه تایمر قبلی
       this.clearCloseTimeout();
       this.mouseInMainLink = false;
       this.mouseInSubmenu = false;
       
-      // اگر موس هم از لینک اصلی و هم از منو خارج شد، منو را ببند
       this.closeTimeout = window.setTimeout(() => {
         if (!this.mouseInMainLink && !this.mouseInSubmenu) {
           this.isMenuOpen = false;
         }
-      }, 100);
+      }, 50);
+    },
+    
+    scheduleCloses() {
+      this.clearCloseTimeout();
+      this.mouseInMainLinkContainer = false;
+      this.mouseInSubmenuContainer = false;
+      
+      this.closeTimeout = window.setTimeout(() => {
+        if (!this.mouseInMainLinkContainer && !this.mouseInSubmenuContainer) {
+          this.isMenuOpenContainer = false;
+        }
+      }, 50);
     },
     
     clearCloseTimeout() {
@@ -130,6 +179,23 @@ export default {
     const container = this.$refs.menuContainer as HTMLElement;
     if (container) {
       container.addEventListener('mouseleave', this.scheduleClose);
+    }
+
+
+
+    document.addEventListener('click', (e) => {
+      const target = e.target as HTMLElement;
+      const menuContainers = this.$refs.menuContainers as HTMLElement;
+      
+      if (menuContainers && !menuContainers.contains(target)) {
+        this.isMenuOpenContainer = false;
+      }
+    });
+    
+    // رویداد mouseleave برای کانتینر منو
+    const containers = this.$refs.menuContainers as HTMLElement;
+    if (containers) {
+      containers.addEventListener('mouseleave', this.scheduleCloses);
     }
   },
   

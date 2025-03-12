@@ -145,10 +145,18 @@
         <NavBarNavDesktop />
         <NavBarNavMobile />
         <CloudHeader />
-        <CloudFeatures />
-        <CloudTozihat />
-        <CloudPackages />
-        <CloudSubmenu />
+        <div id="features">
+          <CloudFeatures />
+        </div>
+        <div id="tozihat">
+          <CloudTozihat />
+        </div>
+        <div id="packages">
+          <CloudPackages />
+        </div>
+        <div id="submenu">
+          <CloudSubmenu />
+        </div>
         <CloudFooter />
         <EndFooter />
     </div>
@@ -162,77 +170,7 @@ export default {
         return {
             observer: null as MutationObserver | null
         };
-    },
-    mounted() {
-        this.$nextTick(() => {
-            // Enable smooth scrolling
-            document.documentElement.style.scrollBehavior = 'smooth';
-            
-            // Make sure page is scrollable on mobile
-            document.body.style.overflow = 'auto';
-            document.body.style.overscrollBehavior = 'auto';
-            
-            // Force enable scrolling on mobile
-            this.enableMobileScroll();
-            
-            // Handle hash-based navigation
-            this.handleHashScroll();
-            
-            // Add event listeners for navigation
-            window.addEventListener('hashchange', this.handleHashScroll);
-            
-            // Add click handlers for anchor links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    const targetId = anchor.getAttribute('href')?.substring(1) || '';
-                    this.scrollToElement(targetId);
-                    window.location.hash = targetId;
-                });
-            });
-        });
-    },
-    beforeDestroy() {
-        // Clean up event listeners
-        window.removeEventListener('hashchange', this.handleHashScroll);
-        if (this.observer) {
-            this.observer.disconnect();
-        }
-    },
-    methods: {
-        enableMobileScroll() {
-            // Force enable scrolling immediately for mobile devices
-            const forceScroll = () => {
-                window.scrollTo(0, 1);
-                window.scrollTo(0, 0);
-                document.body.style.overflow = 'auto';
-                document.body.style.height = 'auto';
-                document.documentElement.style.overflow = 'auto';
-                document.documentElement.style.height = 'auto';
-            };
-            
-            // Run immediately and then again after a short delay
-            forceScroll();
-            setTimeout(forceScroll, 100);
-            setTimeout(forceScroll, 500);
-        },
-        handleHashScroll() {
-            if (window.location.hash) {
-                const targetId = window.location.hash.substring(1);
-                this.scrollToElement(targetId);
-            }
-        },
-        scrollToElement(targetId: string) {
-            // Find the target element
-            const targetElement = document.getElementById(targetId);
-            
-            // If the element exists, scroll to it
-            if (targetElement) {
-                targetElement.scrollIntoView({ behavior: 'smooth' });
-            }
-        }
-    }
-}
+      }}
 </script>       
 
 

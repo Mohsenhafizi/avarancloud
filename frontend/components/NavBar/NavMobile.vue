@@ -32,7 +32,7 @@
     </div>
 
 
-    <div class="flex items-center mb-5 pr-2.5 h-10 rounded-md">
+    <div class="flex items-center mb-3 pr-2.5 h-10 rounded-md">
         <NuxtLink to="/" class="flex items-center gap-x-2" active-class="active-link">
             <div class="w-3 h-3 rounded-full border-2 border-green-500 bg-white"></div>
             <span class="pt-1">صفحه اصلی</span>
@@ -55,22 +55,32 @@
                 </span>
             </div>
             <div class="submenu" :class="{ 'submenu--open': submenuOpen }">
-                <NuxtLink to="/site-builder#features" class="submenu__item--active" @click="closeNav">ویژگی ها</NuxtLink>
-                <br>
-                <NuxtLink to="/site-builder#tozihat" class="submenu__item--active" @click="closeNav">توضیحات</NuxtLink>
-                <br>
+                <NuxtLink to="/site-builder#features" class="submenu__item--active my-1" @click="closeNav">ویژگی ها</NuxtLink>
+                <NuxtLink to="/site-builder#tozihat" class="submenu__item--active my-1" @click="closeNav">توضیحات</NuxtLink>
                 <NuxtLink to="/site-builder#packages" class="submenu__item--active" @click="closeNav">بسته ها</NuxtLink>
-                <br>
-                <NuxtLink to="/site-builder#submenu" class="submenu__item--active" @click="closeNav">سوالات متداول</NuxtLink>
+                <NuxtLink to="/site-builder#submenu" class="submenu__item--active my-2" @click="closeNav">سوالات متداول</NuxtLink>
             </div>
         </li>
 
 
-        <li class="mb-4">
-            <NuxtLink to="/cloud-builder" class="flex items-center gap-x-2 pr-2.5" active-class="active-link">
-                <div class="w-3 h-3 rounded-full border-2 border-green-500 bg-white"></div>
-                 ابر ساز
-            </NuxtLink>
+        <li class="mb-1">
+            <div class="flex items-center justify-between submenu-open-btn" @click="toggleSub">
+                <NuxtLink to="/cloud-builder" class="flex items-center gap-x-2 pr-2.5" active-class="active-link">
+                    <div class="w-3 h-3 rounded-full border-2 border-green-500 bg-white"></div>
+                      ابر ساز  
+                </NuxtLink>
+                <span class="">
+                    <svg class="w-4 h-4">
+                        <use xlink:href="#chevron-down-mini"></use>
+                    </svg>
+                </span>
+            </div>
+            <div class="submenu" :class="{ 'submenu--open': submenuOpens }">
+                <NuxtLink to="/cloud-builder#features" class="submenu__item--active my-1" @click="closeNav">ویژگی ها</NuxtLink>
+                <NuxtLink to="/cloud-builder#tozihat" class="submenu__item--active my-1" @click="closeNav">توضیحات</NuxtLink>
+                <NuxtLink to="/cloud-builder#packages" class="submenu__item--active" @click="closeNav">بسته ها</NuxtLink>
+                <NuxtLink to="/cloud-builder#submenu" class="submenu__item--active my-2" @click="closeNav">سوالات متداول</NuxtLink>
+            </div>
         </li>
         <li class="mb-4">
             <NuxtLink to="/about" class="flex items-center gap-x-2 pr-2.5" active-class="active-link">
@@ -102,6 +112,7 @@ export default defineComponent({
   setup() {
     const navOpen = ref(false);
     const submenuOpen = ref(false);
+    const submenuOpens = ref(false);
     const overlayVisible = ref(false);
     const nav = ref<HTMLElement | null>(null);
     const submenu = ref<HTMLElement | null>(null);
@@ -124,6 +135,11 @@ export default defineComponent({
       submenuOpen.value = !submenuOpen.value;
     };
 
+    const toggleSub = (e: Event) => {
+      e.preventDefault();
+      submenuOpens.value = !submenuOpens.value;
+    };
+
     const closeOverlay = () => {
       closeNav();
     };
@@ -137,10 +153,12 @@ export default defineComponent({
     return {
       navOpen,
       submenuOpen,
+      submenuOpens,
       overlayVisible,
       openNav,
       closeNav,
       toggleSubmenu,
+      toggleSub,
       closeOverlay
     };
   }
@@ -179,7 +197,7 @@ export default defineComponent({
     flex-direction: column;
     /* gap: 0.75rem;  */
     padding-right: 0.75rem; /* 3 */
-    margin-top: 0.75rem; /* 3 */
+    margin-top: 0.5rem; /* 3 */
     font-size: 0.875rem; /* text-sm */
     color: #3f3f46; /* text-zinc-600 */
     transition: max-height 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
@@ -187,7 +205,7 @@ export default defineComponent({
 
 .submenu--open {
     /* display: flex; */
-    max-height: 200px; /* Valor suficiente para mostrar todos los elementos */
+    max-height:200px; /* Valor suficiente para mostrar todos los elementos */
     opacity: 1;
     transform: translateY(0);
 }
