@@ -975,11 +975,11 @@ export default {
   background-color: rgb(138, 138, 159);
   background-image: radial-gradient(
       at 88% 40%,
-      rgb(255, 192, 97) 65%,
+      rgb(246, 168, 51) 65%,
       transparent 85%
     ),
-    radial-gradient(at 49% 30%, rgb(239, 136, 62) 65%, transparent 85%),
-    radial-gradient(at 14% 26%, rgb(255, 202, 97) 65%, transparent 85%),
+    radial-gradient(at 49% 30%, rgb(226, 127, 57) 65%, transparent 85%),
+    radial-gradient(at 14% 26%, rgb(238, 104, 21) 65%, transparent 85%),
     radial-gradient(at 0% 64%, hsla(263, 93%, 56%, 1) 0px, transparent 85%),
     radial-gradient(at 41% 94%, hsla(284, 100%, 84%, 1) 0px, transparent 85%),
     radial-gradient(at 100% 99%, hsla(306, 100%, 57%, 1) 0px, transparent 85%);
