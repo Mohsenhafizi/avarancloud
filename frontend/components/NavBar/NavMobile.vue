@@ -223,4 +223,48 @@ export default defineComponent({
 .nav a:hover div.rounded-full {
     background-color: rgba(34, 197, 94, 0.3) !important;
 }
+
+/* استایل برای منوی سایت ساز */
+[href^="/site-builder"] {
+    color: #059669 !important;
+}
+
+[href^="/site-builder"] div.rounded-full {
+    border-color: #059669 !important;
+}
+
+[href^="/site-builder"].active-link div.rounded-full {
+    background-color: #059669 !important;
+    border-color: #059669 !important;
+}
+
+[href^="/site-builder#"] {
+    color: #064e3b !important;
+}
+
+[href^="/site-builder#"]:hover {
+    color: #059669 !important;
+}
+
+/* استایل برای منوی ابر ساز */
+[href^="/cloud-builder"] {
+    color: #0284c7 !important;
+}
+
+[href^="/cloud-builder"] div.rounded-full {
+    border-color: #0284c7 !important;
+}
+
+[href^="/cloud-builder"].active-link div.rounded-full {
+    background-color: #0284c7 !important;
+    border-color: #0284c7 !important;
+}
+
+[href^="/cloud-builder#"] {
+    color: #0c4a6e !important;
+}
+
+[href^="/cloud-builder#"]:hover {
+    color: #0284c7 !important;
+}
 </style>
