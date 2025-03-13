@@ -15,8 +15,6 @@
   width: 100%;
   min-height: 100vh;
   position: relative;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
   background: radial-gradient(
     125% 125% at -2% 101%,
     rgba(245, 87, 2, 1) 10.5%,
