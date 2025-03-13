@@ -145,16 +145,16 @@
         <NavBarNavDesktop />
         <NavBarNavMobile />
         <SiteHeader />
-        <div id="features">
+        <div>
           <SiteFeatures />
         </div>
-        <div id="tozihat">
+        <div>
           <SiteTozihat />
         </div>
-        <div id="packages">
+        <div>
           <SitePackages />
         </div>
-        <div id="submenu">
+        <div>
           <SiteSubmenu />
         </div>
         <SiteFooter />
