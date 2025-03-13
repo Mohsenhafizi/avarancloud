@@ -1,5 +1,5 @@
 <template>
-<div class="bg-white rtl fixed w-full z-20 md:hidden p-2">  
+<div class="bg-white rtl w-full z-20 md:hidden p-2">  
 <!-- Overlay -->
 <div class="overlay fixed inset-0 bg-black/60 bg-opacity-75 z-10 transition-opacity duration-500 ease-in-out" :class="{ 'opacity-0 invisible': !overlayVisible, 'opacity-100 visible': overlayVisible }" @click="closeOverlay"></div>
 <!-- nav Icon -->
