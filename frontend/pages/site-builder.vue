@@ -188,6 +188,19 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-y: auto;
+    position: relative;
+}
 
+#__nuxt {
+    height: 100%;
+    overflow-y: auto;
+}
 </style>

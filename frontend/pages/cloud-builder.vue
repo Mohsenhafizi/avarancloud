@@ -177,8 +177,17 @@ export default {
 <style scoped>
 /* Ensure content is scrollable on mobile */
 html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
     overflow-y: auto !important;
     -webkit-overflow-scrolling: touch;
     overscroll-behavior-y: auto;
+    position: relative;
+}
+
+#__nuxt {
+    height: 100%;
+    overflow-y: auto;
 }
 </style>
