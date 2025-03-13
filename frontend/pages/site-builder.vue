@@ -1,5 +1,5 @@
 <template>
-    <div class="min-h-screen overflow-x-hidden overflow-y-auto">
+    <div class="min-h-screen overflow-x-hidden relative">
         <svg class="hidden">
 
   <symbol id="shopping-cart" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
@@ -145,16 +145,16 @@
         <NavBarNavDesktop />
         <NavBarNavMobile />
         <SiteHeader />
-        <div>
+        <div id="features">
           <SiteFeatures />
         </div>
-        <div>
+        <div id="tozihat">
           <SiteTozihat />
         </div>
-        <div>
+        <div id="packages">
           <SitePackages />
         </div>
-        <div>
+        <div id="submenu">
           <SiteSubmenu />
         </div>
         <SiteFooter />
@@ -189,25 +189,19 @@ export default {
 </script>
 
 <style scoped>
-html, body {
+.min-h-screen {
+    min-height: 100vh;
     height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-y: auto !important;
-    -webkit-overflow-scrolling: touch;
-    overscroll-behavior-y: auto;
-}
-
-#__nuxt {
-    height: 100%;
-    overflow-y: auto;
-}
-
-#features, #tozihat, #packages, #submenu {
     position: relative;
-    width: 100%;
-    display: block;
-    visibility: visible;
-    opacity: 1;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 768px) {
+    .min-h-screen {
+        height: 100%;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+    }
 }
 </style>

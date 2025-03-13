@@ -1,5 +1,5 @@
 <template>
-    <div class="min-h-screen overflow-x-hidden overflow-y-auto">
+    <div class="min-h-screen overflow-x-hidden relative">
       <svg class="hidden">
 
 <symbol id="shopping-cart" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
@@ -170,10 +170,24 @@ export default {
         return {
             observer: null as MutationObserver | null
         };
-    }
-}
-</script>
+      }}
+</script>       
 
 
 <style scoped>
+.min-h-screen {
+    min-height: 100vh;
+    height: 100%;
+    position: relative;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 768px) {
+    .min-h-screen {
+        height: 100%;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
 </style>
