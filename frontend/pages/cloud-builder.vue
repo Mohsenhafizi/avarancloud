@@ -1,5 +1,5 @@
 <template>
-    <div class="min-h-screen overflow-x-hidden">
+    <div class="min-h-screen overflow-x-hidden overflow-y-auto">
       <svg class="hidden">
 
 <symbol id="shopping-cart" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
