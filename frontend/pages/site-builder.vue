@@ -189,15 +189,5 @@ export default {
 </script>
 
 <style scoped>
-.min-h-screen {
-    min-height: 100vh;
-    position: relative;
-}
 
-@media (max-width: 768px) {
-    .min-h-screen {
-        min-height: 100vh;
-        position: relative;
-    }
-}
 </style>
