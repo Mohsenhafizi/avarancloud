@@ -192,11 +192,15 @@ export default {
 .min-h-screen {
     min-height: 100vh;
     position: relative;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 @media (max-width: 768px) {
     .min-h-screen {
         min-height: 100vh;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
     }
 }
 </style>
