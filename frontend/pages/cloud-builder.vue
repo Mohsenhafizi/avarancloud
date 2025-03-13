@@ -171,8 +171,7 @@ export default {
             observer: null as MutationObserver | null
         };
       }}
-</script>       
-
+</script>
 
 <style scoped>
 .min-h-screen {
