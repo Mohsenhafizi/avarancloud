@@ -2,7 +2,7 @@
     <div class="hidden md:flex justify-center mr-20 lg:mr-50">
         <img class="relative bottom-42 w-100 h-100 -rotate-4" src="../../assets/photos/arrrow7.png" data-aos="fade-up" alt="">
     </div>
-<div class="flex justify-center items-center mb-56 lg:mb-22 relative -bottom-10 md:bottom-60">
+<div class="z-10 flex justify-center items-center mb-56 lg:mb-22 relative -bottom-10 md:bottom-60">
 <div class="container flex lg:inline-block items-center flex-col lg:flex-row text-center" data-aos="fade-up">
   <div class="text-3xl mb-10 text-purple-950">بسته ها</div>
 
@@ -86,7 +86,7 @@
         <span class="list_text">ویژه سایت های رزومه ای، شخصی، خبری، و دارای محتوای از قبل مشخص شده</span>
         </li>
     </ul>
-    <button class="click-to-call">تماس بگیرید</button>
+    <NuxtLink to="/contact" class="click-to-call">تماس بگیرید</NuxtLink>
     <div class="hidden lg:flex justify-center items-center relative top-36">
     <div class="custom">
     <div class="card__border"></div>
@@ -116,7 +116,7 @@
         <span class="list_text">دارای تمامی موارد پکیج برنزی به علاوه موارد سفارشی</span>
         </li>
     </ul>
-    <button class="click-to-call"> تماس بگیرید </button>
+    <NuxtLink to="/contact" class="click-to-call"> تماس بگیرید </NuxtLink>
     </div>
     </div>
     </div>
@@ -268,7 +268,7 @@
         <span class="list_text">قابلیت تبلیغات هوشمند و اتوماسیون بازاریابی</span>
         </li>
     </ul>
-    <button class="click-to-call">تماس بگیرید</button>
+    <NuxtLink to="/contact" class="click-to-call">تماس بگیرید</NuxtLink>
     </div>
     <div class="golden-abr mb-8 lg:mb-0">
     <div class="card__border"></div>
@@ -435,7 +435,7 @@
         <span class="list_text">حذف برندینگ ابرآوران</span>
         </li>
     </ul>
-    <button class="click-to-call">تماس بگیرید</button>
+    <NuxtLink to="/contact" class="click-to-call">تماس بگیرید</NuxtLink>
     </div>
     <div class="lg:hidden flex justify-center">
     <div class="custom">
@@ -466,7 +466,7 @@
         <span class="list_text">دارای تمامی موارد پکیج برنزی به علاوه موارد سفارشی</span>
         </li>
     </ul>
-    <button class="click-to-call"> تماس بگیرید </button>
+    <NuxtLink to="/contact" class="click-to-call"> تماس بگیرید </NuxtLink>
     </div>
     </div>
 </div>

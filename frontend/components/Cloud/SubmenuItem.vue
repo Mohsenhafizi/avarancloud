@@ -66,16 +66,15 @@ export default {
     justify-content: space-between;
     align-items: center;
     padding: 12px 10px;
-    background-color: #f9f9f9;
+    background-color: #acd0ea;
     cursor: pointer;
     font-weight: 500;
     transition: background-color 0.3s ease;
-    border: 1px solid #eaeaea;
     border-radius: 8px;
 }
 
 .submenu-title:hover {
-    background-color: #f0f0f0;
+    background-color: #c1ddf2;
 }
 
 .submenu-icon {
@@ -100,8 +99,7 @@ export default {
 
 .submenu-content {
     padding: 10px;
-    background-color: #ffffff;
-    border: 1px solid #eaeaea;
+    background-color: #cde4f7;
     border-top: none;
     border-radius: 0 0 8px 8px;
     margin-top: -1px;

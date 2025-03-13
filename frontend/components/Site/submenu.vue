@@ -1,5 +1,5 @@
 <template>
-  <div class="hidden md:flex justify-center items-center mb-6 relative bottom-20 md:bottom-30 lg:bottom-20 right-10 lg:right-50">
+  <div class="z-0 hidden md:flex justify-center items-center mb-6 relative bottom-20 md:bottom-30 lg:bottom-20 right-10 lg:right-50">
     <img class="absolute w-80 h-80 lg:w-100 lg:h-100 rotate-10 lg:-rotate-4" src="../../assets/photos/arrrow7.png" data-aos="fade-up" alt="">
   </div>
   <div class="faq-container relative rtl top-20 md:top-0 pb-6 sm:pb-8 md:pb-10">

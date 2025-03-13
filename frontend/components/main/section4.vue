@@ -8,8 +8,9 @@
                     <p class="text-lg">
                       پکیج ساخت سایت سفارشی، راهکار ویژه‌ای برای کسب‌وکارهاییه که دنبال داشتن یه سایت اختصاصی هستن و می‌خوان طعم فروش آنلاین متفاوتی رو بچشن. ابرآوران اینجا به پشتوانه‌ی خدمات دیجی‌کالا، پکیج ساخت سایت سفارشی برای شما در نظر گرفته که می‌تونین هر ویژگی که می‌خواین رو روی سایتتون داشته باشین.
                     </p>
-                    <NuxtLink to="/site-builder#packages" class="flex justify-center z-10">
-                      <div type="klid" class="klid p-4">
+                    <div class="flex justify-center">
+                      <NuxtLink to="/site-builder#packages" type="klid" class="klid p-4">
+
             <span class="fold"></span>
 
             <div class="points_wrapper">
@@ -28,8 +29,9 @@
             <span class="inner">
                 مشاهده خدمات ویژه‌
             </span>
-            </div> 
-                    </NuxtLink>
+          </NuxtLink>
+
+                  </div>
                       </div>
                   </div>
                     <div class="hidden lg:flex justify-center relative bottom-18 left-30 -z-10">
@@ -44,8 +46,9 @@
                     <p class="text-lg">
                       یکی از مهم‌ترین کارهایی که باید برای سایتتون انجام بدین، اینه که سئو یا بهینه‌سازی برای موتورهای جستجو رو توی دستور کار قرار بدین. اینطوری وقتی یه کاربر یه سری واژه‌ی خاص رو توی گوگل سرچ می‌کنه، سایت شما جزو اولین نتایج جستجو نمایش داده می‌شه و احتمال اینکه وارد سایتتون بشه و ازتون خرید کنه، خیلی بیشتر می‌شه. ابرآوران اینجا هم کنارتونه و سه مدل بسته‌ی مختلف سئو براتون آماده کرده تا بتونید توی نتایج جستجوی گوگل بدرخشید!
                     </p>
-                    <NuxtLink to="/site-builder#packages" class="flex justify-center">
-                      <div type="klid" class="klid p-4">
+                    <div class="flex justify-center">
+                      <NuxtLink to="/site-builder#packages" type="klid" class="klid p-4">
+
             <span class="fold"></span>
 
             <div class="points_wrapper">
@@ -64,13 +67,14 @@
             <span class="inner">
                 مشاهده بسته ها
             </span>
-            </div> 
-                    </NuxtLink>
+          </NuxtLink>
+
+        </div>
                 </div>
                 <img src="../../assets/photos/seo.webp" class="hidden lg:inline-block mr-10 xl:ml-10 w-[340px]" alt="contact">
 
             </div>
-            <div class="hidden lg:flex justify-center relative bottom-10 left-56 -z-10">
+            <div class="hidden lg:flex justify-center relative bottom-10 left-60 -z-10">
                 <img class="w-80 h-80 -scale-x-120 rotate-16" src="../../assets/photos/arrrow3.png" alt="" data-aos="fade-up">
             </div>
         </div>
@@ -82,8 +86,9 @@
                     <p class="text-lg">
                       اگر برای تکمیل و راه‌اندازی سایت خود نیاز به کمک دارید، کار را به ابرآوران بسپارید. ابرآوران یا پشتیبان اختصاصی، یک اکانت منیجر حرفه‌ای و آموزش‌دیده است که به‌صورت ویژه و اختصاصی کنارتان است و راه‌اندازی سایت را برایتان انجام می‌دهد. با خرید این بسته، یک سایت کامل به شما تحویل داده می‌شود که آماده‌ی فروش حرفه‌ای است.
                     </p>
-                    <NuxtLink to="/site-builder#packages" class="flex justify-center">
-                      <div type="klid" class="klid p-4">
+                    <div class="flex justify-center">
+                      <NuxtLink to="/site-builder#packages" type="klid" class="klid p-4">
+
             <span class="fold"></span>
 
             <div class="points_wrapper">
@@ -102,8 +107,9 @@
             <span class="inner">
                 مشاهده بسته ها
             </span>
-            </div> 
-                    </NuxtLink>
+          </NuxtLink>
+        </div>
+
                 </div>  
 
             </div>
