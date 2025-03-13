@@ -188,7 +188,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 html, body {
     height: 100%;
     margin: 0;
@@ -196,11 +196,18 @@ html, body {
     overflow-y: auto !important;
     -webkit-overflow-scrolling: touch;
     overscroll-behavior-y: auto;
-    position: relative;
 }
 
 #__nuxt {
     height: 100%;
     overflow-y: auto;
+}
+
+#features, #tozihat, #packages, #submenu {
+    position: relative;
+    width: 100%;
+    display: block;
+    visibility: visible;
+    opacity: 1;
 }
 </style>
