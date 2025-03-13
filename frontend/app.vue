@@ -29,13 +29,4 @@
   );
 }
 
-@media (max-width: 768px) {
-  .bg {
-    min-height: 100vh;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-    position: relative;
-    width: 100%;
-  }
-}
 </style>
