@@ -1,5 +1,5 @@
 <template>
-  <div class="relative z-0 bg min-h-screen overflow-y-auto">
+  <div class="relative z-0 bg">
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
@@ -34,9 +34,8 @@
     min-height: 100vh;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
-    position: fixed;
+    position: relative;
     width: 100%;
-    height: 100%;
   }
 }
 </style>
