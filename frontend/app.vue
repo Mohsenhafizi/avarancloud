@@ -1,5 +1,5 @@
 <template>
-  <div class="relative z-0 bg">
+  <div class="relative z-0 bg min-h-screen overflow-y-auto">
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
@@ -13,7 +13,7 @@
 <style>
 .bg {
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   background: radial-gradient(
     125% 125% at -2% 101%,
     rgba(245, 87, 2, 1) 10.5%,

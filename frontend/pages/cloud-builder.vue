@@ -1,5 +1,5 @@
 <template>
-    <div class="min-h-screen overflow-x-hidden relative">
+    <div class="min-h-screen overflow-x-hidden">
       <svg class="hidden">
 
 <symbol id="shopping-cart" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
@@ -177,7 +177,6 @@ export default {
 <style scoped>
 .min-h-screen {
     min-height: 100vh;
-    height: 100%;
     position: relative;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
@@ -185,7 +184,7 @@ export default {
 
 @media (max-width: 768px) {
     .min-h-screen {
-        height: 100%;
+        min-height: 100vh;
         overflow-y: auto;
         -webkit-overflow-scrolling: touch;
     }
