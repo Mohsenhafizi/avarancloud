@@ -181,8 +181,7 @@ ul {
   top: -35px;
 }
 .example-2 .icon-content a {
-  position: relative;
-  overflow: hidden;
+  position: relative; 
   display: flex;
   justify-content: center;
   align-items: center;

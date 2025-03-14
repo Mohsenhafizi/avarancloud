@@ -88,7 +88,6 @@ export default {
 
 .submenu-content-wrapper {
     max-height: 0;
-    overflow: hidden;
     transition: max-height 0.6s ease;
 }
 
