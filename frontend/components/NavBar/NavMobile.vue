@@ -1,7 +1,7 @@
 <template>
 <div class="bg-white rtl fixed w-full z-20 md:hidden p-2">  
 <!-- Overlay -->
-<div class="overlay fixed inset-0 bg-black/60 bg-opacity-75 z-10 transition-opacity duration-500 ease-in-out"
+<div class="fixed inset-0 bg-black/60 z-10 transition-opacity duration-500 ease-in-out"
      :class="overlayVisible ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'"
      @click="closeOverlay">
 </div>
@@ -213,22 +213,6 @@ const closeNav = () => {
     max-height:200px; /* Valor suficiente para mostrar todos los elementos */
     opacity: 1;
     transform: translateY(0);
-}
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 10;
-    transition: opacity 0.5s ease-in-out;
-}
-
-.overlay.opacity-0 {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none; /* جلوگیری از تداخل با اسکرول */
 }
 
 .rtl{
