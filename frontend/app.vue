@@ -13,6 +13,7 @@
 <style>
 .bg {
   width: 100%;
+  height: 100%;
   position: relative;
   background: radial-gradient(
     125% 125% at -2% 101%,
