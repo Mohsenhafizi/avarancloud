@@ -1,7 +1,10 @@
 <template>
 <div class="bg-white rtl fixed w-full z-20 md:hidden p-2">  
 <!-- Overlay -->
-<div class="overlay fixed inset-0 bg-black/60 bg-opacity-75 z-10 transition-opacity duration-500 ease-in-out" :class="{ 'opacity-0 invisible': !overlayVisible, 'opacity-100 visible': overlayVisible }" @click="closeOverlay"></div>
+<div class="overlay fixed inset-0 bg-black/60 bg-opacity-75 z-10 transition-opacity duration-500 ease-in-out"
+     :class="overlayVisible ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'"
+     @click="closeOverlay">
+</div>
 <!-- nav Icon -->
 <div class="flex justify-between m-2">
 <div class="nav-icon inline-block p-2" @click="openNav">
@@ -166,6 +169,24 @@ export default defineComponent({
 </script>
 
 <style>
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* رنگ پس‌زمینه */
+    z-index: 10; /* لایه بالایی */
+    transition: opacity 0.5s ease-in-out; /* انتقال روان */
+}
+
+/* حالت مخفی */
+.overlay.opacity-0 {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none; /* جلوگیری از تداخل با اسکرول */
+}
+
 .submenu__item--active {
     position: relative;
     color: #22c55e;
