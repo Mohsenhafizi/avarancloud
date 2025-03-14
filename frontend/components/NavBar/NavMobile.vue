@@ -121,17 +121,19 @@ export default defineComponent({
     const submenu = ref<HTMLElement | null>(null);
     const overlay = ref<HTMLElement | null>(null);
 
-    const openNav = (e : Event) => {
-      navOpen.value = true;
-      overlayVisible.value = true;
-      document.body.style.overflow = 'hidden'; // Prevenir scroll cuando el menú está abierto
-    };
+    const openNav = () => {
+    navOpen.value = true;
+    overlayVisible.value = true;
+    document.body.style.overflow = 'hidden'; // مسدود کردن اسکرول
+};
 
-    const closeNav = () => {
-      navOpen.value = false;
-      overlayVisible.value = false;
-      document.body.style.overflow = ''; // Restaurar scroll
-    };
+const closeNav = () => {
+    navOpen.value = false;
+    overlayVisible.value = false;
+    setTimeout(() => {
+        document.body.style.overflow = ''; // فعال کردن اسکرول
+    }, 500); // تاخیر برای هماهنگی با انیمیشن
+};
 
     const toggleSubmenu = (e: Event) => {
       e.preventDefault();
@@ -169,24 +171,6 @@ export default defineComponent({
 </script>
 
 <style>
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* رنگ پس‌زمینه */
-    z-index: 10; /* لایه بالایی */
-    transition: opacity 0.5s ease-in-out; /* انتقال روان */
-}
-
-/* حالت مخفی */
-.overlay.opacity-0 {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none; /* جلوگیری از تداخل با اسکرول */
-}
-
 .submenu__item--active {
     position: relative;
     color: #22c55e;
@@ -229,6 +213,22 @@ export default defineComponent({
     max-height:200px; /* Valor suficiente para mostrar todos los elementos */
     opacity: 1;
     transform: translateY(0);
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 10;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.overlay.opacity-0 {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none; /* جلوگیری از تداخل با اسکرول */
 }
 
 .rtl{
