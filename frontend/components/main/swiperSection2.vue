@@ -78,7 +78,7 @@
     <span class="lightRotation4"></span>
 </button>
 </div>
-    </div>
+</div>
 </template>
 
 <script setup lang="ts">
