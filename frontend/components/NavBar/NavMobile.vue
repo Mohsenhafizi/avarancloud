@@ -215,55 +215,47 @@ export default defineComponent({
 
 /* استایل برای لینک فعال */
 .active-link div.rounded-full {
-    background-color: #22c55e !important;
+    background-color: #22c55e;
 }
 
 /* استایل برای هاور روی لینک‌ها */
 .nav a:hover div.rounded-full {
-    background-color: rgba(34, 197, 94, 0.3) !important;
+    background-color: rgba(34, 197, 94, 0.3);
 }
 
 /* استایل برای منوی سایت ساز */
 [href^="/site-builder"] {
-    color: #059669 !important;
+    color: #059669;
 }
 
 [href^="/site-builder"] div.rounded-full {
-    border-color: #059669 !important;
+    border-color: #059669;
 }
 
 [href^="/site-builder"].active-link div.rounded-full {
-    background-color: #059669 !important;
-    border-color: #059669 !important;
-}
-
-[href^="/site-builder#"] {
-    color: #064e3b !important;
-}
-
-[href^="/site-builder#"]:hover {
-    color: #059669 !important;
+    background-color: #059669;
+    border-color: #059669;
 }
 
 /* استایل برای منوی ابر ساز */
 [href^="/cloud-builder"] {
-    color: #0284c7 !important;
+    color: #0284c7;
 }
 
 [href^="/cloud-builder"] div.rounded-full {
-    border-color: #0284c7 !important;
+    border-color: #0284c7;
 }
 
 [href^="/cloud-builder"].active-link div.rounded-full {
-    background-color: #0284c7 !important;
-    border-color: #0284c7 !important;
+    background-color: #0284c7;
+    border-color: #0284c7;
 }
 
 [href^="/cloud-builder#"] {
-    color: #0c4a6e !important;
+    color: #0c4a6e;
 }
 
 [href^="/cloud-builder#"]:hover {
-    color: #0284c7 !important;
+    color: #0284c7;
 }
 </style>

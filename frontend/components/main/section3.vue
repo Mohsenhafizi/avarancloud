@@ -9,21 +9,21 @@
                 <div class="relative lg:p-3">                  
                     <img class="w-12 ml-0.5 inline-block" src="../../assets/photos/formm.png" alt="">
                     <span class="text-lg md:text-xl font-bold text-purple-900">
-                        ثبت‌نام
+                        انتخاب بسته
                     </span>
                     <span class="flex text-sm md:text-lg p-1 md:px-2">
                         <span class="absolute inline-block -top-[16px] md:top[3px] lg:top-[1px] 2xl:-top-[14px] right-50 md:right-20 2xl:right-60 -z-10 text-gray-300 font-bold text-[100px] md:text-[140px]">
                         1
                          </span>
-                        رایگان ثبت‌نام کنید و یکی از پکیج‌های ساخت سایت رو انتخاب کنید
+                         وارد صفحه بسته ها شوید و یکی از بسته های ساخت سایت یا ساخت زیرساخت ابریتان را انتخاب کنید.
                     </span>
                 </div>
             </div>
             <div class="col-span-12 sm:col-span-6 md:col-span-4 hover:border-1 hover:border-gray-400 rounded-2xl transition-all">
                 <div class="relative lg:p-3">
-                    <img class="w-12 ml-0.5 inline-block" src="../../assets/photos/customize.png" alt="">
+                    <img class="w-12 ml-0.5 inline-block rotate-170" src="../../assets/photos/tel.png" alt="">
                     <span class="text-lg md:text-xl font-bold text-purple-900">  
-                        شخصی‌سازی                      
+                      تماس با ما                      
                     </span>
                     <span class="flex text-sm md:text-lg p-1 md:px-2">
                         <span class="absolute inline-block -top-[16px] md:top[3px] lg:top-[1px] 2xl:-top-[14px] right-50 md:right-20 2xl:right-60 -z-10 text-gray-300 font-bold text-[100px] md:text-[140px]">
@@ -43,7 +43,7 @@
                         <span class="absolute inline-block -top-[16px] md:top[3px] lg:top-[1px] 2xl:-top-[14px] right-50 md:right-20 2xl:right-60 -z-10 text-gray-300 font-bold text-[100px] md:text-[140px]">
                         3
                          </span>
-                        کارهای عملیاتی مثل انتخاب اسم دامنه و دریافت اینماد رو پیش ببرید
+                         کار های عملیاتی مثل انتخاب نام دامنه، دریافت اینماد، دریافت پنل پیامک و درگاه پرداخت را پیش ببرید.
                     </span>
                 </div>
             </div>
@@ -52,14 +52,14 @@
                     <span class="flex text-lg md:text-xl font-bold text-purple-900">
                     <img class="w-12 inline-block" src="../../assets/photos/compelete.png" alt="">
                     <span class="mt-3.5 md:mt-2 xl:mt-3.5 xl:mx-1">
-                    یک قدم تا تکمیل سایت
+                      شروع توسعه
                     </span>
                     </span>
                     <span class="flex text-sm md:text-lg p-1 md:px-2">
                         <span class="absolute inline-block -top-[16px] md:top[3px] lg:top-[1px] 2xl:-top-[14px] right-50 md:right-20 2xl:right-60 -z-10 text-gray-300 font-bold text-[100px] md:text-[140px]">
                         4
                          </span>
-                        با ایجاد درگاه پرداخت و تعریف روش‌ ارسال، آماده‌ی فروش بشید
+                         با انجام مراحل تا به اینجا سایت شما به تیم توسعه سایت سپرده میشود.
                     </span>
                 </div>
             </div>
@@ -82,16 +82,16 @@
             <div class="col-span-12 sm:col-span-6 md:col-span-4 hover:border-1 hover:border-gray-400 rounded-2xl transition-all">
                 <div class="relative lg:p-3">
                     <div class="flex gap-x-1">
-                        <img class="w-11 ml-0.5" src="../../assets/photos/maganet.png" alt="">
-                        <span class="mt-2 text-lg md:text-xl font-bold text-purple-900">
-                        جذب بازدیدکننده
+                        <img class="w-13 ml-0.5" src="../../assets/photos/cloud2.png" alt="">
+                        <span class="mt-4 text-lg md:text-xl font-bold text-purple-900">
+                          ابر سازی
                         </span>
                     </div>
                     <span class="flex text-sm md:text-lg p-1 md:px-2">
                         <span class="absolute inline-block -top-[16px] md:top[3px] lg:top-[1px] 2xl:-top-[14px] right-50 md:right-20 2xl:right-60 -z-10 text-gray-300 font-bold text-[100px] md:text-[140px]">
                         6
                          </span>
-                        با بسته‌های ترافیک و دیزاین ابرآوران، بازدیدکننده‌های بیشتری رو به سایتتون بکشونید
+                         راستی اگه از قبل سایت دارین میتونید از بسته های ابرساز استفاده کنید تا بهبود های زیرساختی و عملیاتی داشته باشید😉
                     </span>
                 </div>
             </div>

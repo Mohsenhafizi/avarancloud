@@ -232,30 +232,30 @@ export default {
 }
 
 [href^="/site-builder"]:hover {
-    background-color: rgba(5, 150, 105, 0.1) !important;
+    background-color: rgba(5, 150, 105, 0.1);
 }
 
 [href^="/site-builder"]:hover .circle {
-    background-color: rgba(5, 150, 105, 0.3) !important;
+    background-color: rgba(5, 150, 105, 0.3);
 }
 
 [href^="/site-builder"].active-link .circle {
-    background-color: #059669 !important;
-    border-color: #059669 !important;
+    background-color: #059669;
+    border-color: #059669;
 }
 
 /* استایل برای زیرمنوی سایت ساز */
 [href^="/site-builder#"] {
-    color: #064e3b !important; /* رنگ سبز emerald-900 */
+    color: #064e3b; /* رنگ سبز emerald-900 */
 }
 
 [href^="/site-builder#"]:hover {
-    color: #059669 !important;
+    color: #059669;
 }
 
 [href^="/site-builder#"]:hover::before {
-    background-color: #059669 !important;
-    box-shadow: 0 0 3px rgba(5, 150, 105, 0.5) !important;
+    background-color: #059669;
+    box-shadow: 0 0 3px rgba(5, 150, 105, 0.5);
 }
 
 /* استایل برای منوی ابر ساز */
@@ -268,25 +268,25 @@ export default {
 }
 
 [href^="/cloud-builder"]:hover {
-    background-color: rgba(2, 132, 199, 0.1) !important;
+    background-color: rgba(2, 132, 199, 0.1);
 }
 
 [href^="/cloud-builder"]:hover .circle {
-    background-color: rgba(2, 132, 199, 0.3) !important;
+    background-color: rgba(2, 132, 199, 0.3);
 }
 
 [href^="/cloud-builder"].active-link .circle {
-    background-color: #0284c7 !important;
-    border-color: #0284c7 !important;
+    background-color: #0284c7;
+    border-color: #0284c7;
 }
 
 /* استایل برای زیرمنوی ابر ساز */
 [href^="/cloud-builder#"] {
-    color: #0c4a6e !important; /* رنگ آبی اسکای 900 */
+    color: #0c4a6e; /* رنگ آبی اسکای 900 */
 }
 
 [href^="/cloud-builder#"]:hover {
-    color: #0284c7 !important;
+    color: #0284c7;
 }
 
 [href^="/cloud-builder#"]:hover::before {

@@ -4,9 +4,10 @@
     </div>
     <div class="gradient w-full h-66 lg:h-80">
         <div class="relative block text-center top-10 lg:top-4 text-3xl" data-aos="fade-up">
-            آیا برای راه اندازی سایت خودتان اماده اید؟
+            آیا برای راه اندازی سایت خودتان آماده اید؟
+        </div>
         <div class="flex justify-center mt-10 lg:mt-15" data-aos="fade-up">
-        <button class="uiverse">
+        <NuxtLink to="/site-builder" class="uiverse">
           <div class="wrapper">
                 <span>شروع کنید</span>
                 <div class="circle circle-12"></div>
@@ -22,10 +23,10 @@
                 <div class="circle circle-2"></div>
                 <div class="circle circle-1"></div>
           </div>
-        </button>
+        </NuxtLink>
     </div>
         </div>
-    </div>
+    
 </template>
 
 <script>

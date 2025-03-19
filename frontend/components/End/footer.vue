@@ -6,7 +6,7 @@
             <h2 class="mb-8 text-lg font-semibold uppercase text-white">ابرآوران</h2>
             <ul class="text-gray-400 lg:w-70">
                 <li class="mb-10">
-                    ابرآوران پلتفرمی یکپارچه برای ساختن وب‌سایته. با استفاده از ابرآوران همه می‌تونن با هر سطحی از دانش فنی، برای کسب‌وکارشون یه سایت بسازن و فقط با استفاده از پنل ابرآوران، سفارشات خودشون رو از مرحله‌ی پرداخت تا ارسال و وفادارسازی مشتری مدیریت کنن. به‌علاوه، با استفاده از بسته‌های مکمل ابرآوران، هر کسب‌وکاری می‌تونه ترافیک سایتش رو افزایش بده و یه ظاهر زیبا و چشم‌گیر برای سایتش ایجاد کنه.
+                  پلتفرمی یکپارچه برای ساختن وب‌سایت و وب اپلیکیشنه. با استفاده از ابرآوران همه می‌تونن با هر سطحی از دانش فنی، برای کسب‌وکارشون یه سایت بسازن و فقط با استفاده از پنل ابرآوران، سفارشات خودشون رو از مرحله‌ی پرداخت تا ارسال و وفادارسازی مشتری مدیریت کنن.راستی از بسته های ابرسازمون برای ساخت و بهبود زیر ساخت های مانیتورینگ و افرایش مقیاس ما غافل نشید
                 </li>
             </ul>
         </div>
@@ -16,7 +16,7 @@
                 <li class="mb-4">
                 خیابان شاهزاده قاسم میثاق ششم
             </li>
-            <a href="#" class="flex gap-1 mb-4">
+            <a href="tel:+989200587282" class="flex gap-1 mb-4">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 -scale-x-96">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
                 </svg>
@@ -25,7 +25,7 @@
                 </span>
             </a>
             <li class="mb-10">
-                <a href="#" class="flex gap-1">
+                <a href="mailto:mohsenhafizi90@gmail.com" class="flex gap-1">
                     <svg class="w-7 h-7 text-white" xmlns="http://www.w3.org/2000/svg" fill="#6a7282" viewBox="0 0 24 24">
                     <path d="M 4.5 3 C 2.5788117 3 1 4.5788117 1 6.5 L 1 18 C 1 19.64497 2.3550302 21 4 21 L 8 21 L 8 13.673828 L 12 16.798828 L 16 13.673828 L 16 21 L 20 21 C 21.64497 21 23 19.64497 23 18 L 23 6.5 C 23 4.5788117 21.421188 3 19.5 3 C 18.750123 3 17.982547 3.2422598 17.34375 3.7421875 L 12 7.9121094 L 6.65625 3.7421875 L 6.6542969 3.7421875 C 6.0158061 3.2430811 5.2492693 3 4.5 3 z M 4.5 5 C 4.8301235 5 5.1426247 5.098287 5.4238281 5.3183594 L 6 5.7675781 L 6 9.5742188 L 3 7.2324219 L 3 6.5 C 3 5.6591883 3.6591883 5 4.5 5 z M 19.5 5 C 20.340812 5 21 5.6591883 21 6.5 L 21 7.2324219 L 18 9.5742188 L 18 5.7675781 L 18.576172 5.3183594 C 18.857375 5.0982871 19.169877 5 19.5 5 z M 8 7.328125 L 12 10.449219 L 16 7.328125 L 16 11.136719 L 12 14.261719 L 8 11.136719 L 8 7.328125 z M 3 9.7695312 L 6 12.111328 L 6 19 L 4 19 C 3.4349698 19 3 18.56503 3 18 L 3 9.7695312 z M 21 9.7695312 L 21 18 C 21 18.56503 20.56503 19 20 19 L 18 19 L 18 12.111328 L 21 9.7695312 z"></path>
                     </svg>
@@ -37,31 +37,7 @@
             <li class="flex mb-16">
                 <ul class="example-2">
         <li class="icon-content">
-            <a
-            href="https://linkedin.com/"
-            aria-label="LinkedIn"
-            data-social="linkedin"
-            >
-            <div class="filled"></div>
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-linkedin"
-                viewBox="0 0 16 16"
-                xml:space="preserve"
-            >
-                <path
-                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
-                fill="currentColor"
-                ></path>
-            </svg>
-            </a>
-            <div class="tooltip">LinkedIn</div>
-        </li>
-        <li class="icon-content">
-            <a href="https://www.github.com/" aria-label="GitHub" data-social="github">
+            <a href="https://github.com/iamirup" target="_blank" aria-label="GitHub" data-social="github">
             <div class="filled"></div>
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -82,9 +58,9 @@
         </li>
         <li class="icon-content">
             <a
+            href="https://t.me/AmirHosseinHafiziBidgoli" target="_blank"
             data-social="telegram"
             aria-label="Telegram"
-            href="https://telegram.org/"
             >
             <div class="filled"></div>
             <svg viewBox="0 0 100 100" version="1.1">
@@ -103,30 +79,33 @@
         <div>
             <h2 class="mb-10 text-md font-semibold uppercase text-white">سرویس ها</h2>
             <ul class="text-gray-400">
-                <li class="mb-4">
+                <NuxtLink to="/site-builder" class="relative inline-block mb-4">
                     فروشگاه ساز
-                </li>
-                <li class="mb-4">
-                    بسته‌های جذب بازدیدکننده و ترافیک
-                </li>
-                <li class="mb-4">
+                </NuxtLink>
+                <NuxtLink to="/site-builder#packages" class="relative inline-block mb-4">
+                  بسته‌های جذب بازدیدکننده  
+                </NuxtLink>
+                <NuxtLink to="/site-builder" class="relative inline-block mb-4">
                     ابرآوران(پشتیبان اختصاصی)
-                </li>
+                </NuxtLink>
             </ul>
         </div>
         <div>
             <h2 class="mb-10 text-md font-semibold uppercase text-white">لینک های مفید</h2>
             <ul class="text-gray-400">
-            <li class="mb-4">
+            <NuxtLink to="/site-builder" class="relative mb-4 inline-block">
                 پنل مدیریت فروشگاه اینترنتی
-            </li>
-            <li class="mb-4">
+            </NuxtLink>
+            <br>
+            <NuxtLink to="/site-builder" class="mb-4 inline-block">
                 بلاگ ابرآوران
-            </li>
-            <li class="mb-4">
+            </NuxtLink>
+            <br>
+            <NuxtLink to="/site-builder#submenu" class="mb-4 inline-block">
                 سوالات متداول
-            </li>
-            <li class="mb-4">درباره ما</li>
+            </NuxtLink>
+            <br>
+            <NuxtLink to="/site-builder" class="mb-4 inline-block">درباره ما</NuxtLink>
             </ul>
         </div>
     </div>
@@ -184,6 +163,7 @@ ul {
   position: relative; 
   display: flex;
   justify-content: center;
+  overflow: hidden;
   align-items: center;
   width: 50px;
   height: 50px;
