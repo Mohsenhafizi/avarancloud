@@ -6,7 +6,7 @@
                 <div class="text-zinc-700 md:mr-10 mx-4 md:mx-0 lg:mx-10 xl:mx-14">
                     <h3 class="text-2xl py-6 md:text-4xl mb-0.5 md:mb-1.5 text-purple-950">سایت رو سفارشی براتون می‌سازیم!</h3>
                     <p class="text-lg">
-                      پکیج ساخت سایت سفارشی، راهکار ویژه‌ای برای افرادیه که دنبال داشتن یه سایت اختصاصی هستن و می‌خوان طعم یه دارای جدید و متفاوتی رو بچشن. ابرآوران اینجا به پشتوانه‌ی خدمات افراد متخصص، پکیج ساخت سایت سفارشی برای شما در نظر گرفته که می‌تونین هر ویژگی که می‌خواین رو روی سایتتون داشته باشین.
+                      پکیج ساخت سایت سفارشی، راهکار ویژه‌ای برای افرادیه که دنبال داشتن یه سایت اختصاصی هستن و می‌خوان طعم یه دارایی جدید و متفاوتی رو بچشن. ابرآوران اینجا به پشتوانه‌ی خدمات افراد متخصص، پکیج ساخت سایت سفارشی برای شما در نظر گرفته که می‌تونین هر ویژگی که می‌خواین رو روی سایتتون داشته باشین.
                     </p>
                     <div class="flex justify-center">
                       <NuxtLink to="/site-builder#packages" type="klid" class="klid p-4">
@@ -38,7 +38,7 @@
                       <img class="w-70 h-70 -rotate-25" src="../../assets/photos/arrrow1.png" alt="" data-aos="fade-up">
                   </div>
         </div>
-        <div class="rtl mb-16 lg:mb-0 lg:relative lg:bottom-38 z-10 md:mx-20" data-aos="fade-up">
+        <div class="rtl mb-30 lg:mb-0 lg:relative lg:bottom-38 z-10 md:mx-20" data-aos="fade-up">
             <div class="flex flex-col md:flex-row items-center">
               <img src="../../assets/svg/card1.svg" class="lg:hidden w-[340px]" alt="contact">
                 <div class="text-zinc-700 mx-4 md:mx-0">

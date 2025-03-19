@@ -6,7 +6,7 @@
         <div class="relative block text-center top-10 lg:top-4 text-3xl" data-aos="fade-up">
             آیا برای راه اندازی سایت خودتان آماده اید؟
         </div>
-        <div class="flex justify-center mt-10 lg:mt-15" data-aos="fade-up">
+        <div class="flex justify-center mt-15" data-aos="fade-up">
         <NuxtLink to="/site-builder" class="uiverse">
           <div class="wrapper">
                 <span>شروع کنید</span>

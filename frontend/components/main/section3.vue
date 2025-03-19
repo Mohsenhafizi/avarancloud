@@ -14,7 +14,7 @@
                     <span class="flex text-sm md:text-lg p-1 md:px-2">
                         <span class="absolute inline-block -top-[16px] md:top[3px] lg:top-[1px] 2xl:-top-[14px] right-50 md:right-20 2xl:right-60 -z-10 text-gray-300 font-bold text-[100px] md:text-[140px]">
                         1
-                         </span>
+                        </span>
                          وارد صفحه بسته ها شوید و یکی از بسته های ساخت سایت یا ساخت زیرساخت ابریتان را انتخاب کنید.
                     </span>
                 </div>
@@ -28,8 +28,8 @@
                     <span class="flex text-sm md:text-lg p-1 md:px-2">
                         <span class="absolute inline-block -top-[16px] md:top[3px] lg:top-[1px] 2xl:-top-[14px] right-50 md:right-20 2xl:right-60 -z-10 text-gray-300 font-bold text-[100px] md:text-[140px]">
                         2
-                         </span>
-                        تم مورد نظرتون رو انتخاب و محصولاتتون رو اضافه کنید
+                        </span>
+                        روی تماس با ما برنید و از اطلاعات مورد نیاز و راهنمایی های ما مطلع شوید.
                     </span>
                 </div>
             </div>
@@ -42,7 +42,7 @@
                     <span class="flex text-sm md:text-lg p-1 md:px-2">
                         <span class="absolute inline-block -top-[16px] md:top[3px] lg:top-[1px] 2xl:-top-[14px] right-50 md:right-20 2xl:right-60 -z-10 text-gray-300 font-bold text-[100px] md:text-[140px]">
                         3
-                         </span>
+                        </span>
                          کار های عملیاتی مثل انتخاب نام دامنه، دریافت اینماد، دریافت پنل پیامک و درگاه پرداخت را پیش ببرید.
                     </span>
                 </div>
@@ -58,7 +58,7 @@
                     <span class="flex text-sm md:text-lg p-1 md:px-2">
                         <span class="absolute inline-block -top-[16px] md:top[3px] lg:top-[1px] 2xl:-top-[14px] right-50 md:right-20 2xl:right-60 -z-10 text-gray-300 font-bold text-[100px] md:text-[140px]">
                         4
-                         </span>
+                        </span>
                          با انجام مراحل تا به اینجا سایت شما به تیم توسعه سایت سپرده میشود.
                     </span>
                 </div>
@@ -73,8 +73,8 @@
                     <span class="flex text-sm md:text-lg p-1 md:px-2">
                         <span class="absolute -top-[10px] md:top[3px] lg:top-[1px] 2xl:-top-[14px] right-50 md:right-20 2xl:right-60 -z-10 text-gray-300 font-bold text-[100px] md:text-[140px]">
                         5
-                         </span>
-                        سایتتون آماده است؛ فقط باید به همه بگید که از طریق سایت ازتون خرید کنن
+                        </span>
+                        سایتتون آماده است؛ فقط باید به همه بگید که از طریق سایت ازتون خرید کنن.
                     </span>
                     </div>
                 </div>
@@ -90,7 +90,7 @@
                     <span class="flex text-sm md:text-lg p-1 md:px-2">
                         <span class="absolute inline-block -top-[16px] md:top[3px] lg:top-[1px] 2xl:-top-[14px] right-50 md:right-20 2xl:right-60 -z-10 text-gray-300 font-bold text-[100px] md:text-[140px]">
                         6
-                         </span>
+                        </span>
                          راستی اگه از قبل سایت دارین میتونید از بسته های ابرساز استفاده کنید تا بهبود های زیرساختی و عملیاتی داشته باشید😉
                     </span>
                 </div>
@@ -108,7 +108,7 @@
 </button>
 </div>
 <div class="hidden lg:flex lg:justify-center">
-  <img class=" absolute -z-10 w-70 h-70 rotate-70" src="../../assets/photos/arrrow6.png" alt="" data-aos="fade-up">
+  <img class="absolute -z-10 w-70 h-70 rotate-70" src="../../assets/photos/arrrow6.png" alt="" data-aos="fade-up">
 </div>
 </div>
 </template>
