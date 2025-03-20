@@ -593,7 +593,7 @@ export default {
 
 .costom .card__list .card__list_item {
   display: flex;
-  align-items: center;
+  align-items: start;
   gap: 0.5rem;
 }
 
@@ -602,8 +602,8 @@ export default {
   justify-content: center;
   align-items: center;
 
-  width: 1.1rem;
-  height: 1.1rem;
+  width: full;
+  height: full;
   background-color: var(--primary);
 
   border-radius: 50%;
@@ -751,7 +751,7 @@ export default {
 
 .silver .card__list .card__list_item {
   display: flex;
-  align-items: center;
+  align-items: start;
   gap: 0.5rem;
 }
 
@@ -760,8 +760,9 @@ export default {
   justify-content: center;
   align-items: center;
 
-  width: 1.1rem;
-  height: 1.1rem;
+  width: full;
+  height: full;
+  padding: 2px;
   background-color: var(--primary);
 
   border-radius: 50%;
@@ -909,7 +910,7 @@ export default {
 
 .bronze .card__list .card__list_item {
   display: flex;
-  align-items: center;
+  align-items: start;
   gap: 0.5rem;
 }
 
@@ -1068,7 +1069,7 @@ export default {
 
 .golden .card__list .card__list_item {
   display: flex;
-  align-items: center;
+  align-items: start;
   gap: 0.5rem;
 }
 
@@ -1077,8 +1078,9 @@ export default {
   justify-content: center;
   align-items: center;
 
-  width: 1.1rem;
-  height: 1.1rem;
+  width: full;
+  height: full;
+  padding: 2px;
   background-color: var(--primary);
 
   border-radius: 50%;
