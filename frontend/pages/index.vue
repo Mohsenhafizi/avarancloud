@@ -156,6 +156,7 @@
 
 <script lang="ts">
 import { MainSection5, NavBarNavDesktop, NavBarNavMobile, MainSection1, MainSection2, MainSwiperSection2, MainSection3, MainSection4, EndFooter } from '#components';
+import { useHead } from '@vueuse/head';
 
 export default {
   name: 'IndexPage',
@@ -169,6 +170,11 @@ export default {
     MainSection3,
     MainSection4,
     EndFooter
+  },
+  setup() {
+    useHead({
+      title: 'home',
+    });
   },
 }
 </script>

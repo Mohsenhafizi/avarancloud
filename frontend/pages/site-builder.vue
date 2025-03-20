@@ -163,6 +163,7 @@
 </template>
 
 <script lang="ts">
+import { useHead } from '@vueuse/head';
 import SiteHeader from '~/components/Site/header.vue';
 import SiteTozihat from '~/components/Site/tozihat.vue';
 import SitePackages from '~/components/Site/packages.vue';
@@ -174,6 +175,12 @@ import NavBarNavDesktop from '~/components/NavBar/NavDesktop.vue';
 import NavBarNavMobile from '~/components/NavBar/NavMobile.vue';
 
 export default {
+  name: 'SiteBuilder',
+  setup() {
+    useHead({
+      title: 'site builder',
+    });
+  },
   components: {
     SiteHeader,
     SiteTozihat,

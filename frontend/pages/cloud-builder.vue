@@ -164,13 +164,21 @@
 
 
 <script lang="ts">
+import { useHead } from '@vueuse/head';
+
 export default {
     name: 'CloudBuilder',
+    setup() {
+        useHead({
+            title: 'cloud builder',
+        });
+    },
     data() {
         return {
             observer: null as MutationObserver | null
         };
-      }}
+    }
+}
 </script>
 
 <style scoped>

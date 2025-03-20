@@ -961,12 +961,12 @@ export default {
 }
 
 .afzar-abr .card_title__container .card_title {
-  font-size: 0.7rem;
+  font-size: 1rem;
   color: var(--white);
 }
 
 .afzar-abr .card_title__container .card_paragraph {
-  margin-top: 0.5rem;
+  margin-top: 0.7rem;
   width: 100%;
 
   font-size: 0.7rem;
