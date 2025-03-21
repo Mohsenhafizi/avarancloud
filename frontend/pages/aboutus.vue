@@ -1,5 +1,5 @@
 <template>
-   <div class="ground min-h-screen overflow-x-hidden">
+   <div class="rtl ground min-h-screen overflow-x-hidden">
       <svg class="hidden">
 
 <symbol id="shopping-cart" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
@@ -143,13 +143,16 @@
         
       </svg>
       <div class="z-20 relative">
-    <NavBarNavDesktop />
-    <NavBarNavMobile />
-    <AboutusHero />
-    <AboutusContainerinner1 />
-    <AboutusProjects />
-    <AboutusFooter />
-    <EndFooter />
+      <NavBarNavDesktop />
+      <NavBarNavMobile />
+      <AboutusHero />
+      <AboutusKontainerinner1 />
+      <AboutusProjects />
+      <AboutusAvatari />
+      <AboutusContact />
+      <AboutusNewsletter />
+      <AboutusFooter />
+      <EndFooter />
       </div>
    </div>
 </template>
@@ -226,4 +229,5 @@
     transform: translate(-50%, -50%) rotate(-360deg);
   }
 }
+
 </style>
