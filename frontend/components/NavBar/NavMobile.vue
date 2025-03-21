@@ -83,7 +83,7 @@
             </div>
         </li>
         <li class="mb-4">
-            <NuxtLink to="/about" class="flex items-center gap-x-2 pr-2.5" active-class="active-link">
+            <NuxtLink to="/aboutus" class="flex items-center gap-x-2 pr-2.5" active-class="active-link">
                 <div class="w-3 h-3 rounded-full border-2 border-green-500 bg-white"></div>
                  درباره ما
             </NuxtLink>

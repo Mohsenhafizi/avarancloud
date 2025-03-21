@@ -1,5 +1,5 @@
 <template>
-<div class="relative top-10 mb-20 hidden lg:block">
+<div class="z-10 relative top-10 mb-20 hidden lg:block">
 <div class="text-center font-bold text-2xl sm:text-3xl my-6">
    ابرآوران بهترین انتخاب برای کسب‌وکار شماست، چون:
 </div>

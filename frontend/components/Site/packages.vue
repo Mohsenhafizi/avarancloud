@@ -86,7 +86,7 @@
         <span class="list_text">ویژه سایت های رزومه ای، شخصی، خبری، و دارای محتوای از قبل مشخص شده</span>
         </li>
     </ul>
-    <NuxtLink to="/contact" class="click-to-call">تماس بگیرید</NuxtLink>
+    <NuxtLink to="/aboutus" class="click-to-call">تماس بگیرید</NuxtLink>
     <div class="hidden lg:flex justify-center items-center relative top-36">
     <div class="costom">
     <div class="card__border"></div>
@@ -116,7 +116,7 @@
         <span class="list_text">دارای تمامی موارد پکیج برنزی به علاوه موارد سفارشی</span>
         </li>
     </ul>
-    <NuxtLink to="/contact" class="click-to-call"> تماس بگیرید </NuxtLink>
+    <NuxtLink to="/aboutus" class="click-to-call"> تماس بگیرید </NuxtLink>
     </div>
     </div>
     </div>
@@ -268,7 +268,7 @@
         <span class="list_text">قابلیت تبلیغات هوشمند و اتوماسیون بازاریابی</span>
         </li>
     </ul>
-    <NuxtLink to="/contact" class="click-to-call">تماس بگیرید</NuxtLink>
+    <NuxtLink to="/aboutus" class="click-to-call">تماس بگیرید</NuxtLink>
     </div>
     <div class="golden mb-8 lg:mb-0">
     <div class="card__border"></div>
@@ -435,7 +435,7 @@
         <span class="list_text">حذف برندینگ ابرآوران</span>
         </li>
     </ul>
-    <NuxtLink to="/contact" class="click-to-call">تماس بگیرید</NuxtLink>
+    <NuxtLink to="/aboutus" class="click-to-call">تماس بگیرید</NuxtLink>
     </div>
     <div class="lg:hidden flex justify-center">
     <div class="costom">
@@ -466,7 +466,7 @@
         <span class="list_text">دارای تمامی موارد پکیج برنزی به علاوه موارد سفارشی</span>
         </li>
     </ul>
-    <NuxtLink to="/contact" class="click-to-call"> تماس بگیرید </NuxtLink>
+    <NuxtLink to="/aboutus" class="click-to-call"> تماس بگیرید </NuxtLink>
     </div>
     </div>
 </div>

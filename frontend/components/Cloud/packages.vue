@@ -104,7 +104,7 @@
         <span class="list_text">پشتیبان‌گیری دوره‌ای از داده‌ها برای تضمین بازیابی اولیه در مواقع بحرانی</span>
         </li>
     </ul>
-    <NuxtLink to="/contact" class="click-to-call">تماس بگیرید</NuxtLink>
+    <NuxtLink to="/aboutus" class="click-to-call">تماس بگیرید</NuxtLink>
     <div>
       <div class="hidden lg:flex justify-center items-center relative top-31">
     <div class="afzar-abr">
@@ -117,7 +117,7 @@
            مناسب برای Paas و Saas
         </p>
     </div>
-    <NuxtLink to="/contact" class="click-to-call"> تماس بگیرید </NuxtLink>
+    <NuxtLink to="/aboutus" class="click-to-call"> تماس بگیرید </NuxtLink>
     </div>
     </div>
     <div class="hidden lg:flex justify-center items-center relative top-76">
@@ -129,7 +129,7 @@
           مناسب برای زیرساخت های مجهز به نرم افزار های مدل هوش مصنوعی و اجرا و مقیاس پذیر کردن آن(MLOps)
         </p>
     </div>
-    <NuxtLink to="/contact" class="click-to-call"> تماس بگیرید </NuxtLink>
+    <NuxtLink to="/aboutus" class="click-to-call"> تماس بگیرید </NuxtLink>
     </div>
   </div>
     </div>
@@ -266,7 +266,7 @@
         <span class="list_text"> پشتیبان‌گیری و بازیابی داده و اجرای زمان‌بندی منظم برای پشتیبان‌گیری و برنامه بازیابی اطلاعات</span>
         </li>
     </ul>
-    <NuxtLink to="/contact" class="click-to-call">تماس بگیرید</NuxtLink>
+    <NuxtLink to="/aboutus" class="click-to-call">تماس بگیرید</NuxtLink>
     </div>
     <div class="golden-abr mb-8 lg:mb-0">
     <div class="card__border"></div>
@@ -383,7 +383,7 @@
         <span class="list_text">مشاوره معماری تخصصی و جلسات مشاوره جهت بهبود و بهینه‌سازی معماری نرم افزار به همراه راهکارهای سفارشی</span>
         </li>
     </ul>
-    <NuxtLink to="/contact" class="click-to-call">تماس بگیرید</NuxtLink>
+    <NuxtLink to="/aboutus" class="click-to-call">تماس بگیرید</NuxtLink>
     <div class="teke-abr left-[1px] top-160">
     <div class="card__border"></div>
     <div class="card_title__container">
@@ -392,7 +392,7 @@
        اگر فقط نیازمند یک یا چند مورد از این ده ها مورد دیگر بسته ها هستید، این بسته را انتخاب کنید
         </p>
     </div>
-    <NuxtLink to="/contact" class="click-to-call"> تماس بگیرید </NuxtLink>
+    <NuxtLink to="/aboutus" class="click-to-call"> تماس بگیرید </NuxtLink>
     </div>
     </div>
     <div class="">
@@ -458,7 +458,7 @@
         <span class="list_text">خدمات پشتیبانی ویژه و پشتیبانی چندجانبه و هماهنگ جهت رفع مشکلات به صورت آنی و سفارشی</span>
         </li>
     </ul>
-    <NuxtLink to="/contact" class="click-to-call">تماس بگیرید</NuxtLink>
+    <NuxtLink to="/aboutus" class="click-to-call">تماس بگیرید</NuxtLink>
     </div>
   </div>
     <div class="lg:hidden flex justify-center mt-4 mb-36">
@@ -470,7 +470,7 @@
           اگر فقط نیازمند یک یا چند مورد از این ده ها مورد دیگر بسته ها هستید، این بسته را انتخاب کنید.
         </p>
     </div>
-    <NuxtLink to="/contact" class="click-to-call"> تماس بگیرید </NuxtLink>
+    <NuxtLink to="/aboutus" class="click-to-call"> تماس بگیرید </NuxtLink>
     </div>
     </div>
     <div class="lg:hidden flex justify-center mt-6 mb-36">
@@ -482,7 +482,7 @@
           مناسب برای زیرساخت های مجهز به نرم افزار های مدل هوش مصنوعی و اجرا و مقیاس پذیر کردن آن(MLOps)
         </p>
     </div>
-    <NuxtLink to="/contact" class="click-to-call"> تماس بگیرید </NuxtLink>
+    <NuxtLink to="/aboutus" class="click-to-call"> تماس بگیرید </NuxtLink>
     </div>
     </div>
     <div class="lg:hidden flex justify-center mt-6">
@@ -514,7 +514,7 @@
         <span class="list_text">مناسب برای Paas و Saas</span>
         </li>
     </ul>
-    <NuxtLink to="/contact" class="click-to-call"> تماس بگیرید </NuxtLink>
+    <NuxtLink to="/aboutus" class="click-to-call"> تماس بگیرید </NuxtLink>
     </div>
     </div>
 </div>

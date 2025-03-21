@@ -1,5 +1,5 @@
 <template>
-    <div class="min-h-screen overflow-x-hidden bg">
+   <div class="ground min-h-screen overflow-x-hidden">
       <svg class="hidden">
 
 <symbol id="shopping-cart" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
@@ -142,58 +142,89 @@
             
         
       </svg>
-        <NavBarNavDesktop />
-        <NavBarNavMobile />
-        <CloudHeader />
-        <div id="features">
-          <CloudFeatures />
-        </div>
-        <div id="tozihat">
-          <CloudTozihat />
-        </div>
-        <div id="packages">
-          <CloudPackages />
-        </div>
-        <div id="submenu">
-          <CloudSubmenu />
-        </div>
-        <CloudFooter />
-        <EndFooter />
-    </div>
+      <div class="z-20 relative">
+    <NavBarNavDesktop />
+    <NavBarNavMobile />
+    <AboutusHero />
+    <AboutusContainerinner1 />
+    <AboutusProjects />
+    <AboutusFooter />
+    <EndFooter />
+      </div>
+   </div>
 </template>
-
-
+  
 <script lang="ts">
-import { useHead } from '@vueuse/head';
-
-export default {
-    name: 'CloudBuilder',
-    setup() {
-        useHead({
-            title: 'cloud builder',
-        });
+  export default{
+      setup() {
+      useHead({
+        title: 'aboutus',
+      });
     },
-    data() {
-        return {
-            observer: null as MutationObserver | null
-        };
-    }
-}
+  }
+  
 </script>
+  
+<style>
 
-<style scoped>
-.bg {
-  width: 100%;
+
+.ground {
   position: relative;
+  width: 100%; /* Fill the entire screen */
+  height: 100%;
+  overflow: hidden;
   background: radial-gradient(
-    125% 125% at -2% 101%,
-    rgba(245, 87, 2, 1) 10.5%,
-    rgba(245, 120, 2, 1) 16%,
-    rgba(245, 140, 2, 1) 17.5%,
-    rgba(245, 170, 100, 1) 25%,
-    rgba(238, 174, 202, 1) 40%,
-    rgba(202, 179, 214, 1) 65%,
-    rgba(148, 201, 233, 1) 100%
+    circle,
+    rgba(255, 255, 255, 0.2),
+    rgba(0, 0, 0, 0.1)
   );
 }
+
+.ground::before,
+.ground::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: conic-gradient(
+    from 0deg,
+    #ff9aa2,
+    /* Soft pink */ #ffb7b2,
+    /* Light peach */ #ffdac1,
+    /* Pastel yellow */ #e2f0cb,
+    /* Mint green */ #a2e4ff,
+    /* Baby blue */ #c9afff,
+    /* Lavender */ #ffb7b2,
+    #ff9aa2
+  );
+
+}
+
+/* Secondary rotating layer for depth */
+.ground::after {
+  width: 20000%;
+  height: 20000%;
+  animation: rotate-reverse 10s linear infinite;
+  opacity: 0.6;
+}
+
+/* Rotating animations */
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes rotate-reverse {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+
 </style>
