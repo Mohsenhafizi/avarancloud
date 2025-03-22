@@ -1,102 +1,106 @@
 <template>
-    <div class="bg-white rtl fixed w-full z-20 md:hidden p-2">  
-    <!-- Overlay -->
-    <div class="overlay fixed inset-0 bg-black/60 bg-opacity-75 z-10 transition-opacity duration-500 ease-in-out" :class="{ 'opacity-0 invisible': !overlayVisible, 'opacity-100 visible': overlayVisible }" @click="closeOverlay"></div>
-    <!-- nav Icon -->
-    <div class="flex justify-between m-2">
-    <div class="nav-icon inline-block p-2" @click="openNav">
-        <svg class="w-6 h-6 text-zinc-700">
-            <use href="#bars-3"></use>
+<div class="bg-white rtl fixed w-full z-20 md:hidden p-2">  
+<!-- Overlay -->
+<div class="overlay fixed inset-0 bg-black/60 bg-opacity-75 z-10 transition-opacity duration-500 ease-in-out" :class="{ 'opacity-0 invisible': !overlayVisible, 'opacity-100 visible': overlayVisible }" @click="closeOverlay"></div>
+<!-- nav Icon -->
+<div class="flex justify-between m-2">
+<div class="nav-icon inline-block p-2" @click="openNav">
+    <svg class="w-6 h-6 text-zinc-700">
+        <use href="#bars-3"></use>
+    </svg>
+</div>
+<div class="font-bold">
+    avarancloud
+    <img class="inline-block w-12 h-12" src="../../assets/svg/cloud2.svg" alt="">
+</div>
+</div>
+
+<!-- nav -->
+<div class="nav fixed top-0 bottom-0 right-0 w-64 pt-3 px-4 bg-white z-20 overflow-y-auto transform transition-transform duration-500 ease-in-out" :class="{ 'translate-x-full': !navOpen, 'translate-x-0': navOpen }">
+    <div class="flex items-center justify-between pb-5 mb-4 border-b border-b-gray-100">
+        <div class="flex pt-1 font-bold">
+            <img class="inline-block w-12 h-12" src="../../assets/svg/cloud2.svg" alt="">
+            <span class="pt-3 pr-1">
+            avarancloud
+            </span>
+        </div>
+        <div class="nav-Close-Btn" @click="closeNav">
+            <svg class="w-5 h-5 text-zinc-600">
+                <use href="#x-mark-mini"></use>
         </svg>
+        </div>
     </div>
-    <div class="font-bold">
-        avarancloud
-        <img class="inline-block w-12 h-12" src="../../assets/svg/cloud2.svg" alt="">
+
+
+    <div class="flex items-center mb-3 pr-2.5 h-10 rounded-md">
+        <NuxtLink to="/" class="flex items-center gap-x-2" active-class="active-link">
+            <div class="w-3 h-3 rounded-full border-2 border-green-500 bg-white"></div>
+            <span class="pt-1">صفحه اصلی</span>
+        </NuxtLink>
     </div>
-    </div>
-    
-    <!-- nav -->
-    <div class="nav fixed top-0 bottom-0 right-0 w-64 pt-3 px-4 bg-white z-20 overflow-y-auto transform transition-transform duration-500 ease-in-out" :class="{ 'translate-x-full': !navOpen, 'translate-x-0': navOpen }">
-        <div class="flex items-center justify-between pb-5 mb-4 border-b border-b-gray-100">
-            <div class="flex pt-1 font-bold">
-                <img class="inline-block w-12 h-12" src="../../assets/svg/cloud2.svg" alt="">
-                <span class="pt-3 pr-1">
-                avarancloud
+
+
+    <ul class="text-zinc-600">
+
+        <li class="mb-1">
+            <div class="flex items-center justify-between submenu-open-btn" @click="toggleSubmenu">
+                <NuxtLink to="/site-builder" class="flex items-center gap-x-2 pr-2.5" active-class="active-link">
+                    <div class="w-3 h-3 rounded-full border-2 border-green-500 bg-white"></div>
+                      سایت ساز  
+                </NuxtLink>
+                <span class="">
+                    <svg class="w-4 h-4">
+                        <use xlink:href="#chevron-down-mini"></use>
+                    </svg>
                 </span>
             </div>
-            <div class="nav-Close-Btn" @click="closeNav">
-                <svg class="w-5 h-5 text-zinc-600">
-                    <use href="#x-mark-mini"></use>
-            </svg>
+            <div class="submenu" :class="{ 'submenu--open': submenuOpen }">
+                <NuxtLink to="/site-builder#features" class="submenu__item--active my-1" @click="closeNav">ویژگی ها</NuxtLink>
+                <NuxtLink to="/site-builder#tozihat" class="submenu__item--active my-1" @click="closeNav">توضیحات</NuxtLink>
+                <NuxtLink to="/site-builder#packages" class="submenu__item--active" @click="closeNav">بسته ها</NuxtLink>
+                <NuxtLink to="/site-builder#submenu" class="submenu__item--active my-2" @click="closeNav">سوالات متداول</NuxtLink>
             </div>
-        </div>
-    
-        <div class="flex items-center mb-3 pr-2.5 h-10 rounded-md">
-            <NuxtLink to="/" class="flex items-center gap-x-2" active-class="active-link">
+        </li>
+
+
+        <li class="mb-1">
+            <div class="flex items-center justify-between submenu-open-btn" @click="toggleSub">
+                <NuxtLink to="/cloud-builder" class="flex items-center gap-x-2 pr-2.5" active-class="active-link">
+                    <div class="w-3 h-3 rounded-full border-2 border-green-500 bg-white"></div>
+                      ابر ساز  
+                </NuxtLink>
+                <span class="">
+                    <svg class="w-4 h-4">
+                        <use xlink:href="#chevron-down-mini"></use>
+                    </svg>
+                </span>
+            </div>
+            <div class="submenu" :class="{ 'submenu--open': submenuOpens }">
+                <NuxtLink to="/cloud-builder#features" class="submenu__item--active my-1" @click="closeNav">ویژگی ها</NuxtLink>
+                <NuxtLink to="/cloud-builder#tozihat" class="submenu__item--active my-1" @click="closeNav">توضیحات</NuxtLink>
+                <NuxtLink to="/cloud-builder#packages" class="submenu__item--active" @click="closeNav">بسته ها</NuxtLink>
+                <NuxtLink to="/cloud-builder#submenu" class="submenu__item--active my-2" @click="closeNav">سوالات متداول</NuxtLink>
+            </div>
+        </li>
+        <li class="mb-4">
+            <NuxtLink to="/about-us" class="flex items-center gap-x-2 pr-2.5" active-class="active-link">
                 <div class="w-3 h-3 rounded-full border-2 border-green-500 bg-white"></div>
-                <span class="pt-1">صفحه اصلی</span>
+                 درباره ما
             </NuxtLink>
-        </div>
-    
-        <ul class="text-zinc-600">
-    
-            <li class="mb-1">
-                <div class="flex items-center justify-between submenu-open-btn" @click="toggleSubmenu">
-                    <NuxtLink to="/site-builder" class="flex items-center gap-x-2 pr-2.5" active-class="active-link">
-                        <div class="w-3 h-3 rounded-full border-2 border-green-500 bg-white"></div>
-                          سایت ساز  
-                    </NuxtLink>
-                    <span class="">
-                        <svg class="w-4 h-4">
-                            <use xlink:href="#chevron-down-mini"></use>
-                        </svg>
-                    </span>
-                </div>
-                <div class="submenu" :class="{ 'submenu--open': submenuOpen }">
-                    <NuxtLink to="/site-builder#features" class="submenu__item--active my-1" @click="closeNav">ویژگی ها</NuxtLink>
-                    <NuxtLink to="/site-builder#tozihat" class="submenu__item--active my-1" @click="closeNav">توضیحات</NuxtLink>
-                    <NuxtLink to="/site-builder#packages" class="submenu__item--active" @click="closeNav">بسته ها</NuxtLink>
-                    <NuxtLink to="/site-builder#submenu" class="submenu__item--active my-2" @click="closeNav">سوالات متداول</NuxtLink>
-                </div>
-            </li>
-    
-            <li class="mb-1">
-                <div class="flex items-center justify-between submenu-open-btn" @click="toggleSub">
-                    <NuxtLink to="/cloud-builder" class="flex items-center gap-x-2 pr-2.5" active-class="active-link">
-                        <div class="w-3 h-3 rounded-full border-2 border-green-500 bg-white"></div>
-                          ابر ساز  
-                    </NuxtLink>
-                    <span class="">
-                        <svg class="w-4 h-4">
-                            <use xlink:href="#chevron-down-mini"></use>
-                        </svg>
-                    </span>
-                </div>
-                <div class="submenu" :class="{ 'submenu--open': submenuOpens }">
-                    <NuxtLink to="/cloud-builder#features" class="submenu__item--active my-1" @click="closeNav">ویژگی ها</NuxtLink>
-                    <NuxtLink to="/cloud-builder#tozihat" class="submenu__item--active my-1" @click="closeNav">توضیحات</NuxtLink>
-                    <NuxtLink to="/cloud-builder#packages" class="submenu__item--active" @click="closeNav">بسته ها</NuxtLink>
-                    <NuxtLink to="/cloud-builder#submenu" class="submenu__item--active my-2" @click="closeNav">سوالات متداول</NuxtLink>
-                </div>
-            </li>
-            <li class="mb-4">
-                <NuxtLink to="/about-us" class="flex items-center gap-x-2 pr-2.5" active-class="active-link">
-                    <div class="w-3 h-3 rounded-full border-2 border-green-500 bg-transparent" :class="{ 'bg-green-500': isActive('/about-us') }"></div>
-                     درباره ما
-                </NuxtLink>
-            </li>
-            <li class="mb-4">
-                <NuxtLink to="/about-us#contact-us" class="flex items-center gap-x-2 pr-2.5" active-class="active-link" @click="handleContactUsClick">
-                    <div class="w-3 h-3 rounded-full border-2 border-green-500 bg-transparent" :class="{ 'bg-green-500': isContactUsVisible || (isContactUsClicked && isContactUsVisible) }"></div>
-                     ارتباط با ما
-                </NuxtLink>
-            </li>
-        </ul>
-    </div>
-    </div>
-    </template>
+        </li>
+        <li class="mb-4">
+            <NuxtLink to="/about-us#contact-us" class="flex items-center gap-x-2 pr-2.5" active-class="active-link">
+                <div class="w-3 h-3 rounded-full border-2 border-green-500 bg-white"></div>
+                 ارتباط با ما
+            </NuxtLink>
+        </li>
+    </ul>
+</div>
+</div>
+</template>
+
 <script lang="ts">
-import { defineComponent, ref, onMounted, onUnmounted } from 'vue';
+import { defineComponent, ref, onMounted } from 'vue';
 
 export default defineComponent({
   setup() {
@@ -104,11 +108,11 @@ export default defineComponent({
     const submenuOpen = ref(false);
     const submenuOpens = ref(false);
     const overlayVisible = ref(false);
-    const isContactUsClicked = ref(false); // برای ردیابی کلیک روی لینک "ارتباط با ما"
-    const isContactUsVisible = ref(false); // برای ردیابی دیده شدن بخش #contact-us
-    const observer = ref<IntersectionObserver | null>(null); // ذخیره نمونه Intersection Observer
+    const nav = ref<HTMLElement | null>(null);
+    const submenu = ref<HTMLElement | null>(null);
+    const overlay = ref<HTMLElement | null>(null);
 
-    const openNav = () => {
+    const openNav = (e : Event) => {
       navOpen.value = true;
       overlayVisible.value = true;
     };
@@ -116,14 +120,16 @@ export default defineComponent({
     const closeNav = () => {
       navOpen.value = false;
       overlayVisible.value = false;
-      document.body.style.overflow = ''; // Restore scroll
+      document.body.style.overflow = ''; // Restaurar scroll
     };
 
-    const toggleSubmenu = () => {
+    const toggleSubmenu = (e: Event) => {
+      e.preventDefault();
       submenuOpen.value = !submenuOpen.value;
     };
 
-    const toggleSub = () => {
+    const toggleSub = (e: Event) => {
+      e.preventDefault();
       submenuOpens.value = !submenuOpens.value;
     };
 
@@ -131,74 +137,11 @@ export default defineComponent({
       closeNav();
     };
 
-    const handleContactUsClick = () => {
-      isContactUsClicked.value = true; // وقتی کاربر روی لینک "ارتباط با ما" کلیک می‌کند
-    };
-
-    const setupIntersectionObserver = () => {
-      const contactUsSection = document.querySelector('#contact-us');
-      if (contactUsSection) {
-        observer.value = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                isContactUsVisible.value = true; // وقتی بخش #contact-us دیده شد
-              } else {
-                isContactUsVisible.value = false; // وقتی بخش #contact-us دیده نشد
-              }
-            });
-          },
-          {
-            threshold: 0.5, // حداقل 50% بخش باید دیده شود
-          }
-        );
-        observer.value.observe(contactUsSection);
-      }
-    };
-
-    const scrollToContactUs = () => {
-      const contactUsSection = document.querySelector('#contact-us');
-      if (contactUsSection) {
-        contactUsSection.scrollIntoView({ behavior: 'smooth' }); // اسکرول به بخش #contact-us
-      }
-    };
-
-    // تعریف تابع isActive
-    const isActive = (route: string) => {
-      return route === window.location.pathname || route === window.location.href;
-    };
-
     onMounted(() => {
-      // راه‌اندازی Intersection Observer
-      setupIntersectionObserver();
-
-      // بررسی اینکه آیا کاربر مستقیماً به بخش #contact-us مراجعه کرده است
-      if (window.location.hash === '#contact-us') {
-        scrollToContactUs(); // اسکرول به بخش #contact-us
-      }
-
-      // رویداد کلی برای کل صفحه برای بستن منو وقتی کاربر جای دیگری کلیک می‌کند
-      document.addEventListener('click', handleClickOutside);
+      nav.value = document.querySelector('.nav');
+      submenu.value = document.querySelector('.submenu');
+      overlay.value = document.querySelector('.overlay');
     });
-
-    onUnmounted(() => {
-      // پاکسازی Intersection Observer
-      if (observer.value) {
-        observer.value.disconnect();
-      }
-
-      // پاکسازی event listeners
-      document.removeEventListener('click', handleClickOutside);
-    });
-
-    const handleClickOutside = (e: MouseEvent) => {
-      const target = e.target as HTMLElement;
-
-      const menuContainer = document.querySelector('.nav') as HTMLElement;
-      if (menuContainer && !menuContainer.contains(target)) {
-        closeNav();
-      }
-    };
 
     return {
       navOpen,
@@ -209,13 +152,9 @@ export default defineComponent({
       closeNav,
       toggleSubmenu,
       toggleSub,
-      closeOverlay,
-      isContactUsClicked,
-      isContactUsVisible,
-      handleContactUsClick,
-      isActive, // اضافه کردن تابع isActive
+      closeOverlay
     };
-  },
+  }
 });
 </script>
 
