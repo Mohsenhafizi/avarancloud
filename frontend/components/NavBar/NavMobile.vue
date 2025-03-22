@@ -27,7 +27,7 @@
             <div class="nav-Close-Btn" @click="closeNav">
                 <svg class="w-5 h-5 text-zinc-600">
                     <use href="#x-mark-mini"></use>
-            </svg>
+                </svg>
             </div>
         </div>
     
@@ -86,15 +86,24 @@
                 </NuxtLink>
             </li>
             <li class="mb-4">
-                <NuxtLink to="/about-us#contact-us" class="flex items-center gap-x-2 pr-2.5" active-class="active-link" @click="handleContactUsClick">
-  <div class="w-3 h-3 rounded-full border-2 border-green-500 bg-transparent" :class="{ 'bg-green-500': isContactUsVisible || (isContactUsClicked && isContactUsVisible) }"></div>
-  ارتباط با ما
-</NuxtLink>
+              <NuxtLink
+              to="/about-us#contact-us"
+              class="flex items-center gap-x-2 pr-2.5"
+              :class="{ 'active-link': isContactUsVisible }"
+              @click="isContactUsClicked = true"
+              :key="'contact-us-link'"
+            >
+              <div
+                class="w-3 h-3 rounded-full border-2 border-green-500"
+                :class="{ 'bg-green-500': isContactUsVisible, 'bg-transparent': !isContactUsVisible }"
+              ></div>
+              ارتباط با ما
+            </NuxtLink>
             </li>
         </ul>
     </div>
     </div>
-    </template>
+</template>
 <script lang="ts">
 import { defineComponent, ref, onMounted, onUnmounted } from 'vue';
 
@@ -104,27 +113,25 @@ export default defineComponent({
     const submenuOpen = ref(false);
     const submenuOpens = ref(false);
     const overlayVisible = ref(false);
-    const isContactUsClicked = ref(false); // برای ردیابی کلیک روی لینک "ارتباط با ما"
-    const isContactUsVisible = ref(false); // برای ردیابی دیده شدن بخش #contact-us
-    const observer = ref<IntersectionObserver | null>(null); // ذخیره نمونه Intersection Observer
+    const isContactUsClicked = ref(false);
+    const isContactUsVisible = ref(false);
+    const observer = ref<IntersectionObserver | null>(null);
 
     const openNav = () => {
-      navOpen.value = true;
-      overlayVisible.value = true;
+      navOpen.value = true; // نوار کناری را باز می‌کند
+      overlayVisible.value = true; // Overlay را فعال می‌کند
     };
 
     const closeNav = () => {
-      navOpen.value = false;
-      overlayVisible.value = false; // Restore scroll
+      navOpen.value = false; // نوار کناری را می‌بندد
+      overlayVisible.value = false; // Overlay را غیرفعال می‌کند
     };
 
-    const toggleSubmenu = (e: Event) => {
-      e.preventDefault();
+    const toggleSubmenu = () => {
       submenuOpen.value = !submenuOpen.value;
     };
 
-    const toggleSub = (e: Event) => {
-      e.preventDefault();
+    const toggleSub = () => {
       submenuOpens.value = !submenuOpens.value;
     };
 
@@ -132,8 +139,20 @@ export default defineComponent({
       closeNav();
     };
 
-    const handleContactUsClick = () => {
-      isContactUsClicked.value = true; // وقتی کاربر روی لینک "ارتباط با ما" کلیک می‌کند
+    const handleClickOutside = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+
+      // بررسی اینکه آیا کلیک روی منو یا آیکون منو انجام شده است
+      const menuContainer = document.querySelector('.nav') as HTMLElement;
+      const navIcon = document.querySelector('.nav-icon') as HTMLElement;
+
+      if (
+        menuContainer &&
+        !menuContainer.contains(target) && // کلیک خارج از منو
+        !(navIcon && navIcon.contains(target)) // کلیک روی آیکون منو
+      ) {
+        closeNav(); // منو را می‌بندد
+      }
     };
 
     const setupIntersectionObserver = () => {
@@ -142,54 +161,30 @@ export default defineComponent({
         observer.value = new IntersectionObserver(
           (entries) => {
             entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                isContactUsVisible.value = true; // وقتی بخش #contact-us دیده شد
-              } else {
-                isContactUsVisible.value = false; // وقتی بخش #contact-us دیده نشد
-              }
+              isContactUsVisible.value = entry.isIntersecting;
             });
           },
           {
-            threshold: 0.5, // حداقل 50% بخش باید دیده شود
+            threshold: 0.5,
           }
         );
         observer.value.observe(contactUsSection);
-      }
-    };
-
-    const scrollToContactUs = () => {
-      const contactUsSection = document.querySelector('#contact-us');
-      if (contactUsSection) {
-        contactUsSection.scrollIntoView({ behavior: 'smooth' }); // اسکرول به بخش #contact-us
+      } else {
+        console.warn('بخش #contact-us در صفحه موجود نیست.');
       }
     };
 
     onMounted(() => {
-      // راه‌اندازی Intersection Observer
       setupIntersectionObserver();
-
-      // رویداد کلی برای کل صفحه برای بستن منو وقتی کاربر جای دیگری کلیک می‌کند
       document.addEventListener('click', handleClickOutside);
     });
 
     onUnmounted(() => {
-      // پاکسازی Intersection Observer
       if (observer.value) {
         observer.value.disconnect();
       }
-
-      // پاکسازی event listeners
       document.removeEventListener('click', handleClickOutside);
     });
-
-    const handleClickOutside = (e: MouseEvent) => {
-      const target = e.target as HTMLElement;
-
-      const menuContainer = document.querySelector('.nav') as HTMLElement;
-      if (menuContainer && !menuContainer.contains(target)) {
-        closeNav();
-      }
-    };
 
     return {
       navOpen,
@@ -203,7 +198,6 @@ export default defineComponent({
       closeOverlay,
       isContactUsClicked,
       isContactUsVisible,
-      handleContactUsClick,
     };
   },
 });
