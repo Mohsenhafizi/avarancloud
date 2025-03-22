@@ -149,7 +149,9 @@
       <AboutusKontainerinner1 />
       <AboutusProjects />
       <AboutusAvatari />
+      <div id="contact-us">
       <AboutusContact />
+      </div>
       <AboutusNewsletter />
       <AboutusFooter />
       <EndFooter />

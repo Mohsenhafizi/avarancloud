@@ -64,17 +64,23 @@
                     <div class="safe-area"></div>
                 </div>
             </div>
-            <NuxtLink to="/aboutus" class="hover:bg-emerald-300 rounded-2xl p-3 transition-all flex items-center" active-class="active-link">
-                <div class="circle mx-2 w-3 h-3 mb-1 shadow-xl rounded-full transition-all duration-300"></div>
-                <li>
-                    درباره ما
-                </li>
+            <NuxtLink
+            to="/about-us"
+            class="hover:bg-emerald-300 rounded-2xl p-3 transition-all flex items-center"
+            active-class="active-link"
+            >
+            <div class="circle mx-2 w-3 h-3 mb-1 shadow-xl rounded-full transition-all duration-300"></div>
+            <li>درباره ما</li>
             </NuxtLink>
-            <NuxtLink to="/contact" class="hover:bg-emerald-300 rounded-2xl p-3 transition-all flex items-center" active-class="active-link">
-                <div class="circle mx-2 w-3 h-3 mb-1 shadow-xl rounded-full transition-all duration-300"></div>
-                <li>
-                    تماس با ما
-                </li>
+
+            <NuxtLink
+                to="/about-us#contact-us"
+                class="hover:bg-emerald-300 rounded-2xl p-3 transition-all flex items-center"
+                :class="{ 'active-link': isContactUsVisible || (isContactUsClicked && isContactUsVisible) }"
+                @click="handleContactUsClick"
+                >
+            <div class="circle mx-2 w-3 h-3 mb-1 shadow-xl rounded-full transition-all duration-300"></div>
+            <li>ارتباط با ما</li>
             </NuxtLink>
         </ul>
     </nav>
@@ -99,7 +105,10 @@ export default {
       mouseInSubmenu: false,
       mouseInMainLink: false,
       mouseInSubmenuContainer: false,
-      mouseInMainLinkContainer: false
+      mouseInMainLinkContainer: false,
+      isContactUsClicked: false, // برای ردیابی کلیک روی لینک "ارتباط با ما"
+      isContactUsVisible: false, // برای ردیابی دیده شدن بخش #contact-us
+      observer: null as IntersectionObserver | null,  // ذخیره نمونه Intersection Observer
     }
   },
   
@@ -161,51 +170,66 @@ export default {
         clearTimeout(this.closeTimeout);
         this.closeTimeout = null;
       }
+    },
+    handleContactUsClick() {
+      this.isContactUsClicked = true; // وقتی کاربر روی لینک "ارتباط با ما" کلیک می‌کند
+    },
+    setupIntersectionObserver() {
+    const contactUsSection = document.querySelector('#contact-us');
+    if (contactUsSection) {
+      this.observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              this.isContactUsVisible = true; // وقتی بخش #contact-us دیده شد
+            } else {
+              this.isContactUsVisible = false; // وقتی بخش #contact-us دیده نشد
+            }
+          });
+        },
+        {
+          threshold: 0.5, // حداقل 50% بخش باید دیده شود
+        }
+      );
+      this.observer.observe(contactUsSection);
     }
+  },
   },
   
   mounted() {
-    // رویداد کلی برای کل صفحه برای بستن منو وقتی کاربر جای دیگری کلیک می‌کند
-    document.addEventListener('click', (e) => {
-      const target = e.target as HTMLElement;
-      const menuContainer = this.$refs.menuContainer as HTMLElement;
-      
-      if (menuContainer && !menuContainer.contains(target)) {
-        this.isMenuOpen = false;
-      }
-    });
-    
-    // رویداد mouseleave برای کانتینر منو
-    const container = this.$refs.menuContainer as HTMLElement;
-    if (container) {
-      container.addEventListener('mouseleave', this.scheduleClose);
+  // رویداد کلی برای کل صفحه برای بستن منو وقتی کاربر جای دیگری کلیک می‌کند
+  document.addEventListener('click', (e) => {
+    const target = e.target as HTMLElement | null;
+    const menuContainer = this.$refs.menuContainer as HTMLElement | null;
+    if (menuContainer && target && !menuContainer.contains(target)) {
+      this.isMenuOpen = false;
     }
 
+    const menuContainers = this.$refs.menuContainers as HTMLElement | null;
+    if (menuContainers && target && !menuContainers.contains(target)) {
+      this.isMenuOpenContainer = false;
+    }
+  });
 
+  // رویداد mouseleave برای کانتینر منو
+  const container = this.$refs.menuContainer as HTMLElement | null;
+  if (container) {
+    container.addEventListener('mouseleave', this.scheduleClose);
+  }
 
-    document.addEventListener('click', (e) => {
-      const target = e.target as HTMLElement;
-      const menuContainers = this.$refs.menuContainers as HTMLElement;
-      
-      if (menuContainers && !menuContainers.contains(target)) {
-        this.isMenuOpenContainer = false;
-      }
-    });
-    
-    // رویداد mouseleave برای کانتینر منو
-    const containers = this.$refs.menuContainers as HTMLElement;
-    if (containers) {
-      containers.addEventListener('mouseleave', this.scheduleCloses);
+  const containers = this.$refs.menuContainers as HTMLElement | null;
+  if (containers) {
+    containers.addEventListener('mouseleave', this.scheduleCloses);
+  }
+  this.setupIntersectionObserver(); // راه‌اندازی Intersection Observer
+},
+  
+beforeDestroy() {
+    // پاکسازی Intersection Observer
+    if (this.observer) {
+      this.observer.disconnect();
     }
   },
-  
-  beforeDestroy() {
-    // پاکسازی هر گونه تایمر باقی‌مانده
-    this.clearCloseTimeout();
-    
-    // پاکسازی event listeners (اختیاری، برای جلوگیری از memory leak)
-    document.removeEventListener('click', () => {});
-  }
 }
 </script>
 

@@ -3,7 +3,7 @@
         <img class="relative bottom-42 w-100 h-100 -rotate-4" src="../../assets/photos/arrrow7.png" data-aos="fade-up" alt="">
     </div>
 <div class="z-10 flex justify-center items-center mb-56 lg:mb-22 relative -bottom-10 md:bottom-60">
-<div class="container flex lg:inline-block items-center flex-col lg:flex-row text-center" data-aos="fade-up">
+<div class="flex lg:inline-block items-center flex-col lg:flex-row text-center" data-aos="fade-up">
   <div class="text-3xl mb-10 text-purple-950">بسته ها</div>
 
     <div class="bronze">
@@ -86,7 +86,7 @@
         <span class="list_text">ویژه سایت های رزومه ای، شخصی، خبری، و دارای محتوای از قبل مشخص شده</span>
         </li>
     </ul>
-    <NuxtLink to="/aboutus" class="click-to-call">تماس بگیرید</NuxtLink>
+    <NuxtLink to="/about-us#contact-us" @click="setSource('bronz')" class="click-to-call"> تماس بگیرید </NuxtLink>
     <div class="hidden lg:flex justify-center items-center relative top-36">
     <div class="costom">
     <div class="card__border"></div>
@@ -116,7 +116,7 @@
         <span class="list_text">دارای تمامی موارد پکیج برنزی به علاوه موارد سفارشی</span>
         </li>
     </ul>
-    <NuxtLink to="/aboutus" class="click-to-call"> تماس بگیرید </NuxtLink>
+    <NuxtLink to="/about-us#contact-us" @click="setSource('sefareshi')" class="click-to-call"> تماس بگیرید </NuxtLink>
     </div>
     </div>
     </div>
@@ -268,7 +268,7 @@
         <span class="list_text">قابلیت تبلیغات هوشمند و اتوماسیون بازاریابی</span>
         </li>
     </ul>
-    <NuxtLink to="/aboutus" class="click-to-call">تماس بگیرید</NuxtLink>
+    <NuxtLink to="/about-us#contact-us" @click="setSource('nogrei')" class="click-to-call"> تماس بگیرید </NuxtLink>
     </div>
     <div class="golden mb-8 lg:mb-0">
     <div class="card__border"></div>
@@ -435,7 +435,7 @@
         <span class="list_text">حذف برندینگ ابرآوران</span>
         </li>
     </ul>
-    <NuxtLink to="/aboutus" class="click-to-call">تماس بگیرید</NuxtLink>
+    <NuxtLink to="/about-us#contact-us" @click="setSource('talai')" class="click-to-call"> تماس بگیرید </NuxtLink>
     </div>
     <div class="lg:hidden flex justify-center">
     <div class="costom">
@@ -466,7 +466,7 @@
         <span class="list_text">دارای تمامی موارد پکیج برنزی به علاوه موارد سفارشی</span>
         </li>
     </ul>
-    <NuxtLink to="/aboutus" class="click-to-call"> تماس بگیرید </NuxtLink>
+    <NuxtLink to="/about-us#contact-us" @click="setSource('sefareshi')" class="click-to-call"> تماس بگیرید </NuxtLink>
     </div>
     </div>
 </div>
@@ -474,9 +474,16 @@
 
 </template>
 
-<script>
-export default {
-    name: 'Packages'
+<script lang="ts" setup>
+import { useState } from "#app";
+import { computed } from "vue"; // وارد کردن computed از vue
+
+// تعریف وضعیت
+const source = useState("source", () => "");
+
+// تابع تنظیم وضعیت
+function setSource(value: string) {
+  source.value = value;
 }
 </script>
 

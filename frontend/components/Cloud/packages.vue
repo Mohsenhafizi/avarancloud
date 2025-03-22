@@ -3,7 +3,7 @@
         <img class="relative bottom-42 w-100 h-100 -rotate-4" src="../../assets/photos/arrrow7.png" data-aos="fade-up" alt="">
     </div>
 <div class="z-10 flex justify-center items-center mb-56 lg:mb-22 relative -bottom-10 md:bottom-60">
-<div class="container flex lg:inline-block items-center flex-col lg:flex-row text-center" data-aos="fade-up">
+<div class="flex lg:inline-block items-center flex-col lg:flex-row text-center" data-aos="fade-up">
   <div class="text-3xl mb-10 text-purple-950">بسته ها</div>
 
     <div class="tem">
@@ -104,7 +104,7 @@
         <span class="list_text">پشتیبان‌گیری دوره‌ای از داده‌ها برای تضمین بازیابی اولیه در مواقع بحرانی</span>
         </li>
     </ul>
-    <NuxtLink to="/aboutus" class="click-to-call">تماس بگیرید</NuxtLink>
+    <NuxtLink to="/about-us#contact-us" @click="setSource('abrkochaak')" class="click-to-call"> تماس بگیرید </NuxtLink>
     <div>
       <div class="hidden lg:flex justify-center items-center relative top-31">
     <div class="afzar-abr">
@@ -117,7 +117,7 @@
            مناسب برای Paas و Saas
         </p>
     </div>
-    <NuxtLink to="/aboutus" class="click-to-call"> تماس بگیرید </NuxtLink>
+    <NuxtLink to="/about-us#contact-us" @click="setSource('abrafzar')" class="click-to-call"> تماس بگیرید </NuxtLink>
     </div>
     </div>
     <div class="hidden lg:flex justify-center items-center relative top-76">
@@ -129,7 +129,7 @@
           مناسب برای زیرساخت های مجهز به نرم افزار های مدل هوش مصنوعی و اجرا و مقیاس پذیر کردن آن(MLOps)
         </p>
     </div>
-    <NuxtLink to="/aboutus" class="click-to-call"> تماس بگیرید </NuxtLink>
+    <NuxtLink to="/about-us#contact-us" @click="setSource('hoshabr')" class="click-to-call"> تماس بگیرید </NuxtLink>
     </div>
   </div>
     </div>
@@ -266,7 +266,7 @@
         <span class="list_text"> پشتیبان‌گیری و بازیابی داده و اجرای زمان‌بندی منظم برای پشتیبان‌گیری و برنامه بازیابی اطلاعات</span>
         </li>
     </ul>
-    <NuxtLink to="/aboutus" class="click-to-call">تماس بگیرید</NuxtLink>
+    <NuxtLink to="/about-us#contact-us" @click="setSource('revan')" class="click-to-call"> تماس بگیرید </NuxtLink>
     </div>
     <div class="golden-abr mb-8 lg:mb-0">
     <div class="card__border"></div>
@@ -383,7 +383,7 @@
         <span class="list_text">مشاوره معماری تخصصی و جلسات مشاوره جهت بهبود و بهینه‌سازی معماری نرم افزار به همراه راهکارهای سفارشی</span>
         </li>
     </ul>
-    <NuxtLink to="/aboutus" class="click-to-call">تماس بگیرید</NuxtLink>
+    <NuxtLink to="/about-us#contact-us" @click="setSource('barvar')" class="click-to-call"> تماس بگیرید </NuxtLink>
     <div class="teke-abr left-[1px] top-160">
     <div class="card__border"></div>
     <div class="card_title__container">
@@ -392,7 +392,7 @@
        اگر فقط نیازمند یک یا چند مورد از این ده ها مورد دیگر بسته ها هستید، این بسته را انتخاب کنید
         </p>
     </div>
-    <NuxtLink to="/aboutus" class="click-to-call"> تماس بگیرید </NuxtLink>
+    <NuxtLink to="/about-us#contact-us" @click="setSource('tekeabr')" class="click-to-call"> تماس بگیرید </NuxtLink>
     </div>
     </div>
     <div class="">
@@ -458,7 +458,7 @@
         <span class="list_text">خدمات پشتیبانی ویژه و پشتیبانی چندجانبه و هماهنگ جهت رفع مشکلات به صورت آنی و سفارشی</span>
         </li>
     </ul>
-    <NuxtLink to="/aboutus" class="click-to-call">تماس بگیرید</NuxtLink>
+    <NuxtLink to="/about-us#contact-us" @click="setSource('abrsefareshi')" class="click-to-call"> تماس بگیرید </NuxtLink>
     </div>
   </div>
     <div class="lg:hidden flex justify-center mt-4 mb-36">
@@ -470,7 +470,7 @@
           اگر فقط نیازمند یک یا چند مورد از این ده ها مورد دیگر بسته ها هستید، این بسته را انتخاب کنید.
         </p>
     </div>
-    <NuxtLink to="/aboutus" class="click-to-call"> تماس بگیرید </NuxtLink>
+    <NuxtLink to="/about-us#contact-us" @click="setSource('tekeabr')" class="click-to-call"> تماس بگیرید </NuxtLink>
     </div>
     </div>
     <div class="lg:hidden flex justify-center mt-6 mb-36">
@@ -482,7 +482,7 @@
           مناسب برای زیرساخت های مجهز به نرم افزار های مدل هوش مصنوعی و اجرا و مقیاس پذیر کردن آن(MLOps)
         </p>
     </div>
-    <NuxtLink to="/aboutus" class="click-to-call"> تماس بگیرید </NuxtLink>
+    <NuxtLink to="/about-us#contact-us" @click="setSource('hoshabr')" class="click-to-call"> تماس بگیرید </NuxtLink>
     </div>
     </div>
     <div class="lg:hidden flex justify-center mt-6">
@@ -514,24 +514,31 @@
         <span class="list_text">مناسب برای Paas و Saas</span>
         </li>
     </ul>
-    <NuxtLink to="/aboutus" class="click-to-call"> تماس بگیرید </NuxtLink>
+    <NuxtLink to="/about-us#contact-us" @click="setSource('abrafzar')" class="click-to-call"> تماس بگیرید </NuxtLink>
     </div>
     </div>
 </div>
 </div>
 <div class="relative dare mt-80 lg:mt-0 md:bottom-50 2xl:bottom-10 z-10 2xl:mx-100" data-aos="fade-up">
         <div class="dare2 relative text-center text-purple-950 text-lg lg:text-xl font-bold mx-10 md:mx-50 lg:mx-80 xl:mx-100 2xl:mx-10 bottom-6">
-          برای اطلاعات بیشتر و دریافت مشاوره در خصوص انتخاب بسته مناسب یا تنظیم ویژه بسته‌ها، لطفاً با تیم فروش و پشتیبانی ما تماس بگیرید 
+          برای اطلاعات بیشتر و دریافت مشاوره در خصوص انتخاب بسته مناسب یا تنظیم ویژه بسته‌ها، ا تیم فروش و پشتیبانی ما تماس بگیرید 
         </div>
         <div class="dare3 text-center text-md md:text-lg mx-10 md:mx-30 lg:mx-60 xl:mx-90 2xl:mx-20">
-          این بسته‌های "ابر ساز" علاوه بر پوشش نیازهای اساسی سایت‌سازی، به شما امکان مدیریت بهینه زیرساخت و نظارت جامع بر عملکرد سیستم را نیز می‌دهند. اگر مایل به دانستن جزئیات بیشتر درباره فناوری‌های به کار رفته (مانند Kubernetes برای orchestration یا پلتفرم‌های observability یا ابزار های مربوط به طراحی سیستم) هستید یا سوالات دیگری در زمینه افزایش امنیت و بهبود عملکرد زیرساخت دارید، با ما تماس بگیرید تا به‌طور تخصصی به آن‌ها بپردازیم
+          این بسته‌های "ابر ساز" علاوه بر پوشش نیازهای اساسی سایت‌سازی، به شما امکان مدیریت بهینه زیرساخت و نظارت جامع بر عملکرد سیستم را نیز می‌دهند. اگر مایل به دانستن جزئیات بیشتر درباره فناوری‌های به کار رفته (مانند Kubernetes برای orchestration یا پلتفرم‌های observability یا ابزار های مربوط به طراحی سیستم) هستید یا سوالات دیگری در زمینه افزایش امنیت و به کرد زیرساخت دارید، با ما تماس بگیرید تا به‌طور تخصصی به آن‌ها بپردازیم
         </div>
 </div>
 </template>
 
-<script>
-export default {
-    name: 'Packages'
+<script lang="ts" setup>
+import { useState } from "#app";
+import { computed } from "vue"; // وارد کردن computed از vue
+
+// تعریف وضعیت
+const source = useState("source", () => "");
+
+// تابع تنظیم وضعیت
+function setSource(value: string) {
+  source.value = value;
 }
 </script>
 
