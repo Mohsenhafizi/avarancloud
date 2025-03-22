@@ -81,15 +81,15 @@
             </li>
             <li class="mb-4">
                 <NuxtLink to="/about-us" class="flex items-center gap-x-2 pr-2.5" active-class="active-link">
-                    <div class="w-3 h-3 rounded-full border-2 border-green-500 bg-transparent" :class="{ 'bg-green-500': isActive('/about-us') }"></div>
-                     درباره ما
+                  <div class="w-3 h-3 rounded-full border-2 border-green-500 bg-transparent"></div>
+                  درباره ما
                 </NuxtLink>
             </li>
             <li class="mb-4">
-                <NuxtLink to="/about-us#contact-us" class="flex items-center gap-x-2 pr-2.5" active-class="active-link">
-                    <div class="w-3 h-3 rounded-full border-2 border-green-500 bg-transparent" :class="{ 'bg-green-500': isContactUsVisible }"></div>
-                     ارتباط با ما
-                </NuxtLink>
+                <NuxtLink to="/about-us#contact-us" class="flex items-center gap-x-2 pr-2.5" active-class="active-link" @click="handleContactUsClick">
+  <div class="w-3 h-3 rounded-full border-2 border-green-500 bg-transparent" :class="{ 'bg-green-500': isContactUsVisible || (isContactUsClicked && isContactUsVisible) }"></div>
+  ارتباط با ما
+</NuxtLink>
             </li>
         </ul>
     </div>
@@ -104,11 +104,10 @@ export default defineComponent({
     const submenuOpen = ref(false);
     const submenuOpens = ref(false);
     const overlayVisible = ref(false);
+    const isContactUsClicked = ref(false); // برای ردیابی کلیک روی لینک "ارتباط با ما"
     const isContactUsVisible = ref(false); // برای ردیابی دیده شدن بخش #contact-us
     const observer = ref<IntersectionObserver | null>(null); // ذخیره نمونه Intersection Observer
-        const isActive = (route: string) => {
-  return route === window.location.pathname || route === window.location.href;
-};
+
     const openNav = () => {
       navOpen.value = true;
       overlayVisible.value = true;
@@ -116,20 +115,25 @@ export default defineComponent({
 
     const closeNav = () => {
       navOpen.value = false;
-      overlayVisible.value = false;
-      document.body.style.overflow = ''; // Restore scroll
+      overlayVisible.value = false; // Restore scroll
     };
 
-    const toggleSubmenu = () => {
+    const toggleSubmenu = (e: Event) => {
+      e.preventDefault();
       submenuOpen.value = !submenuOpen.value;
     };
 
-    const toggleSub = () => {
+    const toggleSub = (e: Event) => {
+      e.preventDefault();
       submenuOpens.value = !submenuOpens.value;
     };
 
     const closeOverlay = () => {
       closeNav();
+    };
+
+    const handleContactUsClick = () => {
+      isContactUsClicked.value = true; // وقتی کاربر روی لینک "ارتباط با ما" کلیک می‌کند
     };
 
     const setupIntersectionObserver = () => {
@@ -150,6 +154,13 @@ export default defineComponent({
           }
         );
         observer.value.observe(contactUsSection);
+      }
+    };
+
+    const scrollToContactUs = () => {
+      const contactUsSection = document.querySelector('#contact-us');
+      if (contactUsSection) {
+        contactUsSection.scrollIntoView({ behavior: 'smooth' }); // اسکرول به بخش #contact-us
       }
     };
 
@@ -190,8 +201,9 @@ export default defineComponent({
       toggleSubmenu,
       toggleSub,
       closeOverlay,
-      isContactUsVisible, // فقط این متغیر برای مدیریت دایره "ارتباط با ما" استفاده می‌شود
-      isActive,
+      isContactUsClicked,
+      isContactUsVisible,
+      handleContactUsClick,
     };
   },
 });
