@@ -162,7 +162,6 @@
     </div>
 </template>
 
-
 <script lang="ts">
 import { useHead } from '@vueuse/head';
 
