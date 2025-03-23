@@ -4,17 +4,17 @@
         <div class="flex flex-col md:flex-row items-center justify-between gap-8 px-4">
           <div class="md:w-1/2 mx-10 md:mx-20 relative">
             <div class="md:mt-10">
-              <span class="text-center text-purple-950 md:text-right text-3xl md:text-5xl 2xl:text-6xl font-bold block" data-aos="fade-up">
+              <h1 class="text-center text-purple-950 md:text-right text-3xl md:text-5xl 2xl:text-6xl font-bold block" data-aos="fade-up">
                   فروشگاه‌ساز ابرآوران,
                   سایت‌ساز کسب‌وکار شما 
-              </span>    
+              </h1>    
               <span class="absolute top-18 sm:top-18 mx-10 flex -z-10" data-aos="fade-up">
                 <img class="w-80" src="../../assets/svg/vector-7.svg" alt="">
               </span>
-              <p class="text-center md:text-right text-lg md:text-xl 2xl:text-2xl py-10" data-aos="fade-up">
+              <h2 class="text-center md:text-right text-lg md:text-xl 2xl:text-2xl py-10" data-aos="fade-up">
                 ساخت سایت فروشگاهی با تمام امکانات لازم برای مدیریت سایت و سفارشات مانند
                 خدمات پرداخت و ارسال ابزارهای جذب ترافیک و مشتری و افزایش فروش تضمینی
-              </p>
+              </h2>
               <div class="flex justify-center md:justify-start"> 
               <div class="shadow__btn flex justify-center w-40">
                     ثبت نام

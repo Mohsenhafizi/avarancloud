@@ -2,8 +2,9 @@ import tailwindcss from "@tailwindcss/vite";
 import { defineNuxtConfig } from "nuxt/config";
 export default defineNuxtConfig({
   app: {
-    head:{
-      title: 'Home',
+    head: {
+      title: 'avarancloud', // مقدار پیش‌فرض برای عنوان
+      titleTemplate: '%s - avarancloud', // قالب برای عنوان صفحه [[4]]
       link: [
         { rel: 'icon', type: 'image/svg+xml', href: '/cloud2.svg' }
       ]

@@ -10,17 +10,17 @@
         data-aos="fade-up"
       >
       <span class="2xl:flex text-purple-950 2xl:justify-center z-10">
-        ابرآوران سوپرسرویس آنلاین کسب‌وکارها
+        <h1>ابرآوران سوپرسرویس آنلاین کسب‌وکارها</h1>
         <span class="absolute top-18 sm:top-13 mx-10 flex -z-10">
         <img class="w-80" src="../../assets/svg/vector-7.svg" alt="">
         </span>
       </span>
       </h1>
-      <p class="text-lg md:text-xl 2xl:text-2xl pb-10 px-10">
+      <h2 class="text-lg md:text-xl 2xl:text-2xl pb-10 px-10">
         ساخت سایت تخصصی و فروشگاهی با تمام امکانات لازم برای مدیریت سایت و سفارشات مانند
         خدمات پرداخت و ارسال ابزارهای جذب ترافیک و مشتری و افزایش فروش تضمینی<br />
         <span class="relative top-4">ابرآوران</span>
-      </p>
+      </h2>
       </div>
 <div class="relative bottom-19 flex justify-center mb-6 2xl:mb-10">
 <svg class="absolute" xmlns="http://www.w3.org/2000/svg" height="200" width="200">
