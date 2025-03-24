@@ -163,7 +163,7 @@
   export default{
       setup() {
       useHead({
-        title: 'about us',
+        title: ' | درباره ما',
       });
     },
   }

@@ -169,7 +169,7 @@ export default {
     name: 'CloudBuilder',
     setup() {
         useHead({
-            title: 'cloud builder',
+            title: ' | ابرساز',
         });
     },
     data() {

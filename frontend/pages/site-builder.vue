@@ -179,14 +179,14 @@ export default {
   name: 'SiteBuilder',
   setup() {
     useHead({
-      title: 'site builder',
-      meta: [
-        { name: 'description', content: 'ساخت سایت تخصصی و فروشگاهی با تمام امکانات لازم برای مدیریت سایت و سفارشات مانند خدمات پرداخت و ارسال ابزارهای جذب ترافیکی' },
-        { name: 'keywords', content: ' سایت ساز ابرآوران, ابر آوران, avarancloud' },
-        { property: 'og:title', content: 'ابرآوران' },
-        { property: 'og:description', content: 'ساخت سایت تخصصی و فروشگاهی با تمام امکانات لازم برای مدیریت سایت و سفارشات مانند خدمات پرداخت و ارسال ابزارهای جذب ترافیک و مشتری و افزایش فروش تضمینی' },
-        { property: 'og:url', content: 'https://avarancloud.ir' },
-      ],
+      title: ' | سایت ساز',
+      // meta: [
+      //   { name: 'description', content: 'ساخت سایت تخصصی و فروشگاهی با تمام امکانات لازم برای مدیریت سایت و سفارشات مانند خدمات پرداخت و ارسال ابزارهای جذب ترافیکی' },
+      //   { name: 'keywords', content: ' سایت ساز ابرآوران, ابر آوران, avarancloud' },
+      //   { property: 'og:title', content: 'ابرآوران' },
+      //   { property: 'og:description', content: 'ساخت سایت تخصصی و فروشگاهی با تمام امکانات لازم برای مدیریت سایت و سفارشات مانند خدمات پرداخت و ارسال ابزارهای جذب ترافیک و مشتری و افزایش فروش تضمینی' },
+      //   { property: 'og:url', content: 'https://avarancloud.ir' },
+      // ],
     });
   },
   components: {
