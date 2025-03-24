@@ -34,5 +34,5 @@ export default defineNuxtConfig({
     ],
   },
 
-  modules: ["nuxt-swiper",'@nuxtjs/seo',],
+  modules: ["nuxt-swiper"],
 });
