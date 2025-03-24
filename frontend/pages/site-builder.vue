@@ -179,7 +179,7 @@ export default {
   name: 'SiteBuilder',
   setup() {
     useHead({
-      title: ' | سایت ساز',
+      title: 'سایت ساز',
       // meta: [
       //   { name: 'description', content: 'ساخت سایت تخصصی و فروشگاهی با تمام امکانات لازم برای مدیریت سایت و سفارشات مانند خدمات پرداخت و ارسال ابزارهای جذب ترافیکی' },
       //   { name: 'keywords', content: ' سایت ساز ابرآوران, ابر آوران, avarancloud' },

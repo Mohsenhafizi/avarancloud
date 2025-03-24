@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: 'ابرآوران', // مقدار پیش‌فرض برای عنوان
-      titleTemplate: '%s - ابرآوران', // قالب برای عنوان صفحه [[4]]
+      titleTemplate: '%s | ابرآوران', // قالب برای عنوان صفحه [[4]]
       link: [
         { rel: 'icon', type: 'image/svg+xml', href: '/cloud2.svg' }
       ],
