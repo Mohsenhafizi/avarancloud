@@ -108,7 +108,7 @@
 </button>
 </div>
 <div class="hidden lg:flex lg:justify-center">
-  <img class="absolute -z-10 w-70 h-70 rotate-70" src="../../assets/photos/arrrow6.png" alt="ساخت سایت" data-aos="fade-up">
+  <img class="absolute -z-10 w-70 h-70 rotate-70" src="../../assets/photos/arrrow6.png" alt="ساخت سایت با ابرآوران" data-aos="fade-up">
 </div>
 </div>
 </template>

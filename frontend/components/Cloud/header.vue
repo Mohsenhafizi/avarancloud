@@ -9,7 +9,7 @@
                   سایت‌ساز کسب‌وکار شما 
               </h1>    
               <span class="absolute top-18 sm:top-18 mx-10 flex -z-10" data-aos="fade-up">
-                <img class="w-80" src="../../assets/svg/vector-7.svg" alt="ساخت سایت فروشگاهی">
+                <img class="w-80" src="../../assets/svg/vector-7.svg" alt="ساخت سایت باابزار های جذب ترافیک">
               </span>
               <h2 class="text-center md:text-right text-lg md:text-xl 2xl:text-2xl py-10" data-aos="fade-up">
                 ساخت سایت فروشگاهی با تمام امکانات لازم برای مدیریت سایت و سفارشات مانند
@@ -25,7 +25,7 @@
           
           
           <div class="md:w-1/2 flex md:justify-end justify-center mx-5">
-            <img class="w-full max-w-lg" src="../../assets/svg/shopping.svg" alt="ساخت سایت فروشگاهی">
+            <img class="w-full max-w-lg" src="../../assets/svg/shopping.svg" alt="ساخت سایت فروشگاهی با افزایش فروش">
           </div>
         </div>
       </div>

@@ -17,7 +17,7 @@
         <swiper-slide class="flex justify-center mb-14 mt-10">
           <div class="cart">
             <div class="flex justify-center md:my-1">
-              <img class="w-50 h-36 md:w-60 md:h-44 border-2 border-slate-200 rounded-3xl" src="../../assets/photos/card.png" alt="قابل توسعه سایت">
+              <img class="w-50 h-36 md:w-60 md:h-44 border-2 border-slate-200 rounded-3xl" src="../../assets/photos/card.png" alt="قابل توسعه سایت با ابرآوران">
             </div>
             <div class="px-4.5">
               <p class="font-bold pt-2 text-md md:text-lg">قابل توسعه‌ست</p>
@@ -30,7 +30,7 @@
         <swiper-slide class="flex justify-center mb-14 mt-10">
           <div class="cart">
           <div class="pb-2 md:pb-3">
-            <img class="mx-2 md:mx-5 w-50 h-36 md:w-60 md:h-44 border-2 border-slate-200 rounded-3xl" src="../../assets/svg/icon.svg" alt="دسترسی سایت">
+            <img class="mx-2 md:mx-5 w-50 h-36 md:w-60 md:h-44 border-2 border-slate-200 rounded-3xl" src="../../assets/svg/icon.svg" alt="دسترسی سایت با ابرآوران">
           </div>
           <div class="px-4.5">
             <p class="font-bold pb-4 text-md md:text-lg">
@@ -45,7 +45,7 @@
         <swiper-slide class="flex justify-center mb-14 mt-10">
           <div class="cart">
           <div class="flex justify-center">
-            <img class="w-50 h-36 md:w-60 md:h-44 px-8 border-2 border-slate-200 rounded-3xl" src="../../assets/svg/icon2.svg" alt="پشتیبانی سایت">
+            <img class="w-50 h-36 md:w-60 md:h-44 px-8 border-2 border-slate-200 rounded-3xl" src="../../assets/svg/icon2.svg" alt="پشتیبانی سایت با ابرآوران">
           </div>
           <div class="px-4.5">
             <p class="font-bold pt-2 text-md md:text-lg">

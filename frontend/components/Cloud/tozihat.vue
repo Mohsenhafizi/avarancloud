@@ -41,7 +41,7 @@
                 <div class="cloud-corner-4"></div>
                 
                 <div class="flex justify-center md:order-2 md:ml-4 mb-4 md:mb-0">
-                    <img src="../../assets/svg/shop.svg" class="w-40" alt="ساخت سایت فروشگاهی">
+                    <img src="../../assets/svg/shop.svg" class="w-40" alt="فروشگاه ساز اینترنتی">
                 </div>
                 <div class="md:order-1 px-8 pt-7">
                     <h2 class="text-lg lg:text-2xl text-right font-bold mb-6 text-purple-800">ساخت سایت فروشگاهی، بدون هزینه‌ی اولیه ممکنه</h2>
@@ -143,7 +143,7 @@
                 <div class="cloud-corner-4"></div>
                 
                 <div class="relative bottom-4 flex justify-center md:order-2">
-                    <img src="../../assets/svg/companion.svg" class="w-34 md:w-60 2xl:w-40" alt="ساخت سایت">
+                    <img src="../../assets/svg/companion.svg" class="w-34 md:w-60 2xl:w-40" alt="سایت ساز">
                 </div>
                 <div class="px-8 pt-7 md:order-1">
                     <h2 class="text-lg lg:text-2xl text-right font-bold mb-6 text-purple-800">بعد از ساخت سایت هم کنارتون هستیم</h2>
@@ -200,7 +200,7 @@
                     </p>
                 </div>
                 <div class="flex justify-center mt-4 md:mt-0">
-                    <img src="../../assets/svg/services.svg" class="w-40 md:w-80" alt="خدمات ابرآوران">
+                    <img src="../../assets/svg/services.svg" class="w-40 md:w-80" alt="خدمات جذب کننده ابرآوران">
                 </div>
             </div>
         </div>

@@ -1,6 +1,6 @@
 <template>
     <div class="hidden md:flex justify-center mr-20 lg:mr-50">
-        <img class="relative bottom-42 w-100 h-100 -rotate-4" src="../../assets/photos/arrrow7.png" data-aos="fade-up" alt="بسته های ابرآوران">
+        <img class="relative bottom-42 w-100 h-100 -rotate-4" src="../../assets/photos/arrrow7.png" data-aos="fade-up" alt="بسته های سایت ابرآوران">
     </div>
 <div class="z-10 flex justify-center items-center mb-56 lg:mb-22 relative -bottom-10 md:bottom-60">
 <div class="flex lg:inline-block items-center flex-col lg:flex-row text-center" data-aos="fade-up">
