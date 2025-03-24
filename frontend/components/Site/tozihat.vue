@@ -4,7 +4,7 @@
         <div class="flex justify-end flex-col md:flex-row mb-10 lg:mr-30 lg:ml-70" data-aos="fade-up">
             <div class="flex flex-col md:flex-row lg:py-14 lg:px-12 py-8 px-4 backdrop-blur-sm shadow-2xl rounded-xl">
                 <div class="flex justify-center md:order-2 md:ml-4 mb-4 md:mb-0">
-                    <img src="../../assets/svg/shop.svg" class="w-40" alt="سئو و بهینه‌سازی">
+                    <img src="../../assets/svg/shop.svg" class="w-40" alt="ساخت سایت فروشگاهی">
                 </div>
                 <div class="md:order-1 px-8 pt-7">
                     <h2 class="text-lg lg:text-2xl text-right font-bold mb-6 text-purple-800">ساخت سایت فروشگاهی، بدون هزینه‌ی اولیه ممکنه</h2>
@@ -24,7 +24,7 @@
                     </p>
                 </div>
                 <div class="flex justify-center mt-2 md:mb-0">
-                    <img src="../../assets/svg/zerotoone.svg" class="w-30 md:w-50" alt="سئو و بهینه‌سازی">
+                    <img src="../../assets/svg/zerotoone.svg" class="w-30 md:w-50" alt="صفر تا صد ساخت سایت">
                 </div>
             </div>
         </div>
@@ -32,7 +32,7 @@
         <div class="flex justify-end flex-col md:flex-row mb-10 lg:mr-30 lg:ml-70" data-aos="fade-up">
             <div class="flex flex-col md:flex-row lg:px-12 lg:py-14 px-8 py-8 backdrop-blur-sm shadow-2xl rounded-lg">
             <div class="relative bottom-4 flex justify-center md:order-2">
-                <img src="../../assets/svg/companion.svg" class="w-34 md:w-60 2xl:w-40" alt="سئو و بهینه‌سازی">
+                <img src="../../assets/svg/companion.svg" class="w-34 md:w-60 2xl:w-40" alt="ساخت سایت">
             </div>
                 <div class="px-8 pt-7 md:order-1">
                     <h2 class="text-lg lg:text-2xl text-right font-bold mb-6 text-purple-800">بعد از ساخت سایت هم کنارتون هستیم</h2>
@@ -52,7 +52,7 @@
                     </p>
                 </div>
                 <div class="flex justify-center mt-4 md:mt-0">
-                    <img src="../../assets/svg/services.svg" class="w-40 md:w-80" alt="سئو و بهینه‌سازی">
+                    <img src="../../assets/svg/services.svg" class="w-40 md:w-80" alt="خدمات ابرآوران">
                 </div>
             </div>
         </div>

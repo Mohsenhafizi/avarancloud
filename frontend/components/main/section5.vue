@@ -1,6 +1,6 @@
 <template>
     <div class="hidden lg:flex justify-center mt-6 mr-30">
-        <img class="absulote inline-block w-90 h-60 rotate-12" src="../../assets/photos/arrrow4.png" data-aos="fade-up" alt="">
+        <img class="absulote inline-block w-90 h-60 rotate-12" src="../../assets/photos/arrrow4.png" data-aos="fade-up" alt="راه اندازی سایت">
     </div>
     <div class="gradient w-full h-66 lg:h-80">
         <div class="relative block text-center top-10 lg:top-4 text-3xl" data-aos="fade-up">

@@ -1,6 +1,6 @@
 <template>
   <div class="z-0 hidden md:flex justify-center items-center relative bottom-80 xl:bottom-74 2xl:my-30">
-    <img class="absolute w-220 h-460 lg:w-220 lg:180 2xl:w-248 rotate-10 md:-rotate-2 lg:-rotate-2" src="../../assets/svg/arrowc.svg" data-aos="fade-up" alt="">
+    <img class="absolute w-220 h-460 lg:w-220 lg:180 2xl:w-248 rotate-10 md:-rotate-2 lg:-rotate-2" src="../../assets/svg/arrowc.svg" data-aos="fade-up" alt="سوالات متداول از ابرآوران">
   </div>
   <div class="faq-container relative rtl top-20 md:top-0">
     <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-6 sm:mb-8 md:mb-16 text-purple-950" data-aos="fade-up">سوالات متداول</h2>

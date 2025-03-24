@@ -11,7 +11,7 @@
     </div>
     <div class="font-bold">
         avarancloud
-        <img class="inline-block w-12 h-12" src="../../assets/svg/cloud2.svg" alt="">
+        <img class="inline-block w-12 h-12" src="../../assets/svg/cloud2.svg" alt="avarancloud">
     </div>
     </div>
     
@@ -19,7 +19,7 @@
     <div class="nav fixed top-0 bottom-0 right-0 w-64 pt-3 px-4 bg-white z-20 overflow-y-auto transform transition-transform duration-500 ease-in-out" :class="{ 'translate-x-full': !navOpen, 'translate-x-0': navOpen }">
         <div class="flex items-center justify-between pb-5 mb-4 border-b border-b-gray-100">
             <div class="flex pt-1 font-bold">
-                <img class="inline-block w-12 h-12" src="../../assets/svg/cloud2.svg" alt="">
+                <img class="inline-block w-12 h-12" src="../../assets/svg/cloud2.svg" alt="avarancloud">
                 <span class="pt-3 pr-1">
                 avarancloud
                 </span>

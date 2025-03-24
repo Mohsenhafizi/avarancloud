@@ -7,7 +7,7 @@
         <div class="mx-2 md:mx-60 grid grid-cols-12 gap-0 md:gap-x-16 gap-y-6 my-5">
             <div class="col-span-12 sm:col-span-6 md:col-span-4 hover:border-1 hover:border-gray-400 rounded-2xl transition-all">
                 <div class="relative lg:p-3">                  
-                    <img class="w-12 ml-0.5 inline-block" src="../../assets/photos/formm.png" alt="">
+                    <img class="w-12 ml-0.5 inline-block" src="../../assets/photos/formm.png" alt="بسته های ابرآوران">
                     <span class="text-lg md:text-xl font-bold text-purple-900">
                         انتخاب بسته
                     </span>
@@ -21,7 +21,7 @@
             </div>
             <div class="col-span-12 sm:col-span-6 md:col-span-4 hover:border-1 hover:border-gray-400 rounded-2xl transition-all">
                 <div class="relative lg:p-3">
-                    <img class="w-12 ml-0.5 inline-block rotate-170" src="../../assets/photos/tel.png" alt="">
+                    <img class="w-12 ml-0.5 inline-block rotate-170" src="../../assets/photos/tel.png" alt="تماس باابرآوران">
                     <span class="text-lg md:text-xl font-bold text-purple-900">  
                       تماس با ما                      
                     </span>
@@ -35,7 +35,7 @@
             </div>
             <div class="col-span-12 sm:col-span-6 md:col-span-4 hover:border-1 hover:border-gray-400 rounded-2xl transition-all">
                 <div class="relative lg:p-2 lg:mt-2">
-                    <img class="w-12 ml-0.5 inline-block" src="../../assets/photos/website.png" alt="">
+                    <img class="w-12 ml-0.5 inline-block" src="../../assets/photos/website.png" alt="پیش نیاز ابرآوران">
                     <span class="text-lg md:text-xl font-bold text-purple-900">       
                         پیش‌نیازها          
                     </span>
@@ -50,7 +50,7 @@
             <div class="col-span-12 sm:col-span-6 md:col-span-4 hover:border-1 hover:border-gray-400 rounded-2xl transition-all">
                 <div class="relative lg:p-2">
                     <span class="flex text-lg md:text-xl font-bold text-purple-900">
-                    <img class="w-12 inline-block" src="../../assets/photos/compelete.png" alt="">
+                    <img class="w-12 inline-block" src="../../assets/photos/compelete.png" alt="شروع توسعه با ابرآوران">
                     <span class="mt-3.5 md:mt-2 xl:mt-3.5 xl:mx-1">
                       شروع توسعه
                     </span>
@@ -66,7 +66,7 @@
             <div class="col-span-12 sm:col-span-6 md:col-span-4 hover:border-1 hover:border-gray-400 rounded-2xl transition-all">
                 <div class="relative">
                     <div class="pt-3">
-                    <img class="w-12 inline-block" src="../../assets/photos/shop.png" alt="">
+                    <img class="w-12 inline-block" src="../../assets/photos/shop.png" alt="رونمایی سایت با ابرآوران">
                     <span class="text-lg md:text-xl font-bold text-purple-900">
                     رونمایی از سایت
                     </span>
@@ -82,7 +82,7 @@
             <div class="col-span-12 sm:col-span-6 md:col-span-4 hover:border-1 hover:border-gray-400 rounded-2xl transition-all">
                 <div class="relative lg:p-3">
                     <div class="flex gap-x-1">
-                        <img class="w-13 ml-0.5" src="../../assets/photos/cloud2.png" alt="">
+                        <img class="w-13 ml-0.5" src="../../assets/photos/cloud2.png" alt="ابرسازی با ابرآوران">
                         <span class="mt-4 text-lg md:text-xl font-bold text-purple-900">
                           ابر سازی
                         </span>
@@ -108,7 +108,7 @@
 </button>
 </div>
 <div class="hidden lg:flex lg:justify-center">
-  <img class="absolute -z-10 w-70 h-70 rotate-70" src="../../assets/photos/arrrow6.png" alt="" data-aos="fade-up">
+  <img class="absolute -z-10 w-70 h-70 rotate-70" src="../../assets/photos/arrrow6.png" alt="ساخت سایت" data-aos="fade-up">
 </div>
 </div>
 </template>

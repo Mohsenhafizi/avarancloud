@@ -12,7 +12,7 @@
       <span class="2xl:flex text-purple-950 2xl:justify-center z-10">
         <h1>ابرآوران سوپرسرویس آنلاین کسب‌وکارها</h1>
         <span class="absolute top-18 sm:top-13 mx-10 flex -z-10">
-        <img class="w-80" src="../../assets/svg/vector-7.svg" alt="">
+        <img class="w-80" src="../../assets/svg/vector-7.svg" alt="ابرآوران">
         </span>
       </span>
       </h1>
@@ -223,13 +223,13 @@
               <img
                 class="hidden md:inline-block active:border-r-2 hover:border-r-2 active:border-r-blue-500 hover:border-r-blue-500 active:border-l-2 hover:border-l-2 active:border-l-blue-500 hover:border-l-blue-500 active:border-t-2 hover:border-t-2 active:border-t-blue-500 hover:border-t-blue-500 rounded-t-3xl rounded-b-4xl"
                 src="../../assets/photos/ghahve.png"
-                alt="error"
+                alt="نمونه کار ابرآوران"
               />
            </div>
             <img
               class="inline-block md:hidden border-1 rounded-lg border-gray-500"
               src="../../assets/photos/mobile-screen.png"
-              alt="error"
+              alt="نمونه کار ابرآوران"
             />
           </div>
           <div
@@ -246,10 +246,10 @@
           <div class="relative cursor-pointer group z-10 hidden md:inline-block button rounded-2xl float-right bottom-30 lg:bottom-65 left-26">
           <div class="button-wrapper rounded-2xl">
             <div class="text rounded-2xl">
-              <img src="../../assets/photos/sample-screen.png" alt="">
+              <img src="../../assets/photos/sample-screen.png" alt="نمونه محصولات ابرآوران">
             </div>
             <span class="icon rounded-2xl">
-              <img src="../../assets/photos/sample-screen2.png" alt="">
+              <img src="../../assets/photos/sample-screen2.png" alt="نمونه محصولات ابرآوران">
             </span>
             </div>
             <div

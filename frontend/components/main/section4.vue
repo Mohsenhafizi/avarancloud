@@ -2,7 +2,7 @@
   <div class="relative top-20 lg:top-60">
     <div class="rtl mb-16 lg:mb-0 lg:mx-20" data-aos="fade-up">
             <div class="flex flex-col md:flex-row items-center">
-              <img src="../../assets/photos/site.webp" class="w-[296px] relative bottom-10" alt="contact">
+              <img src="../../assets/photos/site.webp" class="w-[296px] relative bottom-10" alt="سایت سفارشی با ابرآورن">
                 <div class="text-zinc-700 md:mr-10 mx-4 md:mx-0 lg:mx-10 xl:mx-14">
                     <h3 class="text-2xl py-6 md:text-4xl mb-0.5 md:mb-1.5 text-purple-950">سایت رو سفارشی براتون می‌سازیم!</h3>
                     <p class="text-lg">
@@ -35,12 +35,12 @@
                       </div>
                   </div>
                     <div class="hidden lg:flex justify-center relative bottom-18 left-30 -z-10">
-                      <img class="w-70 h-70 -rotate-25" src="../../assets/photos/arrrow1.png" alt="" data-aos="fade-up">
+                      <img class="w-70 h-70 -rotate-25" src="../../assets/photos/arrrow1.png" alt="ساخت سایت فروشگاهی" data-aos="fade-up">
                   </div>
         </div>
         <div class="rtl mb-30 lg:mb-0 lg:relative lg:bottom-38 z-10 md:mx-20" data-aos="fade-up">
             <div class="flex flex-col md:flex-row items-center">
-              <img src="../../assets/svg/card1.svg" class="lg:hidden w-[340px]" alt="contact">
+              <img src="../../assets/svg/card1.svg" class="lg:hidden w-[340px]" alt="سئو سایت">
                 <div class="text-zinc-700 mx-4 md:mx-0">
                     <h3 class="text-2xl py-6 md:text-4xl mb-0.5 md:mb-1.5 text-purple-950">رتبه‌ی بالا در جستجوی گوگل هم با ابرآوران!</h3>
                     <p class="text-lg">
@@ -71,16 +71,16 @@
 
         </div>
                 </div>
-                <img src="../../assets/photos/seo.webp" class="hidden lg:inline-block mr-10 xl:ml-10 w-[340px]" alt="contact">
+                <img src="../../assets/photos/seo.webp" class="hidden lg:inline-block mr-10 xl:ml-10 w-[340px]" alt="ساخت سایت">
 
             </div>
             <div class="hidden lg:flex justify-center relative bottom-10 left-60 -z-10">
-                <img class="w-80 h-80 -scale-x-120 rotate-16" src="../../assets/photos/arrrow3.png" alt="" data-aos="fade-up">
+                <img class="w-80 h-80 -scale-x-120 rotate-16" src="../../assets/photos/arrrow3.png" alt="ساخت سایت حرفه ای" data-aos="fade-up">
             </div>
         </div>
         <div class="rtl mb-24 lg:mb-0 lg:relative lg:bottom-62 lg:z-10 lg:mx-20" data-aos="fade-up">
             <div class="flex flex-col md:flex-row items-center">
-              <img src="../../assets/photos/support.webp" class="w-[296px] relative bottom-10" alt="contact">
+              <img src="../../assets/photos/support.webp" class="w-[296px] relative bottom-10" alt="ساخت سایت تخصصی">
                 <div class="text-zinc-700 md:mr-10 mx-4 md:mx-0 lg:mx-10 xl:mx-16">
                     <h3 class="text-2xl py-6 md:text-4xl mb-0.5 md:mb-1.5 text-purple-950">کارها را به متخصص بسپارید!</h3>
                     <p class="text-lg">
