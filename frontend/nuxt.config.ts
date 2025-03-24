@@ -12,7 +12,7 @@ export default defineNuxtConfig({
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'description', content: 'ساخت سایت تخصصی و فروشگاهی با تمام امکانات لازم برای مدیریت سایت و سفارشات مانند خدمات پرداخت و ارسال ابزارهای جذب ترافیک و مشتری و افزایش فروش تضمینی' },
-        { name: 'keywords', content: ' سایت ساز ابرآوران, ابر آوران, avarancloud' },
+        // { name: 'keywords', content: ' سایت ساز ابرآوران, ابر آوران, avarancloud' },
         { property: 'og:title', content: 'ابرآوران' },
         { property: 'og:description', content: 'ساخت سایت تخصصی و فروشگاهی با تمام امکانات لازم برای مدیریت سایت و سفارشات مانند خدمات پرداخت و ارسال ابزارهای جذب ترافیک و مشتری و افزایش فروش تضمینی' },
         { property: 'og:url', content: 'https://avarancloud.ir' },
