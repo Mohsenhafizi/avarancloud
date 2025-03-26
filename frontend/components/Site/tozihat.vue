@@ -52,7 +52,7 @@
                     </p>
                 </div>
                 <div class="flex justify-center mt-4 md:mt-0">
-                    <img src="../../assets/svg/services.svg" class="w-40 md:w-80" alt="خدمات ابرآوران">
+                    <img src="../../assets/svg/services.svg" class="w-40 md:w-80" alt="انواع خدمات ابرآوران">
                 </div>
             </div>
         </div>

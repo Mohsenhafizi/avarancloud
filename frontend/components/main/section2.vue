@@ -7,7 +7,7 @@
 <div class="flex flex-col lg:flex-row items-center justify-center mb-10 mt-10 gap-18">
   <div class="cart">
           <div class="flex justify-center my-5">
-            <img class="w-60 h-36 px-8 border-2 border-slate-200 rounded-3xl" src="../../assets/svg/icon2.svg" alt="پشتبانی ابرآوران">
+            <img class="w-60 h-36 px-8 border-2 border-slate-200 rounded-3xl" src="../../assets/svg/icon2.svg" alt="پشتبانی سایت">
           </div>
           <div class="px-4.5">
             <p class="font-bold pb-5 text-lg">

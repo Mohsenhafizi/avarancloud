@@ -68,7 +68,7 @@
         </button>
         </div>
     </ClientOnly>
-    <div class="flex justify-center relative bottom-24">
+    <div class="flex justify-center relative bottom-24 z-20">
   <button class="div">
     <div class="state" id="moon">شروع کنید</div>
     <div class="state" id="sun">شروع کنید</div>
