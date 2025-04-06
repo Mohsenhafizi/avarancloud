@@ -147,7 +147,7 @@
       <NavBarNavMobile />
       <AboutusHero />
       <AboutusKontainerinner1 />
-      <AboutusProjects />
+      <AboutusProject />
       <AboutusAvatari />
       <div id="contact-us">
       <AboutusContact />

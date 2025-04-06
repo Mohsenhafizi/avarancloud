@@ -1,16 +1,16 @@
 <template>
   <div
-    class="color relative top-15 md:top-0 md:mx-38 md:h-[860px] lg:h-[970px] 2xl:h-[960px] mt-5 md:mt-30 flex items-center justify-center min-h-screen bg-blue-50 md:rounded-3xl"
+    class="color relative top-15 md:top-0 md:mx-38 md:h-[890px] lg:h-[970px] 2xl:h-[1000px] mt-5 md:mt-30 flex items-center justify-center min-h-screen bg-blue-50 md:rounded-3xl"
   >
     <div class="text-center p-8">
-      <div class="mx-30 md:mt-40 lg:mt-60 sm:mx-20 md:mx-52 2xl:mx-34">
+      <div class="mx-30 md:mt-40 lg:mt-60 sm:mx-20 md:mx-52 xl:mx-40 2xl:mx-34">
         <div data-aos="fade-up">
       <h1
-        class="relative text-3xl md:text-5xl 2xl:text-6xl text-center font-bold py-4 my-5"
+        class="relative text-3xl md:text-5xl 2xl:text-[56px] text-center font-bold py-4 my-5"
         data-aos="fade-up"
       >
       <span class="2xl:flex text-purple-950 2xl:justify-center z-10">
-        <h1>ابرآوران سوپرسرویس آنلاین کسب‌وکارها</h1>
+        <h1 class="">ابرآوران سوپرسرویس آنلاین کسب‌وکارها</h1>
         <span class="absolute top-18 sm:top-13 mx-10 flex -z-10">
         <img class="w-80" src="../../assets/svg/vector-7.svg" alt="ابرآوران - طراحی سایت و خدمات وب">
         </span>
@@ -658,6 +658,11 @@ export default defineComponent({
 .faq-button svg {
   height: 2em;
   fill: white;
+}
+@media (min-width: 1534px) and (max-width: 1668px) {
+  .etesal{
+    top: 100px;
+  }
 }
 @media (min-width: 480px) and (max-width: 640px) {
   .faq-button {

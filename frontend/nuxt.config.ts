@@ -5,7 +5,6 @@ export default defineNuxtConfig({
     head: {
       htmlAttrs: {
         lang: 'fa',
-        dir: 'rtl',
       },
       title: 'ابرآوران | طراحی سایت و فروشگاه اینترنتی حرفه‌ای',
       link: [
@@ -26,7 +25,7 @@ export default defineNuxtConfig({
         { property: 'og:title', content: 'ابرآوران | طراحی سایت و فروشگاه اینترنتی حرفه‌ای' },
         { property: 'og:description', content: 'ساخت سایت تخصصی و فروشگاهی با تمام امکانات لازم برای مدیریت سایت و سفارشات مانند خدمات پرداخت و ارسال ابزارهای جذب ترافیک و مشتری و افزایش فروش تضمینی' },
         { property: 'og:url', content: 'https://avarancloud.ir' },
-        { property: 'og:site_name', content: 'ابرآوران' },
+        { property: 'og:site_name', content: 'ابرآوران | طراحی سایت و فروشگاه اینترنتی حرفه‌ای' },
         { property: 'og:image', content: 'https://avarancloud.ir/cloud2.svg' },
         { property: 'og:locale', content: 'fa_IR' },
         

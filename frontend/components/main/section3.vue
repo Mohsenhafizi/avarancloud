@@ -12,7 +12,7 @@
                         انتخاب بسته
                     </span>
                     <span class="flex text-sm md:text-lg p-1 md:px-2">
-                        <span class="absolute inline-block -top-[16px] md:top[3px] lg:top-[1px] 2xl:-top-[14px] right-50 md:right-20 2xl:right-60 -z-10 text-gray-300 font-bold text-[100px] md:text-[140px]">
+                        <span class="absolute inline-block -top-[16px] md:top[3px] lg:top-[1px] 2xl:-top-[14px] right-50 md:right-20 2xl:right-40 -z-10 text-gray-300 font-bold text-[100px] md:text-[140px]">
                         1
                         </span>
                          وارد صفحه بسته ها شوید و یکی از بسته های ساخت سایت یا ساخت زیرساخت ابریتان را انتخاب کنید.
@@ -26,7 +26,7 @@
                       تماس با ما                      
                     </span>
                     <span class="flex text-sm md:text-lg p-1 md:px-2">
-                        <span class="absolute inline-block -top-[16px] md:top[3px] lg:top-[1px] 2xl:-top-[14px] right-50 md:right-20 2xl:right-60 -z-10 text-gray-300 font-bold text-[100px] md:text-[140px]">
+                        <span class="absolute inline-block -top-[16px] md:top[3px] lg:top-[1px] 2xl:-top-[14px] right-50 md:right-20 2xl:right-40 -z-10 text-gray-300 font-bold text-[100px] md:text-[140px]">
                         2
                         </span>
                         روی تماس با ما برنید و از اطلاعات مورد نیاز و راهنمایی های ما مطلع شوید.
@@ -40,7 +40,7 @@
                         پیش‌نیازها          
                     </span>
                     <span class="flex text-sm md:text-lg p-1 md:px-2">
-                        <span class="absolute inline-block -top-[16px] md:top[3px] lg:top-[1px] 2xl:-top-[14px] right-50 md:right-20 2xl:right-60 -z-10 text-gray-300 font-bold text-[100px] md:text-[140px]">
+                        <span class="absolute inline-block -top-[16px] md:top[3px] lg:top-[1px] 2xl:-top-[14px] right-50 md:right-20 2xl:right-40 -z-10 text-gray-300 font-bold text-[100px] md:text-[140px]">
                         3
                         </span>
                          کار های عملیاتی مثل انتخاب نام دامنه، دریافت اینماد، دریافت پنل پیامک و درگاه پرداخت را پیش ببرید.
@@ -56,7 +56,7 @@
                     </span>
                     </span>
                     <span class="flex text-sm md:text-lg p-1 md:px-2">
-                        <span class="absolute inline-block -top-[16px] md:top[3px] lg:top-[1px] 2xl:-top-[14px] right-50 md:right-20 2xl:right-60 -z-10 text-gray-300 font-bold text-[100px] md:text-[140px]">
+                        <span class="absolute inline-block -top-[16px] md:top[3px] lg:top-[1px] 2xl:-top-[14px] right-50 md:right-20 2xl:right-40 -z-10 text-gray-300 font-bold text-[100px] md:text-[140px]">
                         4
                         </span>
                          با انجام مراحل تا به اینجا سایت شما به تیم توسعه سایت سپرده میشود.
@@ -71,7 +71,7 @@
                     رونمایی از سایت
                     </span>
                     <span class="flex text-sm md:text-lg p-1 md:px-2">
-                        <span class="absolute -top-[10px] md:top[3px] lg:top-[1px] 2xl:-top-[14px] right-50 md:right-20 2xl:right-60 -z-10 text-gray-300 font-bold text-[100px] md:text-[140px]">
+                        <span class="absolute -top-[10px] md:top[3px] lg:top-[1px] 2xl:-top-[14px] right-50 md:right-20 2xl:right-40 -z-10 text-gray-300 font-bold text-[100px] md:text-[140px]">
                         5
                         </span>
                         سایتتون آماده است؛ فقط باید به همه بگید که از طریق سایت ازتون خرید کنن.
@@ -88,7 +88,7 @@
                         </span>
                     </div>
                     <span class="flex text-sm md:text-lg p-1 md:px-2">
-                        <span class="absolute inline-block -top-[16px] md:top[3px] lg:top-[1px] 2xl:-top-[14px] right-50 md:right-20 2xl:right-60 -z-10 text-gray-300 font-bold text-[100px] md:text-[140px]">
+                        <span class="absolute inline-block -top-[16px] md:top[3px] lg:top-[1px] 2xl:-top-[14px] right-50 md:right-20 2xl:right-40 -z-10 text-gray-300 font-bold text-[100px] md:text-[140px]">
                         6
                         </span>
                          راستی اگه از قبل سایت دارین میتونید از بسته های ابرساز استفاده کنید تا بهبود های زیرساختی و عملیاتی داشته باشید😉

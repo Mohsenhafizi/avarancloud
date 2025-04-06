@@ -38,13 +38,13 @@
           </div>
           </button>
           <button
-            class="relative group text-[7px] lg:text-[10px] inline-flex items-center rounded-lg text-orange-400 hover:bg-gray-100 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700  px-3 py-2 lg:py-3">
+            class="relative group text-[7px] lg:text-[10px] inline-flex items-center rounded-lg text-orange-400 hover:bg-gray-100 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 px-3 py-2 lg:py-3">
             گزارش مشتریان
             <svg class="w-2.5 h-2.5 md:h-1.5 md:w-1.5 ms-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
             </svg>
             <div
-            class="top-10 left-4 md:top-10 md:-left-1 lg:top-15 lg:left-1 absolute invisible opacity-0 group-hover:visible group-hover:opacity-100 -translate-x-1/2 w-20 md:w-30 transition-all duration-300 ease-out transform group-hover:translate-y-0 translate-y-2"
+            class="top-10 left-4 md:top-10 md:-left-1 lg:top-15 lg:left-1 absolute invisible opacity-0 group-focus:visible group-hover:visible group-hover:opacity-100 group-focus:opacity-100 -translate-x-1/2 w-20 md:w-30 transition-all duration-300 ease-out transform group-focus:translate-y-0 group-hover:translate-y-0 translate-y-2"
           >
             <div
               class="rounded-b-3xl rounded-tl-3xl md:text-xs lg:text-md text-zinc-500 bg-stone-300 p-1 lg:p-2"
