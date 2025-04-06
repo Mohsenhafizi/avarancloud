@@ -174,13 +174,60 @@ export default {
   setup() {
     useHead({
       title: 'ابرآوران | سوپرسرویس آنلاین کسب و کارها',
-      // meta: [
-      //   { name: 'description', content: 'ساخت سایت تخصصی و فروشگاهی با تمام امکانات لازم برای مدیریت سایت و سفارشات مانند خدمات پرداخت و ارسال ابزارهای جذب ترافیک و مشتری و افزایش فروش ' },
-      //   { name: 'keywords', content: ' سایت ساز ابرآوران, ابر آوران, avarancloud' },
-      //   { property: 'og:title', content: 'ابرآوران' },
-      //   { property: 'og:description', content: 'ساخت سایت تخصصی و فروشگاهی با تمام امکانات لازم برای مدیریت سایت و سفارشات مانند خدمات پرداخت و ارسال ابزارهای جذب ترافیک و مشتری و افزایش فروش تضمینی' },
-      //   { property: 'og:url', content: 'https://avarancloud.ir' },
-      // ],
+      meta: [
+        { name: 'description', content: 'ابرآوران - سوپرسرویس آنلاین برای کسب و کارها. طراحی و ساخت وب‌سایت حرفه‌ای و فروشگاه اینترنتی با امکانات پیشرفته، مدیریت سفارشات، درگاه پرداخت و ابزارهای افزایش فروش' },
+        { name: 'keywords', content: 'ابرآوران, ابر آوران, avarancloud, طراحی سایت, ساخت سایت, فروشگاه اینترنتی, افزایش فروش آنلاین, سئو, طراحی وب سایت, سایت فروشگاهی' },
+        { property: 'og:title', content: 'ابرآوران | سوپرسرویس آنلاین کسب و کارها' },
+        { property: 'og:description', content: 'ابرآوران - سوپرسرویس آنلاین برای کسب و کارها. طراحی و ساخت وب‌سایت حرفه‌ای و فروشگاه اینترنتی با امکانات پیشرفته، مدیریت سفارشات، درگاه پرداخت و ابزارهای افزایش فروش' },
+        { property: 'og:url', content: 'https://avarancloud.ir/' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:image', content: 'https://avarancloud.ir/cloud2.svg' },
+        { property: 'og:locale', content: 'fa_IR' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:title', content: 'ابرآوران | سوپرسرویس آنلاین کسب و کارها' },
+        { name: 'twitter:description', content: 'ابرآوران - سوپرسرویس آنلاین برای کسب و کارها' },
+        { name: 'twitter:image', content: 'https://avarancloud.ir/cloud2.svg' },
+        { name: 'robots', content: 'index, follow' },
+        { name: 'canonical', content: 'https://avarancloud.ir/' },
+      ],
+      link: [
+        { rel: 'canonical', href: 'https://avarancloud.ir/' }
+      ],
+      script: [
+        {
+          innerHTML: `{
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "ابرآوران چه خدماتی ارائه می‌دهد؟",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "ابرآوران سوپرسرویس آنلاین کسب‌وکارها است که خدمات طراحی سایت، ساخت فروشگاه اینترنتی، میزبانی وب و خدمات سئو ارائه می‌دهد."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "مزیت‌های استفاده از سرویس ابرآوران چیست؟",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "مزیت‌های استفاده از ابرآوران شامل طراحی سایت حرفه‌ای، پشتیبانی ۲۴ ساعته، سیستم‌های امنیتی پیشرفته، ابزارهای بازاریابی و خدمات سئو می‌باشد."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "آیا ابرآوران خدمات سئو و بهینه‌سازی موتورهای جستجو ارائه می‌دهد؟",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "بله، ابرآوران خدمات کامل سئو و بهینه‌سازی برای موتورهای جستجو ارائه می‌دهد که شامل سئو تکنیکال، تولید محتوا، لینک‌سازی و گزارش‌دهی می‌باشد."
+                }
+              }
+            ]
+          }`,
+          type: 'application/ld+json'
+        }
+      ]
     });
   },
 }

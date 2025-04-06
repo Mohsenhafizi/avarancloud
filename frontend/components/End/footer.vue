@@ -3,15 +3,15 @@
     <div class="mx-auto w-full max-w-screen-xl">
       <div class="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mx-10 xl:mx-0 gap-6 lg:gap-28 px-4 py-10 lg:py-0 bottom-4 lg:pt-20">
         <div class="">
-            <h2 class="mb-8 text-lg font-semibold uppercase text-white">ابرآوران</h2>
+            <h2 class="mb-8 text-lg font-semibold uppercase text-white">ابرآوران | سوپرسرویس آنلاین</h2>
             <ul class="text-gray-400 lg:w-70">
                 <li class="mb-10">
-                  پلتفرمی یکپارچه برای ساختن وب‌سایت و وب اپلیکیشنه. با استفاده از ابرآوران همه می‌تونن با هر سطحی از دانش فنی، برای کسب‌وکارشون یه سایت بسازن و فقط با استفاده از پنل ابرآوران، سفارشات خودشون رو از مرحله‌ی پرداخت تا ارسال و وفادارسازی مشتری مدیریت کنن. راستی از بسته های ابرسازمون برای ساخت و بهبود زیر ساخت های مانیتورینگ و افرایش مقیاس ما غافل نشید.
+                  <span class="font-bold">ابرآوران</span> پلتفرمی یکپارچه برای ساختن وب‌سایت و وب اپلیکیشن است. با استفاده از <span class="font-bold">ابرآوران</span> همه می‌توانند با هر سطحی از دانش فنی، برای کسب‌وکارشان یک سایت حرفه‌ای بسازند و فقط با استفاده از پنل <span class="font-bold">ابرآوران</span>، سفارشات خود را از مرحله‌ی پرداخت تا ارسال و وفادارسازی مشتری مدیریت کنند. از بسته‌های ابرساز <span class="font-bold">ابرآوران</span> برای ساخت و بهبود زیرساخت‌های مانیتورینگ و افزایش مقیاس بهره‌مند شوید.
                 </li>
             </ul>
         </div>
         <div>
-            <h2 class="mb-10 text-md font-semibold uppercase text-white">ارتباط با ما</h2>
+            <h2 class="mb-10 text-md font-semibold uppercase text-white">ارتباط با ابرآوران</h2>
             <ul class="text-gray-400">
                 <li class="mb-4">
                 خیابان شاهزاده قاسم میثاق ششم
@@ -77,24 +77,24 @@
             </ul>
         </div>
         <div>
-            <h2 class="mb-10 text-md font-semibold uppercase text-white">سرویس ها</h2>
+            <h2 class="mb-10 text-md font-semibold uppercase text-white">سرویس های ابرآوران</h2>
             <ul class="text-gray-400">
                 <NuxtLink to="/site-builder" class="relative inline-block mb-4">
-                    فروشگاه ساز
+                    سایت ساز ابرآوران
                 </NuxtLink>
                 <NuxtLink to="/site-builder#packages" class="relative inline-block mb-4">
-                  بسته‌های جذب بازدیدکننده  
+                  بسته‌های جذب بازدیدکننده ابرآوران  
                 </NuxtLink>
-                <NuxtLink to="/site-builder" class="relative inline-block mb-4">
-                    ابرآوران(پشتیبان اختصاصی)
+                <NuxtLink to="/cloud-builder" class="relative inline-block mb-4">
+                    ابرساز ابرآوران (زیرساخت ابری)
                 </NuxtLink>
             </ul>
         </div>
         <div>
-            <h2 class="mb-10 text-md font-semibold uppercase text-white">لینک های مفید</h2>
+            <h2 class="mb-10 text-md font-semibold uppercase text-white">ابرآوران و شما</h2>
             <ul class="text-gray-400">
             <NuxtLink to="/site-builder" class="relative mb-4 inline-block">
-                پنل مدیریت فروشگاه اینترنتی
+                پنل مدیریت فروشگاهی ابرآوران
             </NuxtLink>
             <br>
             <NuxtLink to="/site-builder" class="mb-4 inline-block">
@@ -102,10 +102,10 @@
             </NuxtLink>
             <br>
             <NuxtLink to="/site-builder#submenu" class="mb-4 inline-block">
-                سوالات متداول
+                سوالات متداول درباره ابرآوران
             </NuxtLink>
             <br>
-            <NuxtLink to="/site-builder" class="mb-4 inline-block">درباره ما</NuxtLink>
+            <NuxtLink to="/about-us" class="mb-4 inline-block">درباره ابرآوران</NuxtLink>
             </ul>
         </div>
     </div>

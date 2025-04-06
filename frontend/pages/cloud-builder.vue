@@ -169,7 +169,26 @@ export default {
     name: 'CloudBuilder',
     setup() {
         useHead({
-            title: 'ابرآوران | ابرساز',
+            title: 'ابرآوران | ابرساز حرفه‌ای',
+            meta: [
+                { name: 'description', content: 'ابرساز ابرآوران - پلتفرم ابری برای میزبانی و مدیریت سایت و برنامه‌های وب با امکانات پیشرفته، بکاپ‌گیری خودکار، امنیت بالا و مقیاس‌پذیری آسان' },
+                { name: 'keywords', content: 'ابرساز ابرآوران, ابر آوران, avarancloud, هاست ابری, میزبانی وب, میزبانی ابری, سرور مجازی, مقیاس‌پذیری, بکاپ خودکار' },
+                { property: 'og:title', content: 'ابرآوران | ابرساز حرفه‌ای' },
+                { property: 'og:description', content: 'ابرساز ابرآوران - پلتفرم ابری برای میزبانی و مدیریت سایت و برنامه‌های وب با امکانات پیشرفته، بکاپ‌گیری خودکار، امنیت بالا و مقیاس‌پذیری آسان' },
+                { property: 'og:url', content: 'https://avarancloud.ir/cloud-builder' },
+                { property: 'og:type', content: 'website' },
+                { property: 'og:image', content: 'https://avarancloud.ir/cloud2.svg' },
+                { property: 'og:locale', content: 'fa_IR' },
+                { name: 'twitter:card', content: 'summary_large_image' },
+                { name: 'twitter:title', content: 'ابرآوران | ابرساز حرفه‌ای' },
+                { name: 'twitter:description', content: 'ابرساز ابرآوران - پلتفرم ابری برای میزبانی و مدیریت سایت و برنامه‌های وب' },
+                { name: 'twitter:image', content: 'https://avarancloud.ir/cloud2.svg' },
+                { name: 'robots', content: 'index, follow' },
+                { name: 'canonical', content: 'https://avarancloud.ir/cloud-builder' },
+            ],
+            link: [
+                { rel: 'canonical', href: 'https://avarancloud.ir/cloud-builder' }
+            ],
         });
     },
     data() {

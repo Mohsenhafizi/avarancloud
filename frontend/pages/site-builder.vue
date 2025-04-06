@@ -179,14 +179,26 @@ export default {
   name: 'SiteBuilder',
   setup() {
     useHead({
-      title: 'ابرآوران | سایت ساز',
-      // meta: [
-      //   { name: 'description', content: 'ساخت سایت تخصصی و فروشگاهی با تمام امکانات لازم برای مدیریت سایت و سفارشات مانند خدمات پرداخت و ارسال ابزارهای جذب ترافیکی' },
-      //   { name: 'keywords', content: ' سایت ساز ابرآوران, ابر آوران, avarancloud' },
-      //   { property: 'og:title', content: 'ابرآوران' },
-      //   { property: 'og:description', content: 'ساخت سایت تخصصی و فروشگاهی با تمام امکانات لازم برای مدیریت سایت و سفارشات مانند خدمات پرداخت و ارسال ابزارهای جذب ترافیک و مشتری و افزایش فروش تضمینی' },
-      //   { property: 'og:url', content: 'https://avarancloud.ir' },
-      // ],
+      title: 'ابرآوران | سایت ساز حرفه‌ای',
+      meta: [
+        { name: 'description', content: 'سایت ساز ابرآوران - ساخت سایت تخصصی و فروشگاهی با تمام امکانات لازم برای مدیریت سایت و سفارشات، خدمات پرداخت و ارسال، ابزارهای جذب ترافیک و مشتری' },
+        { name: 'keywords', content: 'سایت ساز ابرآوران, ابر آوران, avarancloud, ساخت سایت, طراحی سایت, سایت شخصی, سایت فروشگاهی, طراحی وب سایت' },
+        { property: 'og:title', content: 'ابرآوران | سایت ساز حرفه‌ای' },
+        { property: 'og:description', content: 'سایت ساز ابرآوران - ساخت سایت تخصصی و فروشگاهی با تمام امکانات لازم برای مدیریت سایت و سفارشات، خدمات پرداخت و ارسال، ابزارهای جذب ترافیک و مشتری' },
+        { property: 'og:url', content: 'https://avarancloud.ir/site-builder' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:image', content: 'https://avarancloud.ir/cloud2.svg' },
+        { property: 'og:locale', content: 'fa_IR' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:title', content: 'ابرآوران | سایت ساز حرفه‌ای' },
+        { name: 'twitter:description', content: 'سایت ساز ابرآوران - ساخت سایت تخصصی و فروشگاهی با تمام امکانات لازم' },
+        { name: 'twitter:image', content: 'https://avarancloud.ir/cloud2.svg' },
+        { name: 'robots', content: 'index, follow' },
+        { name: 'canonical', content: 'https://avarancloud.ir/site-builder' },
+      ],
+      link: [
+        { rel: 'canonical', href: 'https://avarancloud.ir/site-builder' }
+      ],
     });
   },
   components: {

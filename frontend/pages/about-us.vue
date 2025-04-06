@@ -160,14 +160,34 @@
 </template>
   
 <script lang="ts">
-  export default{
-      setup() {
-      useHead({
-        title: 'ابرآوران | درباره ما',
-      });
-    },
-  }
-  
+import { useHead } from '@vueuse/head';
+
+export default{
+    setup() {
+    useHead({
+      title: 'ابرآوران | درباره ما',
+      meta: [
+        { name: 'description', content: 'ابرآوران - آشنایی با ابرآوران، تیم متخصص ما و ارزش‌های سازمانی. ابرآوران ارائه دهنده خدمات حرفه‌ای طراحی سایت و فروشگاه اینترنتی با تیمی مجرب و متعهد به کیفیت برتر.' },
+        { name: 'keywords', content: 'ابرآوران, ابر آوران, درباره ابرآوران, شرکت ابرآوران, تیم ابرآوران, avarancloud, تاریخچه ابرآوران, ارزش‌های ابرآوران' },
+        { property: 'og:title', content: 'ابرآوران | درباره ما' },
+        { property: 'og:description', content: 'ابرآوران - آشنایی با ابرآوران، تیم متخصص ما و ارزش‌های سازمانی. ابرآوران ارائه دهنده خدمات حرفه‌ای طراحی سایت و فروشگاه اینترنتی با تیمی مجرب و متعهد به کیفیت برتر.' },
+        { property: 'og:url', content: 'https://avarancloud.ir/about-us' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:image', content: 'https://avarancloud.ir/cloud2.svg' },
+        { property: 'og:locale', content: 'fa_IR' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:title', content: 'ابرآوران | درباره ما' },
+        { name: 'twitter:description', content: 'درباره ابرآوران - طراحی و ساخت سایت های حرفه‌ای، فروشگاهی و سازمانی' },
+        { name: 'twitter:image', content: 'https://avarancloud.ir/cloud2.svg' },
+        { name: 'robots', content: 'index, follow' },
+        { name: 'canonical', content: 'https://avarancloud.ir/about-us' },
+      ],
+      link: [
+        { rel: 'canonical', href: 'https://avarancloud.ir/about-us' }
+      ],
+    });
+  },
+}
 </script>
   
 <style>
