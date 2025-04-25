@@ -32,6 +32,6 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.PORT }}
           script: |
-            sudo mkdir -p avarancloud /traefik-acme /traefik
             cd ~/avarancloud
-            sudo docker stack deploy -c deploy/traefik-stack.yaml traefik-stack --detach=true
+            sudo docker compose build
+            sudo docker compose up -d

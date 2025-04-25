@@ -82,7 +82,7 @@ func contactHandler(w http.ResponseWriter, r *http.Request) {
 func main() {
 	http.HandleFunc("/api/contact", contactHandler)
 
-	if err := http.ListenAndServe(":8000", nil); err != nil {
+	if err := http.ListenAndServe(":8005", nil); err != nil {
 		log.Fatalf("Server failed to start: %v", err)
 	}
 }

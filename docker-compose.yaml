@@ -1,0 +1,103 @@
+networks:
+  web_net:
+    name: web_net
+
+services:
+  traefik:
+    image: traefik:v3.3.4
+    restart: on-failure
+    container_name: traefik      
+    command:
+      - "--api.dashboard=true"
+      - "--api.insecure=false"
+      - "--entrypoints.http.address=:80"
+      - "--entrypoints.http.http.redirections.entrypoint.to=https"
+      - "--entrypoints.http.http.redirections.entrypoint.scheme=https"
+      - "--entrypoints.http.http.redirections.entrypoint.permanent=true"
+      - "--entrypoints.https.address=:443"
+      - "--entrypoints.https.http.tls.certresolver=mycert"
+      - "--entrypoints.https.http.tls.options=default"
+      - "--entrypoints.metrics.address=:8082"
+      - "--metrics.prometheus=true"
+      - "--metrics.prometheus.entryPoint=metrics"
+      - "--certificatesresolvers.mycert.acme.email=${TRAEFIK_CERT_EMAIL}"
+      - "--certificatesresolvers.mycert.acme.storage=/acme/acme.json"
+      - "--certificatesresolvers.mycert.acme.tlschallenge=true"
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
+      - "--providers.docker.network=web_net"
+      - "--providers.file.directory=/etc/traefik/dynamic"
+      - "--api=true"
+      - "--ping=true"
+      - "--log.level=INFO"
+      - "--log.filepath=/log-file.log"
+      - "--log.format=json"
+      - "--accesslog=true"
+      - "--accesslog.bufferingsize=100"
+    ports:
+      - "80:80"
+      - "443:443/tcp"
+      - "443:443/udp"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /ac_data/traefik:/traefik
+      - /ac_data/traefik-acme:/acme
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=web_net"
+      - "traefik.http.routers.traefik.entrypoints=http"
+      - "traefik.http.routers.traefik.rule=Host(`traefik.avarancloud.ir`)"
+      - "traefik.http.middlewares.web-auth.basicauth.users=${TRAEFIK_BASIC_AUTH_USER}:${TRAEFIK_BASIC_AUTH_PASSWORD_HASH}"
+      - "traefik.http.routers.traefik-secure.middlewares=web-auth"
+      - "traefik.http.routers.traefik-secure.entrypoints=https"
+      - "traefik.http.routers.traefik-secure.rule=Host(`traefik.avarancloud.ir`)"
+      - "traefik.http.routers.traefik-secure.service=api@internal"
+      - "traefik.http.routers.traefik-secure.tls=true"
+      - "traefik.http.routers.traefik-secure.tls.options=default"
+      - "traefik.http.routers.traefik-secure.tls.certresolver=mycert"
+      - "traefik.http.services.traefik.loadbalancer.server.port=8080"
+    networks:
+      - web_net
+
+  frontend:
+    build: ../frontend
+    restart: on-failure
+    container_name: frontend
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=web_net"
+      - "traefik.http.routers.frontend.entrypoints=http"
+      - "traefik.http.routers.frontend.rule=Host(`avarancloud.ir`)"
+      - "traefik.http.routers.frontend-secure.entrypoints=https"
+      - "traefik.http.routers.frontend-secure.rule=Host(`avarancloud.ir`)"
+      - "traefik.http.routers.frontend-secure.tls=true"
+      - "traefik.http.routers.frontend-secure.tls.options=default"
+      - "traefik.http.routers.frontend-secure.tls.certresolver=mycert"
+      - "traefik.http.routers.frontend-secure.middlewares=compress"
+      - "traefik.http.middlewares.compress.compress=true"
+      - "traefik.http.services.frontend.loadbalancer.server.port=3000"
+    depends_on:
+      - backend
+    networks:
+      - web_net
+
+  backend:
+    build: ../backend
+    restart: on-failure
+    container_name: backend
+    environment:
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+      - TELEGRAM_CHAT_ID=${TELEGRAM_CHAT_ID}
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=web_net"
+      - "traefik.http.routers.backend.entrypoints=http"
+      - "traefik.http.routers.backend.rule=(Host(`avarancloud.ir`) && PathPrefix(`/api`))"
+      - "traefik.http.routers.backend-secure.entrypoints=https"
+      - "traefik.http.routers.backend-secure.rule=(Host(`avarancloud.ir`) && PathPrefix(`/api`))"
+      - "traefik.http.routers.backend-secure.tls=true"
+      - "traefik.http.routers.backend-secure.tls.options=default"
+      - "traefik.http.routers.backend-secure.tls.certresolver=mycert"
+      - "traefik.http.services.backend.loadbalancer.server.port=8005"
+    networks:
+      - web_net
