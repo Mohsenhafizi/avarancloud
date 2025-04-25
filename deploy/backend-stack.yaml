@@ -25,7 +25,7 @@ services:
         - "traefik.http.middlewares.rate-limit.ratelimit.burst=3"
         - "traefik.http.middlewares.rate-limit.ratelimit.period=1m"
         - "traefik.http.middlewares.rate-limit.ratelimit.sourceCriterion.requestHeaderName=X-Forwarded-For"
-        - "traefik.http.services.backend.loadbalancer.server.port=8080" 
+        - "traefik.http.services.backend.loadbalancer.server.port=8000" 
     networks:
       - web_net
 
