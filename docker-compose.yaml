@@ -73,8 +73,11 @@ services:
       - "traefik.http.routers.frontend-secure.tls=true"
       - "traefik.http.routers.frontend-secure.tls.options=default"
       - "traefik.http.routers.frontend-secure.tls.certresolver=mycert"
-      - "traefik.http.routers.frontend-secure.middlewares=compress"
+      - "traefik.http.routers.frontend-secure.middlewares=compress,frontend-ratelimit"
       - "traefik.http.middlewares.compress.compress=true"
+      - "traefik.http.middlewares.frontend-ratelimit.ratelimit.average=300"
+      - "traefik.http.middlewares.frontend-ratelimit.ratelimit.period=1h"
+      - "traefik.http.middlewares.frontend-ratelimit.ratelimit.burst=300"
       - "traefik.http.services.frontend.loadbalancer.server.port=3000"
     depends_on:
       - backend
@@ -98,6 +101,10 @@ services:
       - "traefik.http.routers.backend-secure.tls=true"
       - "traefik.http.routers.backend-secure.tls.options=default"
       - "traefik.http.routers.backend-secure.tls.certresolver=mycert"
+      - "traefik.http.routers.backend-secure.middlewares=backend-ratelimit"
+      - "traefik.http.middlewares.backend-ratelimit.ratelimit.average=3"
+      - "traefik.http.middlewares.backend-ratelimit.ratelimit.period=1m"
+      - "traefik.http.middlewares.backend-ratelimit.ratelimit.burst=5"
       - "traefik.http.services.backend.loadbalancer.server.port=8005"
     networks:
       - web_net

@@ -60,7 +60,7 @@ func contactHandler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	messageText := fmt.Sprintf(
-		"**درخواست جدید**\nنام: %s\nشماره: %s\nپیام:\n%s",
+		"- درخواست جدید - \n\nنام: %s\nشماره: %s\nپیام:\n%s",
 		req.Name,
 		req.Phone,
 		req.Message,
