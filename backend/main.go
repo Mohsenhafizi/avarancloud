@@ -14,7 +14,7 @@ var chatID = os.Getenv("TELEGRAM_CHAT_ID")
 
 type ContactRequest struct {
 	Name    string `json:"name"`
-	Email   string `json:"email"`
+	Phone   string `json:"phone"`
 	Message string `json:"message"`
 }
 
@@ -60,9 +60,9 @@ func contactHandler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	messageText := fmt.Sprintf(
-		"New contact form submission:\nName: %s\nEmail: %s\nMessage: %s",
+		"**درخواست جدید**\nنام: %s\nشماره: %s\nپیام:\n%s",
 		req.Name,
-		req.Email,
+		req.Phone,
 		req.Message,
 	)
 
