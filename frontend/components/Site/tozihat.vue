@@ -7,9 +7,9 @@
                     <img src="../../assets/svg/shop.svg" class="w-40" alt="ساخت سایت فروشگاهی بدون ریسک مالی">
                 </div>
                 <div class="md:order-1 px-8 pt-7">
-                    <h2 class="text-lg lg:text-2xl text-right font-bold mb-6 text-purple-800">ساخت سایت فروشگاهی، بدون هزینه‌ی اولیه ممکنه</h2>
+                    <h2 class="text-lg lg:text-2xl text-right font-bold mb-6 text-purple-800">ساخت سایت حرفه‌ای، بدون هزینه‌ی اولیه</h2>
                     <p class="text-base text-right md:text-lg text-gray-700">
-                        ساختن سایت با فروشگاه‌ ساز اینترنتی ابرآوران، بدون هزینه اولیه است تا بتونید بدون ریسک مالی، سایت بسازید و فروش با سایت رو هم تجربه کنید.
+                        ساخت سایت با ابرآوران بدون هزینه اولیه است تا بتوانید بدون ریسک مالی، سایت خود را بسازید و از امکانات حرفه‌ای آن بهره‌مند شوید.
                     </p>
                 </div>
             </div>
@@ -18,9 +18,9 @@
         <div class="flex flex-col md:flex-row mb-10 lg:ml-30 lg:mr-70 justify-start" data-aos="fade-up">
             <div class="flex flex-col md:flex-row lg:px-12 lg:py-12 px-8 py-8 backdrop-blur-sm shadow-2xl rounded-lg">
                 <div class="pr-8 pt-7 pl-4 md:order-1">
-                    <h2 class="text-lg lg:text-2xl text-right font-bold mb-6 text-purple-800">صفر تا ۱۰۰ سایت با ماست</h2>
+                    <h2 class="text-lg lg:text-2xl text-right font-bold mb-6 text-purple-800">صفر تا ۱۰۰ ساخت سایت با ابرآوران</h2>
                     <p class="text-base text-right md:text-lg text-gray-700">
-                        با فروشگاه‌ساز آنلاین ابرآوران, یه سایت کامل با دامنه، انواع روش‌های ارسال و مدل‌های پرداخت، باشگاه مشتریان، هاست نامحدود و هر پیش‌نیاز دیگه‌ای که لازمه، می‌سازید و خیالتون از پشتیبانی اختصاصی ابرآوران راحته.
+                        با سایت‌ساز ابرآوران، یک سایت کامل با دامنه، هاست نامحدود، طراحی ریسپانسیو، بهینه‌سازی SEO و هر پیش‌نیاز دیگری که نیاز دارید، می‌سازید و از پشتیبانی اختصاصی ابرآوران بهره‌مند می‌شوید.
                     </p>
                 </div>
                 <div class="flex justify-center mt-2 md:mb-0">
@@ -35,9 +35,9 @@
                 <img src="../../assets/svg/companion.svg" class="w-34 md:w-60 2xl:w-40" alt="ساخت سایت با همراهی آن">
             </div>
                 <div class="px-8 pt-7 md:order-1">
-                    <h2 class="text-lg lg:text-2xl text-right font-bold mb-6 text-purple-800">بعد از ساخت سایت هم کنارتون هستیم</h2>
+                    <h2 class="text-lg lg:text-2xl text-right font-bold mb-6 text-purple-800">پشتیبانی کامل بعد از ساخت سایت</h2>
                     <p class="text-base text-right md:text-lg text-gray-700">
-                        بعد از ساخت سایت با سایت‌ساز دیجی‌کالا، با راهکارهای جذب و نگهداشت مخاطب هوای کسب‌وکارتون رو داریم. بدونید که با بسته‌های مکمل ابرآوران رونق سایتتون تضمین شده است.
+                        بعد از ساخت سایت با ابرآوران، با راهکارهای بهینه‌سازی و نگهداری سایت، هوای کسب‌وکار شما را داریم. با بسته‌های مکمل ابرآوران، موفقیت سایت شما تضمین شده است.
                     </p>
                 </div>
             </div>
@@ -46,9 +46,9 @@
         <div class="flex flex-col md:flex-row mb-10 lg:ml-30 lg:mr-70 justify-start" data-aos="fade-up">
             <div class="flex flex-col md:flex-row lg:px-12 lg:py-16 px-8 py-8 backdrop-blur-sm shadow-2xl rounded-lg">
                 <div class="pr-8 md:order-1">
-                    <h2 class="text-lg lg:text-2xl text-right font-bold mb-6 text-purple-800">نوع خدمات ما مساوی قدرت انتخاب شماست</h2>
+                    <h2 class="text-lg lg:text-2xl text-right font-bold mb-6 text-purple-800">انعطاف‌پذیری در انتخاب خدمات</h2>
                     <p class="text-base text-right md:text-lg text-gray-700">
-                        ابرآوران با پکیج‌های مختلف ساخت فروشگاه اینترنتی و انواع بسته‌های تکمیلی برای جذب و نگهداشت مخاطب، هر نیازی که کسب‌‌وکارتون داره رو پاسخ می‌ده. شما فقط بگید چی لازم دارید، بقیه‌اش با ابرآوران!
+                        ابرآوران با پکیج‌های مختلف ساخت سایت و انواع بسته‌های تکمیلی برای بهینه‌سازی و نگهداری سایت، هر نیازی که کسب‌وکار شما دارد را پاسخ می‌دهد. شما فقط بگویید چه می‌خواهید، بقیه با ابرآوران!
                     </p>
                 </div>
                 <div class="flex justify-center mt-4 md:mt-0">

@@ -41,12 +41,12 @@
                 <div class="cloud-corner-4"></div>
                 
                 <div class="flex justify-center md:order-2 md:ml-4 mb-4 md:mb-0">
-                    <img src="../../assets/svg/shop.svg" class="w-40" alt="فروشگاه ساز اینترنتی">
+                    <img src="../../assets/svg/shop.svg" class="w-40" alt="ابر ساز حرفه‌ای">
                 </div>
                 <div class="md:order-1 px-8 pt-7">
-                    <h2 class="text-lg lg:text-2xl text-right font-bold mb-6 text-purple-800">ساخت سایت فروشگاهی، بدون هزینه‌ی اولیه ممکنه</h2>
+                    <h2 class="text-lg lg:text-2xl text-right font-bold mb-6 text-purple-800">ساخت زیرساخت ابری، با ابرساز حرفه‌ای ابرآوران</h2>
                     <p class="text-base text-right md:text-lg text-gray-700">
-                        ساختن سایت با فروشگاه‌ ساز اینترنتی ابرآوران، بدون هزینه اولیه است تا بتونید بدون ریسک مالی، سایت بسازید و فروش با سایت رو هم تجربه کنید.
+                        با ابرساز ابرآوران، می‌توانید زیرساخت ابری خود را با امکانات پیشرفته‌ای مانند Kubernetes، Docker، و CI/CD بسازید. این پلتفرم به شما امکان می‌دهد تا برنامه‌های خود را به راحتی در محیط ابری مدیریت کنید.
                     </p>
                 </div>
             </div>
@@ -92,9 +92,9 @@
                 <div class="cloud-corner-4"></div>
                 
                 <div class="pr-8 pt-7 pl-4 md:order-1">
-                    <h2 class="text-lg lg:text-2xl text-right font-bold mb-6 text-purple-800">صفر تا ۱۰۰ سایت با ماست</h2>
+                    <h2 class="text-lg lg:text-2xl text-right font-bold mb-6 text-purple-800">مدیریت کامل زیرساخت ابری</h2>
                     <p class="text-base text-right md:text-lg text-gray-700">
-                        با فروشگاه‌ساز آنلاین ابرآوران, یه سایت کامل با دامنه، انواع روش‌های ارسال و مدل‌های پرداخت، باشگاه مشتریان، هاست نامحدود و هر پیش‌نیاز دیگه‌ای که لازمه، می‌سازید و خیالتون از پشتیبانی اختصاصی ابرآوران راحته.
+                        ابرساز ابرآوران به شما امکان می‌دهد تا زیرساخت ابری خود را با ابزارهای پیشرفته مدیریت کنید. از مانیتورینگ و لاگینگ گرفته تا مقیاس‌پذیری خودکار و مدیریت منابع، همه چیز در دستان شماست.
                     </p>
                 </div>
                 <div class="flex justify-center mt-2 md:mb-0">
@@ -146,9 +146,9 @@
                     <img src="../../assets/svg/companion.svg" class="w-34 md:w-60 2xl:w-40" alt="سایت ساز">
                 </div>
                 <div class="px-8 pt-7 md:order-1">
-                    <h2 class="text-lg lg:text-2xl text-right font-bold mb-6 text-purple-800">بعد از ساخت سایت هم کنارتون هستیم</h2>
+                    <h2 class="text-lg lg:text-2xl text-right font-bold mb-6 text-purple-800">امنیت و پشتیبانی ۲۴/۷</h2>
                     <p class="text-base text-right md:text-lg text-gray-700">
-                        بعد از ساخت سایت با سایت‌ساز دیجی‌کالا، با راهکارهای جذب و نگهداشت مخاطب هوای کسب‌وکارتون رو داریم. بدونید که با بسته‌های مکمل ابرآوران رونق سایتتون تضمین شده است.
+                        با ابرساز ابرآوران، امنیت زیرساخت ابری شما تضمین شده است. سیستم‌های امنیتی پیشرفته، پشتیبان‌گیری خودکار و پشتیبانی ۲۴/۷ از جمله ویژگی‌های این سرویس هستند.
                     </p>
                 </div>
             </div>
@@ -194,9 +194,9 @@
                 <div class="cloud-corner-4"></div>
                 
                 <div class="pr-8 md:order-1">
-                    <h2 class="text-lg lg:text-2xl text-right font-bold mb-6 text-purple-800">نوع خدمات ما مساوی قدرت انتخاب شماست</h2>
+                    <h2 class="text-lg lg:text-2xl text-right font-bold mb-6 text-purple-800">انعطاف‌پذیری و مقیاس‌پذیری</h2>
                     <p class="text-base text-right md:text-lg text-gray-700">
-                        ابرآوران با پکیج‌های مختلف ساخت فروشگاه اینترنتی و انواع بسته‌های تکمیلی برای جذب و نگهداشت مخاطب، هر نیازی که کسب‌‌وکارتون داره رو پاسخ می‌ده. شما فقط بگید چی لازم دارید، بقیه‌اش با ابرآوران!
+                        ابرساز ابرآوران به شما امکان می‌دهد تا زیرساخت ابری خود را بر اساس نیازهای خود تنظیم کنید. از مقیاس‌پذیری خودکار گرفته تا مدیریت منابع، همه چیز در کنترل شماست.
                     </p>
                 </div>
                 <div class="flex justify-center mt-4 md:mt-0">

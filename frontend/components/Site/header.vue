@@ -5,20 +5,20 @@
           <div class="md:w-1/2 mx-10 md:mx-20 relative">
             <div class="md:mt-10">
               <h1 class="text-center text-purple-950 md:text-right text-3xl md:text-5xl 2xl:text-6xl font-bold block" data-aos="fade-up">
-                  فروشگاه‌ساز ابرآوران,
-                  سایت‌ساز کسب‌وکار شما 
+                  سایت‌ساز حرفه‌ای ابرآوران,
+                  راه‌حل جامع طراحی وب‌سایت
               </h1>    
               <span class="absolute top-18 sm:top-18 mx-10 flex -z-10" data-aos="fade-up">
-                <img class="w-80" src="../../assets/svg/vector-7.svg" alt="ساخت سایت فروشگاهی با تمام امکانات">
+                <img class="w-80" src="../../assets/svg/vector-7.svg" alt="ساخت سایت حرفه‌ای با تمام امکانات">
               </span>
               <h2 class="text-center md:text-right text-lg md:text-xl 2xl:text-2xl py-10" data-aos="fade-up">
-                ساخت سایت فروشگاهی با تمام امکانات لازم برای مدیریت سایت و سفارشات مانند
-                خدمات پرداخت و ارسال ابزارهای جذب ترافیک و مشتری و افزایش فروش تضمینی
+                ساخت سایت حرفه‌ای با تمام امکانات مورد نیاز برای مدیریت محتوا، بهینه‌سازی موتورهای جستجو،
+                طراحی ریسپانسیو و پشتیبانی فنی 24/7 برای موفقیت کسب و کار شما
               </h2>
               <div class="flex justify-center md:justify-start"> 
-              <div class="shadow__btn flex justify-center w-40">
-                    ثبت نام
-              </div>
+              <NuxtLink to="/about-us#contact-us" class="shadow__btn flex justify-center w-40">
+                    ارتباط با ما
+              </NuxtLink>
               </div>
             </div>
           </div>

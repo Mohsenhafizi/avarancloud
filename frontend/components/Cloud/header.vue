@@ -5,27 +5,26 @@
           <div class="md:w-1/2 mx-10 md:mx-20 relative">
             <div class="md:mt-10">
               <h1 class="text-center text-purple-950 md:text-right text-3xl md:text-5xl 2xl:text-6xl font-bold block" data-aos="fade-up">
-                  فروشگاه‌ساز ابرآوران,
-                  سایت‌ساز کسب‌وکار شما 
+                  ابرساز ابرآوران,
+                  راهکار ابری حرفه‌ای شما 
               </h1>    
               <span class="absolute top-18 sm:top-18 mx-10 flex -z-10" data-aos="fade-up">
-                <img class="w-80" src="../../assets/svg/vector-7.svg" alt="ساخت سایت باابزار های جذب ترافیک">
+                <img class="w-80" src="../../assets/svg/vector-7.svg" alt="راهکارهای ابری حرفه‌ای">
               </span>
               <h2 class="text-center md:text-right text-lg md:text-xl 2xl:text-2xl py-10" data-aos="fade-up">
-                ساخت سایت فروشگاهی با تمام امکانات لازم برای مدیریت سایت و سفارشات مانند
-                خدمات پرداخت و ارسال ابزارهای جذب ترافیک و مشتری و افزایش فروش تضمینی
+                ارائه خدمات ابری با امکانات پیشرفته برای میزبانی و مدیریت برنامه‌های وب، با قابلیت‌های مقیاس‌پذیری، امنیت بالا و پشتیبانی فنی حرفه‌ای
               </h2>
               <div class="flex justify-center md:justify-start"> 
-              <div class="shadow__btn flex justify-center w-40">
-                    ثبت نام
-              </div>
+              <NuxtLink to="/about-us#contact-us" class="shadow__btn flex justify-center w-40">
+                    ارتباط با ما
+              </NuxtLink>
               </div>
             </div>
           </div>
           
           
           <div class="md:w-1/2 flex md:justify-end justify-center mx-5">
-            <img class="w-full max-w-lg" src="../../assets/svg/shopping.svg" alt="ساخت سایت فروشگاهی با افزایش فروش">
+            <img class="w-full max-w-lg relative md:left-10" src="../../assets/svg/cloud-builder.svg" alt="ساخت سایت فروشگاهی با افزایش فروش">
           </div>
         </div>
       </div>

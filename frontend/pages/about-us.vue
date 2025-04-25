@@ -152,7 +152,6 @@
       <div id="contact-us">
       <AboutusContact />
       </div>
-      <AboutusNewsletter />
       <AboutusFooter />
       <EndFooter />
       </div>

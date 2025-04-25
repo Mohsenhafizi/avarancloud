@@ -112,9 +112,9 @@
     <div class="card_title__container">
       <span class="card_title">بسته نرم افزار ابری</span>
         <p class="card_paragraph">
-          اگر نیازمند ساخت یک نرم افزار تحت ابر (cloud-native) خاص هستید این بسته را به شما پیشنهاد میکنم
+          راهکار جامع برای توسعه و میزبانی برنامه‌های ابری با معماری microservices
           <br>
-           مناسب برای Paas و Saas
+          مناسب برای PaaS و SaaS با قابلیت‌های پیشرفته DevOps
         </p>
     </div>
     <NuxtLink to="/about-us#contact-us" @click="setSource('abrafzar')" class="click-to-call"> تماس بگیرید </NuxtLink>
@@ -126,7 +126,7 @@
     <div class="card_title__container">
         <span class="card_title">بسته ابر هوشمند</span>
         <p class="card_paragraph">
-          مناسب برای زیرساخت های مجهز به نرم افزار های مدل هوش مصنوعی و اجرا و مقیاس پذیر کردن آن(MLOps)
+          زیرساخت ابری پیشرفته برای برنامه‌های هوش مصنوعی و یادگیری ماشین با قابلیت‌های MLOps و مقیاس‌پذیری خودکار
         </p>
     </div>
     <NuxtLink to="/about-us#contact-us" @click="setSource('hoshabr')" class="click-to-call"> تماس بگیرید </NuxtLink>
@@ -139,9 +139,7 @@
     <div class="card_title__container">
         <span class="card_title">بسته ابر روان</span>
         <p class="card_paragraph">
-          15 تا 38 تومان به همراه پشتیبانی فنی سطح پیشرفته (5 تا 10 تومان ماهانه):
-          <br>
-          مناسب برای برنامه‌های خدماتی متوسط با نیاز به زیرساخت‌های پویا و افزایش قابلیت‌های نظارتی
+          راهکار ابری مقرون به صرفه برای کسب و کارهای متوسط با پشتیبانی فنی پیشرفته و قابلیت‌های نظارتی
         </p>
     </div>
     <hr class="line" />
@@ -389,7 +387,7 @@
     <div class="card_title__container">
         <span class="card_title">بسته تکه ابر</span>
         <p class="card_paragraph">
-       اگر فقط نیازمند یک یا چند مورد از این ده ها مورد دیگر بسته ها هستید، این بسته را انتخاب کنید
+          خدمات ابری سفارشی برای نیازهای خاص کسب و کار شما با امکان انتخاب و ترکیب سرویس‌های مورد نیاز
         </p>
     </div>
     <NuxtLink to="/about-us#contact-us" @click="setSource('tekeabr')" class="click-to-call"> تماس بگیرید </NuxtLink>
@@ -467,7 +465,7 @@
     <div class="card_title__container">
         <span class="card_title">بسته تکه ابر</span>
         <p class="card_paragraph">
-          اگر فقط نیازمند یک یا چند مورد از این ده ها مورد دیگر بسته ها هستید، این بسته را انتخاب کنید.
+          خدمات ابری سفارشی برای نیازهای خاص کسب و کار شما با امکان انتخاب و ترکیب سرویس‌های مورد نیاز
         </p>
     </div>
     <NuxtLink to="/about-us#contact-us" @click="setSource('tekeabr')" class="click-to-call"> تماس بگیرید </NuxtLink>
@@ -479,7 +477,7 @@
     <div class="card_title__container">
         <span class="card_title">بسته ابر هوشمند</span>
         <p class="card_paragraph">
-          مناسب برای زیرساخت های مجهز به نرم افزار های مدل هوش مصنوعی و اجرا و مقیاس پذیر کردن آن(MLOps)
+          زیرساخت ابری پیشرفته برای برنامه‌های هوش مصنوعی و یادگیری ماشین با قابلیت‌های MLOps و مقیاس‌پذیری خودکار
         </p>
     </div>
     <NuxtLink to="/about-us#contact-us" @click="setSource('hoshabr')" class="click-to-call"> تماس بگیرید </NuxtLink>
@@ -491,7 +489,9 @@
     <div class="card_title__container">
       <span class="card_title">بسته نرم افزار ابری</span>
         <p class="card_paragraph">
-          اگر نیازمند ساخت یک نرم افزار تحت ابر (cloud-native) خاص هستید این بسته را به شما پیشنهاد میکنم
+          راهکار جامع برای توسعه و میزبانی برنامه‌های ابری با معماری microservices
+          <br>
+          مناسب برای PaaS و SaaS با قابلیت‌های پیشرفته DevOps
         </p>
     </div>
     <hr class="line" />

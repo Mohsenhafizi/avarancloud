@@ -1,12 +1,10 @@
 <template>
-      <div class="container-inner mx-10 lg:mx-40">
-        <p class="text-lg sm:text-xl pb-10">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
-  
-        <div class="flex justify-between items-center py-6">
-          <div class="w-full sm:w-1/2 px-8 py-8 sm:py-0 relative sm:top-8">
+      <div class="container-inner mx-10 lg:mx-40"> 
+        <div class="flex justify-between items-center pb-6">
+          <div class="w-full sm:w-1/2 hidden sm:flex px-8 py-8 sm:py-0 relative">
             <img src="~assets/svg/mind_map.svg" alt="browser" />
           </div>
-          <div class="w-1/2 px-8 hidden sm:flex justify-end">
+          <div class="w-1/2 px-8 hidden sm:flex justify-end relative sm:bottom-8">
             <img src="~assets/svg/code_review.svg" alt="mobile" />
           </div>
         </div>
