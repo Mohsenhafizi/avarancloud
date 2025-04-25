@@ -4,9 +4,10 @@
       <!-- تغییر متن heading بر اساس query parameter -->
       <div class="heading">{{ headingText }}</div>
       <form action="" class="form">
+        <input required class="input" name="fullname" id="fullname" placeholder="نام و نام خانوادگی خود را وارد کنید" />
         <input required class="input" name="phone" id="phone" placeholder="شماره خود را وارد کنید" />
         <div class="form-group pt-4">
-          <textarea class="textarea" required id="textarea" name="textarea" placeholder="متن خود را بنویسید:"></textarea>
+          <textarea class="textarea" required id="textarea" name="textarea" placeholder="متن و توضیحات خود را بنویسید"></textarea>
         </div>
         <input class="login-button" type="submit" value="ثبت" />
       </form>
