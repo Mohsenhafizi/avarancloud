@@ -3,13 +3,15 @@
     <div class="container">
       <!-- تغییر متن heading بر اساس query parameter -->
       <div class="heading">{{ headingText }}</div>
-      <form action="" class="form">
-        <input required class="input" name="fullname" id="fullname" placeholder="نام و نام خانوادگی خود را وارد کنید" />
-        <input required class="input" name="phone" id="phone" placeholder="شماره خود را وارد کنید" />
+      <form @submit.prevent="handleSubmit" class="form">
+        <input required class="input" v-model="formData.name" name="fullname" id="fullname" placeholder="نام و نام خانوادگی خود را وارد کنید" />
+        <input required class="input" v-model="formData.phone" name="phone" id="phone" placeholder="شماره خود را وارد کنید" />
         <div class="form-group pt-4">
-          <textarea class="textarea" required id="textarea" name="textarea" placeholder="متن و توضیحات خود را بنویسید"></textarea>
+          <textarea class="textarea" required v-model="formData.message" id="textarea" name="textarea" placeholder="متن و توضیحات خود را بنویسید"></textarea>
         </div>
-        <input class="login-button" type="submit" value="ثبت" />
+        <div v-if="error" class="error-message">{{ error }}</div>
+        <div v-if="success" class="success-message">{{ success }}</div>
+        <input class="login-button" type="submit" :value="isSubmitting ? 'در حال ارسال...' : 'ثبت'" :disabled="isSubmitting" />
       </form>
     </div>
   </div>
@@ -17,7 +19,7 @@
 
 <script lang="ts" setup>
 import { useState } from "#app";
-import { computed } from "vue"; // وارد کردن computed از vue
+import { computed, ref } from "vue";
 
 // تعریف وضعیت
 const source = useState("source", () => "");
@@ -44,6 +46,55 @@ const defaultHeading = "ارتباط ما";
 const headingText = computed(() => {
   return headingMap[source.value] || defaultHeading;
 });
+
+// فرم دیتا
+const formData = ref({
+  name: '',
+  phone: '',
+  message: ''
+});
+
+const error = ref('');
+const success = ref('');
+const isSubmitting = ref(false);
+
+// تابع ارسال فرم
+const handleSubmit = async () => {
+  try {
+    isSubmitting.value = true;
+    error.value = '';
+    success.value = '';
+
+    const response = await fetch('/api/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        name: formData.value.name,
+        phone: formData.value.phone,
+        message: formData.value.message
+      })
+    });
+
+    const data = await response.json();
+
+    if (!response.ok) {
+      throw new Error(data.message || 'خطا در ارسال پیام');
+    }
+
+    success.value = 'پیام شما با موفقیت ارسال شد';
+    formData.value = {
+      name: '',
+      phone: '',
+      message: ''
+    };
+  } catch (err) {
+    error.value = err instanceof Error ? err.message : 'خطا در ارسال پیام';
+  } finally {
+    isSubmitting.value = false;
+  }
+};
 </script>
 
 <style>
@@ -329,5 +380,24 @@ textarea {
   text-decoration: none;
   color: #0099ff;
   font-size: 9px;
+}
+
+.error-message {
+  color: #ff4444;
+  text-align: center;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.success-message {
+  color: #00C851;
+  text-align: center;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.login-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
 }
 </style>

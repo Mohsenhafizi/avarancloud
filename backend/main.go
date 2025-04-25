@@ -14,7 +14,7 @@ var chatID = os.Getenv("TELEGRAM_CHAT_ID")
 
 type ContactRequest struct {
 	Name    string `json:"name"`
-	Email   string `json:"email"`
+	Phone   string `json:"phone"`
 	Message string `json:"message"`
 }
 
