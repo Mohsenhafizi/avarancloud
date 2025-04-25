@@ -22,7 +22,7 @@ jobs:
         run: ssh-keyscan -p ${{ secrets.PORT }} -H ${{ secrets.HOST }} >> ~/.ssh/known_hosts
 
       - name: Deploy with rsync
-        run: rsync -avz --delete -e "ssh -p ${{ secrets.PORT }}" . ${{ secrets.USERNAME }}@${{ secrets.HOST }}:~/avarancloud
+        run: rsync -avz --delete --exclude='.env' -e "ssh -p ${{ secrets.PORT }}" ./ ${{ secrets.USERNAME }}@${{ secrets.HOST }}:/home/${{ secrets.USERNAME }}/avarancloud
 
       - name: Deploy
         uses: appleboy/ssh-action@master
