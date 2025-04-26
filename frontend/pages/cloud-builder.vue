@@ -151,6 +151,9 @@
         <div id="tozihat">
           <CloudTozihat />
         </div>
+        <div id="AS">
+          <CloudAS />
+        </div>
         <div id="packages">
           <CloudPackages />
         </div>

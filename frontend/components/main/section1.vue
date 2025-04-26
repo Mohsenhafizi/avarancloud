@@ -1,6 +1,6 @@
 <template>
   <div
-    class="color relative top-15 md:top-0 md:mx-38 md:h-[890px] lg:h-[970px] 2xl:h-[1000px] mt-5 md:mt-30 flex items-center justify-center min-h-screen bg-blue-50 md:rounded-3xl"
+    class="color relative top-15 md:top-0 md:mx-38 md:h-[890px] lg:h-[970px] 2xl:h-[1000px] md:mt-30 flex items-center justify-center min-h-screen bg-blue-50 md:rounded-3xl"
   >
     <div class="text-center p-8">
       <div class="mx-30 md:mt-40 lg:mt-60 sm:mx-20 md:mx-52 xl:mx-40 2xl:mx-34">
@@ -347,19 +347,19 @@ export default defineComponent({
 @keyframes bounce {
   0%,
   100% {
-    translate: 0px 36px;
+    translate: 0px 10px;
   }
   50% {
-    translate: 0px 46px;
+    translate: 0px 15px;
   }
 }
 @keyframes bounce2 {
   0%,
   100% {
-    translate: 0px 46px;
+    translate: 0px 15px;
   }
   50% {
-    translate: 0px 56px;
+    translate: 0px 20px;
   }
 }
 
@@ -377,10 +377,10 @@ export default defineComponent({
 @keyframes partciles {
   0%,
   100% {
-    translate: 0px 16px;
+    translate: 0px 8px;
   }
   50% {
-    translate: 0px 6px;
+    translate: 0px 3px;
   }
 }
 #particles {
@@ -850,6 +850,77 @@ export default defineComponent({
 
 .button:hover:before {
   bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
+}
+
+/* New animations */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Apply animations to elements */
+h1 {
+  animation: slideIn 0.8s ease-out;
+}
+
+h2 {
+  animation: slideIn 0.8s ease-out 0.2s backwards;
+}
+
+.faq-button {
+  animation: pulse 3s infinite;
+}
+
+.button {
+  animation: float 5s ease-in-out infinite;
+}
+
+img {
+  transition: transform 0.5s ease;
+}
+
+img:hover {
+  transform: scale(1.01);
+}
+
+/* Add hover effects */
+button {
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 </style>

@@ -1,7 +1,7 @@
 <template>
     <div class="newsletter bg-background-tertiary">
       <div class="container-inner mx-auto py-16 pb-8 text-center textl-xl">
-        <h2 class="text-2xl font-bold mb-8">به خبرنامهابرآوران بپیوندید</h2>
+        <h2 class="text-2xl font-bold mb-8">به خبرنامه ابرآوران بپیوندید</h2>
 
         <div class="w-4/5 mx-auto mb-8">
           <p class="mb-8 text-lg sm:text-xl">با عضویت در خبرنامه ما، از آخرین اخبار و به‌روزرسانی‌های پلتفرمابرآوران مطلع شوید و از مزایای ویژه‌ای که برای اعضای خبرنامه در نظر گرفته‌ایم بهره‌مند شوید.</p>

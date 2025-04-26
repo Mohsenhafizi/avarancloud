@@ -227,6 +227,124 @@ export default {
     }
 }
 
+/* انیمیشن‌های بهینه شده */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes cloudFloat {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* اعمال انیمیشن‌ها به المان‌ها */
+.cloud-shape {
+    animation: fadeIn 0.5s ease-out;
+}
+
+.cloud-shape img {
+    animation: fadeIn 0.5s ease-out;
+}
+
+.cloud-shape h2 {
+    animation: fadeIn 0.5s ease-out;
+}
+
+.cloud-shape p {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* انیمیشن hover برای باکس‌ها */
+.cloud-shape {
+    transition: transform 0.3s ease;
+}
+
+.cloud-shape:hover {
+    transform: translateY(-3px);
+}
+
+/* انیمیشن hover برای تصاویر */
+.cloud-shape img {
+    transition: transform 0.3s ease;
+}
+
+.cloud-shape:hover img {
+    transform: scale(1.02);
+}
+
+/* انیمیشن برای ابرها - بهینه شده */
+[class^="cloud-"] {
+    animation: cloudFloat 4s ease-in-out infinite;
+    will-change: transform;
+}
+
+/* تاخیر متفاوت برای هر ابر - کاهش تعداد تاخیرها */
+.cloud-top-1, .cloud-bottom-1, .cloud-left-1, .cloud-right-1 { animation-delay: 0s; }
+.cloud-top-2, .cloud-bottom-2, .cloud-left-2, .cloud-right-2 { animation-delay: 0.5s; }
+.cloud-top-3, .cloud-bottom-3, .cloud-left-3, .cloud-right-3 { animation-delay: 1s; }
+.cloud-top-4, .cloud-bottom-4, .cloud-left-4, .cloud-right-4 { animation-delay: 1.5s; }
+.cloud-top-5, .cloud-bottom-5, .cloud-left-5, .cloud-right-5 { animation-delay: 2s; }
+.cloud-top-6, .cloud-bottom-6 { animation-delay: 2.5s; }
+.cloud-top-7 { animation-delay: 3s; }
+
+/* بهینه‌سازی برای موبایل */
+@media (max-width: 768px) {
+    [class^="cloud-"] {
+        animation: none;
+    }
+    
+    .cloud-shape {
+        animation: fadeIn 0.5s ease-out;
+    }
+}
+
+/* انیمیشن‌های جدید */
+@keyframes floatIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes glowPulse {
+    0% {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    }
+    50% {
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    }
+    100% {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    }
+}
+
+@keyframes rotateIn {
+    from {
+        opacity: 0;
+        transform: rotate(-10deg) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: rotate(0) scale(1);
+    }
+}
+
 /* تنظیمات responsive برای تمام اندازه‌های نمایش */
 /* موبایل کوچک - تا 375px */
 @media (max-width: 375px) {

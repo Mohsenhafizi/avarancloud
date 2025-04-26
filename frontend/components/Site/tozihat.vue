@@ -78,6 +78,60 @@ export default {
         max-width: 90%;
     }
 }
+
+/* انیمیشن‌های بهینه شده */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* اعمال انیمیشن‌ها به المان‌ها */
+.backdrop-blur-sm {
+    animation: fadeIn 0.5s ease-out;
+}
+
+.backdrop-blur-sm img {
+    animation: fadeIn 0.5s ease-out;
+}
+
+.backdrop-blur-sm h2 {
+    animation: slideUp 0.5s ease-out;
+}
+
+.backdrop-blur-sm p {
+    animation: slideUp 0.5s ease-out;
+}
+
+/* انیمیشن hover برای باکس‌ها */
+.backdrop-blur-sm {
+    transition: transform 0.3s ease;
+}
+
+.backdrop-blur-sm:hover {
+    transform: translateY(-3px);
+}
+
+/* انیمیشن hover برای تصاویر */
+.backdrop-blur-sm img {
+    transition: transform 0.3s ease;
+}
+
+.backdrop-blur-sm:hover img {
+    transform: scale(1.02);
+}
 </style>
 
 
