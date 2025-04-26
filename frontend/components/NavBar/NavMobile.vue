@@ -9,23 +9,21 @@
             <use href="#bars-3"></use>
         </svg>
     </div>
-    <div class="font-bold">
-        avarancloud
-        <img class="inline-block w-12 h-12" src="../../assets/svg/cloud2.svg" alt="avaran">
+    <div class="font-bold absolute top-0 left-0">
+        <img class="relative right-2 w-[240px] h-[91px]" src="../../assets/photos/avaran-removebg-preview.png" alt="avaran">
     </div>
     </div>
     
     <!-- nav -->
     <div class="nav fixed top-0 bottom-0 right-0 w-64 pt-3 px-4 bg-white z-20 overflow-y-auto transform transition-transform duration-500 ease-in-out" :class="{ 'translate-x-full': !navOpen, 'translate-x-0': navOpen }">
         <div class="flex items-center justify-between pb-5 mb-4 border-b border-b-gray-100">
-            <div class="flex pt-1 font-bold">
-                <img class="inline-block w-12 h-12" src="../../assets/svg/cloud2.svg" alt="cloud">
-                <span class="pt-3 pr-1">
-                avarancloud
-                </span>
+            <div class="mb-2">
+              <div class="absolute top-0 left-6">
+                <img class="relative left-3 w-[222px] h-[84px]" src="../../assets/photos/avaran-removebg-preview.png" alt="cloud">
+              </div>
             </div>
-            <div class="nav-Close-Btn" @click="closeNav">
-                <svg class="w-5 h-5 text-zinc-600">
+            <div class="relative top-3 nav-Close-Btn" @click="closeNav">
+                <svg class="w-6 h-6 text-zinc-600">
                     <use href="#x-mark-mini"></use>
                 </svg>
             </div>
@@ -75,6 +73,7 @@
                 <div class="submenu" :class="{ 'submenu--open': submenuOpens }">
                     <NuxtLink to="/cloud-builder#features" class="submenu__item--active my-1" @click="closeNav">ویژگی ها</NuxtLink>
                     <NuxtLink to="/cloud-builder#tozihat" class="submenu__item--active my-1" @click="closeNav">توضیحات</NuxtLink>
+                    <NuxtLink to="/cloud-builder#aaS" class="submenu__item--active my-1" @click="closeNav">مدل های ابرساز</NuxtLink>
                     <NuxtLink to="/cloud-builder#packages" class="submenu__item--active" @click="closeNav">بسته ها</NuxtLink>
                     <NuxtLink to="/cloud-builder#submenu" class="submenu__item--active my-2" @click="closeNav">سوالات متداول</NuxtLink>
                 </div>

@@ -2,8 +2,8 @@
 <header class="rtl fixed top-0 right-0 left-0 z-20 hidden md:flex justify-between items-center px-5 lg:px-10 
                py-5 h-24 w-[98%] lg:w-[90%] 2xl:w-[80%] mx-auto bg-white shadow-2xl rounded-b-3xl">
     <div class="flex items-center w-full justify-between">
-    <nav class="flex items-center gap-x-6 lg:gap-x-9 h-14">
-        <ul class="flex gap-x-3 items-center lg:gap-x-9 h-full text-lg 2xl:text-xl text-gray-800 tracking-tightest child:leading-[56px]">
+    <nav class="flex items-center gap-x-3 lg:gap-x-6 h-14">
+        <ul class="flex gap-x-2 items-center lg:gap-x-6 h-full text-lg 2xl:text-xl text-gray-800 tracking-tighest child:leading-[56px] whitespace-nowrap">
             <NuxtLink to="/" class="hover:bg-emerald-300 rounded-2xl p-3 transition-all flex items-center" active-class="active-link">
                 <div class="circle mx-2 w-3 h-3 mb-1 shadow-xl rounded-full transition-all duration-300"></div>
                 <li>
@@ -58,6 +58,7 @@
                     <ul class="text-right">
                         <li><NuxtLink to="/cloud-builder#features" class="submenu-item block py-2 px-4 text-gray-800 text-base">ویژگی ها</NuxtLink></li>
                         <li><NuxtLink to="/cloud-builder#tozihat" class="submenu-item block py-2 px-4 text-gray-800 text-base">توضیحات</NuxtLink></li>
+                        <li><NuxtLink to="/cloud-builder#aaS" class="submenu-item block py-2 px-4 text-gray-800 text-base">مدل های ابرساز</NuxtLink></li>
                         <li><NuxtLink to="/cloud-builder#packages" class="submenu-item block py-2 px-4 text-gray-800 text-base">بسته ها</NuxtLink></li>
                         <li><NuxtLink to="/cloud-builder#submenu" class="submenu-item block py-2 px-4 text-gray-800 text-base">سوالات متداول</NuxtLink></li>
                     </ul>
@@ -84,12 +85,9 @@
             </NuxtLink>
         </ul>
     </nav>
-    <div class="flex gap-x-4 lg:gap-x-10 xs:gap-x-10 font-bold">
-        <div class="flex text-xl items-center gap-x-2.5 text-sky-600">
-            avarancloud
-            <img class="w-14 h-16" src="../../assets/svg/cloud2.svg" alt="avarancloud">
+        <div class="relative top-[10px] right-4">
+            <img class="w-[315px] h-[120px]" src="../../assets/photos/avaran-removebg-preview.png" alt="avarancloud">
         </div>
-    </div>
     </div>
 </header>
 </template>

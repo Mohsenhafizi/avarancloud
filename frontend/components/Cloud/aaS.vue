@@ -5,67 +5,67 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         <div class="service-card">
             <h3 class="service-title">SaaS</h3>
-            <p class="service-description">نرم‌افزار به عنوان سرویس - ارائه نرم‌افزارهای کاربردی از طریق اینترنت</p>
+            <p class="service-description">نرم‌افزار به عنوان سرویس - ارائه نرم‌افزارهای کاربردی از طریق اینترنت (software as a service)</p>
         </div>
         <div class="service-card">
             <h3 class="service-title">FaaS</h3>
-            <p class="service-description">فرانت‌اند به عنوان سرویس - ارائه خدمات توسعه و میزبانی فرانت‌اند</p>
+            <p class="service-description">فرانت‌اند به عنوان سرویس - ارائه خدمات توسعه و میزبانی فرانت‌اند (frontend as a service)</p>
         </div>
         <div class="service-card">
             <h3 class="service-title">BaaS</h3>
-            <p class="service-description">بک‌اند به عنوان سرویس - ارائه خدمات توسعه و میزبانی بک‌اند</p>
+            <p class="service-description">بک‌اند به عنوان سرویس - ارائه خدمات توسعه و میزبانی بک‌اند (backend as a service)</p>
         </div>
         <div class="service-card">
             <h3 class="service-title">PaaS</h3>
-            <p class="service-description">پلتفرم به عنوان سرویس - ارائه محیط توسعه و اجرای برنامه‌ها</p>
+            <p class="service-description">پلتفرم به عنوان سرویس - ارائه محیط توسعه و اجرای برنامه‌ها (platform as a service)</p>
         </div>
         <div class="service-card">
             <h3 class="service-title">AaaS</h3>
-            <p class="service-description">هوش مصنوعی به عنوان سرویس - ارائه خدمات هوش مصنوعی و یادگیری ماشین</p>
+            <p class="service-description">هوش مصنوعی به عنوان سرویس - ارائه خدمات ایجنت های هوش مصنوعی (AI agent as a service)</p>
         </div>
         <div class="service-card">
             <h3 class="service-title">WaaS</h3>
-            <p class="service-description">وب به عنوان سرویس - ارائه خدمات میزبانی و مدیریت وب</p>
+            <p class="service-description">وب به عنوان سرویس - ارائه خدمات میزبانی و مدیریت وب (web as a service)</p>
         </div>
         <div class="service-card">
             <h3 class="service-title">CaaS</h3>
-            <p class="service-description">ابر به عنوان سرویس - ارائه خدمات زیرساخت ابری</p>
+            <p class="service-description">ابر به عنوان سرویس - ارائه خدمات زیرساخت ابری (cloud as a service)</p>
         </div>
         <div class="service-card">
             <h3 class="service-title">ITaaS</h3>
-            <p class="service-description">فناوری اطلاعات به عنوان سرویس - ارائه خدمات مدیریت IT</p>
+            <p class="service-description">فناوری اطلاعات به عنوان سرویس - ارائه خدمات مدیریت آی تی (IT as a service)</p>
         </div>
         <div class="service-card">
             <h3 class="service-title">KaaS</h3>
-            <p class="service-description">کوبرنتیز به عنوان سرویس - ارائه خدمات مدیریت کانتینر</p>
+            <p class="service-description">کوبرنتیز به عنوان سرویس - ارائه خدمات مدیریت کانتینر (kubernetes as a service)</p>
         </div>
         <div class="service-card">
             <h3 class="service-title">CIaaS</h3>
-            <p class="service-description">CI/CD به عنوان سرویس - ارائه خدمات یکپارچه‌سازی و تحویل مداوم</p>
+            <p class="service-description">CI/CD به عنوان سرویس - ارائه خدمات یکپارچه‌سازی و تحویل مداوم (CI/CD as a service)</p>
         </div>
         <div class="service-card">
             <h3 class="service-title">EaaS</h3>
-            <p class="service-description">اج به عنوان سرویس - ارائه خدمات محاسبات لبه</p>
+            <p class="service-description">اج به عنوان سرویس - ارائه خدمات محاسبات لبه (edge as a service)</p>
         </div>
         <div class="service-card">
             <h3 class="service-title">LaaS</h3>
-            <p class="service-description">ثبت رویداد به عنوان سرویس - ارائه خدمات مدیریت لاگ</p>
+            <p class="service-description"> لاگ به عنوان سرویس - ارائه خدمات جمع آوری و مدیریت لاگ (logging as a service)</p>
         </div>
         <div class="service-card">
             <h3 class="service-title">MaaS</h3>
-            <p class="service-description">مانیتورینگ به عنوان سرویس - ارائه خدمات نظارت و پایش</p>
+            <p class="service-description">مانیتورینگ به عنوان سرویس - ارائه خدمات نظارت و پایش (monitoring as a service)</p>
         </div>
         <div class="service-card">
             <h3 class="service-title">NaaS</h3>
-            <p class="service-description">شبکه به عنوان سرویس - ارائه خدمات زیرساخت شبکه</p>
+            <p class="service-description">شبکه به عنوان سرویس - ارائه خدمات زیرساخت شبکه (network as a service)</p>
         </div>
         <div class="service-card">
             <h3 class="service-title">RaaS</h3>
-            <p class="service-description">ربات به عنوان سرویس - ارائه خدمات اتوماسیون و رباتیک</p>
+            <p class="service-description">ربات به عنوان سرویس - ارائه خدمات اتوماسیون و یا ربات های تلگرام (robot as a service)</p>
         </div>
         <div class="service-card">
             <h3 class="service-title">XaaS</h3>
-            <p class="service-description">هر چیزی به عنوان سرویس - ارائه هر نوع سرویس قابل تصور</p>
+            <p class="service-description">هر چیزی به عنوان سرویس - ارائه هر نوع سرویس قابل تصور (anything as a service)</p>
         </div>
     </div>
 </div>

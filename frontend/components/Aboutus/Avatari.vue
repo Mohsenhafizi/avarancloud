@@ -11,13 +11,13 @@
 
         <div class="flex flex-col sm:flex-row justify-between items-center mb-16">
           <transition name="image-appear">
-            <div class="image-wrapper">
-              <img src="../../assets/photos/avatar.jpg" alt="avatar" class="profile-image" />
+            <div class="image-wrapper mr-2">
+              <img src="../../public/logo-avarancloud.png" alt="avatar" class="profile-image" />
               <div class="image-overlay"></div>
             </div>
           </transition>
           <div class="flex-1 text-lg sm:text-xl mr-6 content-section">
-            <p class="mb-4 content-text">آواران کلود یک پلتفرم پیشرفته برای مدیریت و بهینه‌سازی زیرساخت‌های ابری است. این پروژه با هدف ارائه راهکارهای نوین در زمینه محاسبات ابری و مدیریت منابع طراحی شده است.</p>
+            <p class="mb-4 content-text">ابرآوران  یک پلتفرم پیشرفته برای مدیریت و بهینه‌سازی زیرساخت‌های ابری است. این پروژه با هدف ارائه راهکارهای نوین در زمینه محاسبات ابری و مدیریت منابع طراحی شده است.</p>
             <p class="mb-4 content-text">تیم ما متشکل از متخصصان با تجربه در زمینه‌های مختلف فناوری اطلاعات، امنیت سایبری و مهندسی نرم‌افزار است. ما با استفاده از آخرین تکنولوژی‌ها و استانداردهای صنعت، خدمات خود را با بالاترین کیفیت ارائه می‌دهیم.</p>
             <p class="content-text">ماموریت ما کمک به سازمان‌ها و کسب‌وکارها برای بهینه‌سازی زیرساخت‌های IT و کاهش هزینه‌های عملیاتی است.</p>
           </div>
@@ -113,13 +113,17 @@ export default {
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .profile-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
   transition: all 0.5s ease;
+  padding: 10px;
 }
 
 .image-overlay {

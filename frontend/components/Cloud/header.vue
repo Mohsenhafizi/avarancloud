@@ -11,10 +11,10 @@
               <span class="absolute top-18 sm:top-18 mx-10 flex -z-10" data-aos="fade-up">
                 <img class="w-80" src="../../assets/svg/vector-7.svg" alt="راهکارهای ابری حرفه‌ای">
               </span>
-              <h2 class="text-center md:text-right text-lg md:text-xl 2xl:text-2xl py-10 animate-text" data-aos="fade-up" data-aos-delay="600">
+              <h2 class="text-center md:text-right text-lg md:text-xl 2xl:text-2xl pt-8 pb-4 md:py-10 animate-text" data-aos="fade-up" data-aos-delay="600">
                 ارائه خدمات ابری با امکانات پیشرفته برای میزبانی و مدیریت برنامه‌های وب، با قابلیت‌های مقیاس‌پذیری، امنیت بالا و پشتیبانی فنی حرفه‌ای
               </h2>
-              <div class="flex justify-center md:justify-start" data-aos="zoom-in" data-aos-delay="800"> 
+              <div class="mb-3 flex justify-center md:justify-start" data-aos="zoom-in" data-aos-delay="800"> 
                 <NuxtLink to="/about-us#contact-us" class="shadow__btn flex justify-center w-40 pulse-button">
                     ارتباط با ما
                 </NuxtLink>

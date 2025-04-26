@@ -10,15 +10,14 @@
         data-aos="fade-up"
       >
       <span class="2xl:flex text-purple-950 2xl:justify-center z-10">
-        <h1 class="">ابرآوران سوپرسرویس آنلاین کسب‌وکارها</h1>
+        <h1 class="">ابرآوران - خدمات حرفه‌ای وب و دیجیتال</h1>
         <span class="absolute top-18 sm:top-13 mx-10 flex -z-10">
-        <img class="w-80" src="../../assets/svg/vector-7.svg" alt="ابرآوران - طراحی سایت و خدمات وب">
+        <img class="w-80" src="../../assets/svg/vector-7.svg" alt="ابرآوران - خدمات وب و دیجیتال">
         </span>
       </span>
       </h1>
       <h2 class="text-lg md:text-xl 2xl:text-2xl pb-10 px-10">
-        <strong>ابرآوران</strong> ارائه دهنده خدمات طراحی سایت تخصصی و فروشگاهی با تمام امکانات لازم برای مدیریت سایت و سفارشات مانند
-        خدمات پرداخت و ارسال، ابزارهای جذب ترافیک و مشتری و افزایش فروش تضمینی<br />
+        <strong>ابرآوران</strong> ارائه دهنده خدمات جامع طراحی سایت، فروشگاه آنلاین و سئو با پشتیبانی کامل از مدیریت محتوا، پرداخت آنلاین، سیستم ارسال و ابزارهای پیشرفته بازاریابی دیجیتال<br />
         <span class="relative top-4 font-bold">ابرآوران، همراه کسب و کار شما</span>
       </h2>
       </div>
