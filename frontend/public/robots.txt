@@ -1,0 +1,23 @@
+# robots.txt for avarancloud.com
+User-agent: *
+Allow: /
+
+# Allow all bots to access the site
+User-agent: Googlebot
+Allow: /
+User-agent: Googlebot-Image
+Allow: /
+User-agent: Googlebot-Mobile
+Allow: /
+User-agent: Googlebot-News
+Allow: /
+User-agent: Bingbot
+Allow: /
+User-agent: Yandex
+Allow: /
+
+# Crawl delay
+Crawl-delay: 1
+
+# Sitemaps
+Sitemap: https://avarancloud.com/sitemap.xml 

@@ -164,26 +164,70 @@ import { useHead } from '@vueuse/head';
 export default{
     setup() {
     useHead({
-      title: 'ابرآوران | درباره ما',
+      title: 'درباره ابرآوران | تیم متخصص طراحی سایت و فروشگاه اینترنتی',
       meta: [
-        { name: 'description', content: 'ابرآوران - آشنایی با ابرآوران، تیم متخصص ما و ارزش‌های سازمانی. ابرآوران ارائه دهنده خدمات حرفه‌ای طراحی سایت و فروشگاه اینترنتی با تیمی مجرب و متعهد به کیفیت برتر.' },
-        { name: 'keywords', content: 'ابرآوران, ابر آوران, درباره ابرآوران, شرکت ابرآوران, تیم ابرآوران, avarancloud, تاریخچه ابرآوران, ارزش‌های ابرآوران' },
-        { property: 'og:title', content: 'ابرآوران | درباره ما' },
-        { property: 'og:description', content: 'ابرآوران - آشنایی با ابرآوران، تیم متخصص ما و ارزش‌های سازمانی. ابرآوران ارائه دهنده خدمات حرفه‌ای طراحی سایت و فروشگاه اینترنتی با تیمی مجرب و متعهد به کیفیت برتر.' },
-        { property: 'og:url', content: 'https://avarancloud.ir/about-us' },
+        { name: 'description', content: 'ابرآوران گروهی از متخصصان طراحی سایت و توسعه وب با بیش از 10 سال تجربه در ارائه خدمات وب به کسب و کارها. ما با استفاده از جدیدترین تکنولوژی‌ها سایت‌های مدرن و کارآمد می‌سازیم.' },
+        { name: 'keywords', content: 'ابرآوران, تیم طراحی سایت, متخصصان طراحی وب, شرکت طراحی سایت, شرکت طراحی فروشگاه اینترنتی, توسعه دهندگان وب, طراحان UI/UX, خدمات دیجیتال مارکتینگ, سئو, تماس با ابرآوران, درباره ما' },
+        { property: 'og:title', content: 'درباره ابرآوران | تیم متخصص طراحی سایت و فروشگاه اینترنتی' },
+        { property: 'og:description', content: 'ابرآوران گروهی از متخصصان طراحی سایت و توسعه وب با بیش از 10 سال تجربه در ارائه خدمات وب به کسب و کارها. ما با استفاده از جدیدترین تکنولوژی‌ها سایت‌های مدرن و کارآمد می‌سازیم.' },
+        { property: 'og:url', content: 'https://avarancloud.com/about-us' },
         { property: 'og:type', content: 'website' },
-        { property: 'og:image', content: 'https://avarancloud.ir/cloud2.svg' },
-        { property: 'og:locale', content: 'fa_IR' },
+        { property: 'og:image', content: 'https://avarancloud.com/about-us-thumb.png' },
         { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:title', content: 'ابرآوران | درباره ما' },
-        { name: 'twitter:description', content: 'درباره ابرآوران - طراحی و ساخت سایت های حرفه‌ای، فروشگاهی و سازمانی' },
-        { name: 'twitter:image', content: 'https://avarancloud.ir/cloud2.svg' },
-        { name: 'robots', content: 'index, follow' },
-        { name: 'canonical', content: 'https://avarancloud.ir/about-us' },
+        { name: 'twitter:title', content: 'درباره ابرآوران | تیم متخصص طراحی سایت و فروشگاه اینترنتی' },
+        { name: 'twitter:description', content: 'ابرآوران گروهی از متخصصان طراحی سایت و توسعه وب با بیش از 10 سال تجربه' },
+        { name: 'canonical', content: 'https://avarancloud.com/about-us' },
       ],
       link: [
-        { rel: 'canonical', href: 'https://avarancloud.ir/about-us' }
+        { rel: 'canonical', href: 'https://avarancloud.com/about-us' }
       ],
+      script: [
+        {
+          innerHTML: `{
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "ابرآوران",
+            "url": "https://avarancloud.com",
+            "logo": "https://avarancloud.com/logo-avarancloud.png",
+            "description": "ابرآوران ارائه دهنده خدمات طراحی سایت و فروشگاه اینترنتی حرفه‌ای با امکانات کامل مدیریتی",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+98-XXX-XXX-XXXX",
+              "contactType": "customer service"
+            },
+            "sameAs": [
+              "https://www.instagram.com/avarancloud",
+              "https://www.linkedin.com/company/avarancloud",
+              "https://t.me/avarancloud"
+            ],
+            "address": {
+              "@type": "PostalAddress",
+              "addressCountry": "IR",
+              "addressLocality": "تهران",
+              "addressRegion": "تهران",
+              "postalCode": "XXXXXX",
+              "streetAddress": "تهران، خیابان XXXX، ساختمان XXXX"
+            },
+            "founder": {
+              "@type": "Person",
+              "name": "بنیانگذار ابرآوران"
+            },
+            "foundingDate": "2018",
+            "employee": [
+              {
+                "@type": "Person",
+                "name": "متخصص طراحی وب",
+                "jobTitle": "Front-end Developer"
+              },
+              {
+                "@type": "Person",
+                "name": "متخصص برنامه نویسی",
+                "jobTitle": "Back-end Developer"
+              }
+            ]
+          }`
+        }
+      ]
     });
   },
 }

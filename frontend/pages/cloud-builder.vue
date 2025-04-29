@@ -172,26 +172,56 @@
       name: 'CloudBuilder',
       setup() {
           useHead({
-              title: 'ابرآوران | ابرساز حرفه‌ای',
+              title: 'ابرساز ابرآوران | طراحی فروشگاه اینترنتی حرفه‌ای با امکانات کامل',
               meta: [
-                  { name: 'description', content: 'ابرساز ابرآوران - پلتفرم ابری برای میزبانی و مدیریت سایت و برنامه‌های وب با امکانات پیشرفته، بکاپ‌گیری خودکار، امنیت بالا و مقیاس‌پذیری آسان' },
-                  { name: 'keywords', content: 'ابرساز ابرآوران, ابر آوران, avarancloud, هاست ابری, میزبانی وب, میزبانی ابری, سرور مجازی, مقیاس‌پذیری, بکاپ خودکار' },
-                  { property: 'og:title', content: 'ابرآوران | ابرساز حرفه‌ای' },
-                  { property: 'og:description', content: 'ابرساز ابرآوران - پلتفرم ابری برای میزبانی و مدیریت سایت و برنامه‌های وب با امکانات پیشرفته، بکاپ‌گیری خودکار، امنیت بالا و مقیاس‌پذیری آسان' },
-                  { property: 'og:url', content: 'https://avarancloud.ir/cloud-builder' },
+                  { name: 'description', content: 'ابرساز ابرآوران - سرویس طراحی فروشگاه اینترنتی حرفه‌ای با امکانات کامل مدیریت محصولات، سبد خرید، پرداخت آنلاین، سیستم تخفیف و کوپن و بهینه‌سازی برای موتورهای جستجو' },
+                  { name: 'keywords', content: 'فروشگاه اینترنتی, فروشگاه آنلاین, ساخت فروشگاه اینترنتی, طراحی فروشگاه آنلاین, سایت فروشگاهی, ابرساز, ابرآوران, فروشگاه ساز, درگاه پرداخت آنلاین, مدیریت محصولات, سیستم فروش آنلاین, افزایش فروش اینترنتی, فروشگاه چندفروشنده, راه اندازی کسب و کار آنلاین, دیجیتال مارکتینگ, avarancloud, ecommerce' },
+                  { property: 'og:title', content: 'ابرساز ابرآوران | طراحی فروشگاه اینترنتی حرفه‌ای با امکانات کامل' },
+                  { property: 'og:description', content: 'ابرساز ابرآوران - سرویس طراحی فروشگاه اینترنتی حرفه‌ای با امکانات کامل مدیریت محصولات، سبد خرید، پرداخت آنلاین، سیستم تخفیف و کوپن و بهینه‌سازی برای موتورهای جستجو' },
+                  { property: 'og:url', content: 'https://avarancloud.com/cloud-builder' },
                   { property: 'og:type', content: 'website' },
-                  { property: 'og:image', content: 'https://avarancloud.ir/cloud2.svg' },
-                  { property: 'og:locale', content: 'fa_IR' },
+                  { property: 'og:image', content: 'https://avarancloud.com/cloud-builder-thumb.png' },
                   { name: 'twitter:card', content: 'summary_large_image' },
-                  { name: 'twitter:title', content: 'ابرآوران | ابرساز حرفه‌ای' },
-                  { name: 'twitter:description', content: 'ابرساز ابرآوران - پلتفرم ابری برای میزبانی و مدیریت سایت و برنامه‌های وب' },
-                  { name: 'twitter:image', content: 'https://avarancloud.ir/cloud2.svg' },
-                  { name: 'robots', content: 'index, follow' },
-                  { name: 'canonical', content: 'https://avarancloud.ir/cloud-builder' },
+                  { name: 'twitter:title', content: 'ابرساز ابرآوران | طراحی فروشگاه اینترنتی حرفه‌ای با امکانات کامل' },
+                  { name: 'twitter:description', content: 'ابرساز ابرآوران - سرویس طراحی فروشگاه اینترنتی حرفه‌ای با امکانات کامل' },
+                  { name: 'canonical', content: 'https://avarancloud.com/cloud-builder' },
               ],
               link: [
-                  { rel: 'canonical', href: 'https://avarancloud.ir/cloud-builder' }
+                  { rel: 'canonical', href: 'https://avarancloud.com/cloud-builder' }
               ],
+              script: [
+                  {
+                      innerHTML: `{
+                        "@context": "https://schema.org",
+                        "@type": "Product",
+                        "name": "ابرساز ابرآوران",
+                        "description": "سرویس طراحی فروشگاه اینترنتی حرفه‌ای با امکانات کامل فروش آنلاین",
+                        "brand": {
+                          "@type": "Brand",
+                          "name": "ابرآوران"
+                        },
+                        "offers": {
+                          "@type": "AggregateOffer",
+                          "lowPrice": "3000000",
+                          "highPrice": "15000000",
+                          "priceCurrency": "IRR",
+                          "offerCount": "3"
+                        },
+                        "review": {
+                          "@type": "Review",
+                          "reviewRating": {
+                            "@type": "Rating",
+                            "ratingValue": "4.9",
+                            "bestRating": "5"
+                          },
+                          "author": {
+                            "@type": "Person",
+                            "name": "فروشندگان آنلاین"
+                          }
+                        }
+                      }`
+                  }
+              ]
           });
       },
       data() {

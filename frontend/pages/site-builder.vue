@@ -179,26 +179,56 @@ export default {
   name: 'SiteBuilder',
   setup() {
     useHead({
-      title: 'ابرآوران | سایت ساز حرفه‌ای',
+      title: 'سایت ساز ابرآوران | طراحی سایت شخصی و شرکتی با امکانات حرفه‌ای',
       meta: [
-        { name: 'description', content: 'سایت ساز ابرآوران - ساخت سایت تخصصی و فروشگاهی با تمام امکانات لازم برای مدیریت سایت و سفارشات، خدمات پرداخت و ارسال، ابزارهای جذب ترافیک و مشتری' },
-        { name: 'keywords', content: 'سایت ساز ابرآوران, ابر آوران, avarancloud, ساخت سایت, طراحی سایت, سایت شخصی, سایت فروشگاهی, طراحی وب سایت' },
-        { property: 'og:title', content: 'ابرآوران | سایت ساز حرفه‌ای' },
-        { property: 'og:description', content: 'سایت ساز ابرآوران - ساخت سایت تخصصی و فروشگاهی با تمام امکانات لازم برای مدیریت سایت و سفارشات، خدمات پرداخت و ارسال، ابزارهای جذب ترافیک و مشتری' },
-        { property: 'og:url', content: 'https://avarancloud.ir/site-builder' },
+        { name: 'description', content: 'سایت ساز حرفه‌ای ابرآوران برای ساخت وب‌سایت‌های شخصی و شرکتی. استفاده از تکنولوژی‌های روز، طراحی واکنش‌گرا، سرعت بالا و بهینه‌سازی شده برای موتورهای جستجو' },
+        { name: 'keywords', content: 'سایت ساز, طراحی سایت شخصی, طراحی سایت شرکتی, سایت ساز ابرآوران, وب سایت حرفه ای, طراحی سایت ارزان, سایت رسپانسیو, سایت مدرن, ساخت وب سایت, سایت کسب و کار, وب سایت سریع, سایت سئو شده, avarancloud' },
+        { property: 'og:title', content: 'سایت ساز ابرآوران | طراحی سایت شخصی و شرکتی با امکانات حرفه‌ای' },
+        { property: 'og:description', content: 'سایت ساز حرفه‌ای ابرآوران برای ساخت وب‌سایت‌های شخصی و شرکتی. استفاده از تکنولوژی‌های روز، طراحی واکنش‌گرا، سرعت بالا و بهینه‌سازی شده برای موتورهای جستجو' },
+        { property: 'og:url', content: 'https://avarancloud.com/site-builder' },
         { property: 'og:type', content: 'website' },
-        { property: 'og:image', content: 'https://avarancloud.ir/cloud2.svg' },
-        { property: 'og:locale', content: 'fa_IR' },
+        { property: 'og:image', content: 'https://avarancloud.com/site-builder-thumb.png' },
         { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:title', content: 'ابرآوران | سایت ساز حرفه‌ای' },
-        { name: 'twitter:description', content: 'سایت ساز ابرآوران - ساخت سایت تخصصی و فروشگاهی با تمام امکانات لازم' },
-        { name: 'twitter:image', content: 'https://avarancloud.ir/cloud2.svg' },
-        { name: 'robots', content: 'index, follow' },
-        { name: 'canonical', content: 'https://avarancloud.ir/site-builder' },
+        { name: 'twitter:title', content: 'سایت ساز ابرآوران | طراحی سایت شخصی و شرکتی با امکانات حرفه‌ای' },
+        { name: 'twitter:description', content: 'سایت ساز حرفه‌ای ابرآوران برای ساخت وب‌سایت‌های شخصی و شرکتی' },
+        { name: 'canonical', content: 'https://avarancloud.com/site-builder' },
       ],
       link: [
-        { rel: 'canonical', href: 'https://avarancloud.ir/site-builder' }
+        { rel: 'canonical', href: 'https://avarancloud.com/site-builder' }
       ],
+      script: [
+        {
+          innerHTML: `{
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": "سایت ساز ابرآوران",
+            "description": "سرویس طراحی وب‌سایت‌های شخصی و شرکتی با امکانات حرفه‌ای",
+            "brand": {
+              "@type": "Brand",
+              "name": "ابرآوران"
+            },
+            "offers": {
+              "@type": "AggregateOffer",
+              "lowPrice": "1500000",
+              "highPrice": "7500000",
+              "priceCurrency": "IRR",
+              "offerCount": "3"
+            },
+            "review": {
+              "@type": "Review",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "4.8",
+                "bestRating": "5"
+              },
+              "author": {
+                "@type": "Person",
+                "name": "مشتریان ابرآوران"
+              }
+            }
+          }`
+        }
+      ]
     });
   },
   components: {
