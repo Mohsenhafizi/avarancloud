@@ -32,8 +32,8 @@
                     <div class="arrow-up"></div>
                     <div class="safe-area"></div>
                     <ul class="text-right">
+                      <li role="menuitem"><NuxtLink to="/site-builder#tozihat" class="submenu-item block py-2 px-4 text-gray-800 text-base" itemprop="url"><span itemprop="name">توضیحات</span></NuxtLink></li>
                         <li role="menuitem"><NuxtLink to="/site-builder#features" class="submenu-item block py-2 px-4 text-gray-800 text-base" itemprop="url"><span itemprop="name">ویژگی ها</span></NuxtLink></li>
-                        <li role="menuitem"><NuxtLink to="/site-builder#tozihat" class="submenu-item block py-2 px-4 text-gray-800 text-base" itemprop="url"><span itemprop="name">توضیحات</span></NuxtLink></li>
                         <li role="menuitem"><NuxtLink to="/site-builder#packages" class="submenu-item block py-2 px-4 text-gray-800 text-base" itemprop="url"><span itemprop="name">بسته ها</span></NuxtLink></li>
                         <li role="menuitem"><NuxtLink to="/site-builder#submenu" class="submenu-item block py-2 px-4 text-gray-800 text-base" itemprop="url"><span itemprop="name">سوالات متداول</span></NuxtLink></li>
                     </ul>
@@ -62,8 +62,8 @@
                     <div class="arrow-up"></div>
                     <div class="safe-area"></div>
                     <ul class="text-right">
+                      <li role="menuitem"><NuxtLink to="/cloud-builder#tozihat" class="submenu-item block py-2 px-4 text-gray-800 text-base" itemprop="url"><span itemprop="name">توضیحات</span></NuxtLink></li>
                         <li role="menuitem"><NuxtLink to="/cloud-builder#features" class="submenu-item block py-2 px-4 text-gray-800 text-base" itemprop="url"><span itemprop="name">ویژگی ها</span></NuxtLink></li>
-                        <li role="menuitem"><NuxtLink to="/cloud-builder#tozihat" class="submenu-item block py-2 px-4 text-gray-800 text-base" itemprop="url"><span itemprop="name">توضیحات</span></NuxtLink></li>
                         <li role="menuitem"><NuxtLink to="/cloud-builder#aaS" class="submenu-item block py-2 px-4 text-gray-800 text-base" itemprop="url"><span itemprop="name">مدل های ابرساز</span></NuxtLink></li>
                         <li role="menuitem"><NuxtLink to="/cloud-builder#packages" class="submenu-item block py-2 px-4 text-gray-800 text-base" itemprop="url"><span itemprop="name">بسته ها</span></NuxtLink></li>
                         <li role="menuitem"><NuxtLink to="/cloud-builder#submenu" class="submenu-item block py-2 px-4 text-gray-800 text-base" itemprop="url"><span itemprop="name">سوالات متداول</span></NuxtLink></li>

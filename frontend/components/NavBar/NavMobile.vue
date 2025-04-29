@@ -55,8 +55,8 @@
                     </span>
                 </div>
                 <div id="site-submenu" class="submenu" :class="{ 'submenu--open': submenuOpen }" role="menu" aria-labelledby="site-menu">
+                  <NuxtLink to="/site-builder#tozihat" class="submenu__item--active my-1" @click="navigateToSection('/site-builder#tozihat')" itemprop="url" role="menuitem"><span itemprop="name">توضیحات</span></NuxtLink>
                     <NuxtLink to="/site-builder#features" class="submenu__item--active my-1" @click="navigateToSection('/site-builder#features')" itemprop="url" role="menuitem"><span itemprop="name">ویژگی ها</span></NuxtLink>
-                    <NuxtLink to="/site-builder#tozihat" class="submenu__item--active my-1" @click="navigateToSection('/site-builder#tozihat')" itemprop="url" role="menuitem"><span itemprop="name">توضیحات</span></NuxtLink>
                     <NuxtLink to="/site-builder#packages" class="submenu__item--active" @click="navigateToSection('/site-builder#packages')" itemprop="url" role="menuitem"><span itemprop="name">بسته ها</span></NuxtLink>
                     <NuxtLink to="/site-builder#submenu" class="submenu__item--active my-2" @click="navigateToSection('/site-builder#submenu')" itemprop="url" role="menuitem"><span itemprop="name">سوالات متداول</span></NuxtLink>
                 </div>
@@ -75,8 +75,8 @@
                     </span>
                 </div>
                 <div id="cloud-submenu" class="submenu" :class="{ 'submenu--open': submenuOpens }" role="menu" aria-labelledby="cloud-menu">
+                  <NuxtLink to="/cloud-builder#tozihat" class="submenu__item--active my-1" @click="navigateToSection('/cloud-builder#tozihat')" itemprop="url" role="menuitem"><span itemprop="name">توضیحات</span></NuxtLink>
                     <NuxtLink to="/cloud-builder#features" class="submenu__item--active my-1" @click="navigateToSection('/cloud-builder#features')" itemprop="url" role="menuitem"><span itemprop="name">ویژگی ها</span></NuxtLink>
-                    <NuxtLink to="/cloud-builder#tozihat" class="submenu__item--active my-1" @click="navigateToSection('/cloud-builder#tozihat')" itemprop="url" role="menuitem"><span itemprop="name">توضیحات</span></NuxtLink>
                     <NuxtLink to="/cloud-builder#aaS" class="submenu__item--active my-1" @click="navigateToSection('/cloud-builder#aaS')" itemprop="url" role="menuitem"><span itemprop="name">مدل های ابرساز</span></NuxtLink>
                     <NuxtLink to="/cloud-builder#packages" class="submenu__item--active" @click="navigateToSection('/cloud-builder#packages')" itemprop="url" role="menuitem"><span itemprop="name">بسته ها</span></NuxtLink>
                     <NuxtLink to="/cloud-builder#submenu" class="submenu__item--active my-2" @click="navigateToSection('/cloud-builder#submenu')" itemprop="url" role="menuitem"><span itemprop="name">سوالات متداول</span></NuxtLink>
