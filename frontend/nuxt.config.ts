@@ -5,7 +5,6 @@ export default defineNuxtConfig({
     head: {
       htmlAttrs: {
         lang: 'fa',
-        dir: 'rtl',
       },
       title: 'ابرآوران | طراحی سایت و فروشگاه اینترنتی حرفه‌ای',
       link: [
