@@ -10,10 +10,10 @@
       <SubmenuItem class="w-full">
         <template #title>
           <span class="bg-gray-400 rounded-lg px-2 py-1 text-xs ml-1.5 sm:px-2 sm:py-0.5 sm:ml-2 md:px-2.5 md:py-0.5 md:ml-3 sm:text-sm">1.</span>
-          <span class="text-sm sm:text-base md:text-lg">چطور باید با ابرآوران سایت بسازم؟</span>
+          <span class="text-sm sm:text-base md:text-lg">چگونه می‌توانم از خدمات ابری ابرآوران استفاده کنم؟</span>
         </template>
         <template #content>
-          <p class="text-xs sm:text-sm md:text-base">وقتی در ابرآوران ثبت نام کنید پکیج کلیک براتون به صورت پیش فرض و کاملا رایگان فعال میشه و فقط کافیه 6 مرحله افتتاح فروشگاه رو تکمیل کنید تا سایت کسب و کارتون راه اندازی بشه</p>
+          <p class="text-xs sm:text-sm md:text-base">برای استفاده از خدمات ابری ابرآوران، کافیست با ما تماس بگیرید. کارشناسان ما پس از بررسی نیازهای شما، مناسب‌ترین پکیج ابری را پیشنهاد می‌دهند و در تمام مراحل راه‌اندازی و پشتیبانی در کنار شما خواهند بود.</p>
         </template>
       </SubmenuItem>
 
@@ -21,10 +21,10 @@
       <SubmenuItem class="w-full">
         <template #title>
           <span class="bg-gray-400 rounded-lg px-2 py-1 text-xs ml-1.5 sm:px-2 sm:py-0.5 sm:ml-2 md:px-2.5 md:py-0.5 md:ml-3 sm:text-sm">2.</span>
-          <span class="text-sm sm:text-base md:text-lg">آیا برای ساخت سایت با ابرآوران نیاز به دانش برنامه‌نویسی دارم؟</span>
+          <span class="text-sm sm:text-base md:text-lg">آیا خدمات ابری ابرآوران برای کسب و کارهای کوچک مناسب است؟</span>
         </template>
         <template #content>
-          <p class="text-xs sm:text-sm md:text-base">خیر، ابرآوران به گونه‌ای طراحی شده که هر کسی بدون نیاز به دانش فنی بتواند سایت خود را راه‌اندازی کند. رابط کاربری ساده و امکانات drag-and-drop به شما کمک می‌کند تا به راحتی سایت خود را بسازید.</p>
+          <p class="text-xs sm:text-sm md:text-base">بله، ابرآوران پکیج‌های متنوعی برای کسب و کارهای مختلف ارائه می‌دهد. از پکیج‌های پایه برای کسب و کارهای کوچک تا راهکارهای پیشرفته برای سازمان‌های بزرگ، همه نیازها را پوشش می‌دهیم.</p>
         </template>
       </SubmenuItem>
 
@@ -32,10 +32,10 @@
       <SubmenuItem class="w-full">
         <template #title>
           <span class="bg-gray-400 rounded-lg px-2 py-1 text-xs ml-1.5 sm:px-2 sm:py-0.5 sm:ml-2 md:px-2.5 md:py-0.5 md:ml-3 sm:text-sm">3.</span>
-          <span class="text-sm sm:text-base md:text-lg">هزینه استفاده از خدمات ابرآوران چقدر است؟</span>
+          <span class="text-sm sm:text-base md:text-lg">امنیت داده‌ها در سرویس‌های ابری ابرآوران چگونه است؟</span>
         </template>
         <template #content>
-          <p class="text-xs sm:text-sm md:text-base">ابرآوران پلن‌های مختلفی دارد که متناسب با نیازهای کسب و کارهای مختلف طراحی شده‌اند. پکیج کلیک به صورت رایگان ارائه می‌شود و پکیج‌های پیشرفته‌تر با امکانات بیشتر با قیمت‌های مقرون به صرفه در دسترس هستند.</p>
+          <p class="text-xs sm:text-sm md:text-base">امنیت داده‌ها در ابرآوران از بالاترین اولویت‌هاست. ما از آخرین تکنولوژی‌های امنیتی، رمزنگاری داده‌ها، پشتیبان‌گیری خودکار و سیستم‌های نظارتی پیشرفته استفاده می‌کنیم تا امنیت کامل داده‌های شما را تضمین کنیم.</p>
         </template>
       </SubmenuItem>
 
@@ -43,10 +43,10 @@
       <SubmenuItem class="w-full">
         <template #title>
           <span class="bg-gray-400 rounded-lg px-2 py-1 text-xs ml-1.5 sm:px-2 sm:py-0.5 sm:ml-2 md:px-2.5 md:py-0.5 md:ml-3 sm:text-sm">4.</span>
-          <span class="text-sm sm:text-base md:text-lg">آیا می‌توانم دامنه اختصاصی برای سایتم داشته باشم؟</span>
+          <span class="text-sm sm:text-base md:text-lg">آیا امکان مقیاس‌پذیری در سرویس‌های ابری ابرآوران وجود دارد؟</span>
         </template>
         <template #content>
-          <p class="text-xs sm:text-sm md:text-base">بله، در ابرآوران می‌توانید دامنه اختصاصی خود را ثبت کنید یا دامنه‌ای که قبلاً خریداری کرده‌اید را به سایت خود متصل کنید. این کار باعث می‌شود برند شما حرفه‌ای‌تر به نظر برسد.</p>
+          <p class="text-xs sm:text-sm md:text-base">بله، یکی از مزایای اصلی سرویس‌های ابری ابرآوران، مقیاس‌پذیری است. شما می‌توانید منابع مورد نیاز خود را بر اساس نیاز کسب و کارتان افزایش یا کاهش دهید، بدون اینکه نیاز به تغییرات زیرساختی داشته باشید.</p>
         </template>
       </SubmenuItem>
 
@@ -54,10 +54,10 @@
       <SubmenuItem class="w-full">
         <template #title>
           <span class="bg-gray-400 rounded-lg px-2 py-1 text-xs ml-1.5 sm:px-2 sm:py-0.5 sm:ml-2 md:px-2.5 md:py-0.5 md:ml-3 sm:text-sm">5.</span>
-          <span class="text-sm sm:text-base md:text-lg">آیا ابرآوران از فروشگاه آنلاین پشتیبانی می‌کند؟</span>
+          <span class="text-sm sm:text-base md:text-lg">پشتیبانی فنی ابرآوران چگونه است؟</span>
         </template>
         <template #content>
-          <p class="text-xs sm:text-sm md:text-base">بله، ابرآوران امکانات کاملی برای راه‌اندازی فروشگاه آنلاین ارائه می‌دهد. شما می‌توانید محصولات خود را اضافه کنید، قیمت‌گذاری کنید، موجودی انبار را مدیریت کنید و سفارشات را پیگیری کنید.</p>
+          <p class="text-xs sm:text-sm md:text-base">ابرآوران با تیم پشتیبانی فنی حرفه‌ای و 24/7 در خدمت شماست. کارشناسان ما آماده پاسخگویی به سوالات و رفع مشکلات شما هستند و در تمام مراحل استفاده از سرویس‌های ابری در کنار شما خواهند بود.</p>
         </template>
       </SubmenuItem>
 
@@ -65,10 +65,10 @@
       <SubmenuItem class="w-full">
         <template #title>
           <span class="bg-gray-400 rounded-lg px-2 py-1 text-xs ml-1.5 sm:px-2 sm:py-0.5 sm:ml-2 md:px-2.5 md:py-0.5 md:ml-3 sm:text-sm">6.</span>
-          <span class="text-sm sm:text-base md:text-lg">آیا سایت‌های ساخته شده با ابرآوران برای موبایل بهینه هستند؟</span>
+          <span class="text-sm sm:text-base md:text-lg">آیا امکان انتقال داده‌ها از سرویس‌های دیگر به ابرآوران وجود دارد؟</span>
         </template>
         <template #content>
-          <p class="text-xs sm:text-sm md:text-base">بله، تمام قالب‌های ابرآوران به صورت ریسپانسیو طراحی شده‌اند و با تمام دستگاه‌ها از جمله موبایل، تبلت و دسکتاپ سازگار هستند. این یعنی سایت شما روی هر دستگاهی به خوبی نمایش داده می‌شود.</p>
+          <p class="text-xs sm:text-sm md:text-base">بله، تیم فنی ابرآوران در انتقال داده‌ها و برنامه‌های شما از سرویس‌های دیگر به زیرساخت ابری ما کمک می‌کند. این فرآیند با کمترین اختلال در خدمات شما انجام می‌شود.</p>
         </template>
       </SubmenuItem>
 
@@ -76,10 +76,10 @@
       <SubmenuItem class="w-full">
         <template #title>
           <span class="bg-gray-400 rounded-lg px-2 py-1 text-xs ml-1.5 sm:px-2 sm:py-0.5 sm:ml-2 md:px-2.5 md:py-0.5 md:ml-3 sm:text-sm">7.</span>
-          <span class="text-sm sm:text-base md:text-lg">آیا می‌توانم سایتم را به شبکه‌های اجتماعی متصل کنم؟</span>
+          <span class="text-sm sm:text-base md:text-lg">آیا ابرآوران از برنامه‌های خاصی پشتیبانی می‌کند؟</span>
         </template>
         <template #content>
-          <p class="text-xs sm:text-sm md:text-base">بله، ابرآوران امکان اتصال سایت شما به شبکه‌های اجتماعی مختلف را فراهم می‌کند. شما می‌توانید دکمه‌های اشتراک‌گذاری را اضافه کنید و فید شبکه‌های اجتماعی خود را در سایت نمایش دهید.</p>
+          <p class="text-xs sm:text-sm md:text-base">ابرآوران از طیف گسترده‌ای از برنامه‌ها و پلتفرم‌ها پشتیبانی می‌کند. از برنامه‌های وب ساده تا برنامه‌های پیچیده با نیازهای خاص، همه می‌توانند روی زیرساخت ابری ما اجرا شوند.</p>
         </template>
       </SubmenuItem>
 

@@ -4,85 +4,88 @@
     <div class="overlay fixed inset-0 bg-black/60 bg-opacity-75 z-10 transition-opacity duration-500 ease-in-out" :class="{ 'opacity-0 invisible': !overlayVisible, 'opacity-100 visible': overlayVisible }" @click="closeOverlay"></div>
     <!-- nav Icon -->
     <div class="flex justify-between m-2">
-    <div class="nav-icon inline-block p-2" @click="openNav">
-        <svg class="w-6 h-6 text-zinc-700">
+    <div class="nav-icon inline-block p-2" @click="openNav" aria-label="Open menu">
+        <svg class="w-6 h-6 text-zinc-700" aria-hidden="true">
             <use href="#bars-3"></use>
         </svg>
     </div>
-    <div class="font-bold">
-        avarancloud
-        <img class="inline-block w-12 h-12" src="../../assets/svg/cloud2.svg" alt="avaran">
+    <div class="font-bold absolute top-0 left-0">
+        <img class="relative right-2 w-[240px] h-[91px]" src="../../assets/photos/avaran-removebg-preview.png" alt="avaran">
     </div>
     </div>
     
     <!-- nav -->
-    <div class="nav fixed top-0 bottom-0 right-0 w-64 pt-3 px-4 bg-white z-20 overflow-y-auto transform transition-transform duration-500 ease-in-out" :class="{ 'translate-x-full': !navOpen, 'translate-x-0': navOpen }">
+    <div class="nav fixed top-0 bottom-0 right-0 w-64 pt-3 px-4 bg-white z-20 overflow-y-auto transform transition-transform duration-500 ease-in-out" 
+         :class="{ 'translate-x-full': !navOpen, 'translate-x-0': navOpen }"
+         itemscope itemtype="https://schema.org/SiteNavigationElement"
+         role="navigation"
+         aria-label="Mobile Navigation">
         <div class="flex items-center justify-between pb-5 mb-4 border-b border-b-gray-100">
-            <div class="flex pt-1 font-bold">
-                <img class="inline-block w-12 h-12" src="../../assets/svg/cloud2.svg" alt="cloud">
-                <span class="pt-3 pr-1">
-                avarancloud
-                </span>
+            <div class="mb-2">
+              <div class="absolute top-0 left-6">
+                <img class="relative left-3 w-[222px] h-[84px]" src="../../assets/photos/avaran-removebg-preview.png" alt="cloud" itemprop="image">
+              </div>
             </div>
-            <div class="nav-Close-Btn" @click="closeNav">
-                <svg class="w-5 h-5 text-zinc-600">
+            <div class="relative top-3 nav-Close-Btn" @click="closeNav" aria-label="Close menu">
+                <svg class="w-6 h-6 text-zinc-600" aria-hidden="true">
                     <use href="#x-mark-mini"></use>
                 </svg>
             </div>
         </div>
     
         <div class="flex items-center mb-3 pr-2.5 h-10 rounded-md">
-            <NuxtLink to="/" class="flex items-center gap-x-2" active-class="active-link">
-                <div class="w-3 h-3 rounded-full border-2 border-green-500 bg-white"></div>
-                <span class="pt-1">صفحه اصلی</span>
+            <NuxtLink to="/" class="flex items-center gap-x-2" active-class="active-link" itemprop="url" @click="setActiveMenuItem('/')">
+                <div class="w-3 h-3 rounded-full border-2 border-green-500" :class="{'bg-green-500': activeMenuItem === '/'}"></div>
+                <span class="pt-1 text-black" itemprop="name">صفحه اصلی</span>
             </NuxtLink>
         </div>
     
         <ul class="text-zinc-600">
     
             <li class="mb-1">
-                <div class="flex items-center justify-between submenu-open-btn" @click="toggleSubmenu">
-                    <NuxtLink to="/site-builder" class="flex items-center gap-x-2 pr-2.5" active-class="active-link">
-                        <div class="w-3 h-3 rounded-full border-2 border-green-500 bg-white"></div>
-                          سایت ساز  
+                <div class="flex items-center justify-between submenu-open-btn" @click="toggleSubmenu" aria-expanded="false" aria-controls="site-submenu">
+                    <NuxtLink to="/site-builder" class="flex items-center gap-x-2 pr-2.5" active-class="active-link" itemprop="url" @click="setActiveMenuItem('/site-builder')">
+                        <div class="w-3 h-3 rounded-full border-2 border-green-500" :class="{'bg-green-500': activeMenuItem === '/site-builder'}"></div>
+                        <span itemprop="name">سایت ساز</span>
                     </NuxtLink>
                     <span class="">
-                        <svg class="w-4 h-4">
-                            <use xlink:href="#chevron-down-mini"></use>
+                        <svg class="w-4 h-4" aria-hidden="true">
+                            <use href="#chevron-down-mini"></use>
                         </svg>
                     </span>
                 </div>
-                <div class="submenu" :class="{ 'submenu--open': submenuOpen }">
-                    <NuxtLink to="/site-builder#features" class="submenu__item--active my-1" @click="closeNav">ویژگی ها</NuxtLink>
-                    <NuxtLink to="/site-builder#tozihat" class="submenu__item--active my-1" @click="closeNav">توضیحات</NuxtLink>
-                    <NuxtLink to="/site-builder#packages" class="submenu__item--active" @click="closeNav">بسته ها</NuxtLink>
-                    <NuxtLink to="/site-builder#submenu" class="submenu__item--active my-2" @click="closeNav">سوالات متداول</NuxtLink>
+                <div id="site-submenu" class="submenu" :class="{ 'submenu--open': submenuOpen }" role="menu" aria-labelledby="site-menu">
+                  <NuxtLink to="/site-builder#tozihat" class="submenu__item--active my-1" @click="navigateToSection('/site-builder#tozihat')" itemprop="url" role="menuitem"><span itemprop="name">توضیحات</span></NuxtLink>
+                    <NuxtLink to="/site-builder#features" class="submenu__item--active my-1" @click="navigateToSection('/site-builder#features')" itemprop="url" role="menuitem"><span itemprop="name">ویژگی ها</span></NuxtLink>
+                    <NuxtLink to="/site-builder#packages" class="submenu__item--active" @click="navigateToSection('/site-builder#packages')" itemprop="url" role="menuitem"><span itemprop="name">بسته ها</span></NuxtLink>
+                    <NuxtLink to="/site-builder#submenu" class="submenu__item--active my-2" @click="navigateToSection('/site-builder#submenu')" itemprop="url" role="menuitem"><span itemprop="name">سوالات متداول</span></NuxtLink>
                 </div>
             </li>
     
             <li class="mb-1">
-                <div class="flex items-center justify-between submenu-open-btn" @click="toggleSub">
-                    <NuxtLink to="/cloud-builder" class="flex items-center gap-x-2 pr-2.5" active-class="active-link">
-                        <div class="w-3 h-3 rounded-full border-2 border-green-500 bg-white"></div>
-                          ابر ساز  
+                <div class="flex items-center justify-between submenu-open-btn" @click="toggleSub" aria-expanded="false" aria-controls="cloud-submenu">
+                    <NuxtLink to="/cloud-builder" class="flex items-center gap-x-2 pr-2.5" active-class="active-link" itemprop="url" @click="setActiveMenuItem('/cloud-builder')">
+                        <div class="w-3 h-3 rounded-full border-2 border-blue-500" :class="{'bg-blue-500': activeMenuItem === '/cloud-builder'}"></div>
+                        <span itemprop="name">ابر ساز</span>
                     </NuxtLink>
                     <span class="">
-                        <svg class="w-4 h-4">
-                            <use xlink:href="#chevron-down-mini"></use>
+                        <svg class="w-4 h-4" aria-hidden="true">
+                            <use href="#chevron-down-mini"></use>
                         </svg>
                     </span>
                 </div>
-                <div class="submenu" :class="{ 'submenu--open': submenuOpens }">
-                    <NuxtLink to="/cloud-builder#features" class="submenu__item--active my-1" @click="closeNav">ویژگی ها</NuxtLink>
-                    <NuxtLink to="/cloud-builder#tozihat" class="submenu__item--active my-1" @click="closeNav">توضیحات</NuxtLink>
-                    <NuxtLink to="/cloud-builder#packages" class="submenu__item--active" @click="closeNav">بسته ها</NuxtLink>
-                    <NuxtLink to="/cloud-builder#submenu" class="submenu__item--active my-2" @click="closeNav">سوالات متداول</NuxtLink>
+                <div id="cloud-submenu" class="submenu" :class="{ 'submenu--open': submenuOpens }" role="menu" aria-labelledby="cloud-menu">
+                  <NuxtLink to="/cloud-builder#tozihat" class="submenu__item--active my-1" @click="navigateToSection('/cloud-builder#tozihat')" itemprop="url" role="menuitem"><span itemprop="name">توضیحات</span></NuxtLink>
+                    <NuxtLink to="/cloud-builder#features" class="submenu__item--active my-1" @click="navigateToSection('/cloud-builder#features')" itemprop="url" role="menuitem"><span itemprop="name">ویژگی ها</span></NuxtLink>
+                    <NuxtLink to="/cloud-builder#aaS" class="submenu__item--active my-1" @click="navigateToSection('/cloud-builder#aaS')" itemprop="url" role="menuitem"><span itemprop="name">مدل های ابرساز</span></NuxtLink>
+                    <NuxtLink to="/cloud-builder#packages" class="submenu__item--active" @click="navigateToSection('/cloud-builder#packages')" itemprop="url" role="menuitem"><span itemprop="name">بسته ها</span></NuxtLink>
+                    <NuxtLink to="/cloud-builder#submenu" class="submenu__item--active my-2" @click="navigateToSection('/cloud-builder#submenu')" itemprop="url" role="menuitem"><span itemprop="name">سوالات متداول</span></NuxtLink>
                 </div>
             </li>
             <li class="mb-4">
-                <NuxtLink to="/about-us" class="flex items-center gap-x-2 pr-2.5" active-class="active-link">
-                  <div class="w-3 h-3 rounded-full border-2 border-green-500 bg-transparent"></div>
-                  درباره ما
+                <NuxtLink to="/about-us" class="flex items-center gap-x-2 pr-2.5" active-class="active-link" itemprop="url" @click="setActiveMenuItem('/about-us')">
+                  <div class="w-3 h-3 rounded-full border-2 border-green-500" :class="{'bg-green-500': activeMenuItem === '/about-us'}"></div>
+                  <span itemprop="name">درباره ما</span>
                 </NuxtLink>
             </li>
             <li class="mb-4">
@@ -90,14 +93,15 @@
               to="/about-us#contact-us"
               class="flex items-center gap-x-2 pr-2.5"
               :class="{ 'active-link': isContactUsVisible }"
-              @click="isContactUsClicked = true"
+              @click="navigateToSection('/about-us#contact-us')"
               :key="'contact-us-link'"
+              itemprop="url"
             >
               <div
                 class="w-3 h-3 rounded-full border-2 border-green-500"
-                :class="{ 'bg-green-500': isContactUsVisible, 'bg-transparent': !isContactUsVisible }"
+                :class="{ 'bg-green-500': isContactUsVisible || activeMenuItem === '/about-us#contact-us', 'bg-transparent': !isContactUsVisible && activeMenuItem !== '/about-us#contact-us' }"
               ></div>
-              ارتباط با ما
+              <span itemprop="name">ارتباط با ما</span>
             </NuxtLink>
             </li>
         </ul>
@@ -106,9 +110,11 @@
 </template>
 <script lang="ts">
 import { defineComponent, ref, onMounted, onUnmounted } from 'vue';
+import { useRoute } from 'vue-router';
 
 export default defineComponent({
   setup() {
+    const route = useRoute();
     const navOpen = ref(false);
     const submenuOpen = ref(false);
     const submenuOpens = ref(false);
@@ -116,23 +122,47 @@ export default defineComponent({
     const isContactUsClicked = ref(false);
     const isContactUsVisible = ref(false);
     const observer = ref<IntersectionObserver | null>(null);
+    
+    // Track active menu items
+    const activeMenuItem = ref('');
 
     const openNav = () => {
       navOpen.value = true; // نوار کناری را باز می‌کند
       overlayVisible.value = true; // Overlay را فعال می‌کند
+      
+      // Update ARIA attributes for accessibility
+      const siteMenu = document.querySelector('.submenu-open-btn[aria-controls="site-submenu"]');
+      const cloudMenu = document.querySelector('.submenu-open-btn[aria-controls="cloud-submenu"]');
+      
+      if (siteMenu) siteMenu.setAttribute('aria-expanded', submenuOpen.value.toString());
+      if (cloudMenu) cloudMenu.setAttribute('aria-expanded', submenuOpens.value.toString());
     };
 
     const closeNav = () => {
-      navOpen.value = false; // نوار کناری را می‌بندد
-      overlayVisible.value = false; // Overlay را غیرفعال می‌کند
+      setTimeout(() => {
+        navOpen.value = false; // نوار کناری را می‌بندد
+        overlayVisible.value = false; // Overlay را غیرفعال می‌کند
+      }, 100); // Small delay to allow navigation to complete
     };
 
     const toggleSubmenu = () => {
       submenuOpen.value = !submenuOpen.value;
+      
+      // Update ARIA expanded attribute
+      const siteMenu = document.querySelector('.submenu-open-btn[aria-controls="site-submenu"]');
+      if (siteMenu) siteMenu.setAttribute('aria-expanded', submenuOpen.value.toString());
     };
 
     const toggleSub = () => {
       submenuOpens.value = !submenuOpens.value;
+      
+      // Update ARIA expanded attribute
+      const cloudMenu = document.querySelector('.submenu-open-btn[aria-controls="cloud-submenu"]');
+      if (cloudMenu) cloudMenu.setAttribute('aria-expanded', submenuOpens.value.toString());
+    };
+    
+    const setActiveMenuItem = (path: string) => {
+      activeMenuItem.value = path;
     };
 
     const closeOverlay = () => {
@@ -173,10 +203,42 @@ export default defineComponent({
         console.warn('بخش #contact-us در صفحه موجود نیست.');
       }
     };
-
+    
+    const navigateToSection = (path: string) => {
+      setActiveMenuItem(path);
+      closeNav();
+      
+      // If navigating to an anchor link, ensure proper scrolling
+      const isAnchorLink = path.includes('#');
+      if (isAnchorLink) {
+        setTimeout(() => {
+          const targetId = path.split('#')[1];
+          const targetElement = document.getElementById(targetId);
+          if (targetElement) {
+            // Get the position of the element relative to the viewport
+            const elementPosition = targetElement.getBoundingClientRect().top;
+            // Add current scroll position to get absolute position
+            const offsetPosition = elementPosition + window.pageYOffset;
+            // Subtract 100px offset to show section higher (adjust as needed)
+            const scrollPosition = offsetPosition - 100;
+            
+            // Scroll to the adjusted position
+            window.scrollTo({
+              top: scrollPosition,
+              behavior: 'smooth'
+            });
+          }
+        }, 300); // Give time for page to load/render
+      }
+    };
+    
+    // Set initial active menu based on route
     onMounted(() => {
       setupIntersectionObserver();
       document.addEventListener('click', handleClickOutside);
+      
+      // Set initial active menu item based on current route
+      activeMenuItem.value = route.path;
     });
 
     onUnmounted(() => {
@@ -198,6 +260,9 @@ export default defineComponent({
       closeOverlay,
       isContactUsClicked,
       isContactUsVisible,
+      activeMenuItem,
+      setActiveMenuItem,
+      navigateToSection
     };
   },
 });
@@ -206,8 +271,18 @@ export default defineComponent({
 <style>
 .submenu__item--active {
     position: relative;
-    color: #22c55e;
+    color: #3b82f6;
     padding-right: 0.625rem; /* 2.5 */
+}
+
+/* Site Builder submenu items should be green */
+#site-submenu .submenu__item--active {
+    color: #22c55e;
+}
+
+/* Cloud Builder submenu items should be blue */
+#cloud-submenu .submenu__item--active {
+    color: #3b82f6;
 }
 
 .submenu__item--active::after {
@@ -216,13 +291,22 @@ export default defineComponent({
     width: 4px;
     height: 4px;
     border-radius: 100px;
-    background-color: #22c55e;
+    background-color: #3b82f6;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     margin: auto;
-    /* background-color: rgb(234, 255, 192); */
+}
+
+/* Site Builder submenu dots should be green */
+#site-submenu .submenu__item--active::after {
+    background-color: #22c55e;
+}
+
+/* Cloud Builder submenu dots should be blue */
+#cloud-submenu .submenu__item--active::after {
+    background-color: #3b82f6;
 }
 
 .submenu {
@@ -248,53 +332,41 @@ export default defineComponent({
     transform: translateY(0);
 }
 
-.rtl{
-    direction: rtl;
+/* Accessibility styles for mobile navigation */
+.nav[role="navigation"] a:focus {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
 }
 
-/* استایل برای لینک فعال */
-.active-link div.rounded-full {
-    background-color: #22c55e;
+.nav[role="navigation"] a[href^="/site-builder"]:focus,
+.nav[role="navigation"] a[href^="/about-us"]:focus {
+    outline: 2px solid #22c55e;
+    outline-offset: 2px;
 }
 
-/* استایل برای هاور روی لینک‌ها */
-.nav a:hover div.rounded-full {
-    background-color: rgba(34, 197, 94, 0.3);
+.nav[role="navigation"] a[href^="/cloud-builder"]:focus {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
 }
 
-/* استایل برای منوی سایت ساز */
-[href^="/site-builder"] {
-    color: #059669;
+.active-link {
+    font-weight: bold;
+    color: #3b82f6;
 }
 
-[href^="/site-builder"] div.rounded-full {
-    border-color: #059669;
+/* Site Builder and Contact Us links should use green color when active */
+a[href^="/site-builder"].active-link, 
+a[href^="/about-us"].active-link {
+    color: #22c55e;
 }
 
-[href^="/site-builder"].active-link div.rounded-full {
-    background-color: #059669;
-    border-color: #059669;
+/* Cloud Builder links should use blue color when active */
+a[href^="/cloud-builder"].active-link {
+    color: #3b82f6;
 }
 
-/* استایل برای منوی ابر ساز */
-[href^="/cloud-builder"] {
-    color: #0284c7;
-}
-
-[href^="/cloud-builder"] div.rounded-full {
-    border-color: #0284c7;
-}
-
-[href^="/cloud-builder"].active-link div.rounded-full {
-    background-color: #0284c7;
-    border-color: #0284c7;
-}
-
-[href^="/cloud-builder#"] {
-    color: #0c4a6e;
-}
-
-[href^="/cloud-builder#"]:hover {
-    color: #0284c7;
+/* Keep home page text black even when active */
+a[href="/"].active-link span {
+    color: black !important;
 }
 </style>

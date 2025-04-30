@@ -1,31 +1,30 @@
 <template>
-    <div class="z-0 shop color relative top-20 mb-36 md:mb-40 md:top-30 lg:mx-38 flex items-center justify-center bg-blue-50 md:rounded-3xl md:py-10">
+    <div class="z-0 shop color relative top-16 mb-36 md:mb-40 md:top-30 lg:mx-38 flex items-center justify-center bg-blue-50 md:rounded-3xl md:py-10">
       <div class="mx-auto pt-18 pb-10 md:pb-0 md:pt-0 md:py-20">
         <div class="flex flex-col md:flex-row items-center justify-between gap-8 px-4">
           <div class="md:w-1/2 mx-10 md:mx-20 relative">
             <div class="md:mt-10">
-              <h1 class="text-center text-purple-950 md:text-right text-3xl md:text-5xl 2xl:text-6xl font-bold block" data-aos="fade-up">
-                  فروشگاه‌ساز ابرآوران,
-                  سایت‌ساز کسب‌وکار شما 
+              <h1 class="text-center text-purple-950 md:text-right text-3xl md:text-5xl 2xl:text-6xl font-bold block animate-title" data-aos="fade-up" data-aos-delay="200">
+                  سایت‌ساز حرفه‌ای ابرآوران,
+                  راه‌حل جامع ساخت وب‌اپلیکیشن
               </h1>    
-              <span class="absolute top-18 sm:top-18 mx-10 flex -z-10" data-aos="fade-up">
-                <img class="w-80" src="../../assets/svg/vector-7.svg" alt="ساخت سایت فروشگاهی با تمام امکانات">
+              <span class="absolute top-26 sm:top-18 mx-10 flex -z-10" data-aos="fade-up">
+                <img class="w-80" src="../../assets/svg/vector-7.svg" alt="ساخت سایت حرفه‌ای با تمام امکانات">
               </span>
-              <h2 class="text-center md:text-right text-lg md:text-xl 2xl:text-2xl py-10" data-aos="fade-up">
-                ساخت سایت فروشگاهی با تمام امکانات لازم برای مدیریت سایت و سفارشات مانند
-                خدمات پرداخت و ارسال ابزارهای جذب ترافیک و مشتری و افزایش فروش تضمینی
+              <h2 class="text-center md:text-right text-lg md:text-xl 2xl:text-2xl pt-8 pb-4 md:py-10 animate-text" data-aos="fade-up" data-aos-delay="600">
+                ساخت سایت حرفه‌ای با تمام امکانات مورد نیاز برای مدیریت محتوا، بهینه‌سازی موتورهای جستجو،
+                طراحی ریسپانسیو و پشتیبانی فنی 24/7 برای موفقیت کسب و کار شما
               </h2>
-              <div class="flex justify-center md:justify-start"> 
-              <div class="shadow__btn flex justify-center w-40">
-                    ثبت نام
-              </div>
+              <div class="mb-3 flex justify-center md:justify-start" data-aos="zoom-in" data-aos-delay="800"> 
+                <NuxtLink to="/about-us#contact-us" class="shadow__btn flex justify-center w-40 pulse-button">
+                    ارتباط با ما
+                </NuxtLink>
               </div>
             </div>
           </div>
           
-          
-          <div class="md:w-1/2 flex md:justify-end justify-center mx-5">
-            <img class="w-full max-w-lg" src="../../assets/svg/shopping.svg" alt="ساخت سایت فروشگاهی با افزایش فروش">
+          <div class="md:w-1/2 flex md:justify-end justify-center mx-5" data-aos="fade-left" data-aos-delay="1000">
+            <img class="w-full max-w-lg floating-image" src="../../assets/svg/shopping.svg" alt="ساخت سایت فروشگاهی با افزایش فروش">
           </div>
         </div>
       </div>
@@ -133,6 +132,71 @@ export default defineComponent({
   }
   100% {
     transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+
+/* New animations */
+.animate-title {
+  animation: slideInDown 1s ease-out;
+}
+
+.animate-text {
+  animation: fadeIn 1.5s ease-out;
+}
+
+.floating {
+  animation: float 6s ease-in-out infinite;
+}
+
+.floating-image {
+  animation: float 8s ease-in-out infinite;
+}
+
+.pulse-button {
+  animation: pulse 2s infinite;
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 </style>

@@ -41,12 +41,12 @@
                 <div class="cloud-corner-4"></div>
                 
                 <div class="flex justify-center md:order-2 md:ml-4 mb-4 md:mb-0">
-                    <img src="../../assets/svg/shop.svg" class="w-40" alt="فروشگاه ساز اینترنتی">
+                    <img src="../../assets/svg/shop.svg" class="w-40" alt="ابر ساز حرفه‌ای">
                 </div>
                 <div class="md:order-1 px-8 pt-7">
-                    <h2 class="text-lg lg:text-2xl text-right font-bold mb-6 text-purple-800">ساخت سایت فروشگاهی، بدون هزینه‌ی اولیه ممکنه</h2>
+                    <h2 class="text-lg lg:text-2xl text-right font-bold mb-6 text-purple-800">ساخت زیرساخت ابری، با ابرساز حرفه‌ای ابرآوران</h2>
                     <p class="text-base text-right md:text-lg text-gray-700">
-                        ساختن سایت با فروشگاه‌ ساز اینترنتی ابرآوران، بدون هزینه اولیه است تا بتونید بدون ریسک مالی، سایت بسازید و فروش با سایت رو هم تجربه کنید.
+                        با ابرساز ابرآوران، می‌توانید زیرساخت ابری خود را با امکانات پیشرفته‌ای مانند Kubernetes، Docker، و CI/CD بسازید. این پلتفرم به شما امکان می‌دهد تا برنامه‌های خود را به راحتی در محیط ابری مدیریت کنید.
                     </p>
                 </div>
             </div>
@@ -92,9 +92,9 @@
                 <div class="cloud-corner-4"></div>
                 
                 <div class="pr-8 pt-7 pl-4 md:order-1">
-                    <h2 class="text-lg lg:text-2xl text-right font-bold mb-6 text-purple-800">صفر تا ۱۰۰ سایت با ماست</h2>
+                    <h2 class="text-lg lg:text-2xl text-right font-bold mb-6 text-purple-800">مدیریت کامل زیرساخت ابری</h2>
                     <p class="text-base text-right md:text-lg text-gray-700">
-                        با فروشگاه‌ساز آنلاین ابرآوران, یه سایت کامل با دامنه، انواع روش‌های ارسال و مدل‌های پرداخت، باشگاه مشتریان، هاست نامحدود و هر پیش‌نیاز دیگه‌ای که لازمه، می‌سازید و خیالتون از پشتیبانی اختصاصی ابرآوران راحته.
+                        ابرساز ابرآوران به شما امکان می‌دهد تا زیرساخت ابری خود را با ابزارهای پیشرفته مدیریت کنید. از مانیتورینگ و لاگینگ گرفته تا مقیاس‌پذیری خودکار و مدیریت منابع، همه چیز در دستان شماست.
                     </p>
                 </div>
                 <div class="flex justify-center mt-2 md:mb-0">
@@ -146,9 +146,9 @@
                     <img src="../../assets/svg/companion.svg" class="w-34 md:w-60 2xl:w-40" alt="سایت ساز">
                 </div>
                 <div class="px-8 pt-7 md:order-1">
-                    <h2 class="text-lg lg:text-2xl text-right font-bold mb-6 text-purple-800">بعد از ساخت سایت هم کنارتون هستیم</h2>
+                    <h2 class="text-lg lg:text-2xl text-right font-bold mb-6 text-purple-800">امنیت و پشتیبانی ۲۴/۷</h2>
                     <p class="text-base text-right md:text-lg text-gray-700">
-                        بعد از ساخت سایت با سایت‌ساز دیجی‌کالا، با راهکارهای جذب و نگهداشت مخاطب هوای کسب‌وکارتون رو داریم. بدونید که با بسته‌های مکمل ابرآوران رونق سایتتون تضمین شده است.
+                        با ابرساز ابرآوران، امنیت زیرساخت ابری شما تضمین شده است. سیستم‌های امنیتی پیشرفته، پشتیبان‌گیری خودکار و پشتیبانی ۲۴/۷ از جمله ویژگی‌های این سرویس هستند.
                     </p>
                 </div>
             </div>
@@ -194,9 +194,9 @@
                 <div class="cloud-corner-4"></div>
                 
                 <div class="pr-8 md:order-1">
-                    <h2 class="text-lg lg:text-2xl text-right font-bold mb-6 text-purple-800">نوع خدمات ما مساوی قدرت انتخاب شماست</h2>
+                    <h2 class="text-lg lg:text-2xl text-right font-bold mb-6 text-purple-800">انعطاف‌پذیری و مقیاس‌پذیری</h2>
                     <p class="text-base text-right md:text-lg text-gray-700">
-                        ابرآوران با پکیج‌های مختلف ساخت فروشگاه اینترنتی و انواع بسته‌های تکمیلی برای جذب و نگهداشت مخاطب، هر نیازی که کسب‌‌وکارتون داره رو پاسخ می‌ده. شما فقط بگید چی لازم دارید، بقیه‌اش با ابرآوران!
+                        ابرساز ابرآوران به شما امکان می‌دهد تا زیرساخت ابری خود را بر اساس نیازهای خود تنظیم کنید. از مقیاس‌پذیری خودکار گرفته تا مدیریت منابع، همه چیز در کنترل شماست.
                     </p>
                 </div>
                 <div class="flex justify-center mt-4 md:mt-0">
@@ -224,6 +224,124 @@ export default {
     .justify-start .cloud-shape {
         margin-right: auto;
         max-width: 90%;
+    }
+}
+
+/* انیمیشن‌های بهینه شده */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes cloudFloat {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* اعمال انیمیشن‌ها به المان‌ها */
+.cloud-shape {
+    animation: fadeIn 0.5s ease-out;
+}
+
+.cloud-shape img {
+    animation: fadeIn 0.5s ease-out;
+}
+
+.cloud-shape h2 {
+    animation: fadeIn 0.5s ease-out;
+}
+
+.cloud-shape p {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* انیمیشن hover برای باکس‌ها */
+.cloud-shape {
+    transition: transform 0.3s ease;
+}
+
+.cloud-shape:hover {
+    transform: translateY(-3px);
+}
+
+/* انیمیشن hover برای تصاویر */
+.cloud-shape img {
+    transition: transform 0.3s ease;
+}
+
+.cloud-shape:hover img {
+    transform: scale(1.02);
+}
+
+/* انیمیشن برای ابرها - بهینه شده */
+[class^="cloud-"] {
+    animation: cloudFloat 4s ease-in-out infinite;
+    will-change: transform;
+}
+
+/* تاخیر متفاوت برای هر ابر - کاهش تعداد تاخیرها */
+.cloud-top-1, .cloud-bottom-1, .cloud-left-1, .cloud-right-1 { animation-delay: 0s; }
+.cloud-top-2, .cloud-bottom-2, .cloud-left-2, .cloud-right-2 { animation-delay: 0.5s; }
+.cloud-top-3, .cloud-bottom-3, .cloud-left-3, .cloud-right-3 { animation-delay: 1s; }
+.cloud-top-4, .cloud-bottom-4, .cloud-left-4, .cloud-right-4 { animation-delay: 1.5s; }
+.cloud-top-5, .cloud-bottom-5, .cloud-left-5, .cloud-right-5 { animation-delay: 2s; }
+.cloud-top-6, .cloud-bottom-6 { animation-delay: 2.5s; }
+.cloud-top-7 { animation-delay: 3s; }
+
+/* بهینه‌سازی برای موبایل */
+@media (max-width: 768px) {
+    [class^="cloud-"] {
+        animation: none;
+    }
+    
+    .cloud-shape {
+        animation: fadeIn 0.5s ease-out;
+    }
+}
+
+/* انیمیشن‌های جدید */
+@keyframes floatIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes glowPulse {
+    0% {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    }
+    50% {
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    }
+    100% {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    }
+}
+
+@keyframes rotateIn {
+    from {
+        opacity: 0;
+        transform: rotate(-10deg) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: rotate(0) scale(1);
     }
 }
 

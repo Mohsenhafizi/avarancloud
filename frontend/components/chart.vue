@@ -13,8 +13,8 @@
           </svg>
         </div>
       </div>
-      <div id="area-chart"></div>
-      <div class="grid grid-cols-1 items-center border-gray-200 border-t dark:border-gray-700 justify-between">
+      <div id="area-chart" ref="chartRef"></div>
+      <div class="grid grid-cols-1 items-center border-gray-200 border-t dark:border-gray-700 justify-between">                  
         <div class="flex justify-between items-center md:pt-1">
           <!-- Button -->
           <button
@@ -59,84 +59,99 @@
   </template>
   
   <script lang="ts">
-  import { defineComponent } from 'vue';
-  import ApexCharts from 'apexcharts';
+  import { defineComponent, ref, onMounted } from 'vue';
   
   export default defineComponent({
     name: 'Chart',
-    mounted() {
-      const options: ApexCharts.ApexOptions = {
-        chart: {
-          height: '60%',
-          width: '100%',
-          type: 'area',
-          fontFamily: 'Inter, sans-serif',
-          dropShadow: {
-            enabled: false,
-          },
-          toolbar: {
-            show: false,
-          },
-        },
-        tooltip: {
-          enabled: true,
-          x: {
-            show: false,
-          },
-        },
-        fill: {
-          type: 'gradient',
-          gradient: {
-            opacityFrom: 0.55,
-            opacityTo: 0,
-            shade: '#fe6e26',
-            gradientToColors: ['#fe6e26'],
-          },
-        },
-        dataLabels: {
-          enabled: false,
-        },
-        stroke: {
-          width: 6,
-        },
-        grid: {
-          show: false,
-          strokeDashArray: 4,
-          padding: {
-            left: 2,
-            right: 0,
-            top: 0,
-          },
-        },
-        series: [
-          {
-            name: '، مشتریان ما ',
-            data: [0, 2, 1, 3, 5, 4, 5],
-            color: '#fe6e26',
-          },
-        ],
-        xaxis: {
-          categories: ['05 Dey', '02 Farvardin', '03 Khordad', '14 Shahrivar', '01 Aban', '28 Aban', '07 Bahman'],
-          labels: {
-            show: false,
-          },
-          axisBorder: {
-            show: false,
-          },
-          axisTicks: {
-            show: false,
-          },
-        },
-        yaxis: {
-          show: false,
-        },
-      };
+    setup() {
+      const chartRef = ref(null);
+      
+      onMounted(async () => {
+        // Import ApexCharts dynamically only in the browser 
+        if (process.client) {
+          // Dynamic import to avoid SSR issues
+          const ApexCharts = (await import('apexcharts')).default;
+          
+          const options = {
+            chart: {
+              height: '60%',
+              width: '100%',
+              type: 'area',
+              fontFamily: 'Inter, sans-serif',
+              dropShadow: {
+                enabled: false,
+              },
+              toolbar: {
+                show: false,
+              },
+            },
+            tooltip: {
+              enabled: true,
+              x: {
+                show: false,
+              },
+            },
+            fill: {
+              type: 'gradient',
+              gradient: {
+                opacityFrom: 0.55,
+                opacityTo: 0,
+                shade: '#fe6e26',
+                gradientToColors: ['#fe6e26'],
+              },
+            },
+            dataLabels: {
+              enabled: false,
+            },
+            stroke: {
+              width: 6,
+            },
+            grid: {
+              show: false,
+              strokeDashArray: 4,
+              padding: {
+                left: 2,
+                right: 0,
+                top: 0,
+              },
+            },
+            series: [
+              {
+                name: '، مشتریان ما ',
+                data: [0, 2, 1, 3, 5, 4, 5],
+                color: '#fe6e26',
+              },
+            ],
+            xaxis: {
+              categories: ['05 Dey', '02 Farvardin', '03 Khordad', '14 Shahrivar', '01 Aban', '28 Aban', '07 Bahman'],
+              labels: {
+                show: false,
+              },
+              axisBorder: {
+                show: false,
+              },
+              axisTicks: {
+                show: false,
+              },
+            },
+            yaxis: {
+              show: false,
+            },
+          };
   
-      if (document.getElementById('area-chart')) {
-        const chart = new ApexCharts(document.getElementById('area-chart') as HTMLElement, options);
-        chart.render();
-      }
-    },
+          // Create and render the chart using ref
+          const chartElement = chartRef.value;
+          if (chartElement) {
+            const chart = new ApexCharts(chartElement, options);
+            chart.render();
+          }
+        }
+      });
+      
+      return {
+        chartRef
+      };
+    }
   });
   </script>
   

@@ -1,23 +1,23 @@
 <template>
 <header class="rtl fixed top-0 right-0 left-0 z-20 hidden md:flex justify-between items-center px-5 lg:px-10 
-               py-5 h-24 w-[98%] lg:w-[90%] 2xl:w-[80%] mx-auto bg-white shadow-2xl rounded-b-3xl">
+               py-5 h-24 w-[98%] lg:w-[90%] 2xl:w-[80%] mx-auto bg-white shadow-2xl rounded-b-3xl" itemscope itemtype="https://schema.org/SiteNavigationElement">
     <div class="flex items-center w-full justify-between">
-    <nav class="flex items-center gap-x-6 lg:gap-x-9 h-14">
-        <ul class="flex gap-x-3 items-center lg:gap-x-9 h-full text-lg 2xl:text-xl text-gray-800 tracking-tightest child:leading-[56px]">
-            <NuxtLink to="/" class="hover:bg-emerald-300 rounded-2xl p-3 transition-all flex items-center" active-class="active-link">
+    <nav class="flex items-center gap-x-3 lg:gap-x-6 h-14" aria-label="Main Navigation">
+        <ul class="flex gap-x-2 items-center lg:gap-x-6 h-full text-lg 2xl:text-xl text-gray-800 tracking-tighest child:leading-[56px] whitespace-nowrap">
+            <NuxtLink to="/" class="hover:bg-emerald-300 rounded-2xl p-3 transition-all flex items-center" active-class="active-link" itemprop="url">
                 <div class="circle mx-2 w-3 h-3 mb-1 shadow-xl rounded-full transition-all duration-300"></div>
-                <li>
+                <li itemprop="name">
                     صفحه اصلی
                 </li>
             </NuxtLink>
             <div class="dropdown-container relative" ref="menuContainer">
-                <NuxtLink to="/site-builder" class="hover:bg-emerald-300 cursor-pointer rounded-2xl p-3 transition-all flex items-center" @mouseenter="menuMouseEnter" active-class="active-link">
+                <NuxtLink to="/site-builder" class="hover:bg-emerald-300 cursor-pointer rounded-2xl p-3 transition-all flex items-center" @mouseenter="menuMouseEnter" active-class="active-link" itemprop="url">
                     <div class="circle mx-2 w-3 h-3 mb-1 shadow-xl rounded-full transition-all duration-300"></div>
-                    <li class="flex items-center">
+                    <li class="flex items-center" itemprop="name">
                         سایت ساز
                         <svg xmlns="http://www.w3.org/2000/svg" 
                             :class="['h-4 w-4 mr-1 transform transition-transform duration-300', {'rotate-180': isMenuOpen}]" 
-                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </li>
@@ -25,26 +25,29 @@
                 <div :class="['dropdown-menu absolute top-full right-0 mt-1 w-44 py-2 bg-gradient-to-br from-emerald-50 to-teal-100 rounded-lg shadow-xl transition-all duration-300 ease-in-out', {'menu-visible': isMenuOpen, 'menu-hidden': !isMenuOpen}]" 
                     ref="submenuSite" 
                     @mouseenter="submenuMouseEnter"
-                    @mouseleave="scheduleClose">
+                    @mouseleave="scheduleClose"
+                    role="menu"
+                    aria-orientation="vertical"
+                    aria-labelledby="site-builder-menu">
                     <div class="arrow-up"></div>
                     <div class="safe-area"></div>
                     <ul class="text-right">
-                        <li><NuxtLink to="/site-builder#features" class="submenu-item block py-2 px-4 text-gray-800 text-base">ویژگی ها</NuxtLink></li>
-                        <li><NuxtLink to="/site-builder#tozihat" class="submenu-item block py-2 px-4 text-gray-800 text-base">توضیحات</NuxtLink></li>
-                        <li><NuxtLink to="/site-builder#packages" class="submenu-item block py-2 px-4 text-gray-800 text-base">بسته ها</NuxtLink></li>
-                        <li><NuxtLink to="/site-builder#submenu" class="submenu-item block py-2 px-4 text-gray-800 text-base">سوالات متداول</NuxtLink></li>
+                      <li role="menuitem"><NuxtLink to="/site-builder#tozihat" class="submenu-item block py-2 px-4 text-gray-800 text-base" itemprop="url"><span itemprop="name">توضیحات</span></NuxtLink></li>
+                        <li role="menuitem"><NuxtLink to="/site-builder#features" class="submenu-item block py-2 px-4 text-gray-800 text-base" itemprop="url"><span itemprop="name">ویژگی ها</span></NuxtLink></li>
+                        <li role="menuitem"><NuxtLink to="/site-builder#packages" class="submenu-item block py-2 px-4 text-gray-800 text-base" itemprop="url"><span itemprop="name">بسته ها</span></NuxtLink></li>
+                        <li role="menuitem"><NuxtLink to="/site-builder#submenu" class="submenu-item block py-2 px-4 text-gray-800 text-base" itemprop="url"><span itemprop="name">سوالات متداول</span></NuxtLink></li>
                     </ul>
                     <div class="safe-area"></div>
                 </div>
             </div>
             <div class="dropdown-container relative" ref="menuContainers">
-                <NuxtLink to="/cloud-builder" class="hover:bg-emerald-300 cursor-pointer rounded-2xl p-3 transition-all flex items-center" @mouseenter="menuMouseEnters" active-class="active-link">
+                <NuxtLink to="/cloud-builder" class="hover:bg-emerald-300 cursor-pointer rounded-2xl p-3 transition-all flex items-center" @mouseenter="menuMouseEnters" active-class="active-link" itemprop="url">
                     <div class="circle mx-2 w-3 h-3 mb-1 shadow-xl rounded-full transition-all duration-300"></div>
-                    <li class="flex items-center">
+                    <li class="flex items-center" itemprop="name">
                         ابر ساز
                         <svg xmlns="http://www.w3.org/2000/svg" 
                             :class="['h-4 w-4 mr-1 transform transition-transform duration-300', {'rotate-180': isMenuOpenContainer}]" 
-                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </li>
@@ -52,14 +55,18 @@
                 <div :class="['dropdown-menu absolute top-full right-0 mt-1 w-44 py-2 bg-gradient-to-br from-emerald-50 to-teal-100 rounded-lg shadow-xl transition-all duration-300 ease-in-out', {'menu-visible': isMenuOpenContainer, 'menu-hidden': !isMenuOpenContainer}]" 
                     ref="submenuCloud" 
                     @mouseenter="submenuMouseEnters"
-                    @mouseleave="scheduleCloses">
+                    @mouseleave="scheduleCloses"
+                    role="menu"
+                    aria-orientation="vertical"
+                    aria-labelledby="cloud-builder-menu">
                     <div class="arrow-up"></div>
                     <div class="safe-area"></div>
                     <ul class="text-right">
-                        <li><NuxtLink to="/cloud-builder#features" class="submenu-item block py-2 px-4 text-gray-800 text-base">ویژگی ها</NuxtLink></li>
-                        <li><NuxtLink to="/cloud-builder#tozihat" class="submenu-item block py-2 px-4 text-gray-800 text-base">توضیحات</NuxtLink></li>
-                        <li><NuxtLink to="/cloud-builder#packages" class="submenu-item block py-2 px-4 text-gray-800 text-base">بسته ها</NuxtLink></li>
-                        <li><NuxtLink to="/cloud-builder#submenu" class="submenu-item block py-2 px-4 text-gray-800 text-base">سوالات متداول</NuxtLink></li>
+                      <li role="menuitem"><NuxtLink to="/cloud-builder#tozihat" class="submenu-item block py-2 px-4 text-gray-800 text-base" itemprop="url"><span itemprop="name">توضیحات</span></NuxtLink></li>
+                        <li role="menuitem"><NuxtLink to="/cloud-builder#features" class="submenu-item block py-2 px-4 text-gray-800 text-base" itemprop="url"><span itemprop="name">ویژگی ها</span></NuxtLink></li>
+                        <li role="menuitem"><NuxtLink to="/cloud-builder#aaS" class="submenu-item block py-2 px-4 text-gray-800 text-base" itemprop="url"><span itemprop="name">مدل های ابرساز</span></NuxtLink></li>
+                        <li role="menuitem"><NuxtLink to="/cloud-builder#packages" class="submenu-item block py-2 px-4 text-gray-800 text-base" itemprop="url"><span itemprop="name">بسته ها</span></NuxtLink></li>
+                        <li role="menuitem"><NuxtLink to="/cloud-builder#submenu" class="submenu-item block py-2 px-4 text-gray-800 text-base" itemprop="url"><span itemprop="name">سوالات متداول</span></NuxtLink></li>
                     </ul>
                     <div class="safe-area"></div>
                 </div>
@@ -68,9 +75,10 @@
             to="/about-us"
             class="hover:bg-emerald-300 rounded-2xl p-3 transition-all flex items-center"
             active-class="active-link"
+            itemprop="url"
             >
             <div class="circle mx-2 w-3 h-3 mb-1 shadow-xl rounded-full transition-all duration-300"></div>
-            <li>درباره ما</li>
+            <li itemprop="name">درباره ما</li>
             </NuxtLink>
 
             <NuxtLink
@@ -78,18 +86,16 @@
                 class="hover:bg-emerald-300 rounded-2xl p-3 transition-all flex items-center"
                 :class="{ 'active-link': isContactUsVisible || (isContactUsClicked && isContactUsVisible) }"
                 @click="handleContactUsClick"
+                itemprop="url"
                 >
             <div class="circle mx-2 w-3 h-3 mb-1 shadow-xl rounded-full transition-all duration-300"></div>
-            <li>ارتباط با ما</li>
+            <li itemprop="name">ارتباط با ما</li>
             </NuxtLink>
         </ul>
     </nav>
-    <div class="flex gap-x-4 lg:gap-x-10 xs:gap-x-10 font-bold">
-        <div class="flex text-xl items-center gap-x-2.5 text-sky-600">
-            avarancloud
-            <img class="w-14 h-16" src="../../assets/svg/cloud2.svg" alt="avarancloud">
+        <div class="relative top-[10px] right-4">
+            <img class="w-[315px] h-[120px]" src="../../assets/photos/avaran-removebg-preview.png" alt="avarancloud" itemprop="image">
         </div>
-    </div>
     </div>
 </header>
 </template>
@@ -338,19 +344,15 @@ beforeDestroy() {
 
 /* کلاس‌های نمایش و مخفی منو */
 .menu-visible {
-    opacity: 1;
-    transform: translateY(0);
     visibility: visible;
-    pointer-events: auto;
-    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s linear 0s;
+    opacity: 1;
+    z-index: 10;
 }
 
 .menu-hidden {
-    opacity: 0;
-    transform: translateY(-10px);
     visibility: hidden;
-    pointer-events: none;
-    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0s linear 0.2s;
+    opacity: 0;
+    z-index: -1;
 }
 
 /* ایجاد یک ناحیه امن اطراف منو */

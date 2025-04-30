@@ -1,24 +1,39 @@
 <template>
 <div class="hidden md:flex justify-center">
-  <img class="relative left-2 bottom-20 lg:bottom-10 w-80 h-60 rotate-20" src="../../assets/photos/arrrow6.png" alt="چگونگی ساخت سایت" data-aos="fade-up">
+  <img class="relative left-2 bottom-20 lg:bottom-10 w-80 h-60 rotate-20" src="../../assets/photos/arrrow6.png" alt="چگونگی ساخت سایت" data-aos="fade-up" data-aos-duration="1000">
 </div>
-    <div class="relative bottom-10 md:bottom-30 z-0" data-aos="fade-up">
-        <div class="text-center text-purple-950 py-10 lg:py-20 text-4xl md:text-6xl font-bold mx-4">
-            چرا با ابرآوران سایت بسازید؟
+    <div class="relative bottom-10 md:bottom-30 z-0">
+        <div class="text-center text-purple-950 py-10 lg:pt-20 text-4xl md:text-6xl font-bold mx-4" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="200">
+            چرا ابرآوران را انتخاب کنید؟
         </div>
-        <div class="text-center text-xl md:text-2xl mx-10 md:mx-20 xl:mx-100">
-            چون فروشگاه‌ساز دیجی‌کالاست و ساخت سایت فروشگاهی باهاش رایگان و ساده است و هیچ نیازی به دانش فنی نداره.. یکپارچه است و خودش به‌تنهایی همه‌ی نیازمندی‌هاتون رو برآورده می‌کنه…اما فقط این‌ها نیست…ابرآوران خدماتی بهتون می‌ده که هیچ‌جای دیگه پیداش نمی‌کنید!
+        <div class="text-center text-xl md:text-2xl mx-10 md:mx-20 xl:mx-100" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+            ابرآوران با ارائه زیرساخت‌های ابری پیشرفته، امکان میزبانی و مدیریت برنامه‌های وب را با بالاترین سطح امنیت و کارایی فراهم می‌کند. با استفاده از تکنولوژی‌های مدرن و پشتیبانی فنی حرفه‌ای، کسب و کار شما را به سطح بالاتری ارتقا می‌دهیم.
         </div>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'StoreFeatures'
+    name: 'StoreFeatures',
+    mounted() {
+        // Initialize AOS
+        if (typeof window !== 'undefined') {
+            import('aos').then((AOS) => {
+                AOS.default.init({
+                    once: true,
+                    offset: 100,
+                    duration: 1000,
+                });
+            });
+        }
+    }
 }
 </script>
 
 <style scoped>
-
+/* Add smooth transitions */
+.text-center {
+    transition: all 0.3s ease-in-out;
+}
 </style>
 

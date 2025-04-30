@@ -104,7 +104,7 @@
         <span class="list_text">پشتیبان‌گیری دوره‌ای از داده‌ها برای تضمین بازیابی اولیه در مواقع بحرانی</span>
         </li>
     </ul>
-    <NuxtLink to="/about-us#contact-us" @click="setSource('abrkochaak')" class="click-to-call"> تماس بگیرید </NuxtLink>
+    <NuxtLink to="/about-us#contact-us" @click="setSource('بسته ابر کوچک')" class="click-to-call"> تماس بگیرید </NuxtLink>
     <div>
       <div class="hidden lg:flex justify-center items-center relative top-31">
     <div class="afzar-abr">
@@ -112,12 +112,12 @@
     <div class="card_title__container">
       <span class="card_title">بسته نرم افزار ابری</span>
         <p class="card_paragraph">
-          اگر نیازمند ساخت یک نرم افزار تحت ابر (cloud-native) خاص هستید این بسته را به شما پیشنهاد میکنم
+          راهکار جامع برای توسعه و میزبانی برنامه‌های ابری با معماری microservices
           <br>
-           مناسب برای Paas و Saas
+          مناسب برای PaaS و SaaS با قابلیت‌های پیشرفته DevOps
         </p>
     </div>
-    <NuxtLink to="/about-us#contact-us" @click="setSource('abrafzar')" class="click-to-call"> تماس بگیرید </NuxtLink>
+    <NuxtLink to="/about-us#contact-us" @click="setSource('بسته نرم افزار ابری')" class="click-to-call"> تماس بگیرید </NuxtLink>
     </div>
     </div>
     <div class="hidden lg:flex justify-center items-center relative top-76">
@@ -126,10 +126,10 @@
     <div class="card_title__container">
         <span class="card_title">بسته ابر هوشمند</span>
         <p class="card_paragraph">
-          مناسب برای زیرساخت های مجهز به نرم افزار های مدل هوش مصنوعی و اجرا و مقیاس پذیر کردن آن(MLOps)
+          زیرساخت ابری پیشرفته برای برنامه‌های هوش مصنوعی و یادگیری ماشین با قابلیت‌های MLOps و مقیاس‌پذیری خودکار
         </p>
     </div>
-    <NuxtLink to="/about-us#contact-us" @click="setSource('hoshabr')" class="click-to-call"> تماس بگیرید </NuxtLink>
+    <NuxtLink to="/about-us#contact-us" @click="setSource('بسته ابر هوشمند')" class="click-to-call"> تماس بگیرید </NuxtLink>
     </div>
   </div>
     </div>
@@ -139,9 +139,7 @@
     <div class="card_title__container">
         <span class="card_title">بسته ابر روان</span>
         <p class="card_paragraph">
-          15 تا 38 تومان به همراه پشتیبانی فنی سطح پیشرفته (5 تا 10 تومان ماهانه):
-          <br>
-          مناسب برای برنامه‌های خدماتی متوسط با نیاز به زیرساخت‌های پویا و افزایش قابلیت‌های نظارتی
+          راهکار ابری مقرون به صرفه برای کسب و کارهای متوسط با پشتیبانی فنی پیشرفته و قابلیت‌های نظارتی
         </p>
     </div>
     <hr class="line" />
@@ -266,7 +264,7 @@
         <span class="list_text"> پشتیبان‌گیری و بازیابی داده و اجرای زمان‌بندی منظم برای پشتیبان‌گیری و برنامه بازیابی اطلاعات</span>
         </li>
     </ul>
-    <NuxtLink to="/about-us#contact-us" @click="setSource('revan')" class="click-to-call"> تماس بگیرید </NuxtLink>
+    <NuxtLink to="/about-us#contact-us" @click="setSource('بسته ابر روان')" class="click-to-call"> تماس بگیرید </NuxtLink>
     </div>
     <div class="golden-abr mb-8 lg:mb-0">
     <div class="card__border"></div>
@@ -383,16 +381,16 @@
         <span class="list_text">مشاوره معماری تخصصی و جلسات مشاوره جهت بهبود و بهینه‌سازی معماری نرم افزار به همراه راهکارهای سفارشی</span>
         </li>
     </ul>
-    <NuxtLink to="/about-us#contact-us" @click="setSource('barvar')" class="click-to-call"> تماس بگیرید </NuxtLink>
+    <NuxtLink to="/about-us#contact-us" @click="setSource('بسته ابر بارور')" class="click-to-call"> تماس بگیرید </NuxtLink>
     <div class="teke-abr left-[1px] top-160">
     <div class="card__border"></div>
     <div class="card_title__container">
         <span class="card_title">بسته تکه ابر</span>
         <p class="card_paragraph">
-       اگر فقط نیازمند یک یا چند مورد از این ده ها مورد دیگر بسته ها هستید، این بسته را انتخاب کنید
+          خدمات ابری سفارشی برای نیازهای خاص کسب و کار شما با امکان انتخاب و ترکیب سرویس‌های مورد نیاز
         </p>
     </div>
-    <NuxtLink to="/about-us#contact-us" @click="setSource('tekeabr')" class="click-to-call"> تماس بگیرید </NuxtLink>
+    <NuxtLink to="/about-us#contact-us" @click="setSource('بسته تکه ابر')" class="click-to-call"> تماس بگیرید </NuxtLink>
     </div>
     </div>
     <div class="">
@@ -458,7 +456,7 @@
         <span class="list_text">خدمات پشتیبانی ویژه و پشتیبانی چندجانبه و هماهنگ جهت رفع مشکلات به صورت آنی و سفارشی</span>
         </li>
     </ul>
-    <NuxtLink to="/about-us#contact-us" @click="setSource('abrsefareshi')" class="click-to-call"> تماس بگیرید </NuxtLink>
+    <NuxtLink to="/about-us#contact-us" @click="setSource('بسته ابر سفارشی')" class="click-to-call"> تماس بگیرید </NuxtLink>
     </div>
   </div>
     <div class="lg:hidden flex justify-center mt-4 mb-36">
@@ -467,10 +465,10 @@
     <div class="card_title__container">
         <span class="card_title">بسته تکه ابر</span>
         <p class="card_paragraph">
-          اگر فقط نیازمند یک یا چند مورد از این ده ها مورد دیگر بسته ها هستید، این بسته را انتخاب کنید.
+          خدمات ابری سفارشی برای نیازهای خاص کسب و کار شما با امکان انتخاب و ترکیب سرویس‌های مورد نیاز
         </p>
     </div>
-    <NuxtLink to="/about-us#contact-us" @click="setSource('tekeabr')" class="click-to-call"> تماس بگیرید </NuxtLink>
+    <NuxtLink to="/about-us#contact-us" @click="setSource('بسته تکه ابر')" class="click-to-call"> تماس بگیرید </NuxtLink>
     </div>
     </div>
     <div class="lg:hidden flex justify-center mt-6 mb-36">
@@ -479,10 +477,10 @@
     <div class="card_title__container">
         <span class="card_title">بسته ابر هوشمند</span>
         <p class="card_paragraph">
-          مناسب برای زیرساخت های مجهز به نرم افزار های مدل هوش مصنوعی و اجرا و مقیاس پذیر کردن آن(MLOps)
+          زیرساخت ابری پیشرفته برای برنامه‌های هوش مصنوعی و یادگیری ماشین با قابلیت‌های MLOps و مقیاس‌پذیری خودکار
         </p>
     </div>
-    <NuxtLink to="/about-us#contact-us" @click="setSource('hoshabr')" class="click-to-call"> تماس بگیرید </NuxtLink>
+    <NuxtLink to="/about-us#contact-us" @click="setSource('بسته ابر هوشمند')" class="click-to-call"> تماس بگیرید </NuxtLink>
     </div>
     </div>
     <div class="lg:hidden flex justify-center mt-6">
@@ -491,7 +489,9 @@
     <div class="card_title__container">
       <span class="card_title">بسته نرم افزار ابری</span>
         <p class="card_paragraph">
-          اگر نیازمند ساخت یک نرم افزار تحت ابر (cloud-native) خاص هستید این بسته را به شما پیشنهاد میکنم
+          راهکار جامع برای توسعه و میزبانی برنامه‌های ابری با معماری microservices
+          <br>
+          مناسب برای PaaS و SaaS با قابلیت‌های پیشرفته DevOps
         </p>
     </div>
     <hr class="line" />
@@ -514,7 +514,7 @@
         <span class="list_text">مناسب برای Paas و Saas</span>
         </li>
     </ul>
-    <NuxtLink to="/about-us#contact-us" @click="setSource('abrafzar')" class="click-to-call"> تماس بگیرید </NuxtLink>
+    <NuxtLink to="/about-us#contact-us" @click="setSource('بسته نرم افزار ابری')" class="click-to-call"> تماس بگیرید </NuxtLink>
     </div>
     </div>
 </div>
@@ -1837,4 +1837,49 @@ function setSource(value: string) {
   box-shadow: inset 0 -2px 25px -4px var(--white);
 }
 
+/* Cloud Services Section Styles */
+.cloud-services-section {
+    direction: rtl;
+}
+
+.service-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service-title {
+    color: #4B0082;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+}
+
+.service-description {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .service-card {
+        padding: 1rem;
+    }
+    
+    .service-title {
+        font-size: 1.25rem;
+    }
+    
+    .service-description {
+        font-size: 0.85rem;
+    }
+}
 </style>

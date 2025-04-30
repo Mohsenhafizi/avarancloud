@@ -10,10 +10,10 @@
       <SubmenuItem class="w-full">
         <template #title>
           <span class="bg-gray-400 rounded-lg px-2 py-1 text-xs ml-1.5 sm:px-2 sm:py-0.5 sm:ml-2 md:px-2.5 md:py-0.5 md:ml-3 sm:text-sm">1.</span>
-          <span class="text-sm sm:text-base md:text-lg">چطور باید با ابرآوران سایت بسازم؟</span>
+          <span class="text-sm sm:text-base md:text-lg">چطور می‌توانم با ابرآوران سایت بسازم؟</span>
         </template>
         <template #content>
-          <p class="text-xs sm:text-sm md:text-base">وقتی در ابرآوران ثبت نام کنید پکیج کلیک براتون به صورت پیش فرض و کاملا رایگان فعال میشه و فقط کافیه 6 مرحله افتتاح فروشگاه رو تکمیل کنید تا سایت کسب و کارتون راه اندازی بشه</p>
+          <p class="text-xs sm:text-sm md:text-base">با ثبت نام در ابرآوران، می‌توانید به راحتی و در چند مرحله ساده، سایت خود را راه‌اندازی کنید. پلتفرم ما به گونه‌ای طراحی شده که حتی بدون دانش فنی نیز می‌توانید سایت خود را مدیریت کنید.</p>
         </template>
       </SubmenuItem>
 
@@ -35,7 +35,7 @@
           <span class="text-sm sm:text-base md:text-lg">هزینه استفاده از خدمات ابرآوران چقدر است؟</span>
         </template>
         <template #content>
-          <p class="text-xs sm:text-sm md:text-base">ابرآوران پلن‌های مختلفی دارد که متناسب با نیازهای کسب و کارهای مختلف طراحی شده‌اند. پکیج کلیک به صورت رایگان ارائه می‌شود و پکیج‌های پیشرفته‌تر با امکانات بیشتر با قیمت‌های مقرون به صرفه در دسترس هستند.</p>
+          <p class="text-xs sm:text-sm md:text-base">ابرآوران پلن‌های مختلفی دارد که متناسب با نیازهای کسب و کارهای مختلف طراحی شده‌اند. پکیج پایه به صورت رایگان ارائه می‌شود و پکیج‌های پیشرفته‌تر با امکانات بیشتر با قیمت‌های مقرون به صرفه در دسترس هستند.</p>
         </template>
       </SubmenuItem>
 
@@ -54,10 +54,10 @@
       <SubmenuItem class="w-full">
         <template #title>
           <span class="bg-gray-400 rounded-lg px-2 py-1 text-xs ml-1.5 sm:px-2 sm:py-0.5 sm:ml-2 md:px-2.5 md:py-0.5 md:ml-3 sm:text-sm">5.</span>
-          <span class="text-sm sm:text-base md:text-lg">آیا ابرآوران از فروشگاه آنلاین پشتیبانی می‌کند؟</span>
+          <span class="text-sm sm:text-base md:text-lg">آیا سایت‌های ساخته شده با ابرآوران برای موبایل بهینه هستند؟</span>
         </template>
         <template #content>
-          <p class="text-xs sm:text-sm md:text-base">بله، ابرآوران امکانات کاملی برای راه‌اندازی فروشگاه آنلاین ارائه می‌دهد. شما می‌توانید محصولات خود را اضافه کنید، قیمت‌گذاری کنید، موجودی انبار را مدیریت کنید و سفارشات را پیگیری کنید.</p>
+          <p class="text-xs sm:text-sm md:text-base">بله، تمام قالب‌های ابرآوران به صورت ریسپانسیو طراحی شده‌اند و با تمام دستگاه‌ها از جمله موبایل، تبلت و دسکتاپ سازگار هستند. این یعنی سایت شما روی هر دستگاهی به خوبی نمایش داده می‌شود.</p>
         </template>
       </SubmenuItem>
 
@@ -65,10 +65,10 @@
       <SubmenuItem class="w-full">
         <template #title>
           <span class="bg-gray-400 rounded-lg px-2 py-1 text-xs ml-1.5 sm:px-2 sm:py-0.5 sm:ml-2 md:px-2.5 md:py-0.5 md:ml-3 sm:text-sm">6.</span>
-          <span class="text-sm sm:text-base md:text-lg">آیا سایت‌های ساخته شده با ابرآوران برای موبایل بهینه هستند؟</span>
+          <span class="text-sm sm:text-base md:text-lg">آیا ابرآوران از SEO پشتیبانی می‌کند؟</span>
         </template>
         <template #content>
-          <p class="text-xs sm:text-sm md:text-base">بله، تمام قالب‌های ابرآوران به صورت ریسپانسیو طراحی شده‌اند و با تمام دستگاه‌ها از جمله موبایل، تبلت و دسکتاپ سازگار هستند. این یعنی سایت شما روی هر دستگاهی به خوبی نمایش داده می‌شود.</p>
+          <p class="text-xs sm:text-sm md:text-base">بله، ابرآوران امکانات کاملی برای بهینه‌سازی موتورهای جستجو (SEO) ارائه می‌دهد. شما می‌توانید متا تگ‌ها را تنظیم کنید، نقشه سایت ایجاد کنید و از ابزارهای تحلیل ترافیک استفاده کنید.</p>
         </template>
       </SubmenuItem>
 
