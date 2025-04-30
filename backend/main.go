@@ -16,6 +16,7 @@ type ContactRequest struct {
 	Name    string `json:"name"`
 	Phone   string `json:"phone"`
 	Message string `json:"message"`
+	Package string `json:"package"`
 }
 
 type Response struct {
@@ -60,9 +61,10 @@ func contactHandler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	messageText := fmt.Sprintf(
-		"- درخواست جدید - \n\nنام: %s\nشماره: %s\nپیام:\n%s",
+		"- درخواست جدید - \n\nنام: %s\nشماره: %s\nپکیج: %s\nپیام:\n%s",
 		req.Name,
 		req.Phone,
+		req.Package,
 		req.Message,
 	)
 
