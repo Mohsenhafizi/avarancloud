@@ -50,27 +50,12 @@ import { computed, ref, watch } from "vue";
 // تعریف وضعیت
 const source = useState("source", () => "");
 
-// نگاشت منابع به عناوین
-const headingMap: Record<string, string> = {
-  bronz: "بسته برنزی",
-  sefareshi: "بسته سفارشی",
-  nogrei: "بسته نقره ای",
-  talai: "بسته طلایی",
-  abrkochaak: "بسته ابر کوچک",
-  abrafzar: "بسته نرم افزار ابری",
-  hoshabr: "بسته ابر هوش",
-  revan: "بسته ابر روان",
-  barvar: "بسته ابر بارور",
-  tekeabr: "بسته تکه ابر",
-  abrsefareshi: "بسته ابر سفارشی",
-};
-
 // متن پیش‌فرض
 const defaultHeading = "ارتباط ما";
 
 // محاسبه متن heading بر اساس وضعیت
 const headingText = computed(() => {
-  return headingMap[source.value] || defaultHeading;
+  return source.value || defaultHeading;
 });
 
 // فرم دیتا
