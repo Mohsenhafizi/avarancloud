@@ -10,12 +10,14 @@ import (
 )
 
 var botToken = os.Getenv("TELEGRAM_BOT_TOKEN")
-var chatID = os.Getenv("TELEGRAM_CHAT_ID")
+var chatID1 = os.Getenv("TELEGRAM_CHAT_ID1")
+var chatID2 = os.Getenv("TELEGRAM_CHAT_ID2")
 
 type ContactRequest struct {
 	Name    string `json:"name"`
 	Phone   string `json:"phone"`
 	Message string `json:"message"`
+	Package string `json:"package"`
 }
 
 type Response struct {
@@ -23,7 +25,7 @@ type Response struct {
 	Message string `json:"message"`
 }
 
-func sendTelegramMessage(message string) error {
+func sendTelegramMessage(message string, chatID string) error {
 	url := fmt.Sprintf("https://api.telegram.org/bot%s/sendMessage", botToken)
 
 	body, err := json.Marshal(map[string]string{
@@ -60,13 +62,20 @@ func contactHandler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	messageText := fmt.Sprintf(
-		"- درخواست جدید - \n\nنام: %s\nشماره: %s\nپیام:\n%s",
+		"🫕 درخواست جدید 🫕 \n\nنام: %s\nشماره: %s\nپکیج: %s\nپیام:\n%s",
 		req.Name,
 		req.Phone,
+		req.Package,
 		req.Message,
 	)
 
-	if err := sendTelegramMessage(messageText); err != nil {
+	if err := sendTelegramMessage(messageText, chatID1); err != nil {
+		log.Printf("Failed to send Telegram message: %v", err)
+		http.Error(w, "Failed to send message", http.StatusInternalServerError)
+		return
+	}
+
+	if err := sendTelegramMessage(messageText, chatID2); err != nil {
 		log.Printf("Failed to send Telegram message: %v", err)
 		http.Error(w, "Failed to send message", http.StatusInternalServerError)
 		return

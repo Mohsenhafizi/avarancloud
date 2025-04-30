@@ -90,7 +90,8 @@ services:
     container_name: backend
     environment:
       - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
-      - TELEGRAM_CHAT_ID=${TELEGRAM_CHAT_ID}
+      - TELEGRAM_CHAT_ID1=${TELEGRAM_CHAT_ID1}
+      - TELEGRAM_CHAT_ID2=${TELEGRAM_CHAT_ID2}
     labels:
       - "traefik.enable=true"
       - "traefik.docker.network=web_net"
