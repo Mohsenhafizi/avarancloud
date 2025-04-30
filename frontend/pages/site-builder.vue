@@ -185,16 +185,16 @@ export default {
         { name: 'keywords', content: 'سایت ساز, طراحی سایت شخصی, طراحی سایت شرکتی, سایت ساز ابرآوران, وب سایت حرفه ای, طراحی سایت ارزان, سایت رسپانسیو, سایت مدرن, ساخت وب سایت, سایت کسب و کار, وب سایت سریع, سایت سئو شده, avarancloud' },
         { property: 'og:title', content: 'سایت ساز ابرآوران | طراحی سایت شخصی و شرکتی با امکانات حرفه‌ای' },
         { property: 'og:description', content: 'سایت ساز حرفه‌ای ابرآوران برای ساخت وب‌سایت‌های شخصی و شرکتی. استفاده از تکنولوژی‌های روز، طراحی واکنش‌گرا، سرعت بالا و بهینه‌سازی شده برای موتورهای جستجو' },
-        { property: 'og:url', content: 'https://avarancloud.com/site-builder' },
+        { property: 'og:url', content: 'https://avarancloud.ir/site-builder' },
         { property: 'og:type', content: 'website' },
-        { property: 'og:image', content: 'https://avarancloud.com/site-builder-thumb.png' },
+        { property: 'og:image', content: 'https://avarancloud.ir/site-builder-thumb.png' },
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:title', content: 'سایت ساز ابرآوران | طراحی سایت شخصی و شرکتی با امکانات حرفه‌ای' },
         { name: 'twitter:description', content: 'سایت ساز حرفه‌ای ابرآوران برای ساخت وب‌سایت‌های شخصی و شرکتی' },
-        { name: 'canonical', content: 'https://avarancloud.com/site-builder' },
+        { name: 'canonical', content: 'https://avarancloud.ir/site-builder' },
       ],
       link: [
-        { rel: 'canonical', href: 'https://avarancloud.com/site-builder' }
+        { rel: 'canonical', href: 'https://avarancloud.ir/site-builder' }
       ],
       script: [
         {

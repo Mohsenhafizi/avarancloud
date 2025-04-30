@@ -170,16 +170,16 @@ export default{
         { name: 'keywords', content: 'ابرآوران, تیم طراحی سایت, متخصصان طراحی وب, شرکت طراحی سایت, شرکت طراحی فروشگاه اینترنتی, توسعه دهندگان وب, طراحان UI/UX, خدمات دیجیتال مارکتینگ, سئو, تماس با ابرآوران, درباره ما' },
         { property: 'og:title', content: 'درباره ابرآوران | تیم متخصص طراحی سایت و فروشگاه اینترنتی' },
         { property: 'og:description', content: 'ابرآوران گروهی از متخصصان طراحی سایت و توسعه وب با بیش از 10 سال تجربه در ارائه خدمات وب به کسب و کارها. ما با استفاده از جدیدترین تکنولوژی‌ها سایت‌های مدرن و کارآمد می‌سازیم.' },
-        { property: 'og:url', content: 'https://avarancloud.com/about-us' },
+        { property: 'og:url', content: 'https://avarancloud.ir/about-us' },
         { property: 'og:type', content: 'website' },
-        { property: 'og:image', content: 'https://avarancloud.com/about-us-thumb.png' },
+        { property: 'og:image', content: 'https://avarancloud.ir/about-us-thumb.png' },
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:title', content: 'درباره ابرآوران | تیم متخصص طراحی سایت و فروشگاه اینترنتی' },
         { name: 'twitter:description', content: 'ابرآوران گروهی از متخصصان طراحی سایت و توسعه وب با بیش از 10 سال تجربه' },
-        { name: 'canonical', content: 'https://avarancloud.com/about-us' },
+        { name: 'canonical', content: 'https://avarancloud.ir/about-us' },
       ],
       link: [
-        { rel: 'canonical', href: 'https://avarancloud.com/about-us' }
+        { rel: 'canonical', href: 'https://avarancloud.ir/about-us' }
       ],
       script: [
         {
@@ -187,8 +187,8 @@ export default{
             "@context": "https://schema.org",
             "@type": "Organization",
             "name": "ابرآوران",
-            "url": "https://avarancloud.com",
-            "logo": "https://avarancloud.com/logo-avarancloud.png",
+            "url": "https://avarancloud.ir",
+            "logo": "https://avarancloud.ir/logo-avarancloud.png",
             "description": "ابرآوران ارائه دهنده خدمات طراحی سایت و فروشگاه اینترنتی حرفه‌ای با امکانات کامل مدیریتی",
             "contactPoint": {
               "@type": "ContactPoint",

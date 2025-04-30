@@ -179,19 +179,19 @@ export default {
         { name: 'keywords', content: 'ابرآوران, ابر آوران, avarancloud, طراحی سایت, ساخت سایت, فروشگاه اینترنتی, افزایش فروش آنلاین, سئو, طراحی وب سایت, سایت فروشگاهی, سایت رسپانسیو, بهینه سازی سایت, سایت حرفه ای, سایت ارزان, راه اندازی فروشگاه اینترنتی, کسب و کار آنلاین, سایت شرکتی, طراحی سایت با قیمت مناسب, فروشگاه آنلاین' },
         { property: 'og:title', content: 'ابرآوران | طراحی سایت و فروشگاه اینترنتی حرفه‌ای با قیمت مناسب' },
         { property: 'og:description', content: 'ابرآوران - ارائه دهنده خدمات طراحی و ساخت وب‌سایت حرفه‌ای و فروشگاه اینترنتی با امکانات پیشرفته، مدیریت سفارشات، درگاه پرداخت و ابزارهای افزایش فروش' },
-        { property: 'og:url', content: 'https://avarancloud.com/' },
+        { property: 'og:url', content: 'https://avarancloud.ir/' },
         { property: 'og:type', content: 'website' },
-        { property: 'og:image', content: 'https://avarancloud.com/cloud2.svg' },
+        { property: 'og:image', content: 'https://avarancloud.ir/cloud2.svg' },
         { property: 'og:locale', content: 'fa_IR' },
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:title', content: 'ابرآوران | طراحی سایت و فروشگاه اینترنتی حرفه‌ای با قیمت مناسب' },
         { name: 'twitter:description', content: 'ابرآوران - ارائه دهنده خدمات طراحی و ساخت وب‌سایت حرفه‌ای و فروشگاه اینترنتی با امکانات پیشرفته' },
-        { name: 'twitter:image', content: 'https://avarancloud.com/cloud2.svg' },
+        { name: 'twitter:image', content: 'https://avarancloud.ir/cloud2.svg' },
         { name: 'robots', content: 'index, follow' },
-        { name: 'canonical', content: 'https://avarancloud.com/' },
+        { name: 'canonical', content: 'https://avarancloud.ir/' },
       ],
       link: [
-        { rel: 'canonical', href: 'https://avarancloud.com/' }
+        { rel: 'canonical', href: 'https://avarancloud.ir/' }
       ],
       script: [
         {

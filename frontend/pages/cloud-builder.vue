@@ -178,16 +178,16 @@
                   { name: 'keywords', content: 'فروشگاه اینترنتی, فروشگاه آنلاین, ساخت فروشگاه اینترنتی, طراحی فروشگاه آنلاین, سایت فروشگاهی, ابرساز, ابرآوران, فروشگاه ساز, درگاه پرداخت آنلاین, مدیریت محصولات, سیستم فروش آنلاین, افزایش فروش اینترنتی, فروشگاه چندفروشنده, راه اندازی کسب و کار آنلاین, دیجیتال مارکتینگ, avarancloud, ecommerce' },
                   { property: 'og:title', content: 'ابرساز ابرآوران | طراحی فروشگاه اینترنتی حرفه‌ای با امکانات کامل' },
                   { property: 'og:description', content: 'ابرساز ابرآوران - سرویس طراحی فروشگاه اینترنتی حرفه‌ای با امکانات کامل مدیریت محصولات، سبد خرید، پرداخت آنلاین، سیستم تخفیف و کوپن و بهینه‌سازی برای موتورهای جستجو' },
-                  { property: 'og:url', content: 'https://avarancloud.com/cloud-builder' },
+                  { property: 'og:url', content: 'https://avarancloud.ir/cloud-builder' },
                   { property: 'og:type', content: 'website' },
-                  { property: 'og:image', content: 'https://avarancloud.com/cloud-builder-thumb.png' },
+                  { property: 'og:image', content: 'https://avarancloud.ir/cloud-builder-thumb.png' },
                   { name: 'twitter:card', content: 'summary_large_image' },
                   { name: 'twitter:title', content: 'ابرساز ابرآوران | طراحی فروشگاه اینترنتی حرفه‌ای با امکانات کامل' },
                   { name: 'twitter:description', content: 'ابرساز ابرآوران - سرویس طراحی فروشگاه اینترنتی حرفه‌ای با امکانات کامل' },
-                  { name: 'canonical', content: 'https://avarancloud.com/cloud-builder' },
+                  { name: 'canonical', content: 'https://avarancloud.ir/cloud-builder' },
               ],
               link: [
-                  { rel: 'canonical', href: 'https://avarancloud.com/cloud-builder' }
+                  { rel: 'canonical', href: 'https://avarancloud.ir/cloud-builder' }
               ],
               script: [
                   {

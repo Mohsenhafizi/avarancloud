@@ -1,4 +1,4 @@
-# robots.txt for avarancloud.com
+# robots.txt for avarancloud.ir
 User-agent: *
 Allow: /
 
@@ -20,4 +20,4 @@ Allow: /
 Crawl-delay: 1
 
 # Sitemaps
-Sitemap: https://avarancloud.com/sitemap.xml 
+Sitemap: https://avarancloud.ir/sitemap.xml 

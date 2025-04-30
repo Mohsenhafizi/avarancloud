@@ -9,7 +9,7 @@ export default defineNuxtConfig({
       title: 'ابرآوران | طراحی سایت و فروشگاه اینترنتی حرفه‌ای',
       link: [
         { rel: 'icon', type: 'image/png', href: '/logo-avarancloud.png' },
-        { rel: 'canonical', href: 'https://avarancloud.com' }
+        { rel: 'canonical', href: 'https://avarancloud.ir' }
       ],
       meta: [
         { charset: 'utf-8' },
@@ -24,9 +24,9 @@ export default defineNuxtConfig({
         { property: 'og:type', content: 'website' },
         { property: 'og:title', content: 'ابرآوران | طراحی سایت و فروشگاه اینترنتی حرفه‌ای' },
         { property: 'og:description', content: 'ساخت سایت تخصصی و فروشگاهی با تمام امکانات لازم برای مدیریت سایت و سفارشات مانند خدمات پرداخت و ارسال ابزارهای جذب ترافیک و مشتری و افزایش فروش تضمینی' },
-        { property: 'og:url', content: 'https://avarancloud.com' },
+        { property: 'og:url', content: 'https://avarancloud.ir' },
         { property: 'og:site_name', content: 'ابرآوران | طراحی سایت و فروشگاه اینترنتی حرفه‌ای' },
-        { property: 'og:image', content: 'https://avarancloud.com/logo-avarancloud.png' },
+        { property: 'og:image', content: 'https://avarancloud.ir/logo-avarancloud.png' },
         { property: 'og:locale', content: 'fa_IR' },
         { property: 'og:updated_time', content: new Date().toISOString() },
         
@@ -34,14 +34,14 @@ export default defineNuxtConfig({
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:title', content: 'ابرآوران | طراحی سایت و فروشگاه اینترنتی حرفه‌ای' },
         { name: 'twitter:description', content: 'ساخت سایت تخصصی و فروشگاهی با تمام امکانات لازم برای مدیریت سایت و سفارشات' },
-        { name: 'twitter:image', content: 'https://avarancloud.com/logo-avarancloud.png' },
+        { name: 'twitter:image', content: 'https://avarancloud.ir/logo-avarancloud.png' },
         { name: 'twitter:site', content: '@avarancloud' },
 
         // Additional SEO tags
         { name: 'application-name', content: 'ابرآوران' },
         { name: 'apple-mobile-web-app-title', content: 'ابرآوران' },
         { name: 'format-detection', content: 'telephone=no' },
-        { property: 'og:email', content: 'info@avarancloud.com' },
+        { property: 'og:email', content: 'info@avarancloud.ir' },
       ],
       script: [
         { 
@@ -54,8 +54,8 @@ export default defineNuxtConfig({
             "@context": "https://schema.org",
             "@type": "Organization",
             "name": "ابرآوران",
-            "url": "https://avarancloud.com",
-            "logo": "https://avarancloud.com/logo-avarancloud.png",
+            "url": "https://avarancloud.ir",
+            "logo": "https://avarancloud.ir/logo-avarancloud.png",
             "description": "ابرآوران ارائه دهنده خدمات طراحی سایت و فروشگاه اینترنتی حرفه‌ای با امکانات کامل مدیریتی",
             "contactPoint": {
               "@type": "ContactPoint",
@@ -75,10 +75,10 @@ export default defineNuxtConfig({
             "@context": "https://schema.org",
             "@type": "WebSite",
             "name": "ابرآوران",
-            "url": "https://avarancloud.com",
+            "url": "https://avarancloud.ir",
             "potentialAction": {
               "@type": "SearchAction",
-              "target": "https://avarancloud.com/search?q={search_term_string}",
+              "target": "https://avarancloud.ir/search?q={search_term_string}",
               "query-input": "required name=search_term_string"
             }
           }`,
@@ -93,25 +93,25 @@ export default defineNuxtConfig({
                 "@type": "ListItem",
                 "position": 1,
                 "name": "خانه",
-                "item": "https://avarancloud.com/"
+                "item": "https://avarancloud.ir/"
               },
               {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "سایت ساز",
-                "item": "https://avarancloud.com/site-builder"
+                "item": "https://avarancloud.ir/site-builder"
               },
               {
                 "@type": "ListItem",
                 "position": 3,
                 "name": "ابر ساز",
-                "item": "https://avarancloud.com/cloud-builder"
+                "item": "https://avarancloud.ir/cloud-builder"
               },
               {
                 "@type": "ListItem",
                 "position": 4,
                 "name": "درباره ما",
-                "item": "https://avarancloud.com/about-us"
+                "item": "https://avarancloud.ir/about-us"
               }
             ]
           }`,
@@ -158,7 +158,7 @@ export default defineNuxtConfig({
             "provider": {
               "@type": "Organization",
               "name": "ابرآوران",
-              "url": "https://avarancloud.com"
+              "url": "https://avarancloud.ir"
             },
             "description": "طراحی و توسعه انواع وب‌سایت‌های شخصی، شرکتی و فروشگاهی با جدیدترین تکنولوژی‌ها",
             "areaServed": "ایران",
@@ -212,7 +212,7 @@ export default defineNuxtConfig({
   modules: [
     "nuxt-swiper",
     ["@nuxtjs/sitemap", {
-      hostname: 'https://avarancloud.com',
+      hostname: 'https://avarancloud.ir',
       gzip: true,
       routes: [
         '/',
