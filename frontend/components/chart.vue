@@ -14,7 +14,7 @@
         </div>
       </div>
       <div id="area-chart" ref="chartRef"></div>
-      <div class="grid grid-cols-1 items-center border-gray-200 border-t dark:border-gray-700 justify-between">
+      <div class="grid grid-cols-1 items-center border-gray-200 border-t dark:border-gray-700 justify-between">                  
         <div class="flex justify-between items-center md:pt-1">
           <!-- Button -->
           <button
