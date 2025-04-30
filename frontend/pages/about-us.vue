@@ -160,6 +160,7 @@
   
 <script lang="ts">
 import { useHead } from '@vueuse/head';
+import { onMounted } from 'vue';
 
 export default{
     setup() {
@@ -228,6 +229,36 @@ export default{
           }`
         }
       ]
+    });
+
+    onMounted(() => {
+      // برای مدیریت اسکرول به بخش تماس با ما
+      const handleHash = () => {
+        // بررسی وجود هش در URL
+        if (window.location.hash === '#contact-us') {
+          // تاخیر کوتاه برای اطمینان از لود شدن کامل صفحه
+          setTimeout(() => {
+            const contactElement = document.getElementById('contact-us');
+            if (contactElement) {
+              window.scrollTo({
+                top: contactElement.offsetTop - 100, // کمی بالاتر از المنت برای دید بهتر
+                behavior: 'smooth'
+              });
+            }
+          }, 300);
+        }
+      };
+
+      // اجرای اولیه برای لود صفحه
+      handleHash();
+
+      // گوش دادن به تغییرات هش برای کلیک‌های داخلی
+      window.addEventListener('hashchange', handleHash);
+
+      // پاکسازی ایونت لیسنر در هنگام خروج از صفحه
+      return () => {
+        window.removeEventListener('hashchange', handleHash);
+      };
     });
   },
 }

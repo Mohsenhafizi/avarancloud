@@ -1,6 +1,6 @@
 <template>
   <div
-    class="color relative top-15 md:top-0 md:mx-38 md:h-[890px] lg:h-[970px] 2xl:h-[1000px] md:mt-30 flex items-center justify-center min-h-screen bg-blue-50 md:rounded-3xl"
+    class="ltr color relative top-15 md:top-0 md:mx-38 md:h-[890px] lg:h-[970px] 2xl:h-[1000px] md:mt-30 flex items-center justify-center min-h-screen bg-blue-50 md:rounded-3xl"
   >
     <div class="text-center p-8">
       <div class="mx-30 md:mt-40 lg:mt-60 sm:mx-20 md:mx-52 xl:mx-40 2xl:mx-34">
@@ -709,6 +709,9 @@ export default defineComponent({
   100% {
     transform: scale3d(1, 1, 1);
   }
+}
+.ltr{
+  direction: ltr;
 }
 
 .tooltip {
