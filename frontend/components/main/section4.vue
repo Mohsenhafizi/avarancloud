@@ -9,7 +9,7 @@
                       پکیج ساخت سایت سفارشی، راهکار ویژه‌ای برای افرادیه که دنبال داشتن یه سایت اختصاصی هستن و می‌خوان طعم یه دارایی جدید و متفاوتی رو بچشن. ابرآوران اینجا به پشتوانه‌ی خدمات افراد متخصص، پکیج ساخت سایت سفارشی برای شما در نظر گرفته که می‌تونین هر ویژگی که می‌خواین رو روی سایتتون داشته باشین.
                     </p>
                     <div class="flex justify-center">
-                      <NuxtLink to="/site-builder#packages" type="klid" class="klid p-4">
+                      <NuxtLink to="/site-builder#features" type="klid" class="klid p-4" @click="scrollToFeatures">
 
             <span class="fold"></span>
 
@@ -47,7 +47,7 @@
                       یکی از مهم‌ترین کارهایی که باید برای سایتتون انجام بدیم، اینه که سئو یا بهینه‌سازی برای موتورهای جستجو رو توی دستور کار قرار بدیم. اینطوری وقتی یه کاربر یه سری واژه‌ی خاص رو توی گوگل سرچ می‌کنه، سایت شما جزو اولین نتایج جستجو نمایش داده می‌شه و احتمال اینکه وارد سایتتون بشه و ازتون خرید کنه، خیلی بیشتر می‌شه. ابرآوران اینجا هم کنارتونه و از بهترین روش های مختلف سئو براتون آماده کرده تا بتونید توی نتایج جستجوی گوگل بدرخشید!
                     </p>
                     <div class="flex justify-center">
-                      <NuxtLink to="/site-builder#packages" type="klid" class="klid p-4">
+                      <NuxtLink to="/site-builder#packages" type="klid" class="klid p-4" @click="scrollToPackages">
 
             <span class="fold"></span>
 
@@ -87,7 +87,7 @@
                       اگر برای تکمیل و راه‌اندازی سایت خود نیاز به کمک دارید، کار را به ابرآوران بسپارید. ابرآوران یا پشتیبان اختصاصی، یک اکانت منیجر حرفه‌ای و آموزش‌دیده است که به‌صورت ویژه و اختصاصی کنارتان است و راه‌اندازی سایت را برایتان انجام می‌دهد. با خرید این بسته، یک سایت کامل به شما تحویل داده می‌شود که آماده‌ی فروش حرفه‌ای است.
                     </p>
                     <div class="flex justify-center">
-                      <NuxtLink to="/site-builder#packages" type="klid" class="klid p-4">
+                      <NuxtLink to="/cloud-builder#packages" type="klid" class="klid p-4" @click="scrollToPackages">
 
             <span class="fold"></span>
 
@@ -105,7 +105,7 @@
             </div>
 
             <span class="inner">
-                مشاهده بسته ها
+                مشاهده بسته های ابرساز
             </span>
           </NuxtLink>
         </div>
@@ -128,6 +128,19 @@ export default defineComponent({
         onMounted(() => {
             AOS.init();
         });
+
+        const scrollToPackages = () => {
+            setTimeout(() => {
+                const packagesSection = document.getElementById('packages');
+                if (packagesSection) {
+                    packagesSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            }, 100);
+        };
+
+        return {
+            scrollToPackages
+        };
     }
 });
 </script>

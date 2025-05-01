@@ -98,14 +98,14 @@
          </div>
     </div>
     <div class="mt-10 flex justify-center">
-  <button class="div">
+  <NuxtLink to="/site-builder" class="div">
     <div class="state" id="moon">سایت بسازید</div>
     <div class="state" id="sun">سایت بسازید</div>
     <span class="lightRotation"></span>
     <span class="lightRotation2"></span>
     <span class="lightRotation3"></span>
     <span class="lightRotation4"></span>
-</button>
+  </NuxtLink>
 </div>
 <div class="hidden lg:flex lg:justify-center">
   <img class="absolute -z-10 w-70 h-70 rotate-70" src="../../assets/photos/arrrow6.png" alt="ساخت سایت با ابرآوران" data-aos="fade-up">

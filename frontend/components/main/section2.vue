@@ -50,14 +50,14 @@
 </div>
 
 <div class="flex justify-center">
-  <button class="div">
+  <NuxtLink to="/site-builder" class="div">
     <div class="state" id="moon">شروع کنید</div>
     <div class="state" id="sun">شروع کنید</div>
     <span class="lightRotation"></span>
     <span class="lightRotation2"></span>
     <span class="lightRotation3"></span>
     <span class="lightRotation4"></span>
-</button>
+</NuxtLink>
 </div>
 </div>
 
