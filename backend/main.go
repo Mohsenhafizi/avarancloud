@@ -9,9 +9,9 @@ import (
 	"os"
 )
 
-const botToken = os.Getenv("TELEGRAM_BOT_TOKEN")
-const chatID1 = os.Getenv("TELEGRAM_CHAT_ID1")
-const chatID2 = os.Getenv("TELEGRAM_CHAT_ID2")
+var botToken = os.Getenv("TELEGRAM_BOT_TOKEN")
+var chatID1 = os.Getenv("TELEGRAM_CHAT_ID1")
+var chatID2 = os.Getenv("TELEGRAM_CHAT_ID2")
 
 type ContactRequest struct {
 	Name    string `json:"name"`
@@ -62,7 +62,7 @@ func contactHandler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	messageText := fmt.Sprintf(
-		"- درخواست جدید - \n\nنام: %s\nشماره: %s\nپکیج: %s\nپیام:\n%s",
+		"🫕 درخواست جدید 🫕 \n\nنام: %s\nشماره: %s\nپکیج: %s\nپیام:\n%s",
 		req.Name,
 		req.Phone,
 		req.Package,
