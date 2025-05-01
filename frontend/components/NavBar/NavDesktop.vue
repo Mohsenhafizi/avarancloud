@@ -330,6 +330,13 @@ beforeDestroy() {
     border-width: 1.5px;
 }
 
+/* Keep text color black for specific links */
+[href="/"] li,
+[href="/about-us"] li,
+[href="/about-us#contact-us"] li {
+    color: black !important;
+}
+
 /* فلش بالای منو */
 .arrow-up {
     position: absolute;

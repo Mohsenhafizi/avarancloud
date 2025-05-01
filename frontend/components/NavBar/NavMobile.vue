@@ -369,4 +369,18 @@ a[href^="/cloud-builder"].active-link {
 a[href="/"].active-link span {
     color: black !important;
 }
+
+/* Keep text color black for specific links */
+a[href="/"] span,
+a[href="/about-us"] span,
+a[href="/about-us#contact-us"] span {
+    color: black !important;
+}
+
+/* Override active link color for specific links */
+a[href="/"].active-link span,
+a[href="/about-us"].active-link span,
+a[href="/about-us#contact-us"].active-link span {
+    color: black !important;
+}
 </style>
