@@ -12,7 +12,7 @@
         <div class="flex flex-col sm:flex-row justify-between items-center mb-16">
           <transition name="image-appear">
             <div class="image-wrapper mr-2">
-              <img src="../../public/logo-avarancloud.png" alt="avatar" class="profile-image" />
+              <img src="/logo-avarancloud.png" alt="avatar" class="profile-image" />
               <div class="image-overlay"></div>
             </div>
           </transition>
