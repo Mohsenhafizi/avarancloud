@@ -4,7 +4,7 @@
     </div>
 <div class="z-10 flex justify-center items-center mb-56 lg:mb-22 relative -bottom-10 md:bottom-60">
 <div class="flex lg:inline-block items-center flex-col lg:flex-row text-center" data-aos="fade-up">
-  <div class="text-3xl mb-10 text-purple-950">بسته ها</div>
+  <div class="text-3xl mb-10 text-purple-950">بسته های ابرساز</div>
 
     <div class="tem">
     <div class="card__border"></div>

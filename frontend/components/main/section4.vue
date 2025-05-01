@@ -65,7 +65,7 @@
             </div>
 
             <span class="inner">
-                مشاهده بسته ها
+                مشاهده بسته های سایت ساز
             </span>
           </NuxtLink>
 
@@ -129,17 +129,35 @@ export default defineComponent({
             AOS.init();
         });
 
+        const scrollToFeatures = () => {
+            setTimeout(() => {
+                const featuresSection = document.getElementById('features');
+                if (featuresSection) {
+                    const offset = featuresSection.offsetTop - 100; // 150px higher than normal
+                    window.scrollTo({
+                        top: offset,
+                        behavior: 'smooth'
+                    });
+                }
+            }, 100);
+        };
+
         const scrollToPackages = () => {
             setTimeout(() => {
                 const packagesSection = document.getElementById('packages');
                 if (packagesSection) {
-                    packagesSection.scrollIntoView({ behavior: 'smooth' });
+                    const offset = packagesSection.offsetTop - 100; // 150px higher than normal
+                    window.scrollTo({
+                        top: offset,
+                        behavior: 'smooth'
+                    });
                 }
             }, 100);
         };
 
         return {
-            scrollToPackages
+            scrollToPackages,
+            scrollToFeatures
         };
     }
 });
