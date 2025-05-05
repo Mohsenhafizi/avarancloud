@@ -8,7 +8,7 @@ export default defineNuxtConfig({
       },
       title: 'ابرآوران | طراحی سایت و فروشگاه اینترنتی حرفه‌ای',
       link: [
-        { rel: 'icon', type: 'image/png', href: '/avarancloud.ir/assets/photos/logo-avarancloud.png' },
+        { rel: 'icon', type: 'image/png', href: '/logo-avarancloud.png' },
         { rel: 'canonical', href: 'https://avarancloud.ir' }
       ],
       meta: [
