@@ -10,7 +10,9 @@
         </svg>
     </div>
     <div class="font-bold absolute top-0 left-0">
+      <NuxtLink to="/">
         <img class="relative right-2 w-[240px] h-[91px]" src="../../assets/photos/avaran-removebg-preview.png" alt="avaran">
+      </NuxtLink>
     </div>
     </div>
     

@@ -94,7 +94,9 @@
         </ul>
     </nav>
         <div class="relative top-[10px] right-4">
+          <NuxtLink to="/">
             <img class="w-[315px] h-[120px]" src="../../assets/photos/avaran-removebg-preview.png" alt="avarancloud" itemprop="image">
+          </NuxtLink>
         </div>
     </div>
 </header>

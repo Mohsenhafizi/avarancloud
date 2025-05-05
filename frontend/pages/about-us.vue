@@ -189,7 +189,7 @@ export default{
             "@type": "Organization",
             "name": "ابرآوران",
             "url": "https://avarancloud.ir",
-            "logo": "/logo-avarancloud.png",
+            "logo": "/avarancloud.ir/assets/photos/logo-avarancloud.png",
             "description": "ابرآوران ارائه دهنده خدمات طراحی سایت و فروشگاه اینترنتی حرفه‌ای با امکانات کامل مدیریتی",
             "contactPoint": {
               "@type": "ContactPoint",
