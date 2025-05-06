@@ -1,17 +1,17 @@
 <template>
-    <div class="bg-white rtl fixed w-full z-40 md:hidden p-2">  
+    <div class="bg-white rtl fixed w-full z-40 md:hidden p-2" role="region" aria-label="ناوبری موبایل">  
     <!-- Overlay -->
-    <div class="overlay fixed inset-0 bg-black/60 bg-opacity-75 z-10 transition-opacity duration-500 ease-in-out" :class="{ 'opacity-0 invisible': !overlayVisible, 'opacity-100 visible': overlayVisible }" @click="closeOverlay"></div>
+    <div class="overlay fixed inset-0 bg-black/60 bg-opacity-75 z-10 transition-opacity duration-500 ease-in-out" :class="{ 'opacity-0 invisible': !overlayVisible, 'opacity-100 visible': overlayVisible }" @click="closeOverlay" aria-hidden="true"></div>
     <!-- nav Icon -->
     <div class="flex justify-between m-2">
-    <div class="nav-icon inline-block p-2" @click="openNav" aria-label="Open menu">
+    <div class="nav-icon inline-block p-2" @click="openNav" aria-label="باز کردن منو">
         <svg class="w-6 h-6 text-zinc-700" aria-hidden="true">
             <use href="#bars-3"></use>
         </svg>
     </div>
     <div class="font-bold absolute top-0 left-0">
-      <NuxtLink to="/">
-        <img class="relative right-2 w-[240px] h-[91px]" src="../../assets/photos/avaran-removebg-preview.png" alt="avaran">
+      <NuxtLink to="/" aria-label="صفحه اصلی">
+        <img class="relative right-2 w-[240px] h-[91px]" src="../../assets/photos/avaran-removebg-preview.png" alt="ابرآوران - طراحی سایت و فروشگاه اینترنتی">
       </NuxtLink>
     </div>
     </div>
@@ -21,14 +21,14 @@
          :class="{ 'translate-x-full': !navOpen, 'translate-x-0': navOpen }"
          itemscope itemtype="https://schema.org/SiteNavigationElement"
          role="navigation"
-         aria-label="Mobile Navigation">
+         aria-label="منوی موبایل">
         <div class="flex items-center justify-between pb-5 mb-4 border-b border-b-gray-100">
             <div class="mb-2">
               <div class="absolute top-0 left-6">
-                <img class="relative left-3 w-[222px] h-[84px]" src="../../assets/photos/avaran-removebg-preview.png" alt="cloud" itemprop="image">
+                <img class="relative left-3 w-[222px] h-[84px]" src="../../assets/photos/avaran-removebg-preview.png" alt="ابرآوران - طراحی سایت و فروشگاه اینترنتی" itemprop="image">
               </div>
             </div>
-            <div class="relative top-3 nav-Close-Btn" @click="closeNav" aria-label="Close menu">
+            <div class="relative top-3 nav-Close-Btn" @click="closeNav" aria-label="بستن منو">
                 <svg class="w-6 h-6 text-zinc-600" aria-hidden="true">
                     <use href="#x-mark-mini"></use>
                 </svg>
@@ -36,17 +36,17 @@
         </div>
     
         <div class="flex items-center mb-3 pr-2.5 h-10 rounded-md">
-            <NuxtLink to="/" class="flex items-center gap-x-2" active-class="active-link" itemprop="url" @click="setActiveMenuItem('/')">
+            <NuxtLink to="/" class="flex items-center gap-x-2" active-class="active-link" itemprop="url" @click="setActiveMenuItem('/')" role="menuitem" aria-label="صفحه اصلی">
                 <div class="w-3 h-3 rounded-full border-2 border-green-500" :class="{'bg-green-500': activeMenuItem === '/'}"></div>
                 <span class="pt-1 text-black" itemprop="name">صفحه اصلی</span>
             </NuxtLink>
         </div>
     
-        <ul class="text-zinc-600">
+        <ul class="text-zinc-600" role="menu" aria-label="منوی اصلی موبایل">
     
-            <li class="mb-1">
-                <div class="flex items-center justify-between submenu-open-btn" @click="toggleSubmenu" aria-expanded="false" aria-controls="site-submenu">
-                    <NuxtLink to="/site-builder" class="flex items-center gap-x-2 pr-2.5" active-class="active-link" itemprop="url" @click="setActiveMenuItem('/site-builder')">
+            <li class="mb-1" role="presentation">
+                <div class="flex items-center justify-between submenu-open-btn" @click="toggleSubmenu" :aria-expanded="submenuOpen" aria-controls="site-submenu" aria-label="سایت ساز">
+                    <NuxtLink to="/site-builder" class="flex items-center gap-x-2 pr-2.5" active-class="active-link" itemprop="url" @click="setActiveMenuItem('/site-builder')" role="menuitem">
                         <div class="w-3 h-3 rounded-full border-2 border-green-500" :class="{'bg-green-500': activeMenuItem === '/site-builder'}"></div>
                         <span itemprop="name">سایت ساز</span>
                     </NuxtLink>
@@ -57,16 +57,16 @@
                     </span>
                 </div>
                 <div id="site-submenu" class="submenu" :class="{ 'submenu--open': submenuOpen }" role="menu" aria-labelledby="site-menu">
-                  <NuxtLink to="/site-builder#tozihat" class="submenu__item--active my-1" @click="navigateToSection('/site-builder#tozihat')" itemprop="url" role="menuitem"><span itemprop="name">توضیحات</span></NuxtLink>
-                    <NuxtLink to="/site-builder#features" class="submenu__item--active my-1" @click="navigateToSection('/site-builder#features')" itemprop="url" role="menuitem"><span itemprop="name">ویژگی ها</span></NuxtLink>
-                    <NuxtLink to="/site-builder#packages" class="submenu__item--active" @click="navigateToSection('/site-builder#packages')" itemprop="url" role="menuitem"><span itemprop="name">بسته ها</span></NuxtLink>
-                    <NuxtLink to="/site-builder#submenu" class="submenu__item--active my-2" @click="navigateToSection('/site-builder#submenu')" itemprop="url" role="menuitem"><span itemprop="name">سوالات متداول</span></NuxtLink>
+                  <NuxtLink to="/site-builder#tozihat" class="submenu__item--active my-1" @click="navigateToSection('/site-builder#tozihat')" itemprop="url" role="menuitem" aria-label="توضیحات"><span itemprop="name">توضیحات</span></NuxtLink>
+                    <NuxtLink to="/site-builder#features" class="submenu__item--active my-1" @click="navigateToSection('/site-builder#features')" itemprop="url" role="menuitem" aria-label="ویژگی ها"><span itemprop="name">ویژگی ها</span></NuxtLink>
+                    <NuxtLink to="/site-builder#packages" class="submenu__item--active" @click="navigateToSection('/site-builder#packages')" itemprop="url" role="menuitem" aria-label="بسته ها"><span itemprop="name">بسته ها</span></NuxtLink>
+                    <NuxtLink to="/site-builder#submenu" class="submenu__item--active my-2" @click="navigateToSection('/site-builder#submenu')" itemprop="url" role="menuitem" aria-label="سوالات متداول"><span itemprop="name">سوالات متداول</span></NuxtLink>
                 </div>
             </li>
     
-            <li class="mb-1">
-                <div class="flex items-center justify-between submenu-open-btn" @click="toggleSub" aria-expanded="false" aria-controls="cloud-submenu">
-                    <NuxtLink to="/cloud-builder" class="flex items-center gap-x-2 pr-2.5" active-class="active-link" itemprop="url" @click="setActiveMenuItem('/cloud-builder')">
+            <li class="mb-1" role="presentation">
+                <div class="flex items-center justify-between submenu-open-btn" @click="toggleSub" :aria-expanded="submenuOpens" aria-controls="cloud-submenu" aria-label="ابر ساز">
+                    <NuxtLink to="/cloud-builder" class="flex items-center gap-x-2 pr-2.5" active-class="active-link" itemprop="url" @click="setActiveMenuItem('/cloud-builder')" role="menuitem">
                         <div class="w-3 h-3 rounded-full border-2 border-blue-500" :class="{'bg-blue-500': activeMenuItem === '/cloud-builder'}"></div>
                         <span itemprop="name">ابر ساز</span>
                     </NuxtLink>
@@ -77,20 +77,20 @@
                     </span>
                 </div>
                 <div id="cloud-submenu" class="submenu" :class="{ 'submenu--open': submenuOpens }" role="menu" aria-labelledby="cloud-menu">
-                  <NuxtLink to="/cloud-builder#tozihat" class="submenu__item--active my-1" @click="navigateToSection('/cloud-builder#tozihat')" itemprop="url" role="menuitem"><span itemprop="name">توضیحات</span></NuxtLink>
-                    <NuxtLink to="/cloud-builder#features" class="submenu__item--active my-1" @click="navigateToSection('/cloud-builder#features')" itemprop="url" role="menuitem"><span itemprop="name">ویژگی ها</span></NuxtLink>
-                    <NuxtLink to="/cloud-builder#aaS" class="submenu__item--active my-1" @click="navigateToSection('/cloud-builder#aaS')" itemprop="url" role="menuitem"><span itemprop="name">مدل های ابرساز</span></NuxtLink>
-                    <NuxtLink to="/cloud-builder#packages" class="submenu__item--active" @click="navigateToSection('/cloud-builder#packages')" itemprop="url" role="menuitem"><span itemprop="name">بسته ها</span></NuxtLink>
-                    <NuxtLink to="/cloud-builder#submenu" class="submenu__item--active my-2" @click="navigateToSection('/cloud-builder#submenu')" itemprop="url" role="menuitem"><span itemprop="name">سوالات متداول</span></NuxtLink>
+                  <NuxtLink to="/cloud-builder#tozihat" class="submenu__item--active my-1" @click="navigateToSection('/cloud-builder#tozihat')" itemprop="url" role="menuitem" aria-label="توضیحات"><span itemprop="name">توضیحات</span></NuxtLink>
+                    <NuxtLink to="/cloud-builder#features" class="submenu__item--active my-1" @click="navigateToSection('/cloud-builder#features')" itemprop="url" role="menuitem" aria-label="ویژگی ها"><span itemprop="name">ویژگی ها</span></NuxtLink>
+                    <NuxtLink to="/cloud-builder#aaS" class="submenu__item--active my-1" @click="navigateToSection('/cloud-builder#aaS')" itemprop="url" role="menuitem" aria-label="مدل های ابرساز"><span itemprop="name">مدل های ابرساز</span></NuxtLink>
+                    <NuxtLink to="/cloud-builder#packages" class="submenu__item--active" @click="navigateToSection('/cloud-builder#packages')" itemprop="url" role="menuitem" aria-label="بسته ها"><span itemprop="name">بسته ها</span></NuxtLink>
+                    <NuxtLink to="/cloud-builder#submenu" class="submenu__item--active my-2" @click="navigateToSection('/cloud-builder#submenu')" itemprop="url" role="menuitem" aria-label="سوالات متداول"><span itemprop="name">سوالات متداول</span></NuxtLink>
                 </div>
             </li>
-            <li class="mb-4">
-                <NuxtLink to="/about-us" class="flex items-center gap-x-2 pr-2.5" active-class="active-link" itemprop="url" @click="setActiveMenuItem('/about-us')">
+            <li class="mb-4" role="presentation">
+                <NuxtLink to="/about-us" class="flex items-center gap-x-2 pr-2.5" active-class="active-link" itemprop="url" @click="setActiveMenuItem('/about-us')" role="menuitem" aria-label="درباره ما">
                   <div class="w-3 h-3 rounded-full border-2 border-green-500" :class="{'bg-green-500': activeMenuItem === '/about-us'}"></div>
                   <span itemprop="name">درباره ما</span>
                 </NuxtLink>
             </li>
-            <li class="mb-4">
+            <li class="mb-4" role="presentation">
               <NuxtLink
               to="/about-us#contact-us"
               class="flex items-center gap-x-2 pr-2.5"
@@ -98,6 +98,8 @@
               @click="navigateToSection('/about-us#contact-us')"
               :key="'contact-us-link'"
               itemprop="url"
+              role="menuitem"
+              aria-label="ارتباط با ما"
             >
               <div
                 class="w-3 h-3 rounded-full border-2 border-green-500"

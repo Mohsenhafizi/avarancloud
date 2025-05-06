@@ -1,17 +1,17 @@
 <template>
 <header class="rtl fixed top-0 right-0 left-0 z-20 hidden md:flex justify-between items-center px-5 lg:px-10 
-               py-5 h-24 w-[98%] lg:w-[90%] 2xl:w-[80%] mx-auto bg-white shadow-2xl rounded-b-3xl" itemscope itemtype="https://schema.org/SiteNavigationElement">
+               py-5 h-24 w-[98%] lg:w-[90%] 2xl:w-[80%] mx-auto bg-white shadow-2xl rounded-b-3xl" itemscope itemtype="https://schema.org/SiteNavigationElement" role="banner">
     <div class="flex items-center w-full justify-between">
-    <nav class="flex items-center gap-x-3 lg:gap-x-6 h-14" aria-label="Main Navigation">
-        <ul class="flex gap-x-2 items-center lg:gap-x-6 h-full text-lg 2xl:text-xl text-gray-800 tracking-tighest child:leading-[56px] whitespace-nowrap">
-            <NuxtLink to="/" class="hover:bg-emerald-300 rounded-2xl p-3 transition-all flex items-center" active-class="active-link" itemprop="url">
+    <nav class="flex items-center gap-x-3 lg:gap-x-6 h-14" aria-label="منوی اصلی" role="navigation">
+        <ul class="flex gap-x-2 items-center lg:gap-x-6 h-full text-lg 2xl:text-xl text-gray-800 tracking-tighest child:leading-[56px] whitespace-nowrap" role="menubar" aria-orientation="horizontal">
+            <NuxtLink to="/" class="hover:bg-emerald-300 rounded-2xl p-3 transition-all flex items-center" active-class="active-link" itemprop="url" role="menuitem" aria-label="صفحه اصلی">
                 <div class="circle mx-2 w-3 h-3 mb-1 shadow-xl rounded-full transition-all duration-300"></div>
                 <li itemprop="name">
                     صفحه اصلی
                 </li>
             </NuxtLink>
-            <div class="dropdown-container relative" ref="menuContainer">
-                <NuxtLink to="/site-builder" class="hover:bg-emerald-300 cursor-pointer rounded-2xl p-3 transition-all flex items-center" @mouseenter="menuMouseEnter" active-class="active-link" itemprop="url">
+            <div class="dropdown-container relative" ref="menuContainer" role="presentation">
+                <NuxtLink to="/site-builder" class="hover:bg-emerald-300 cursor-pointer rounded-2xl p-3 transition-all flex items-center" @mouseenter="menuMouseEnter" active-class="active-link" itemprop="url" role="menuitem" aria-haspopup="true" :aria-expanded="isMenuOpen.toString()" aria-label="سایت ساز">
                     <div class="circle mx-2 w-3 h-3 mb-1 shadow-xl rounded-full transition-all duration-300"></div>
                     <li class="flex items-center" itemprop="name">
                         سایت ساز
@@ -29,19 +29,19 @@
                     role="menu"
                     aria-orientation="vertical"
                     aria-labelledby="site-builder-menu">
-                    <div class="arrow-up"></div>
-                    <div class="safe-area"></div>
-                    <ul class="text-right">
-                      <li role="menuitem"><NuxtLink to="/site-builder#tozihat" class="submenu-item block py-2 px-4 text-gray-800 text-base" itemprop="url"><span itemprop="name">توضیحات</span></NuxtLink></li>
-                        <li role="menuitem"><NuxtLink to="/site-builder#features" class="submenu-item block py-2 px-4 text-gray-800 text-base" itemprop="url"><span itemprop="name">ویژگی ها</span></NuxtLink></li>
-                        <li role="menuitem"><NuxtLink to="/site-builder#packages" class="submenu-item block py-2 px-4 text-gray-800 text-base" itemprop="url"><span itemprop="name">بسته ها</span></NuxtLink></li>
-                        <li role="menuitem"><NuxtLink to="/site-builder#submenu" class="submenu-item block py-2 px-4 text-gray-800 text-base" itemprop="url"><span itemprop="name">سوالات متداول</span></NuxtLink></li>
+                    <div class="arrow-up" aria-hidden="true"></div>
+                    <div class="safe-area" aria-hidden="true"></div>
+                    <ul class="text-right" role="group">
+                      <li role="menuitem"><NuxtLink to="/site-builder#tozihat" class="submenu-item block py-2 px-4 text-gray-800 text-base" itemprop="url" aria-label="توضیحات"><span itemprop="name">توضیحات</span></NuxtLink></li>
+                        <li role="menuitem"><NuxtLink to="/site-builder#features" class="submenu-item block py-2 px-4 text-gray-800 text-base" itemprop="url" aria-label="ویژگی ها"><span itemprop="name">ویژگی ها</span></NuxtLink></li>
+                        <li role="menuitem"><NuxtLink to="/site-builder#packages" class="submenu-item block py-2 px-4 text-gray-800 text-base" itemprop="url" aria-label="بسته ها"><span itemprop="name">بسته ها</span></NuxtLink></li>
+                        <li role="menuitem"><NuxtLink to="/site-builder#submenu" class="submenu-item block py-2 px-4 text-gray-800 text-base" itemprop="url" aria-label="سوالات متداول"><span itemprop="name">سوالات متداول</span></NuxtLink></li>
                     </ul>
-                    <div class="safe-area"></div>
+                    <div class="safe-area" aria-hidden="true"></div>
                 </div>
             </div>
-            <div class="dropdown-container relative" ref="menuContainers">
-                <NuxtLink to="/cloud-builder" class="hover:bg-emerald-300 cursor-pointer rounded-2xl p-3 transition-all flex items-center" @mouseenter="menuMouseEnters" active-class="active-link" itemprop="url">
+            <div class="dropdown-container relative" ref="menuContainers" role="presentation">
+                <NuxtLink to="/cloud-builder" class="hover:bg-emerald-300 cursor-pointer rounded-2xl p-3 transition-all flex items-center" @mouseenter="menuMouseEnters" active-class="active-link" itemprop="url" role="menuitem" aria-haspopup="true" :aria-expanded="isMenuOpenContainer.toString()" aria-label="ابر ساز">
                     <div class="circle mx-2 w-3 h-3 mb-1 shadow-xl rounded-full transition-all duration-300"></div>
                     <li class="flex items-center" itemprop="name">
                         ابر ساز
@@ -59,16 +59,16 @@
                     role="menu"
                     aria-orientation="vertical"
                     aria-labelledby="cloud-builder-menu">
-                    <div class="arrow-up"></div>
-                    <div class="safe-area"></div>
-                    <ul class="text-right">
-                      <li role="menuitem"><NuxtLink to="/cloud-builder#tozihat" class="submenu-item block py-2 px-4 text-gray-800 text-base" itemprop="url"><span itemprop="name">توضیحات</span></NuxtLink></li>
-                        <li role="menuitem"><NuxtLink to="/cloud-builder#features" class="submenu-item block py-2 px-4 text-gray-800 text-base" itemprop="url"><span itemprop="name">ویژگی ها</span></NuxtLink></li>
-                        <li role="menuitem"><NuxtLink to="/cloud-builder#aaS" class="submenu-item block py-2 px-4 text-gray-800 text-base" itemprop="url"><span itemprop="name">مدل های ابرساز</span></NuxtLink></li>
-                        <li role="menuitem"><NuxtLink to="/cloud-builder#packages" class="submenu-item block py-2 px-4 text-gray-800 text-base" itemprop="url"><span itemprop="name">بسته ها</span></NuxtLink></li>
-                        <li role="menuitem"><NuxtLink to="/cloud-builder#submenu" class="submenu-item block py-2 px-4 text-gray-800 text-base" itemprop="url"><span itemprop="name">سوالات متداول</span></NuxtLink></li>
+                    <div class="arrow-up" aria-hidden="true"></div>
+                    <div class="safe-area" aria-hidden="true"></div>
+                    <ul class="text-right" role="group">
+                      <li role="menuitem"><NuxtLink to="/cloud-builder#tozihat" class="submenu-item block py-2 px-4 text-gray-800 text-base" itemprop="url" aria-label="توضیحات"><span itemprop="name">توضیحات</span></NuxtLink></li>
+                        <li role="menuitem"><NuxtLink to="/cloud-builder#features" class="submenu-item block py-2 px-4 text-gray-800 text-base" itemprop="url" aria-label="ویژگی ها"><span itemprop="name">ویژگی ها</span></NuxtLink></li>
+                        <li role="menuitem"><NuxtLink to="/cloud-builder#aaS" class="submenu-item block py-2 px-4 text-gray-800 text-base" itemprop="url" aria-label="مدل های ابرساز"><span itemprop="name">مدل های ابرساز</span></NuxtLink></li>
+                        <li role="menuitem"><NuxtLink to="/cloud-builder#packages" class="submenu-item block py-2 px-4 text-gray-800 text-base" itemprop="url" aria-label="بسته ها"><span itemprop="name">بسته ها</span></NuxtLink></li>
+                        <li role="menuitem"><NuxtLink to="/cloud-builder#submenu" class="submenu-item block py-2 px-4 text-gray-800 text-base" itemprop="url" aria-label="سوالات متداول"><span itemprop="name">سوالات متداول</span></NuxtLink></li>
                     </ul>
-                    <div class="safe-area"></div>
+                    <div class="safe-area" aria-hidden="true"></div>
                 </div>
             </div>
             <NuxtLink
@@ -76,6 +76,8 @@
             class="hover:bg-emerald-300 rounded-2xl p-3 transition-all flex items-center"
             active-class="active-link"
             itemprop="url"
+            role="menuitem"
+            aria-label="درباره ما"
             >
             <div class="circle mx-2 w-3 h-3 mb-1 shadow-xl rounded-full transition-all duration-300"></div>
             <li itemprop="name">درباره ما</li>
@@ -87,6 +89,8 @@
                 :class="{ 'active-link': isContactUsVisible || (isContactUsClicked && isContactUsVisible) }"
                 @click="handleContactUsClick"
                 itemprop="url"
+                role="menuitem"
+                aria-label="ارتباط با ما"
                 >
             <div class="circle mx-2 w-3 h-3 mb-1 shadow-xl rounded-full transition-all duration-300"></div>
             <li itemprop="name">ارتباط با ما</li>
@@ -95,7 +99,7 @@
     </nav>
         <div class="relative top-[10px] right-4">
           <NuxtLink to="/">
-            <img class="w-[315px] h-[120px]" src="../../assets/photos/avaran-removebg-preview.png" alt="avarancloud" itemprop="image">
+            <img class="w-[315px] h-[120px]" src="../../assets/photos/avaran-removebg-preview.png" alt="ابرآوران - طراحی سایت و فروشگاه اینترنتی" itemprop="image">
           </NuxtLink>
         </div>
     </div>
