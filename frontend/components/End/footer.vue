@@ -8,6 +8,18 @@
                 <li class="mb-10">
                   <span class="font-bold">ابرآوران</span> پلتفرمی یکپارچه برای ساختن وب‌سایت و وب اپلیکیشن است. با استفاده از <span class="font-bold">ابرآوران</span> همه می‌توانند با هر سطحی از دانش فنی، برای کسب‌وکارشان یک سایت حرفه‌ای بسازند و فقط با استفاده از پنل <span class="font-bold">ابرآوران</span>، سفارشات خود را از مرحله‌ی پرداخت تا ارسال و وفادارسازی مشتری مدیریت کنند. از بسته‌های ابرساز <span class="font-bold">ابرآوران</span> برای ساخت و بهبود زیرساخت‌های مانیتورینگ و افزایش مقیاس بهره‌مند شوید.
                 </li>
+                <li class="mb-4 p-3 bg-gray-700 rounded-md border-r-4 border-blue-500">
+                  <div class="flex items-center mb-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span class="font-bold text-white">نام صحیح ما: ابرآوران</span>
+                  </div>
+                  <p class="text-sm">
+                    توجه داشته باشید که نام شرکت ما <span class="font-bold text-blue-400">ابرآوران</span> (با واو) است، نه ابرآروان. ابرآوران از ترکیب کلمات "ابر" و "آوران" تشکیل شده است.
+                    <NuxtLink to="/brand" class="text-blue-400 underline">اطلاعات بیشتر</NuxtLink>
+                  </p>
+                </li>
             </ul>
         </div>
         <div>
@@ -138,6 +150,10 @@ a[href*="cloud-builder"] {
 
 a[href*="about-us"] {
     color: #a3a2a2 !important; /* Black color for about-us links */
+}
+
+a[href*="brand"] {
+    color: #60a5fa !important; /* Light blue color for brand links */
 }
 
 .example-2 .icon-content a[data-social="telegram"] .filled,

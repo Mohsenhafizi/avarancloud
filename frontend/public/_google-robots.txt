@@ -1,0 +1,18 @@
+# Special robots.txt instructions for Google
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+
+# Priority pages for brand identity reinforcement
+Allow: /brand$
+Allow: /about-us$
+Allow: /$
+
+# Spelling correction handling
+Disallow: /*ابرآروان*
+Disallow: /*abaravan*
+
+# Canonical page for our brand
+Allow: /brand$
+
+Sitemap: https://avarancloud.ir/sitemap.xml 

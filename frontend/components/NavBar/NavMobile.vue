@@ -209,15 +209,20 @@ export default defineComponent({
     };
     
     const navigateToSection = (path: string) => {
+      // Extract the route path and hash
+      const [routePath, hash] = path.split('#');
+      
+      // Set active menu item
       setActiveMenuItem(path);
+      
+      // First close the mobile navigation
       closeNav();
       
       // If navigating to an anchor link, ensure proper scrolling
-      const isAnchorLink = path.includes('#');
-      if (isAnchorLink) {
+      if (hash) {
+        // Use a longer delay to ensure menu has closed before scrolling
         setTimeout(() => {
-          const targetId = path.split('#')[1];
-          const targetElement = document.getElementById(targetId);
+          const targetElement = document.getElementById(hash);
           if (targetElement) {
             // Get the position of the element relative to the viewport
             const elementPosition = targetElement.getBoundingClientRect().top;
@@ -226,13 +231,24 @@ export default defineComponent({
             // Subtract 100px offset to show section higher (adjust as needed)
             const scrollPosition = offsetPosition - 100;
             
-            // Scroll to the adjusted position
+            // First scroll quickly to the position
             window.scrollTo({
               top: scrollPosition,
-              behavior: 'smooth'
+              behavior: 'auto'
             });
+            
+            // Then after a small delay, do a smooth fine adjustment
+            setTimeout(() => {
+              const newElementPosition = targetElement.getBoundingClientRect().top;
+              if (Math.abs(newElementPosition) > 20) {
+                window.scrollBy({
+                  top: newElementPosition - 100,
+                  behavior: 'smooth'
+                });
+              }
+            }, 150);
           }
-        }, 300); // Give time for page to load/render
+        }, 400); // Increase delay to ensure menu has closed
       }
     };
     

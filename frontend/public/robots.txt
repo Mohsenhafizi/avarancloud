@@ -2,9 +2,14 @@
 User-agent: *
 Allow: /
 
-# Allow all bots to access the site
+# Primary focus on brand pages
 User-agent: Googlebot
 Allow: /
+Disallow: /admin/
+# Priority pages for brand identity
+Allow: /brand$
+Allow: /about-us$
+
 User-agent: Googlebot-Image
 Allow: /
 User-agent: Googlebot-Mobile
@@ -15,18 +20,6 @@ User-agent: Bingbot
 Allow: /
 User-agent: Yandex
 Allow: /
-
-# Disallow duplicate content
-Disallow: */index.html
-Disallow: /*?*
-Disallow: /*?
-
-# Disallow admin or internal paths if they exist
-Disallow: /admin/
-Disallow: /admin
-Disallow: /login
-Disallow: /register
-Disallow: /logout
 
 # Crawl delay
 Crawl-delay: 1

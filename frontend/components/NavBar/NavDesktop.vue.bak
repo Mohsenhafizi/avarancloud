@@ -106,200 +106,198 @@
 </header>
 </template>
 
-<script setup lang="ts">
-import { ref, onMounted, onBeforeUnmount } from 'vue';
-
-// حالت های کامپوننت
-const isMenuOpen = ref(false);
-const isMenuOpenContainer = ref(false);
-const closeTimeout = ref<number | null>(null);
-const mouseInSubmenu = ref(false);
-const mouseInMainLink = ref(false);
-const mouseInSubmenuContainer = ref(false);
-const mouseInMainLinkContainer = ref(false);
-const isContactUsClicked = ref(false); // برای ردیابی کلیک روی لینک "ارتباط با ما"
-const isContactUsVisible = ref(false); // برای ردیابی دیده شدن بخش #contact-us
-const observer = ref<IntersectionObserver | null>(null); // ذخیره نمونه Intersection Observer
-
-// رفرنس ها
-const menuContainer = ref<HTMLElement | null>(null);
-const submenuSite = ref<HTMLElement | null>(null);
-const menuContainers = ref<HTMLElement | null>(null);
-const submenuCloud = ref<HTMLElement | null>(null);
-
-// متدها
-const clearCloseTimeout = () => {
-  if (closeTimeout.value) {
-    clearTimeout(closeTimeout.value);
-    closeTimeout.value = null;
-  }
-};
-
-const menuMouseEnter = () => {
-  clearCloseTimeout();
-  mouseInMainLink.value = true;
-  mouseInMainLinkContainer.value = false;
-  isMenuOpen.value = true;
-  isMenuOpenContainer.value = false;
-};
-
-const menuMouseEnters = () => {
-  clearCloseTimeout();
-  mouseInMainLinkContainer.value = true;
-  mouseInMainLink.value = false;
-  isMenuOpenContainer.value = true;
-  isMenuOpen.value = false;
-};
-
-const submenuMouseEnter = () => {
-  clearCloseTimeout();
-  mouseInSubmenu.value = true;
-  mouseInSubmenuContainer.value = false;
-};
-
-const submenuMouseEnters = () => {
-  clearCloseTimeout();
-  mouseInSubmenuContainer.value = true;
-  mouseInSubmenu.value = false;
-};
-
-const scheduleClose = () => {
-  clearCloseTimeout();
-  mouseInMainLink.value = false;
-  mouseInSubmenu.value = false;
-  
-  closeTimeout.value = window.setTimeout(() => {
-    if (!mouseInMainLink.value && !mouseInSubmenu.value) {
-      isMenuOpen.value = false;
+<script lang="ts">
+export default {
+  name: 'NavDesktop',
+  data() {
+    return {
+      isMenuOpen: false,
+      isMenuOpenContainer: false,
+      closeTimeout: null as number | null,
+      mouseInSubmenu: false,
+      mouseInMainLink: false,
+      mouseInSubmenuContainer: false,
+      mouseInMainLinkContainer: false,
+      isContactUsClicked: false, // برای ردیابی کلیک روی لینک "ارتباط با ما"
+      isContactUsVisible: false, // برای ردیابی دیده شدن بخش #contact-us
+      observer: null as IntersectionObserver | null,  // ذخیره نمونه Intersection Observer
     }
-  }, 50);
-};
-
-const scheduleCloses = () => {
-  clearCloseTimeout();
-  mouseInMainLinkContainer.value = false;
-  mouseInSubmenuContainer.value = false;
+  },
   
-  closeTimeout.value = window.setTimeout(() => {
-    if (!mouseInMainLinkContainer.value && !mouseInSubmenuContainer.value) {
-      isMenuOpenContainer.value = false;
-    }
-  }, 50);
-};
-
-const handleContactUsClick = () => {
-  isContactUsClicked.value = true; // وقتی کاربر روی لینک "ارتباط با ما" کلیک می‌کند
-};
-
-const setupIntersectionObserver = () => {
-  const contactUsSection = document.querySelector('#contact-us');
-  if (contactUsSection) {
-    observer.value = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            isContactUsVisible.value = true; // وقتی بخش #contact-us دیده شد
-          } else {
-            isContactUsVisible.value = false; // وقتی بخش #contact-us دیده نشد
-          }
-        });
-      },
-      {
-        threshold: 0.5, // حداقل 50% بخش باید دیده شود
-      }
-    );
-    observer.value.observe(contactUsSection);
-  }
-};
-
-const setupHashNavigationEvents = () => {
-  // یافتن تمام لینک‌هایی که دارای هش هستند
-  const hashLinks = document.querySelectorAll('a[href*="#"]');
-  
-  hashLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-      const href = link.getAttribute('href');
-      if (!href) return;
+  methods: {
+    menuMouseEnter() {
+      this.clearCloseTimeout();
+      this.mouseInMainLink = true;
+      this.mouseInMainLinkContainer = false;
+      this.isMenuOpen = true;
+      this.isMenuOpenContainer = false;
+    },
+    
+    menuMouseEnters() {
+      this.clearCloseTimeout();
+      this.mouseInMainLinkContainer = true;
+      this.mouseInMainLink = false;
+      this.isMenuOpenContainer = true;
+      this.isMenuOpen = false;
+    },
+    
+    submenuMouseEnter() {
+      this.clearCloseTimeout();
+      this.mouseInSubmenu = true;
+      this.mouseInSubmenuContainer = false;
+    },
+    
+    submenuMouseEnters() {
+      this.clearCloseTimeout();
+      this.mouseInSubmenuContainer = true;
+      this.mouseInSubmenu = false;
+    },
+    
+    scheduleClose() {
+      this.clearCloseTimeout();
+      this.mouseInMainLink = false;
+      this.mouseInSubmenu = false;
       
-      if (href.includes('#')) {
-        const [path, hash] = href.split('#');
-        const currentPath = window.location.pathname;
-        
-        // اگر در همان صفحه هستیم، اسکرول را به صورت دستی انجام دهیم
-        if ((path === currentPath || (path === '/' && currentPath === '/') || path === '') && hash) {
-          e.preventDefault();
-          
-          // کمی تاخیر برای اطمینان از بسته شدن منوها
-          setTimeout(() => {
-            const targetElement = document.getElementById(hash);
-            if (targetElement) {
-              // اندازه هدر برای محاسبه آفست
-              const headerOffset = 100;
-              const elementPosition = targetElement.getBoundingClientRect().top;
-              const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-              
-              // اول سریع به موقعیت اسکرول کنیم
-              window.scrollTo({
-                top: offsetPosition,
-                behavior: 'auto'
-              });
-              
-              // سپس با تاخیر کم، تنظیم دقیق را انجام دهیم
-              setTimeout(() => {
-                const newElementPosition = targetElement.getBoundingClientRect().top;
-                if (Math.abs(newElementPosition) > 20) {
-                  window.scrollBy({
-                    top: newElementPosition - headerOffset,
-                    behavior: 'smooth'
-                  });
-                }
-              }, 150);
-            }
-            
-            // آدرس را بدون بارگذاری مجدد صفحه به‌روز کنیم
-            history.pushState(null, '', href);
-          }, 100);
+      this.closeTimeout = window.setTimeout(() => {
+        if (!this.mouseInMainLink && !this.mouseInSubmenu) {
+          this.isMenuOpen = false;
         }
+      }, 50);
+    },
+    
+    scheduleCloses() {
+      this.clearCloseTimeout();
+      this.mouseInMainLinkContainer = false;
+      this.mouseInSubmenuContainer = false;
+      
+      this.closeTimeout = window.setTimeout(() => {
+        if (!this.mouseInMainLinkContainer && !this.mouseInSubmenuContainer) {
+          this.isMenuOpenContainer = false;
+        }
+      }, 50);
+    },
+    
+    clearCloseTimeout() {
+      if (this.closeTimeout) {
+        clearTimeout(this.closeTimeout);
+        this.closeTimeout = null;
       }
-    });
-  });
-};
-
-// چرخه حیات کامپوننت
-onMounted(() => {
+    },
+    handleContactUsClick() {
+      this.isContactUsClicked = true; // وقتی کاربر روی لینک "ارتباط با ما" کلیک می‌کند
+    },
+    setupIntersectionObserver() {
+    const contactUsSection = document.querySelector('#contact-us');
+    if (contactUsSection) {
+      this.observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              this.isContactUsVisible = true; // وقتی بخش #contact-us دیده شد
+            } else {
+              this.isContactUsVisible = false; // وقتی بخش #contact-us دیده نشد
+            }
+          });
+        },
+        {
+          threshold: 0.5, // حداقل 50% بخش باید دیده شود
+        }
+      );
+      this.observer.observe(contactUsSection);
+    }
+  },
+  
+  mounted() {
   // رویداد کلی برای کل صفحه برای بستن منو وقتی کاربر جای دیگری کلیک می‌کند
   document.addEventListener('click', (e) => {
     const target = e.target as HTMLElement | null;
-    if (menuContainer.value && target && !menuContainer.value.contains(target)) {
-      isMenuOpen.value = false;
+    const menuContainer = this.$refs.menuContainer as HTMLElement | null;
+    if (menuContainer && target && !menuContainer.contains(target)) {
+      this.isMenuOpen = false;
     }
 
-    if (menuContainers.value && target && !menuContainers.value.contains(target)) {
-      isMenuOpenContainer.value = false;
+    const menuContainers = this.$refs.menuContainers as HTMLElement | null;
+    if (menuContainers && target && !menuContainers.contains(target)) {
+      this.isMenuOpenContainer = false;
     }
   });
 
   // رویداد mouseleave برای کانتینر منو
-  if (menuContainer.value) {
-    menuContainer.value.addEventListener('mouseleave', scheduleClose);
+  const container = this.$refs.menuContainer as HTMLElement | null;
+  if (container) {
+    container.addEventListener('mouseleave', this.scheduleClose);
   }
 
-  if (menuContainers.value) {
-    menuContainers.value.addEventListener('mouseleave', scheduleCloses);
+  const containers = this.$refs.menuContainers as HTMLElement | null;
+  if (containers) {
+    containers.addEventListener('mouseleave', this.scheduleCloses);
   }
   
-  setupIntersectionObserver(); // راه‌اندازی Intersection Observer
+  this.setupIntersectionObserver(); // راه‌اندازی Intersection Observer
   
   // اضافه کردن مدیریت کلیک روی لینک‌های دارای هش
-  setupHashNavigationEvents();
-});
-
-onBeforeUnmount(() => {
-  // پاکسازی Intersection Observer
-  if (observer.value) {
-    observer.value.disconnect();
-  }
-});
+  this.setupHashNavigationEvents();
+},
+  
+beforeDestroy() {
+    // پاکسازی Intersection Observer
+    if (this.observer) {
+      this.observer.disconnect();
+    }
+  },
+  
+  // اضافه کردن متد جدید برای مدیریت کلیک روی لینک‌های هش
+  setupHashNavigationEvents() {
+    const hashLinks = document.querySelectorAll('a[href*="#"]');
+    hashLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        const href = link.getAttribute('href');
+        if (!href) return;
+        
+        if (href.includes('#')) {
+          const [path, hash] = href.split('#');
+          const currentPath = window.location.pathname;
+          
+          // اگر در همان صفحه هستیم، اسکرول را به صورت دستی انجام دهیم
+          if ((path === currentPath || (path === '/' && currentPath === '/') || path === '') && hash) {
+            e.preventDefault();
+            
+            // کمی تاخیر برای اطمینان از بسته شدن منوها
+            setTimeout(() => {
+              const targetElement = document.getElementById(hash);
+              if (targetElement) {
+                // اندازه هدر برای محاسبه آفست
+                const headerOffset = 100;
+                const elementPosition = targetElement.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                
+                // اول سریع به موقعیت اسکرول کنیم
+                window.scrollTo({
+                  top: offsetPosition,
+                  behavior: 'auto'
+                });
+                
+                // سپس با تاخیر کم، تنظیم دقیق را انجام دهیم
+                setTimeout(() => {
+                  const newElementPosition = targetElement.getBoundingClientRect().top;
+                  if (Math.abs(newElementPosition) > 20) {
+                    window.scrollBy({
+                      top: newElementPosition - headerOffset,
+                      behavior: 'smooth'
+                    });
+                  }
+                }, 150);
+              }
+              
+              // آدرس را بدون بارگذاری مجدد صفحه به‌روز کنیم
+              history.pushState(null, '', href);
+            }, 100);
+          }
+        }
+      });
+    });
+  },
+}
 </script>
 
 <style>
