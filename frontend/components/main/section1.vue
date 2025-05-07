@@ -10,9 +10,9 @@
         data-aos="fade-up"
       >
       <span class="2xl:flex text-purple-950 2xl:justify-center z-10">
-        <h1 class="">ابرآوران - خدمات حرفه‌ای وب و دیجیتال</h1>
+        ابرآوران - خدمات حرفه‌ای وب و دیجیتال
         <span class="absolute top-18 sm:top-13 mx-10 flex -z-10">
-        <img class="w-80" src="../../assets/svg/vector-7.svg" alt="ابرآوران - خدمات وب و دیجیتال">
+        <img class="w-80" src="../../assets/svg/vector-7.svg" alt="خط زیر عنوان ابرآوران">
         </span>
       </span>
       </h1>
@@ -155,9 +155,11 @@
         <div class="mx-28">
         <div
           class="relative etesal sm:top-14 md:top-24 2xl:top-12 inline-block group mt-2 right-16 md:right-22 2xl:right-34 z-10"
+          aria-label="اتصال به دامنه شخصی"
         >
           <button
             class="relative md:left-4 bottom-1.5 md:bottom-8 px-2 py-1 sm:px-5 sm:py-2 md:px-6 lg:px-8 md:py-2 text-xs md:text-sm font-semibol bg-slate-200 rounded-3xl border-2 border-slate-300 hover:border-3 hover:border-blue-200 transition-all duration-300 overflow-hidden"
+            aria-label="دامنه اختصاصی شما"
           >
 
             <span
@@ -170,6 +172,7 @@
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
+                aria-hidden="true"
               >
                 <path
                   stroke-linecap="round"
@@ -183,6 +186,7 @@
 
           <div
             class="absolute invisible opacity-0 group-active:visible group-active:opacity-100 group-hover:visible group-hover:opacity-100 bottom-full left-45 -translate-x-1/2 mb-3 w-20 md:w-30 transition-all duration-300 ease-out transform group-active:translate-y-0 group-hover:translate-y-0 translate-y-2"
+            aria-hidden="true"
           >
             <div
               class="relative rounded-br-3xl rounded-t-3xl bg-stone-200 md:mb-7 top-2 md:top-0 p-1.5 text-xs md:text-md"

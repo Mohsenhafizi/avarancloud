@@ -149,8 +149,11 @@
       <AboutusKontainerinner1 />
       <AboutusProject />
       <AboutusAvatari />
-      <div id="contact-us">
-      <AboutusContact />
+      <div id="contact-us" class="mx-auto max-w-7xl px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 py-8">
+          <AboutusContactInfo />
+          <AboutusContact />
+        </div>
       </div>
       <AboutusFooter />
       <EndFooter />
@@ -165,7 +168,7 @@ import { onMounted } from 'vue';
 export default{
     setup() {
     useHead({
-      title: 'درباره ابرآوران | تیم متخصص طراحی سایت و فروشگاه اینترنتی با 10+ سال تجربه',
+      title: 'درباره ابرآوران | تیم متخصص طراحی سایت و فروشگاه اینترنتی با 4+ سال تجربه',
       meta: [
         { name: 'description', content: 'ابرآوران، تیم خلاق و متخصص طراحی سایت و فروشگاه اینترنتی با بیش از 10 سال تجربه در ارائه خدمات دیجیتال. با تخصص در طراحی وب، توسعه اپلیکیشن، سئو و دیجیتال مارکتینگ، ابرآوران ارائه‌دهنده راهکارهای نوآورانه برای کسب‌وکارهای آنلاین' },
         { name: 'keywords', content: 'ابرآوران, تیم متخصص طراحی سایت, متخصصان طراحی وب, تیم حرفه‌ای طراحی وب, تیم خلاق طراحی سایت, طراحان فروشگاه اینترنتی, توسعه‌دهندگان وب, سابقه کاری ابرآوران, تاریخچه ابرآوران, چشم‌انداز ابرآوران, تجربه طراحی سایت, متخصصین UI/UX, تیم دیجیتال مارکتینگ, خدمات سئو, پشتیبانی فنی وب, تیم پشتیبانی سایت, ارتباط با تیم ابرآوران, درباره شرکت ابرآوران, تخصص‌های ابرآوران, تماس با ابرآوران, avarancloud' },
@@ -173,7 +176,7 @@ export default{
         { property: 'og:description', content: 'ابرآوران، تیم خلاق و متخصص طراحی سایت و فروشگاه اینترنتی با بیش از 10 سال تجربه در ارائه خدمات دیجیتال. ارائه‌دهنده راهکارهای نوآورانه برای کسب‌وکارهای آنلاین' },
         { property: 'og:url', content: 'https://avarancloud.ir/about-us' },
         { property: 'og:type', content: 'website' },
-        { property: 'og:image', content: 'https://avarancloud.ir/about-us-thumb.png' },
+        { property: 'og:image', content: 'https://avarancloud.ir/assets/photos/about-us-thumb.png' },
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:title', content: 'درباره ابرآوران | تیم متخصص طراحی سایت و فروشگاه اینترنتی با 10+ سال تجربه' },
         { name: 'twitter:description', content: 'ابرآوران، تیم خلاق و متخصص طراحی سایت و فروشگاه اینترنتی با بیش از 10 سال تجربه در ارائه خدمات دیجیتال' },
@@ -189,83 +192,121 @@ export default{
             "@type": "Organization",
             "name": "ابرآوران",
             "url": "https://avarancloud.ir",
-            "logo": "/avarancloud.ir/assets/photos/logo-avarancloud.png",
+            "logo": "https://avarancloud.ir/assets/photos/logo-avarancloud.png",
             "description": "ابرآوران ارائه دهنده خدمات طراحی سایت و فروشگاه اینترنتی حرفه‌ای با امکانات کامل مدیریتی",
             "contactPoint": {
               "@type": "ContactPoint",
-              "telephone": "+98-XXX-XXX-XXXX",
-              "contactType": "customer service"
+              "telephone": "+989391637282",
+              "contactType": "customer service",
+              "areaServed": "IR",
+              "availableLanguage": ["Persian", "English"]
             },
             "sameAs": [
               "https://www.instagram.com/avarancloud",
               "https://www.linkedin.com/company/avarancloud",
               "https://t.me/avarancloud"
             ],
-            "address": {
-              "@type": "PostalAddress",
-              "addressCountry": "IR",
-              "addressLocality": "تهران",
-              "addressRegion": "تهران",
-              "postalCode": "XXXXXX",
-              "streetAddress": "تهران، خیابان XXXX، ساختمان XXXX"
-            },
-            "founder": {
-              "@type": "Person",
-              "name": "بنیانگذار ابرآوران"
-            },
-            "foundingDate": "2018",
-            "employee": [
+            "foundingDate": "2020",
+            "openingHoursSpecification": [
               {
-                "@type": "Person",
-                "name": "متخصص طراحی وب",
-                "jobTitle": "Front-end Developer"
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Saturday", "Sunday"],
+                "opens": "09:00",
+                "closes": "17:00"
+              }
+            ],
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "35.759632",
+              "longitude": "51.410897"
+            },
+            "hasMap": "https://www.google.com/maps?q=35.759632,51.410897"
+          }`,
+          type: 'application/ld+json'
+        },
+        {
+          innerHTML: `{
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "خانه",
+                "item": "https://avarancloud.ir/"
               },
               {
-                "@type": "Person",
-                "name": "متخصص برنامه نویسی",
-                "jobTitle": "Back-end Developer"
+                "@type": "ListItem",
+                "position": 2,
+                "name": "درباره ما",
+                "item": "https://avarancloud.ir/about-us"
               }
             ]
-          }`
+          }`,
+          type: 'application/ld+json'
+        },
+        {
+          innerHTML: `{
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "ابرآوران",
+            "image": "https://avarancloud.ir/assets/photos/logo-avarancloud.png",
+            "telephone": "+989391637282",
+            "email": "info@avarancloud.ir",
+            "url": "https://avarancloud.ir",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "خیابان شاهزاده قاسم میثاق ششم",
+              "addressLocality": "آران و بیدگل",
+              "addressCountry": "IR"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "35.759632",
+              "longitude": "51.410897"
+            },
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Saturday", "Sunday"],
+                "opens": "09:00",
+                "closes": "17:00"
+              }
+            ],
+            "priceRange": "$$"
+          }`,
+          type: 'application/ld+json'
         }
-      ]
+      ],
     });
 
     onMounted(() => {
-      // برای مدیریت اسکرول به بخش تماس با ما
-      const handleHash = () => {
-        // بررسی وجود هش در URL
-        if (window.location.hash === '#contact-us') {
-          // تاخیر کوتاه برای اطمینان از لود شدن کامل صفحه
-          setTimeout(() => {
-            const contactElement = document.getElementById('contact-us');
-            if (contactElement) {
-              window.scrollTo({
-                top: contactElement.offsetTop - 100, // کمی بالاتر از المنت برای دید بهتر
-                behavior: 'smooth'
-              });
-            }
-          }, 300);
+      // برد ناوبری به نقطه مورد نظر در صورت وجود هش تگ
+      if(window.location.hash) {
+        const id = window.location.hash.substring(1);
+        const element = document.getElementById(id);
+        if(element) {
+          element.scrollIntoView({behavior: "smooth"});
         }
-      };
-
-      // اجرای اولیه برای لود صفحه
-      handleHash();
-
-      // گوش دادن به تغییرات هش برای کلیک‌های داخلی
-      window.addEventListener('hashchange', handleHash);
-
-      // پاکسازی ایونت لیسنر در هنگام خروج از صفحه
-      return () => {
-        window.removeEventListener('hashchange', handleHash);
-      };
+      }
     });
   },
+  components: {
+    NavBarNavDesktop: () => import('@/components/NavBar/NavDesktop.vue'),
+    NavBarNavMobile: () => import('@/components/NavBar/NavMobile.vue'),
+    AboutusHero: () => import('@/components/Aboutus/hero.vue'),
+    AboutusKontainerinner1: () => import('@/components/Aboutus/kontainerinner1.vue'),
+    AboutusProject: () => import('@/components/Aboutus/Project.vue'),
+    AboutusAvatari: () => import('@/components/Aboutus/Avatari.vue'),
+    AboutusContact: () => import('@/components/Aboutus/Contact.vue'),
+    AboutusContactInfo: () => import('@/components/Aboutus/ContactInfo.vue'),
+    AboutusFooter: () => import('@/components/Aboutus/footer.vue'),
+    EndFooter: () => import('@/components/End/footer.vue'),
+  }
 }
 </script>
   
 <style>
-
 
 .ground {
   position: relative;

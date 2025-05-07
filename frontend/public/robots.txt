@@ -16,6 +16,18 @@ Allow: /
 User-agent: Yandex
 Allow: /
 
+# Disallow duplicate content
+Disallow: */index.html
+Disallow: /*?*
+Disallow: /*?
+
+# Disallow admin or internal paths if they exist
+Disallow: /admin/
+Disallow: /admin
+Disallow: /login
+Disallow: /register
+Disallow: /logout
+
 # Crawl delay
 Crawl-delay: 1
 
