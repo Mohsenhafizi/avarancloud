@@ -4,12 +4,12 @@
         <div class="flex justify-end flex-col md:flex-row mb-10 lg:mr-30 lg:ml-70" data-aos="fade-up">
             <div class="flex flex-col md:flex-row lg:py-14 lg:px-12 py-8 px-4 backdrop-blur-sm shadow-2xl rounded-xl">
                 <div class="flex justify-center md:order-2 md:ml-4 mb-4 md:mb-0">
-                    <img src="../../assets/svg/shop.svg" class="w-40" alt="ساخت سایت فروشگاهی بدون ریسک مالی">
+                    <img src="../../assets/svg/shop.svg" class="w-40" alt="طراحی سایت با سایت ساز ابرآوران">
                 </div>
                 <div class="md:order-1 px-8 pt-7">
-                    <h2 class="text-lg lg:text-2xl text-right font-bold mb-6 text-purple-800">ساخت سایت حرفه‌ای، بدون هزینه‌ی اولیه</h2>
+                    <h3 class="text-lg lg:text-2xl text-right font-bold mb-6 text-purple-800">طراحی سایت حرفه‌ای با سایت ساز ابرآوران، بدون هزینه‌ی اولیه</h3>
                     <p class="text-base text-right md:text-lg text-gray-700">
-                        ساخت سایت با ابرآوران بدون هزینه اولیه است تا بتوانید بدون ریسک مالی، سایت خود را بسازید و از امکانات حرفه‌ای آن بهره‌مند شوید.
+                        طراحی سایت با سایت ساز ابرآوران بدون هزینه اولیه است تا بتوانید بدون ریسک مالی، سایت خود را طراحی کنید و از امکانات حرفه‌ای آن بهره‌مند شوید. کیفیت طراحی سایت ما با قیمت مناسب، شما را شگفت‌زده خواهد کرد.
                     </p>
                 </div>
             </div>
@@ -18,13 +18,13 @@
         <div class="flex flex-col md:flex-row mb-10 lg:ml-30 lg:mr-70 justify-start" data-aos="fade-up">
             <div class="flex flex-col md:flex-row lg:px-12 lg:py-12 px-8 py-8 backdrop-blur-sm shadow-2xl rounded-lg">
                 <div class="pr-8 pt-7 pl-4 md:order-1">
-                    <h2 class="text-lg lg:text-2xl text-right font-bold mb-6 text-purple-800">صفر تا ۱۰۰ ساخت سایت با ابرآوران</h2>
+                    <h3 class="text-lg lg:text-2xl text-right font-bold mb-6 text-purple-800">صفر تا ۱۰۰ طراحی سایت با سایت ساز ابرآوران</h3>
                     <p class="text-base text-right md:text-lg text-gray-700">
-                        با سایت‌ساز ابرآوران، یک سایت کامل با دامنه، هاست نامحدود، طراحی ریسپانسیو، بهینه‌سازی SEO و هر پیش‌نیاز دیگری که نیاز دارید، می‌سازید و از پشتیبانی اختصاصی ابرآوران بهره‌مند می‌شوید.
+                        با سایت‌ساز ابرآوران، یک سایت کامل با دامنه، هاست نامحدود، طراحی واکنش‌گرا، بهینه‌سازی SEO و هر آنچه برای طراحی یک وب‌سایت حرفه‌ای نیاز دارید، دریافت می‌کنید و از پشتیبانی اختصاصی ابرآوران بهره‌مند می‌شوید.
                     </p>
                 </div>
                 <div class="flex justify-center mt-2 md:mb-0">
-                    <img src="../../assets/svg/zerotoone.svg" class="w-30 md:w-50" alt="صفر تا صد ساخت سایت">
+                    <img src="../../assets/svg/zerotoone.svg" class="w-30 md:w-50" alt="طراحی وب سایت حرفه‌ای با سایت ساز">
                 </div>
             </div>
         </div>
@@ -32,12 +32,12 @@
         <div class="flex justify-end flex-col md:flex-row mb-10 lg:mr-30 lg:ml-70" data-aos="fade-up">
             <div class="flex flex-col md:flex-row lg:px-12 lg:py-14 px-8 py-8 backdrop-blur-sm shadow-2xl rounded-lg">
             <div class="relative bottom-4 flex justify-center md:order-2">
-                <img src="../../assets/svg/companion.svg" class="w-34 md:w-60 2xl:w-40" alt="ساخت سایت با همراهی آن">
+                <img src="../../assets/svg/companion.svg" class="w-34 md:w-60 2xl:w-40" alt="پشتیبانی طراحی سایت ابرآوران">
             </div>
                 <div class="px-8 pt-7 md:order-1">
-                    <h2 class="text-lg lg:text-2xl text-right font-bold mb-6 text-purple-800">پشتیبانی کامل بعد از ساخت سایت</h2>
+                    <h3 class="text-lg lg:text-2xl text-right font-bold mb-6 text-purple-800">پشتیبانی کامل پس از طراحی سایت</h3>
                     <p class="text-base text-right md:text-lg text-gray-700">
-                        بعد از ساخت سایت با ابرآوران، با راهکارهای بهینه‌سازی و نگهداری سایت، هوای کسب‌وکار شما را داریم. با بسته‌های مکمل ابرآوران، موفقیت سایت شما تضمین شده است.
+                        پس از طراحی سایت با سایت ساز ابرآوران، با راهکارهای بهینه‌سازی سئو و نگهداری تخصصی وب‌سایت، هوای کسب‌وکار آنلاین شما را داریم. با بسته‌های پشتیبانی ابرآوران، موفقیت و بهبود رتبه سایت شما در گوگل تضمین شده است.
                     </p>
                 </div>
             </div>
@@ -46,13 +46,13 @@
         <div class="flex flex-col md:flex-row mb-10 lg:ml-30 lg:mr-70 justify-start" data-aos="fade-up">
             <div class="flex flex-col md:flex-row lg:px-12 lg:py-16 px-8 py-8 backdrop-blur-sm shadow-2xl rounded-lg">
                 <div class="pr-8 md:order-1">
-                    <h2 class="text-lg lg:text-2xl text-right font-bold mb-6 text-purple-800">انعطاف‌پذیری در انتخاب خدمات</h2>
+                    <h3 class="text-lg lg:text-2xl text-right font-bold mb-6 text-purple-800">انعطاف‌پذیری در خدمات طراحی سایت</h3>
                     <p class="text-base text-right md:text-lg text-gray-700">
-                        ابرآوران با پکیج‌های مختلف ساخت سایت و انواع بسته‌های تکمیلی برای بهینه‌سازی و نگهداری سایت، هر نیازی که کسب‌وکار شما دارد را پاسخ می‌دهد. شما فقط بگویید چه می‌خواهید، بقیه با ابرآوران!
+                        سایت ساز ابرآوران با پکیج‌های متنوع طراحی سایت و انواع بسته‌های تکمیلی برای بهینه‌سازی سئو و نگهداری وب‌سایت، هر نیازی که کسب‌وکار آنلاین شما دارد را پاسخ می‌دهد. شما فقط بگویید چه نوع سایتی می‌خواهید، بقیه با سایت ساز ابرآوران!
                     </p>
                 </div>
                 <div class="flex justify-center mt-4 md:mt-0">
-                    <img src="../../assets/svg/services.svg" class="w-40 md:w-80" alt="انواع خدمات ابرآوران">
+                    <img src="../../assets/svg/services.svg" class="w-40 md:w-80" alt="خدمات سایت ساز ابرآوران">
                 </div>
             </div>
         </div>

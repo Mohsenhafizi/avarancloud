@@ -200,35 +200,97 @@ export default {
         {
           innerHTML: `{
             "@context": "https://schema.org",
-            "@type": "Product",
-            "name": "سایت ساز ابرآوران",
-            "description": "سرویس طراحی وب‌سایت‌های شخصی و شرکتی با امکانات حرفه‌ای",
-            "brand": {
-              "@type": "Brand",
-              "name": "ابرآوران"
+            "@type": "WebPage",
+            "name": "سایت‌ساز ابرآوران",
+            "description": "سایت‌ساز حرفه‌ای ابرآوران با تیم متخصص طراحی وب برای ساخت وب‌سایت‌های شخصی و شرکتی. تکنولوژی‌های مدرن، طراحی UI/UX حرفه‌ای، سایت واکنش‌گرا و بهینه‌سازی سئو",
+            "url": "https://avarancloud.ir/site-builder",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "name": "سایت‌ساز ابرآوران"
             },
-            "offers": {
-              "@type": "AggregateOffer",
-              "lowPrice": "1500000",
-              "highPrice": "7500000",
-              "priceCurrency": "IRR",
-              "offerCount": "3"
-            },
-            "review": {
-              "@type": "Review",
-              "reviewRating": {
-                "@type": "Rating",
-                "ratingValue": "4.8",
-                "bestRating": "5"
-              },
-              "author": {
-                "@type": "Person",
-                "name": "مشتریان ابرآوران"
-              }
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": ["header", "main", "footer"]
             }
-          }`
+          }`,
+          type: 'application/ld+json'
+        },
+        {
+          innerHTML: `{
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "سایت‌ساز ابرآوران",
+            "serviceType": "طراحی سایت",
+            "provider": {
+              "@type": "Organization",
+              "name": "ابرآوران",
+              "url": "https://avarancloud.ir"
+            },
+            "description": "سایت‌ساز حرفه‌ای ابرآوران با امکانات متنوع برای طراحی وب‌سایت‌های شخصی و شرکتی",
+            "areaServed": "ایران",
+            "offers": {
+              "@type": "Offer",
+              "price": "از ۵،۰۰۰،۰۰۰ تومان",
+              "priceCurrency": "IRR"
+            }
+          }`,
+          type: 'application/ld+json'
+        },
+        {
+          innerHTML: `{
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "ابرآوران",
+                "item": "https://avarancloud.ir/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "سایت ساز",
+                "item": "https://avarancloud.ir/site-builder"
+              }
+            ]
+          }`,
+          type: 'application/ld+json'
+        },
+        {
+          innerHTML: `{
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "سایت‌ساز ابرآوران چیست؟",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "سایت‌ساز ابرآوران یک سیستم طراحی وب‌سایت حرفه‌ای است که با استفاده از جدیدترین تکنولوژی‌های وب، امکان ساخت سایت‌های شخصی و شرکتی را با سرعت بالا، ظاهر مدرن و امکانات کامل مدیریتی فراهم می‌کند."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "هزینه استفاده از سایت‌ساز ابرآوران چقدر است؟",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "هزینه استفاده از سایت‌ساز ابرآوران بسته به نیازهای شما و نوع پروژه متفاوت است. ما پکیج‌های مختلفی با قیمت‌های مناسب برای کسب و کارهای کوچک تا بزرگ ارائه می‌دهیم. برای دریافت مشاوره رایگان و اطلاع از قیمت دقیق با ما تماس بگیرید."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "آیا سایت‌های طراحی شده با سایت‌ساز ابرآوران برای موتورهای جستجو بهینه هستند؟",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "بله، تمامی سایت‌های طراحی شده با سایت‌ساز ابرآوران بر اساس اصول SEO پیاده‌سازی می‌شوند. ساختار کد استاندارد، سرعت بارگذاری بالا، بهینه‌سازی تصاویر و متاتگ‌ها باعث می‌شود سایت شما در موتورهای جستجو رتبه بهتری داشته باشد."
+                }
+              }
+            ]
+          }`,
+          type: 'application/ld+json'
         }
-      ]
+      ],
     });
   },
   components: {

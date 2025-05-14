@@ -173,27 +173,44 @@ export default {
   },
   setup() {
     useHead({
-      title: 'ابرآوران | طراحی سایت و فروشگاه اینترنتی حرفه‌ای با تیم متخصص',
+      title: 'ابرآوران | طراحی سایت و سایت ساز حرفه‌ای با تیم متخصص',
       meta: [
-        { name: 'description', content: 'ابرآوران - تیم متخصص طراحی سایت و فروشگاه اینترنتی با بیش از 10 سال تجربه. ارائه‌دهنده خدمات وب سایت حرفه‌ای، فروشگاه آنلاین، سایت‌ساز ابرآوران و ابرساز با قابلیت‌های پیشرفته مدیریت محصولات، سبد خرید و درگاه پرداخت آنلاین' },
-        { name: 'keywords', content: 'ابرآوران, طراحی سایت حرفه‌ای, فروشگاه اینترنتی, سایت‌ساز ابرآوران, ابرساز ابرآوران, خدمات وب ابرآوران, توسعه وب‌سایت, طراحی سایت شخصی, طراحی سایت شرکتی, سایت واکنش‌گرا, طراحی سایت مدرن, سایت سئو شده, طراحی UI/UX, راه‌اندازی فروشگاه آنلاین, طراحی فروشگاه اینترنتی, سیستم فروش آنلاین, درگاه پرداخت آنلاین, مدیریت محصولات, سبد خرید اینترنتی, سیستم تخفیف و کوپن, خدمات دیجیتال مارکتینگ, بهینه‌سازی موتورهای جستجو, افزایش فروش اینترنتی, راه‌اندازی کسب و کار آنلاین, فروشگاه چندفروشنده, توسعه اپلیکیشن وب, تیم متخصص طراحی وب, avarancloud' },
-        { property: 'og:title', content: 'ابرآوران | طراحی سایت و فروشگاه اینترنتی حرفه‌ای با تیم متخصص' },
-        { property: 'og:description', content: 'ابرآوران - تیم متخصص طراحی سایت و فروشگاه اینترنتی با بیش از 10 سال تجربه. ارائه‌دهنده خدمات وب سایت حرفه‌ای، فروشگاه آنلاین و سایت‌ساز با قابلیت‌های پیشرفته' },
+        { name: 'description', content: 'ابرآوران - تیم متخصص طراحی سایت و سایت ساز حرفه‌ای با بیش از 10 سال تجربه. ارائه خدمات طراحی وب‌سایت شخصی، شرکتی و فروشگاهی با جدیدترین تکنولوژی‌ها، ظاهر مدرن، سرعت بالا و بهینه‌سازی کامل برای موتورهای جستجو' },
+        { name: 'keywords', content: 'ابرآوران, طراحی سایت حرفه‌ای, سایت ساز, سایت‌ساز ابرآوران, ابرساز ابرآوران, طراحی وب, توسعه وب‌سایت, طراحی سایت شخصی, طراحی سایت شرکتی, سایت واکنش‌گرا, طراحی سایت مدرن, سایت سئو شده, طراحی UI/UX, راه‌اندازی فروشگاه آنلاین, طراحی فروشگاه اینترنتی, سیستم فروش آنلاین, درگاه پرداخت آنلاین, مدیریت محصولات, سبد خرید اینترنتی, خدمات دیجیتال مارکتینگ, بهینه‌سازی موتورهای جستجو, افزایش فروش اینترنتی, راه‌اندازی کسب و کار آنلاین, قیمت طراحی سایت, خدمات طراحی سایت, هزینه طراحی سایت, مزایای طراحی سایت حرفه‌ای, avarancloud' },
+        { property: 'og:title', content: 'ابرآوران | طراحی سایت و سایت ساز حرفه‌ای با تیم متخصص' },
+        { property: 'og:description', content: 'ابرآوران - تیم متخصص طراحی سایت و سایت ساز حرفه‌ای با بیش از 10 سال تجربه. ارائه خدمات طراحی وب‌سایت شخصی، شرکتی و فروشگاهی با جدیدترین تکنولوژی‌ها' },
         { property: 'og:url', content: 'https://avarancloud.ir/' },
         { property: 'og:type', content: 'website' },
-        { property: 'og:image', content: '/avarancloud.ir/assets/photos/logo-avarancloud.png' },
+        { property: 'og:image', content: 'https://avarancloud.ir/assets/photos/logo-avarancloud.png' },
         { property: 'og:locale', content: 'fa_IR' },
         { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:title', content: 'ابرآوران | طراحی سایت و فروشگاه اینترنتی حرفه‌ای با تیم متخصص' },
-        { name: 'twitter:description', content: 'ابرآوران - تیم متخصص طراحی سایت و فروشگاه اینترنتی با بیش از 10 سال تجربه. ارائه خدمات وب سایت حرفه‌ای' },
-        { name: 'twitter:image', content: '/avarancloud.ir/assets/photos/logo-avarancloud.png' },
-        { name: 'robots', content: 'index, follow' },
+        { name: 'twitter:title', content: 'ابرآوران | طراحی سایت و سایت ساز حرفه‌ای با تیم متخصص' },
+        { name: 'twitter:description', content: 'ابرآوران - تیم متخصص طراحی سایت و سایت ساز حرفه‌ای با بیش از 10 سال تجربه. طراحی وب‌سایت با بهترین تکنولوژی‌ها' },
+        { name: 'robots', content: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' },
         { name: 'canonical', content: 'https://avarancloud.ir/' },
       ],
       link: [
         { rel: 'canonical', href: 'https://avarancloud.ir/' }
       ],
       script: [
+        {
+          innerHTML: `{
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "ابرآوران",
+            "description": "ابرآوران - تیم متخصص طراحی سایت و سایت ساز حرفه‌ای با بیش از 10 سال تجربه",
+            "url": "https://avarancloud.ir/",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "name": "ابرآوران"
+            },
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": ["header", "main", "footer"]
+            }
+          }`,
+          type: 'application/ld+json'
+        },
         {
           innerHTML: `{
             "@context": "https://schema.org",

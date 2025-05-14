@@ -5,26 +5,25 @@
           <div class="md:w-1/2 mx-10 md:mx-20 relative">
             <div class="md:mt-10">
               <h1 class="text-center text-purple-950 md:text-right text-3xl md:text-5xl 2xl:text-6xl font-bold block animate-title" data-aos="fade-up" data-aos-delay="200">
-                  سایت‌ساز حرفه‌ای ابرآوران,
-                  راه‌حل جامع ساخت وب‌اپلیکیشن
+                  سایت‌ساز حرفه‌ای ابرآوران | طراحی سایت شخصی و شرکتی
               </h1>    
               <span class="absolute top-26 sm:top-18 mx-10 flex -z-10" data-aos="fade-up">
-                <img class="w-80" src="../../assets/svg/vector-7.svg" alt="ساخت سایت حرفه‌ای با تمام امکانات">
+                <img class="w-80" src="../../assets/svg/vector-7.svg" alt="سایت ساز حرفه‌ای ابرآوران">
               </span>
               <h2 class="text-center md:text-right text-lg md:text-xl 2xl:text-2xl pt-8 pb-4 md:py-10 animate-text" data-aos="fade-up" data-aos-delay="600">
-                ساخت سایت حرفه‌ای با تمام امکانات مورد نیاز برای مدیریت محتوا، بهینه‌سازی موتورهای جستجو،
-                طراحی ریسپانسیو و پشتیبانی فنی 24/7 برای موفقیت کسب و کار شما
+                طراحی سایت حرفه‌ای با سایت ساز ابرآوران - تمام امکانات مورد نیاز برای مدیریت محتوا، 
+                بهینه‌سازی SEO، طراحی واکنش‌گرا و پشتیبانی فنی 24/7 برای موفقیت کسب و کار آنلاین شما
               </h2>
               <div class="mb-3 flex justify-center md:justify-start" data-aos="zoom-in" data-aos-delay="800"> 
                 <NuxtLink to="/about-us#contact-us" class="shadow__btn flex justify-center w-40 pulse-button">
-                    ارتباط با ما
+                    درخواست طراحی سایت
                 </NuxtLink>
               </div>
             </div>
           </div>
           
           <div class="md:w-1/2 flex md:justify-end justify-center mx-5" data-aos="fade-left" data-aos-delay="1000">
-            <img class="w-full max-w-lg floating-image" src="../../assets/svg/shopping.svg" alt="ساخت سایت فروشگاهی با افزایش فروش">
+            <img class="w-full max-w-lg floating-image" src="../../assets/svg/shopping.svg" alt="طراحی سایت با سایت ساز ابرآوران">
           </div>
         </div>
       </div>
