@@ -7,7 +7,9 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "optimize-images": "node scripts/generate-webp.js",
+    "build-optimized": "npm run optimize-images && nuxt build"
   },
   "dependencies": {
     "@nuxt/image": "^1.10.0",
@@ -35,6 +37,7 @@
     "@tailwindcss/vite": "^4.0.15",
     "@types/aos": "^3.0.7",
     "@types/node": "^22.13.4",
+    "sharp": "^0.33.0",
     "typescript": "^5.7.3",
     "vue-svg-loader": "^0.10.0"
   }

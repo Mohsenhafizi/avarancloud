@@ -8,7 +8,7 @@
                   سایت‌ساز حرفه‌ای ابرآوران | طراحی سایت شخصی و شرکتی
               </h1>    
               <span class="absolute top-26 sm:top-18 mx-10 flex -z-10" data-aos="fade-up">
-                <img class="w-80" src="../../assets/svg/vector-7.svg" alt="سایت ساز حرفه‌ای ابرآوران">
+                <img class="w-80" src="/svg/vector-7.svg" alt="سایت ساز حرفه‌ای ابرآوران">
               </span>
               <h2 class="text-center md:text-right text-lg md:text-xl 2xl:text-2xl pt-8 pb-4 md:py-10 animate-text" data-aos="fade-up" data-aos-delay="600">
                 طراحی سایت حرفه‌ای با سایت ساز ابرآوران - تمام امکانات مورد نیاز برای مدیریت محتوا، 

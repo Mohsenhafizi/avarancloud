@@ -6,23 +6,23 @@
       <div class="mx-30 md:mt-40 lg:mt-60 sm:mx-20 md:mx-52 xl:mx-40 2xl:mx-34">
         <div data-aos="fade-up">
       <h1
-        class="relative text-3xl md:text-5xl 2xl:text-[56px] text-center font-bold py-4 my-5"
+        class="relative text-3xl md:text-5xl 2xl:text-[56px] text-center font-bold py-4 my-5 critical-path"
         data-aos="fade-up"
       >
       <span class="2xl:flex text-purple-950 2xl:justify-center z-10">
         <h1 class="">ابرآوران - خدمات حرفه‌ای وب و دیجیتال</h1>
         <span class="absolute top-18 sm:top-13 mx-10 flex -z-10">
-        <img class="w-80" src="../../assets/svg/vector-7.svg" alt="ابرآوران - خدمات وب و دیجیتال">
+          <img class="w-80 lcp-image" src="/svg/vector-7.svg" alt="ابرآوران - خدمات وب و دیجیتال" fetchpriority="high" loading="eager" decoding="async">
         </span>
       </span>
       </h1>
-      <h2 class="text-lg md:text-xl 2xl:text-2xl pb-10 px-10">
+      <h2 class="text-lg md:text-xl 2xl:text-2xl pb-10 px-10 critical-path">
         <strong>ابرآوران</strong> ارائه دهنده خدمات جامع طراحی سایت، فروشگاه آنلاین و سئو با پشتیبانی کامل از مدیریت محتوا، پرداخت آنلاین، سیستم ارسال و ابزارهای پیشرفته بازاریابی دیجیتال<br />
         <span class="relative top-4 font-bold">ابرآوران، همراه کسب و کار شما</span>
       </h2>
       </div>
 <div class="relative bottom-19 flex justify-center mb-6 2xl:mb-10">
-<svg class="absolute" xmlns="http://www.w3.org/2000/svg" height="200" width="200">
+<svg class="absolute" xmlns="http://www.w3.org/2000/svg" height="200" width="200" loading="lazy">
   <g style="order: -1;">
     <polygon
       transform="rotate(45 100 100)"
@@ -220,15 +220,23 @@
           <div class="md:w-[400px] lg:w-[700px]">
            <div class="mx-10">
               <img
-                class="hidden md:inline-block active:border-r-2 hover:border-r-2 active:border-r-blue-500 hover:border-r-blue-500 active:border-l-2 hover:border-l-2 active:border-l-blue-500 hover:border-l-blue-500 active:border-t-2 hover:border-t-2 active:border-t-blue-500 hover:border-t-blue-500 rounded-t-3xl rounded-b-4xl"
+                class="hidden md:inline-block active:border-r-2 hover:border-r-2 active:border-r-blue-500 hover:border-r-blue-500 active:border-l-2 hover:border-l-2 active:border-l-blue-500 hover:border-l-blue-500 active:border-t-2 hover:border-t-2 active:border-t-blue-500 hover:border-t-blue-500 rounded-t-3xl rounded-b-4xl lcp-image"
                 src="../../assets/photos/ghahve.png"
                 alt="نمونه کار ابرآوران"
+                fetchpriority="high"
+                loading="eager"
+                width="700"
+                height="450"
               />
            </div>
             <img
-              class="inline-block md:hidden border-1 rounded-lg border-gray-500"
+              class="inline-block md:hidden border-1 rounded-lg border-gray-500 lcp-image"
               src="../../assets/photos/mobile-screen.png"
               alt="نمونه کار ابرآوران"
+              fetchpriority="high"
+              loading="eager"
+              width="350"
+              height="225"
             />
           </div>
           <div
@@ -245,10 +253,10 @@
           <div class="relative cursor-pointer group z-10 hidden md:inline-block button rounded-2xl float-right bottom-30 lg:bottom-65 left-20">
           <div class="button-wrapper rounded-2xl">
             <div class="text rounded-2xl">
-              <img src="../../assets/photos/sample-screen.png" alt="نمونه محصولات ابرآوران">
+              <img src="../../assets/photos/sample-screen.png" alt="نمونه محصولات ابرآوران" loading="lazy" width="180" height="270">
             </div>
             <span class="icon rounded-2xl">
-              <img src="../../assets/photos/sample-screen2.png" alt="نمونه محصولات ابرآوران">
+              <img src="../../assets/photos/sample-screen2.png" alt="نمونه محصولات ابرآوران" loading="lazy" width="180" height="270">
             </span>
             </div>
             <div
@@ -289,7 +297,9 @@
 
           <div class="hidden md:inline-block relative mt-27 lg:mt-31 left-30 w-30 border-t-1 border-dashed border-t-gray-500"></div>
 
-          <Chart class="" />
+          <client-only>
+            <Chart class="" />
+          </client-only>
 
           <div class="md:hidden w-6 mt-27 border-t-1 border-dashed border-t-gray-500"></div> 
 
@@ -323,23 +333,84 @@
 <br>
 </template>
 
-<script lang="ts">
-import { defineComponent, onMounted } from 'vue';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+<script lang="ts" setup>
+import { onMounted, onUnmounted, ref, nextTick } from 'vue';
+import { useNuxtApp } from '#app';
 
-export default defineComponent({
-    name: 'Section1',
-    setup() {
-        onMounted(() => {
-            AOS.init({
-                duration: 1000, // مدت زمان انیمیشن به میلی‌ثانیه
-                easing: 'ease-in-out',
-                once: true,
-            });
-        });
-    }
+// Flag to track if animations are initialized
+const animationsInitialized = ref(false);
+
+// References to animation elements
+const animationElements = ref({
+  bounce: null as HTMLElement | null,
+  bounce2: null as HTMLElement | null,
+  animatedStop: null as SVGElement | null,
+  particles: null as NodeListOf<Element> | null
 });
+
+// Use composable API
+const nuxtApp = useNuxtApp();
+
+// Initialize animations after render
+onMounted(async () => {
+  // Defer non-critical animations to improve TBT
+  if (typeof window !== 'undefined' && !animationsInitialized.value) {
+    // Wait until page is loaded
+    if (document.readyState === 'complete') {
+      // Use requestIdleCallback to run during browser idle time
+      if ('requestIdleCallback' in window) {
+        (window as any).requestIdleCallback(() => initAnimations(), { timeout: 2000 });
+      } else {
+        setTimeout(initAnimations, 1000);
+      }
+    } else {
+      window.addEventListener('load', () => {
+        // Wait for a frame to ensure other critical tasks complete
+        requestAnimationFrame(() => {
+          // Then schedule animation init during idle time
+          if ('requestIdleCallback' in window) {
+            (window as any).requestIdleCallback(() => initAnimations(), { timeout: 2000 });
+          } else {
+            setTimeout(initAnimations, 1000);
+          }
+        });
+      });
+    }
+  }
+});
+
+// Clean up any event listeners
+onUnmounted(() => {
+  animationsInitialized.value = false;
+});
+
+// Initialize animations with optimized performance
+const initAnimations = async () => {
+  if (animationsInitialized.value) return;
+  
+  // Initialize AOS animations (lazy-loaded via plugin)
+  if (nuxtApp && typeof nuxtApp.$refreshAOS === 'function') {
+    await nextTick();
+    nuxtApp.$refreshAOS();
+  } else {
+    // Fallback if refreshAOS is not available
+    try {
+      const AOS = await import('aos');
+      await import('aos/dist/aos.css');
+      
+      AOS.default.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true,
+      });
+    } catch (error) {
+      console.error('Failed to initialize AOS', error);
+    }
+  }
+  
+  // Mark as initialized to prevent duplicate work
+  animationsInitialized.value = true;
+};
 </script>
 
 <style>
@@ -854,75 +925,14 @@ export default defineComponent({
   bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
 }
 
-/* New animations */
-@keyframes float {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-3px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+/* Performance optimized animations */
+.critical-path {
+  content-visibility: auto;
 }
 
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.02);
-  }
-  100% {
-    transform: scale(1);
-  }
+/* Add width and height to img tags to prevent layout shifts */
+.lcp-image {
+  will-change: transform;
+  contain: layout;
 }
-
-@keyframes slideIn {
-  0% {
-    opacity: 0;
-    transform: translateX(-15px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-/* Apply animations to elements */
-h1 {
-  animation: slideIn 0.8s ease-out;
-}
-
-h2 {
-  animation: slideIn 0.8s ease-out 0.2s backwards;
-}
-
-.faq-button {
-  animation: pulse 3s infinite;
-}
-
-.button {
-  animation: float 5s ease-in-out infinite;
-}
-
-img {
-  transition: transform 0.5s ease;
-}
-
-img:hover {
-  transform: scale(1.01);
-}
-
-/* Add hover effects */
-button {
-  transition: all 0.3s ease;
-}
-
-button:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
 </style>
