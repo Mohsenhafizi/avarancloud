@@ -11,7 +11,9 @@ export default defineNuxtConfig({
       link: [
         { rel: 'icon', type: 'image/png', href: 'logo-avarancloud.png' },
         { rel: 'canonical', href: 'https://avarancloud.ir' },
-        { rel: 'apple-touch-icon', href: '/assets/photos/logo-avarancloud.png' }
+        { rel: 'apple-touch-icon', href: '/assets/photos/logo-avarancloud.png' },
+        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }
       ],
       meta: [
         { charset: 'utf-8' },
@@ -58,6 +60,7 @@ export default defineNuxtConfig({
           innerHTML: 'window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag("js", new Date());gtag("config", "G-XXXXXXXXXX");',
           type: 'text/javascript',
           async: true,
+          defer: true,
         },
         {
           innerHTML: `{
@@ -291,54 +294,88 @@ export default defineNuxtConfig({
     plugins: [
       tailwindcss(),
     ],
+    build: {
+      cssCodeSplit: true,
+      chunkSizeWarningLimit: 1000,
+      rollupOptions: {
+        output: {
+          manualChunks: {
+            'vendor': ['vue', 'vue-router'],
+            'ui': ['tailwindcss']
+          }
+        }
+      }
+    },
+    optimizeDeps: {
+      include: ['vue', 'vue-router']
+    }
+  },
+
+  // تنظیمات برای کاهش TBT
+  nitro: {
+    compressPublicAssets: {
+      gzip: true,
+      brotli: true
+    },
+    minify: true,
+    esbuild: {
+      options: {
+        target: 'es2020'
+      }
+    }
+  },
+
+  // تنظیم lazy-loading برای بهبود TBT
+  experimental: {
+    componentIslands: true
+  },
+
+  // بهینه‌سازی وب‌فونت‌ها
+  routeRules: {
+    '/**': { prerender: true }
   },
 
   modules: [
     "nuxt-swiper",
-    ["@nuxtjs/sitemap", {
-      hostname: 'https://avarancloud.ir',
-      gzip: true,
-      routes: [
-        {
-          url: '/',
-          priority: 1.0,
-          changefreq: 'daily'
-        },
-        {
-          url: '/site-builder',
-          priority: 0.8,
-          changefreq: 'weekly',
-          links: [
-            { lang: 'fa', url: '/site-builder' }
-          ]
-        },
-        {
-          url: '/cloud-builder',
-          priority: 0.8,
-          changefreq: 'weekly',
-          links: [
-            { lang: 'fa', url: '/cloud-builder' }
-          ]
-        },
-        {
-          url: '/about-us',
-          priority: 0.7,
-          changefreq: 'monthly',
-          links: [
-            { lang: 'fa', url: '/about-us' }
-          ]
-        },
-        '/site-builder#features',
-        '/site-builder#tozihat',
-        '/site-builder#packages',
-        '/site-builder#submenu',
-        '/cloud-builder#features',
-        '/cloud-builder#tozihat',
-        '/cloud-builder#aaS',
-        '/cloud-builder#packages',
-        '/cloud-builder#submenu',
-        '/about-us#contact-us'
-      ]
-    }]
-  ]
+    "nuxt-delay-hydration",
+    "nuxt-lazy-load",
+    "@nuxt/image", 
+    "@nuxtjs/sitemap"
+  ],
+
+  // Move options to these public runtime config properties
+  runtimeConfig: {
+    public: {
+      delayHydration: {
+        mode: 'init',
+        debug: process.env.NODE_ENV === 'development',
+        replayClick: true,
+        replayMousemove: false
+      },
+      lazyLoad: {
+        images: true,
+        videos: true,
+        audios: true,
+        iframes: true,
+        native: true,
+        directiveOnly: false
+      },
+      image: {
+        quality: 80,
+        format: ['webp', 'avif', 'jpg'],
+        screens: {
+          xs: 320,
+          sm: 640,
+          md: 768,
+          lg: 1024,
+          xl: 1280,
+          xxl: 1536,
+        }
+      },
+      sitemap: {
+        hostname: 'https://avarancloud.ir',
+        gzip: true
+      }
+    }
+  }
 });
