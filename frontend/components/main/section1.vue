@@ -242,7 +242,7 @@
           </div>
         </div>
         <div>
-          <div class="relative cursor-pointer group z-10 hidden md:inline-block button rounded-2xl float-right bottom-30 lg:bottom-65 left-26">
+          <div class="relative cursor-pointer group z-10 hidden md:inline-block button rounded-2xl float-right bottom-30 lg:bottom-65 left-20">
           <div class="button-wrapper rounded-2xl">
             <div class="text rounded-2xl">
               <img src="../../assets/photos/sample-screen.png" alt="نمونه محصولات ابرآوران">
