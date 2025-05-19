@@ -288,6 +288,7 @@ export default defineNuxtConfig({
           type: 'application/ld+json'
         },
         {
+        
           innerHTML: `{
             "@context": "https://schema.org",
             "@type": "ItemList",
