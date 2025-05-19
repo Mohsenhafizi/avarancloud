@@ -6,9 +6,12 @@ Allow: /
 User-agent: Googlebot
 Allow: /
 Disallow: /admin/
-# Priority pages for brand identity
+# Priority pages for brand identity and navigation
 Allow: /brand$
 Allow: /about-us$
+Allow: /site-builder$
+Allow: /cloud-builder$
+Allow: /about-us#contact-us$
 
 User-agent: Googlebot-Image
 Allow: /
@@ -21,8 +24,8 @@ Allow: /
 User-agent: Yandex
 Allow: /
 
-# Crawl delay
-Crawl-delay: 1
+# Don't use crawl delay to encourage more frequent crawling
+# Crawl-delay: 1
 
 # Sitemaps
 Sitemap: https://avarancloud.ir/sitemap.xml 

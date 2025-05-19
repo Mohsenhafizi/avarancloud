@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-white rtl fixed w-full z-40 md:hidden p-2" role="region" aria-label="ناوبری موبایل">  
+    <div class="bg-white rtl fixed w-full z-40 md:hidden p-2" role="region" aria-label="ناوبری موبایل سایت ابرآوران">  
     <!-- Overlay -->
     <div class="overlay fixed inset-0 bg-black/60 bg-opacity-75 z-10 transition-opacity duration-500 ease-in-out" :class="{ 'opacity-0 invisible': !overlayVisible, 'opacity-100 visible': overlayVisible }" @click="closeOverlay" aria-hidden="true"></div>
     <!-- nav Icon -->
@@ -22,6 +22,11 @@
          itemscope itemtype="https://schema.org/SiteNavigationElement"
          role="navigation"
          aria-label="منوی موبایل">
+        <!-- Meta information for search engines -->
+        <meta itemprop="description" content="منوی اصلی سایت ابرآوران - ارائه دهنده خدمات طراحی سایت و فروشگاه اینترنتی">
+        <meta itemprop="mainContentOfPage" content="true">
+        <meta itemprop="headline" content="منو و ناوبری ابرآوران">
+        
         <div class="flex items-center justify-between pb-5 mb-4 border-b border-b-gray-100">
             <div class="mb-2">
               <div class="absolute top-0 left-6">

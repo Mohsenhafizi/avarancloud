@@ -1,6 +1,11 @@
 <template>
 <header class="rtl fixed top-0 right-0 left-0 z-20 hidden md:flex justify-between items-center px-5 lg:px-10 
-               py-5 h-24 w-[98%] lg:w-[90%] 2xl:w-[80%] mx-auto bg-white shadow-2xl rounded-b-3xl" itemscope itemtype="https://schema.org/SiteNavigationElement" role="banner">
+               py-5 h-24 w-[98%] lg:w-[90%] 2xl:w-[80%] mx-auto bg-white shadow-2xl rounded-b-3xl" itemscope itemtype="https://schema.org/SiteNavigationElement" role="banner" aria-label="منوی اصلی سایت ابرآوران">
+    <!-- Meta information for search engines -->
+    <meta itemprop="description" content="منوی اصلی سایت ابرآوران - ارائه دهنده خدمات طراحی سایت و فروشگاه اینترنتی">
+    <meta itemprop="mainContentOfPage" content="true">
+    <meta itemprop="headline" content="منو و ناوبری ابرآوران">
+    
     <div class="flex items-center w-full justify-between">
     <nav class="flex items-center gap-x-3 lg:gap-x-6 h-14" aria-label="منوی اصلی" role="navigation">
         <ul class="flex gap-x-2 items-center lg:gap-x-6 h-full text-lg 2xl:text-xl text-gray-800 tracking-tighest child:leading-[56px] whitespace-nowrap" role="menubar" aria-orientation="horizontal">

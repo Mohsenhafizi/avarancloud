@@ -10,8 +10,8 @@
   <!-- Homepage -->
   <url>
     <loc>https://avarancloud.ir/</loc>
-    <lastmod>2023-08-01T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2023-11-01T12:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://avarancloud.ir/assets/photos/logo-avarancloud.png</image:loc>
@@ -23,8 +23,8 @@
   <!-- Brand Landing Page -->
   <url>
     <loc>https://avarancloud.ir/brand</loc>
-    <lastmod>2023-08-01T12:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2023-11-01T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://avarancloud.ir/assets/photos/logo-avarancloud.png</image:loc>
@@ -36,8 +36,8 @@
   <!-- Site Builder Page -->
   <url>
     <loc>https://avarancloud.ir/site-builder</loc>
-    <lastmod>2023-08-01T12:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2023-11-01T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://avarancloud.ir/site-builder-thumb.png</image:loc>

@@ -134,11 +134,20 @@ export default defineNuxtConfig({
           innerHTML: `{
             "@context": "https://schema.org",
             "@type": "SiteNavigationElement",
-            "name": ["صفحه اصلی", "سایت ساز", "ابر ساز", "درباره ما", "ارتباط با ما"],
+            "name": ["صفحه اصلی", "سایت ساز", "توضیحات سایت ساز", "ویژگی های سایت ساز", "بسته های سایت ساز", "سوالات متداول سایت ساز", "ابر ساز", "توضیحات ابر ساز", "ویژگی های ابر ساز", "مدل های ابرساز", "بسته های ابر ساز", "سوالات متداول ابر ساز", "درباره ما", "ارتباط با ما"],
             "url": [
               "https://avarancloud.ir/",
               "https://avarancloud.ir/site-builder",
+              "https://avarancloud.ir/site-builder#tozihat",
+              "https://avarancloud.ir/site-builder#features",
+              "https://avarancloud.ir/site-builder#packages",
+              "https://avarancloud.ir/site-builder#submenu",
               "https://avarancloud.ir/cloud-builder",
+              "https://avarancloud.ir/cloud-builder#tozihat",
+              "https://avarancloud.ir/cloud-builder#features",
+              "https://avarancloud.ir/cloud-builder#aaS",
+              "https://avarancloud.ir/cloud-builder#packages",
+              "https://avarancloud.ir/cloud-builder#submenu",
               "https://avarancloud.ir/about-us", 
               "https://avarancloud.ir/about-us#contact-us"
             ]
@@ -275,6 +284,129 @@ export default defineNuxtConfig({
               "name": "ابرآوران",
               "alternateName": ["Avaran Cloud", "ابر آوران"]
             }
+          }`,
+          type: 'application/ld+json'
+        },
+        {
+          innerHTML: `{
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                  "@type": "SiteNavigationElement",
+                  "name": "صفحه اصلی",
+                  "url": "https://avarancloud.ir/",
+                  "potentialAction": {
+                    "@type": "Action",
+                    "target": "https://avarancloud.ir/"
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "item": {
+                  "@type": "SiteNavigationElement",
+                  "name": "سایت ساز",
+                  "url": "https://avarancloud.ir/site-builder",
+                  "potentialAction": {
+                    "@type": "Action",
+                    "target": "https://avarancloud.ir/site-builder"
+                  },
+                  "hasPart": [
+                    {
+                      "@type": "SiteNavigationElement",
+                      "name": "توضیحات سایت ساز",
+                      "url": "https://avarancloud.ir/site-builder#tozihat"
+                    },
+                    {
+                      "@type": "SiteNavigationElement",
+                      "name": "ویژگی های سایت ساز",
+                      "url": "https://avarancloud.ir/site-builder#features"
+                    },
+                    {
+                      "@type": "SiteNavigationElement",
+                      "name": "بسته های سایت ساز",
+                      "url": "https://avarancloud.ir/site-builder#packages"
+                    },
+                    {
+                      "@type": "SiteNavigationElement",
+                      "name": "سوالات متداول سایت ساز",
+                      "url": "https://avarancloud.ir/site-builder#submenu"
+                    }
+                  ]
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "item": {
+                  "@type": "SiteNavigationElement",
+                  "name": "ابر ساز",
+                  "url": "https://avarancloud.ir/cloud-builder",
+                  "potentialAction": {
+                    "@type": "Action",
+                    "target": "https://avarancloud.ir/cloud-builder"
+                  },
+                  "hasPart": [
+                    {
+                      "@type": "SiteNavigationElement",
+                      "name": "توضیحات ابر ساز",
+                      "url": "https://avarancloud.ir/cloud-builder#tozihat"
+                    },
+                    {
+                      "@type": "SiteNavigationElement",
+                      "name": "ویژگی های ابر ساز",
+                      "url": "https://avarancloud.ir/cloud-builder#features"
+                    },
+                    {
+                      "@type": "SiteNavigationElement",
+                      "name": "مدل های ابرساز",
+                      "url": "https://avarancloud.ir/cloud-builder#aaS"
+                    },
+                    {
+                      "@type": "SiteNavigationElement",
+                      "name": "بسته های ابر ساز",
+                      "url": "https://avarancloud.ir/cloud-builder#packages"
+                    },
+                    {
+                      "@type": "SiteNavigationElement",
+                      "name": "سوالات متداول ابر ساز",
+                      "url": "https://avarancloud.ir/cloud-builder#submenu"
+                    }
+                  ]
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "item": {
+                  "@type": "SiteNavigationElement",
+                  "name": "درباره ما",
+                  "url": "https://avarancloud.ir/about-us",
+                  "potentialAction": {
+                    "@type": "Action",
+                    "target": "https://avarancloud.ir/about-us"
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 5,
+                "item": {
+                  "@type": "SiteNavigationElement",
+                  "name": "ارتباط با ما",
+                  "url": "https://avarancloud.ir/about-us#contact-us",
+                  "potentialAction": {
+                    "@type": "Action",
+                    "target": "https://avarancloud.ir/about-us#contact-us"
+                  }
+                }
+              }
+            ]
           }`,
           type: 'application/ld+json'
         }
