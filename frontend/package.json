@@ -9,7 +9,8 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "optimize-images": "node scripts/generate-webp.js",
-    "build-optimized": "npm run optimize-images && nuxt build"
+    "build-optimized": "npm run optimize-images && nuxt build",
+    "generate-pwa-icons": "node scripts/generate-pwa-icons.js"
   },
   "dependencies": {
     "@nuxt/image": "^1.10.0",

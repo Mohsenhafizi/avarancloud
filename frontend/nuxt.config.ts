@@ -13,12 +13,13 @@ export default defineNuxtConfig({
         { rel: 'canonical', href: 'https://avarancloud.ir' },
         { rel: 'apple-touch-icon', href: '/assets/photos/logo-avarancloud.png' },
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
-        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }
+        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
+        { rel: 'manifest', href: '/manifest.json' }
       ],
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: 'ابرآوران: تخصصی‌ترین تیم طراحی سایت و سایت ساز ایران با بیش از 10 سال تجربه. سایت شخصی، سایت شرکتی و فروشگاه اینترنتی با امکانات کامل مدیریت سفارشات، پرداخت آنلاین و ارسال کالا. طراحی سایت با بهترین تکنولوژی‌های روز دنیا.' },
+        { name: 'description', content: 'ابرآوران: تخصصی‌ترین تیم طراحی سایت و سایت ساز ایران با بیش از 4 سال تجربه. سایت شخصی، سایت شرکتی و فروشگاه اینترنتی با امکانات کامل مدیریت سفارشات، پرداخت آنلاین و ارسال کالا. طراحی سایت با بهترین تکنولوژی‌های روز دنیا.' },
         { name: 'keywords', content: 'طراحی سایت, سایت ساز, سایت ساز ابرآوران, ابر آوران, avarancloud, ابرآوران (Abaravan), طراحی سایت حرفه‌ای, فروشگاه آنلاین, طراحی سایت فروشگاهی, فروشگاه اینترنتی, سایت شرکتی, سایت شخصی, ابر ساز, طراحی وب سایت, سئو, طراحی سایت ارزان, طراحی سایت حرفه ای, وب سایت, سایت اختصاصی, سایت رسپانسیو, بهینه سازی سایت, ساخت فروشگاه اینترنتی, افزایش فروش آنلاین, راه اندازی کسب و کار آنلاین, درگاه پرداخت اینترنتی, سیستم مدیریت محتوا, cloud services, web design, online store, قیمت طراحی سایت, خدمات طراحی سایت, هزینه طراحی سایت, مزایای طراحی سایت حرفه‌ای' },
         { name: 'author', content: 'ابرآوران | طراحی سایت و سایت ساز حرفه‌ای' },
         { name: 'robots', content: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' },
@@ -35,7 +36,7 @@ export default defineNuxtConfig({
         // Open Graph / Facebook
         { property: 'og:type', content: 'website' },
         { property: 'og:title', content: 'ابرآوران | طراحی سایت و سایت ساز حرفه‌ای با تیم متخصص' },
-        { property: 'og:description', content: 'ابرآوران: تخصصی‌ترین تیم طراحی سایت و سایت ساز ایران با بیش از 10 سال تجربه. سایت شخصی، سایت شرکتی و فروشگاه اینترنتی با امکانات کامل مدیریت سفارشات و پرداخت آنلاین. بهترین قیمت و کیفیت با تضمین رضایت مشتری.' },
+        { property: 'og:description', content: 'ابرآوران: تخصصی‌ترین تیم طراحی سایت و سایت ساز ایران با بیش از 4 سال تجربه. سایت شخصی، سایت شرکتی و فروشگاه اینترنتی با امکانات کامل مدیریت سفارشات و پرداخت آنلاین. بهترین قیمت و کیفیت با تضمین رضایت مشتری.' },
         { property: 'og:url', content: 'https://avarancloud.ir' },
         { property: 'og:site_name', content: 'ابرآوران | طراحی سایت و سایت ساز حرفه‌ای' },
         { property: 'og:image', content: 'https://avarancloud.ir/assets/photos/logo-avarancloud.png' },
@@ -54,6 +55,11 @@ export default defineNuxtConfig({
         { name: 'apple-mobile-web-app-title', content: 'ابرآوران' },
         { name: 'format-detection', content: 'telephone=no' },
         { property: 'og:email', content: 'info@avarancloud.ir' },
+        
+        // PWA related meta tags
+        { name: 'apple-mobile-web-app-capable', content: 'yes' },
+        { name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent' },
+        { name: 'theme-color', content: '#ffffff' }
       ],
       script: [
         { 

@@ -12,6 +12,19 @@ export default {
     // Set direction to RTL for both document and HTML element
     document.documentElement.dir = 'rtl';
     document.body.dir = 'rtl';
+    
+    // Register Service Worker for PWA
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/sw.js')
+          .then(function(registration) {
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+          })
+          .catch(function(error) {
+            console.log('ServiceWorker registration failed: ', error);
+          });
+      });
+    }
   },
   beforeDestroy() {
     // Clean up on component destruction (though unlikely in this root app component)
