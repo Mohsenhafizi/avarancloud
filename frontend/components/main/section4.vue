@@ -2,7 +2,7 @@
   <div class="relative top-20 lg:top-60">
     <div class="rtl mb-16 lg:mb-0 lg:mx-20" data-aos="fade-up">
             <div class="flex flex-col md:flex-row items-center">
-              <img src="../../assets/photos/site.webp" class="w-[296px] relative bottom-10 animate-float" alt="سایت سفارشی با ابرآورن">
+              <img src="../../assets/photos/support.webp" class="w-[296px] relative bottom-10 animate-float" alt="سایت سفارشی با ابرآورن">
                 <div class="text-zinc-700 md:mr-10 mx-4 md:mx-0 lg:mx-10 xl:mx-14">
                     <h3 class="text-2xl py-6 md:text-4xl mb-0.5 md:mb-1.5 text-purple-950 animate-slide-in">سایت رو سفارشی براتون می‌سازیم!</h3>
                     <p class="text-lg animate-fade-in">
@@ -80,7 +80,7 @@
         </div>
         <div class="rtl mb-24 lg:mb-0 lg:relative lg:bottom-62 lg:z-10 lg:mx-20" data-aos="fade-up">
             <div class="flex flex-col md:flex-row items-center">
-              <img src="../../assets/photos/support.webp" class="w-[296px] relative bottom-10 animate-float" alt="ساخت سایت تخصصی">
+              <img src="../../assets/photos/site.webp" class="w-[296px] relative bottom-10 animate-float" alt="ساخت سایت تخصصی">
                 <div class="text-zinc-700 md:mr-10 mx-4 md:mx-0 lg:mx-10 xl:mx-16">
                     <h3 class="text-2xl py-6 md:text-4xl mb-0.5 md:mb-1.5 text-purple-950">کارها را به متخصص بسپارید!</h3>
                     <p class="text-lg">
