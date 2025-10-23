@@ -419,7 +419,7 @@ export default defineNuxtConfig({
         }
       ]
     },
-    pageTransition: { name: 'page', mode: 'out-in' }
+    pageTransition: { name: 'page', mode: 'in-out' }
   },
   ssr: true,
   compatibilityDate: "2024-11-01",
