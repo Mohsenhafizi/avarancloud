@@ -1,7 +1,7 @@
 <template>
     <div class="rtl fixed w-full z-40 md:hidden p-2" :style="containerStyle" role="region" aria-label="ناوبری موبایل سایت ابرآوران">  
     <!-- Overlay -->
-    <div class="overlay fixed inset-0 bg-black/60 bg-opacity-75 z-10 transition-opacity duration-500 ease-in-out" :class="{ 'opacity-0 invisible': !overlayVisible, 'opacity-100 visible': overlayVisible }" @click="closeOverlay" aria-hidden="true"></div>
+    <div class=" fixed inset-0 bg-black/60 bg-opacity-75 z-10 transition-opacity duration-500 ease-in-out" :class="{ 'opacity-0 invisible': !overlayVisible, 'opacity-100 visible': overlayVisible }" @click="closeOverlay" aria-hidden="true"></div>
     <!-- nav Icon -->
     <div class="flex justify-between m-2">
     <div class="nav-icon inline-block p-2" @click="openNav" aria-label="باز کردن منو">
@@ -17,7 +17,7 @@
     </div>
     
     <!-- nav -->
-    <div class="nav fixed top-0 bottom-0 right-0 w-64 pt-3 px-4 z-20 overflow-y-auto transform transition-transform duration-500 ease-in-out" 
+    <div class="nav fixed top-0 bottom-0 right-0 h-[100dvh] w-64 pt-3 px-4 z-20 overflow-y-auto transform transition-transform duration-500 ease-in-out" 
          :style="panelStyle"
          :class="{ 'translate-x-full': !navOpen, 'translate-x-0': navOpen }"
          itemscope itemtype="https://schema.org/SiteNavigationElement"
@@ -117,6 +117,7 @@
         </ul>
     </div>
     </div>
+    <div class="overlay fixed inset-0 bg-black/60 bg-opacity-75 z-10 transition-opacity duration-500 ease-in-out" :class="{ 'opacity-0 invisible': !overlayVisible, 'opacity-100 visible': overlayVisible }" @click="closeOverlay" aria-hidden="true"></div>
 </template>
 <script lang="ts">
 import { defineComponent, ref, onMounted, onUnmounted } from 'vue';
@@ -280,11 +281,11 @@ export default defineComponent({
         borderRadius: '1rem',
         boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5)',
         border: '1px solid rgba(255, 255, 255, 0.12)',
-        // backdropFilter: 'blur(16px) saturate(150%)',
+        backdropFilter: 'blur(16px) saturate(150%)',
         WebkitBackdropFilter: 'blur(16px) saturate(150%)'
       },
       panelStyle: {
-        background: 'rgba(15, 23, 42, 0.4)',
+        background: 'rgba(15, 23, 42, 0.7)',
         borderLeft: '1px solid rgba(255, 255, 255, 0.12)',
         backdropFilter: 'blur(16px) saturate(150%)',
         WebkitBackdropFilter: 'blur(16px) saturate(150%)'
