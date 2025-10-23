@@ -144,6 +144,7 @@
         </svg>
         <NavBarNavDesktop />
         <NavBarNavMobile />
+        <NavBarBottom />
         <SiteHeader />
         <div id="tozihat">
           <SiteFeatures />

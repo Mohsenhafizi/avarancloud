@@ -9,9 +9,10 @@ export default defineNuxtConfig({
       },
       title: 'ابرآوران | طراحی سایت و سایت ساز حرفه‌ای با تیم متخصص',
       link: [
-        { rel: 'icon', type: 'image/png', href: 'logo-avarancloud.png' },
+        { rel: 'icon', type: 'image/png', href: 'abravaran-logo.png' },
+        { rel: 'preload', href: '/assets/font/font.woff2', as: 'font', type: 'font/woff2', crossorigin: 'anonymous' },
         { rel: 'canonical', href: 'https://avarancloud.ir' },
-        { rel: 'apple-touch-icon', href: '/assets/photos/logo-avarancloud.png' },
+        { rel: 'apple-touch-icon', href: '/assets/photos/abravaran-logo.png' },
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
         { rel: 'manifest', href: '/manifest.json' }
@@ -39,7 +40,7 @@ export default defineNuxtConfig({
         { property: 'og:description', content: 'ابرآوران: تخصصی‌ترین تیم طراحی سایت و سایت ساز ایران با بیش از 4 سال تجربه. سایت شخصی، سایت شرکتی و فروشگاه اینترنتی با امکانات کامل مدیریت سفارشات و پرداخت آنلاین. بهترین قیمت و کیفیت با تضمین رضایت مشتری.' },
         { property: 'og:url', content: 'https://avarancloud.ir' },
         { property: 'og:site_name', content: 'ابرآوران | طراحی سایت و سایت ساز حرفه‌ای' },
-        { property: 'og:image', content: 'https://avarancloud.ir/assets/photos/logo-avarancloud.png' },
+        { property: 'og:image', content: 'https://avarancloud.ir/assets/photos/abravaran-logo.png' },
         { property: 'og:locale', content: 'fa_IR' },
         { property: 'og:updated_time', content: new Date().toISOString() },
         
@@ -47,7 +48,7 @@ export default defineNuxtConfig({
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:title', content: 'ابرآوران | طراحی سایت و سایت ساز حرفه‌ای با تیم متخصص' },
         { name: 'twitter:description', content: 'ابرآوران: تخصصی‌ترین تیم طراحی سایت و سایت ساز ایران. طراحی سایت شخصی، شرکتی و فروشگاهی با بهترین تکنولوژی‌های روز دنیا.' },
-        { name: 'twitter:image', content: 'https://avarancloud.ir/assets/photos/logo-avarancloud.png' },
+        { name: 'twitter:image', content: 'https://avarancloud.ir/assets/photos/abravaran-logo.png' },
         { name: 'twitter:site', content: '@avarancloud' },
 
         // Additional SEO tags
@@ -74,7 +75,7 @@ export default defineNuxtConfig({
             "@type": "Organization",
             "name": "ابرآوران",
             "url": "https://avarancloud.ir",
-            "logo": "https://avarancloud.ir/assets/photos/logo-avarancloud.png",
+            "logo": "https://avarancloud.ir/assets/photos/abravaran-logo.png",
             "description": "ابرآوران ارائه دهنده خدمات طراحی سایت و سایت ساز حرفه‌ای با امکانات کامل مدیریتی",
             "contactPoint": {
               "@type": "ContactPoint",
@@ -267,11 +268,11 @@ export default defineNuxtConfig({
             "url": "https://avarancloud.ir",
             "logo": {
               "@type": "ImageObject",
-              "url": "https://avarancloud.ir/assets/photos/logo-avarancloud.png",
+              "url": "https://avarancloud.ir/assets/photos/abravaran-logo.png",
               "width": "180",
               "height": "60"
             },
-            "image": "https://avarancloud.ir/assets/photos/logo-avarancloud.png",
+            "image": "https://avarancloud.ir/assets/photos/abravaran-logo.png",
             "description": "ابرآوران ارائه دهنده خدمات طراحی سایت و سایت ساز حرفه‌ای با امکانات کامل مدیریتی"
           }`,
           type: 'application/ld+json'
@@ -478,7 +479,8 @@ export default defineNuxtConfig({
     "nuxt-delay-hydration",
     "nuxt-lazy-load",
     "@nuxt/image", 
-    "@nuxtjs/sitemap"
+    "@nuxtjs/sitemap",
+    '@vueuse/motion/nuxt'
   ],
 
   // Move options to these public runtime config properties

@@ -144,6 +144,7 @@
         </svg>
           <NavBarNavDesktop />
           <NavBarNavMobile />
+          <NavBarBottom />
           <CloudHeader />
           <div id="tozihat">
             <CloudFeatures />

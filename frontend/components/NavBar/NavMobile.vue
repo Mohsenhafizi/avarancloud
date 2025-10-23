@@ -5,13 +5,13 @@
     <!-- nav Icon -->
     <div class="flex justify-between m-2">
     <div class="nav-icon inline-block p-2" @click="openNav" aria-label="باز کردن منو">
-        <svg class="w-6 h-6 text-zinc-700" aria-hidden="true">
+        <svg class="relative left-1.5 w-6 h-6 text-zinc-700" aria-hidden="true">
             <use href="#bars-3"></use>
         </svg>
     </div>
-    <div class="font-bold absolute top-0 left-0">
+    <div class="font-bold absolute top-0.5 left-0.5">
       <NuxtLink to="/" aria-label="صفحه اصلی">
-        <img class="relative right-2 w-[240px] h-[91px]" src="../../assets/photos/avaran-removebg-preview.png" alt="ابرآوران - طراحی سایت و فروشگاه اینترنتی">
+        <img class="relative right-1 w-[240px] h-[64px]" src="../../assets/photos/abravaran-logo.png" alt="ابرآوران - طراحی سایت و فروشگاه اینترنتی">
       </NuxtLink>
     </div>
     </div>
@@ -29,8 +29,8 @@
         
         <div class="flex items-center justify-between pb-5 mb-4 border-b border-b-gray-100">
             <div class="mb-2">
-              <div class="absolute top-0 left-6">
-                <img class="relative left-3 w-[222px] h-[84px]" src="../../assets/photos/avaran-removebg-preview.png" alt="ابرآوران - طراحی سایت و فروشگاه اینترنتی" itemprop="image">
+              <div class="absolute top-2 left-6">
+                <img class="relative left-6.5 w-[200px] h-[56px]" src="../../assets/photos/abravaran-logo.png" alt="ابرآوران - طراحی سایت و فروشگاه اینترنتی" itemprop="image">
               </div>
             </div>
             <div class="relative top-3 nav-Close-Btn" @click="closeNav" aria-label="بستن منو">
@@ -40,7 +40,7 @@
             </div>
         </div>
     
-        <div class="flex items-center mb-3 pr-2.5 h-10 rounded-md">
+        <div class="flex items-center mb-3 pr-1 h-10 rounded-md">
             <NuxtLink to="/" class="flex items-center gap-x-2" active-class="active-link" itemprop="url" @click="setActiveMenuItem('/')" role="menuitem" aria-label="صفحه اصلی">
                 <div class="w-3 h-3 rounded-full border-2 border-green-500" :class="{'bg-green-500': activeMenuItem === '/'}"></div>
                 <span class="pt-1 text-black" itemprop="name">صفحه اصلی</span>
@@ -51,7 +51,7 @@
     
             <li class="mb-1" role="presentation">
                 <div class="flex items-center justify-between submenu-open-btn" @click="toggleSubmenu" :aria-expanded="submenuOpen" aria-controls="site-submenu" aria-label="سایت ساز">
-                    <NuxtLink to="/site-builder" class="flex items-center gap-x-2 pr-2.5" active-class="active-link" itemprop="url" @click="setActiveMenuItem('/site-builder')" role="menuitem">
+                    <NuxtLink to="/site-builder" class="flex items-center gap-x-2 pr-1" active-class="active-link" itemprop="url" @click="setActiveMenuItem('/site-builder')" role="menuitem">
                         <div class="w-3 h-3 rounded-full border-2 border-green-500" :class="{'bg-green-500': activeMenuItem === '/site-builder'}"></div>
                         <span itemprop="name">سایت ساز</span>
                     </NuxtLink>
@@ -71,7 +71,7 @@
     
             <li class="mb-1" role="presentation">
                 <div class="flex items-center justify-between submenu-open-btn" @click="toggleSub" :aria-expanded="submenuOpens" aria-controls="cloud-submenu" aria-label="ابر ساز">
-                    <NuxtLink to="/cloud-builder" class="flex items-center gap-x-2 pr-2.5" active-class="active-link" itemprop="url" @click="setActiveMenuItem('/cloud-builder')" role="menuitem">
+                    <NuxtLink to="/cloud-builder" class="flex items-center gap-x-2 pr-1" active-class="active-link" itemprop="url" @click="setActiveMenuItem('/cloud-builder')" role="menuitem">
                         <div class="w-3 h-3 rounded-full border-2 border-blue-500" :class="{'bg-blue-500': activeMenuItem === '/cloud-builder'}"></div>
                         <span itemprop="name">ابر ساز</span>
                     </NuxtLink>
@@ -90,7 +90,7 @@
                 </div>
             </li>
             <li class="mb-4" role="presentation">
-                <NuxtLink to="/about-us" class="flex items-center gap-x-2 pr-2.5" active-class="active-link" itemprop="url" @click="setActiveMenuItem('/about-us')" role="menuitem" aria-label="درباره ما">
+                <NuxtLink to="/about-us" class="flex items-center gap-x-2 pr-1" active-class="active-link" itemprop="url" @click="setActiveMenuItem('/about-us')" role="menuitem" aria-label="درباره ما">
                   <div class="w-3 h-3 rounded-full border-2 border-green-500" :class="{'bg-green-500': activeMenuItem === '/about-us'}"></div>
                   <span itemprop="name">درباره ما</span>
                 </NuxtLink>
@@ -98,7 +98,7 @@
             <li class="mb-4" role="presentation">
               <NuxtLink
               to="/about-us#contact-us"
-              class="flex items-center gap-x-2 pr-2.5"
+              class="flex items-center gap-x-2 pr-1"
               :class="{ 'active-link': isContactUsVisible }"
               @click="navigateToSection('/about-us#contact-us')"
               :key="'contact-us-link'"
@@ -297,7 +297,7 @@ export default defineComponent({
 .submenu__item--active {
     position: relative;
     color: #3b82f6;
-    padding-right: 0.625rem; /* 2.5 */
+    padding-right: 0.625rem; /* 1 */
 }
 
 /* Site Builder submenu items should be green */

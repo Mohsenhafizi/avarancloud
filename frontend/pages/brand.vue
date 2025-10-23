@@ -1,13 +1,14 @@
 <template>
   <NavBarNavDesktop />
   <NavBarNavMobile />
+  <NavBarBottom />
   <div class="w-full min-h-screen overflow-hidden brand-page">
     <!-- پس‌زمینه متحرک -->
     <div class="absolute inset-0 bg-animation"></div>
     
     <div class="w-full px-4 py-8 md:py-16 rtl relative z-10">
       <div class="w-full max-w-6xl mx-auto text-center mb-12 p-6 backdrop-blur-sm rounded-xl shadow-lg animate-fade-in mt-10">
-        <img src="/assets/photos/logo-avarancloud.png" alt="لوگوی ابرآوران" class="mx-auto h-24 md:h-32 mb-4 animate-float" />
+        <img src="/assets/photos/abravaran-logo.png" alt="لوگوی ابرآوران" class="mx-auto h-24 md:h-32 mb-4 animate-float" />
         <h1 class="text-3xl md:text-4xl font-bold mb-2 text-gradient">ابرآوران | Avaran Cloud</h1>
         <h2 class="text-xl text-gray-600 animate-fade-in-delay">طراحی سایت و فروشگاه اینترنتی حرفه‌ای</h2>
       </div>

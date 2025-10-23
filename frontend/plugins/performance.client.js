@@ -58,7 +58,7 @@ export default defineNuxtPlugin({
     // Prioritize LCP image loading
     const prioritizeLCP = () => {
       // Find potential LCP elements
-      const heroImages = document.querySelectorAll('img[src*="mobile-screen"], img[src*="sample-screen"], img[src*="logo-avarancloud"]');
+      const heroImages = document.querySelectorAll('img[src*="mobile-screen"], img[src*="sample-screen"], img[src*="abravaran-logo"]');
       
       heroImages.forEach(img => {
         if (img.loading !== 'eager') {

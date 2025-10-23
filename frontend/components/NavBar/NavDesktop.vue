@@ -102,9 +102,9 @@
             </NuxtLink>
         </ul>
     </nav>
-        <div class="relative top-[10px] right-4">
+        <div class="relative bottom-0.5 right-4">
           <NuxtLink to="/">
-            <img class="w-[315px] h-[120px]" src="../../assets/photos/avaran-removebg-preview.png" alt="ابرآوران - طراحی سایت و فروشگاه اینترنتی" itemprop="image">
+            <img class="w-[290px] h-[74px]" src="../../assets/photos/abravaran-logo.png" alt="ابرآوران - طراحی سایت و فروشگاه اینترنتی" itemprop="image">
           </NuxtLink>
         </div>
     </div>

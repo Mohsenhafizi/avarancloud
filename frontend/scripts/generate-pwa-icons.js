@@ -10,7 +10,7 @@ if (!fs.existsSync(iconsDir)) {
 }
 
 // Source logo path
-const sourceLogoPath = path.join(__dirname, '../public/logo-avarancloud.png');
+const sourceLogoPath = path.join(__dirname, '../public/abravaran-logo.png');
 
 // Define icon sizes for PWA
 const sizes = [72, 96, 128, 144, 152, 192, 384, 512];

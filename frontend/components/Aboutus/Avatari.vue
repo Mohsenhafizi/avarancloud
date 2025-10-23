@@ -11,8 +11,8 @@
 
         <div class="flex flex-col sm:flex-row justify-between items-center mb-16">
           <transition name="image-appear">
-            <div class="image-wrapper mr-2">
-              <img src="/logo-avarancloud.png" alt="avatar" class="profile-image" />
+            <div class="image-wrapper mr-2 mb-4">
+              <img src="../../assets/photos/abr2-logo.png" alt="avatar" class="profile-image" />
               <div class="image-overlay"></div>
             </div>
           </transition>
@@ -119,8 +119,8 @@ export default {
 }
 
 .profile-image {
-  width: 80%;
-  height: 80%;
+  width: 90%;
+  height: 90%;
   object-fit: contain;
   transition: all 0.5s ease;
   padding: 10px;

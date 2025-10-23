@@ -28,7 +28,7 @@ export default defineNuxtPlugin(() => {
         url: 'https://avarancloud.ir',
         logo: {
           '@type': 'ImageObject',
-          url: 'https://avarancloud.ir/assets/photos/logo-avarancloud.png',
+          url: 'https://avarancloud.ir/assets/photos/abravaran-logo.png',
           width: '180',
           height: '60'
         },
