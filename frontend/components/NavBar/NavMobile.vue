@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-white rtl fixed w-full z-40 md:hidden p-2" role="region" aria-label="ناوبری موبایل سایت ابرآوران">  
+    <div class="rtl fixed w-full z-40 md:hidden p-2" :style="containerStyle" role="region" aria-label="ناوبری موبایل سایت ابرآوران">  
     <!-- Overlay -->
     <div class="overlay fixed inset-0 bg-black/60 bg-opacity-75 z-10 transition-opacity duration-500 ease-in-out" :class="{ 'opacity-0 invisible': !overlayVisible, 'opacity-100 visible': overlayVisible }" @click="closeOverlay" aria-hidden="true"></div>
     <!-- nav Icon -->
@@ -11,13 +11,14 @@
     </div>
     <div class="font-bold absolute top-0.5 left-0.5">
       <NuxtLink to="/" aria-label="صفحه اصلی">
-        <img class="relative right-1 w-[240px] h-[64px]" src="../../assets/photos/abravaran-logo.png" alt="ابرآوران - طراحی سایت و فروشگاه اینترنتی">
+        <img class="relative right-1 w-[240px] h-[64px]" src="../../assets/photos/abr-avaran-logo.png" alt="ابرآوران - طراحی سایت و فروشگاه اینترنتی">
       </NuxtLink>
     </div>
     </div>
     
     <!-- nav -->
-    <div class="nav fixed top-0 bottom-0 right-0 w-64 pt-3 px-4 bg-white z-20 overflow-y-auto transform transition-transform duration-500 ease-in-out" 
+    <div class="nav fixed top-0 bottom-0 right-0 w-64 pt-3 px-4 z-20 overflow-y-auto transform transition-transform duration-500 ease-in-out" 
+         :style="panelStyle"
          :class="{ 'translate-x-full': !navOpen, 'translate-x-0': navOpen }"
          itemscope itemtype="https://schema.org/SiteNavigationElement"
          role="navigation"
@@ -27,10 +28,10 @@
         <meta itemprop="mainContentOfPage" content="true">
         <meta itemprop="headline" content="منو و ناوبری ابرآوران">
         
-        <div class="flex items-center justify-between pb-5 mb-4 border-b border-b-gray-100">
+        <div class="flex items-center justify-between pb-7 mb-4 border-b border-b-gray-100">
             <div class="mb-2">
               <div class="absolute top-2 left-6">
-                <img class="relative left-6.5 w-[200px] h-[56px]" src="../../assets/photos/abravaran-logo.png" alt="ابرآوران - طراحی سایت و فروشگاه اینترنتی" itemprop="image">
+                <img class="relative left-6.5 w-[200px] h-[56px]" src="../../assets/photos/abr-avaran-logo.png" alt="ابرآوران - طراحی سایت و فروشگاه اینترنتی" itemprop="image">
               </div>
             </div>
             <div class="relative top-3 nav-Close-Btn" @click="closeNav" aria-label="بستن منو">
@@ -43,7 +44,7 @@
         <div class="flex items-center mb-3 pr-1 h-10 rounded-md">
             <NuxtLink to="/" class="flex items-center gap-x-2" active-class="active-link" itemprop="url" @click="setActiveMenuItem('/')" role="menuitem" aria-label="صفحه اصلی">
                 <div class="w-3 h-3 rounded-full border-2 border-green-500" :class="{'bg-green-500': activeMenuItem === '/'}"></div>
-                <span class="pt-1 text-black" itemprop="name">صفحه اصلی</span>
+                <span class="pt-1 text-white" itemprop="name">صفحه اصلی</span>
             </NuxtLink>
         </div>
     
@@ -92,7 +93,7 @@
             <li class="mb-4" role="presentation">
                 <NuxtLink to="/about-us" class="flex items-center gap-x-2 pr-1" active-class="active-link" itemprop="url" @click="setActiveMenuItem('/about-us')" role="menuitem" aria-label="درباره ما">
                   <div class="w-3 h-3 rounded-full border-2 border-green-500" :class="{'bg-green-500': activeMenuItem === '/about-us'}"></div>
-                  <span itemprop="name">درباره ما</span>
+                  <span :class="['text-white', { 'font-bold': activeMenuItem === '/about-us' }]" itemprop="name">درباره ما</span>
                 </NuxtLink>
             </li>
             <li class="mb-4" role="presentation">
@@ -110,7 +111,7 @@
                 class="w-3 h-3 rounded-full border-2 border-green-500"
                 :class="{ 'bg-green-500': isContactUsVisible || activeMenuItem === '/about-us#contact-us', 'bg-transparent': !isContactUsVisible && activeMenuItem !== '/about-us#contact-us' }"
               ></div>
-              <span itemprop="name">ارتباط با ما</span>
+              <span class="text-white" itemprop="name">ارتباط با ما</span>
             </NuxtLink>
             </li>
         </ul>
@@ -274,6 +275,20 @@ export default defineComponent({
     });
 
     return {
+      containerStyle: {
+        background: 'rgba(15, 23, 42, 0.35)',
+        borderRadius: '1rem',
+        boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5)',
+        border: '1px solid rgba(255, 255, 255, 0.12)',
+        // backdropFilter: 'blur(16px) saturate(150%)',
+        WebkitBackdropFilter: 'blur(16px) saturate(150%)'
+      },
+      panelStyle: {
+        background: 'rgba(15, 23, 42, 0.4)',
+        borderLeft: '1px solid rgba(255, 255, 255, 0.12)',
+        backdropFilter: 'blur(16px) saturate(150%)',
+        WebkitBackdropFilter: 'blur(16px) saturate(150%)'
+      },
       navOpen,
       submenuOpen,
       submenuOpens,
@@ -390,22 +405,17 @@ a[href^="/cloud-builder"].active-link {
     color: #3b82f6;
 }
 
-/* Keep home page text black even when active */
-a[href="/"].active-link span {
-    color: black !important;
-}
-
-/* Keep text color black for specific links */
+/* Make specific link texts white */
 a[href="/"] span,
 a[href="/about-us"] span,
 a[href="/about-us#contact-us"] span {
-    color: black !important;
+    color: white !important;
 }
 
-/* Override active link color for specific links */
+/* Ensure they stay white when active */
 a[href="/"].active-link span,
 a[href="/about-us"].active-link span,
 a[href="/about-us#contact-us"].active-link span {
-    color: black !important;
+    color: white !important;
 }
 </style>

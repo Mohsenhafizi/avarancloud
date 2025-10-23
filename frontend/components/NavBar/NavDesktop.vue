@@ -1,6 +1,6 @@
 <template>
 <header class="rtl fixed top-0 right-0 left-0 z-20 hidden md:flex justify-between items-center px-5 lg:px-10 
-               py-5 h-24 w-[98%] lg:w-[90%] 2xl:w-[80%] mx-auto bg-white shadow-2xl rounded-b-3xl" itemscope itemtype="https://schema.org/SiteNavigationElement" role="banner" aria-label="منوی اصلی سایت ابرآوران">
+               py-5 h-24 w-[98%] lg:w-[90%] 2xl:w-[80%] mx-auto shadow-2xl rounded-b-3xl" :style="desktopContainerStyle" itemscope itemtype="https://schema.org/SiteNavigationElement" role="banner" aria-label="منوی اصلی سایت ابرآوران">
     <!-- Meta information for search engines -->
     <meta itemprop="description" content="منوی اصلی سایت ابرآوران - ارائه دهنده خدمات طراحی سایت و فروشگاه اینترنتی">
     <meta itemprop="mainContentOfPage" content="true">
@@ -11,7 +11,7 @@
         <ul class="flex gap-x-2 items-center lg:gap-x-6 h-full text-lg 2xl:text-xl text-gray-800 tracking-tighest child:leading-[56px] whitespace-nowrap" role="menubar" aria-orientation="horizontal">
             <NuxtLink to="/" class="hover:bg-emerald-300 rounded-2xl p-3 transition-all flex items-center" active-class="active-link" itemprop="url" role="menuitem" aria-label="صفحه اصلی">
                 <div class="circle mx-2 w-3 h-3 mb-1 shadow-xl rounded-full transition-all duration-300"></div>
-                <li itemprop="name">
+                <li class="text-white" itemprop="name">
                     صفحه اصلی
                 </li>
             </NuxtLink>
@@ -85,7 +85,7 @@
             aria-label="درباره ما"
             >
             <div class="circle mx-2 w-3 h-3 mb-1 shadow-xl rounded-full transition-all duration-300"></div>
-            <li itemprop="name">درباره ما</li>
+            <li class="text-white" itemprop="name">درباره ما</li>
             </NuxtLink>
 
             <NuxtLink
@@ -98,13 +98,13 @@
                 aria-label="ارتباط با ما"
                 >
             <div class="circle mx-2 w-3 h-3 mb-1 shadow-xl rounded-full transition-all duration-300"></div>
-            <li itemprop="name">ارتباط با ما</li>
+            <li class="text-white" itemprop="name">ارتباط با ما</li>
             </NuxtLink>
         </ul>
     </nav>
         <div class="relative bottom-0.5 right-4">
           <NuxtLink to="/">
-            <img class="w-[290px] h-[74px]" src="../../assets/photos/abravaran-logo.png" alt="ابرآوران - طراحی سایت و فروشگاه اینترنتی" itemprop="image">
+            <img class="w-[290px] h-[74px]" src="../../assets/photos/abr-avaran-logo.png" alt="ابرآوران - طراحی سایت و فروشگاه اینترنتی" itemprop="image">
           </NuxtLink>
         </div>
     </div>
@@ -131,6 +131,13 @@ const menuContainer = ref<HTMLElement | null>(null);
 const submenuSite = ref<HTMLElement | null>(null);
 const menuContainers = ref<HTMLElement | null>(null);
 const submenuCloud = ref<HTMLElement | null>(null);
+// شیشه‌ای کردن پس‌زمینه هدر دسکتاپ مشابه NavMobile
+const desktopContainerStyle = {
+  background: 'rgba(15, 23, 42, 0.50)',
+  backdropFilter: 'blur(16px) saturate(150%)',
+  WebkitBackdropFilter: 'blur(16px) saturate(150%)',
+  border: '1px solid rgba(255, 255, 255, 0.12)'
+};
 
 // متدها
 const clearCloseTimeout = () => {
@@ -398,11 +405,11 @@ onBeforeUnmount(() => {
     border-width: 1.5px;
 }
 
-/* Keep text color black for specific links */
+/* Force white text for specific links */
 [href="/"] li,
 [href="/about-us"] li,
 [href="/about-us#contact-us"] li {
-    color: black !important;
+    color: white !important;
 }
 
 /* فلش بالای منو */

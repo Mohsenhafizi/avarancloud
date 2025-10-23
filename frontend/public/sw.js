@@ -4,8 +4,8 @@ const urlsToCache = [
   '/',
   '/index.html',
   '/manifest.json',
-  '/abravaran-logo.png',
-  '/assets/photos/abravaran-logo.png',
+  '/abr-avaran-logo.png',
+  '/assets/photos/abr-avaran-logo.png',
   '/assets/css/main.css',
   '/assets/js/main.js'
 ];

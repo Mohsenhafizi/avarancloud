@@ -71,12 +71,6 @@
           </li>
         </ul>
       </div>
-      
-      <div class="w-full max-w-6xl mx-auto text-center mb-12 animate-bounce-slow">
-        <NuxtLink to="/about-us" class="inline-block glow-button bg-primary-600 text-white px-8 py-4 rounded-lg font-bold hover:bg-primary-700 transition-all transform hover:-translate-y-1">
-          بیشتر درباره ابرآوران
-        </NuxtLink>
-      </div>
     </div>
   </div>
 </template>
