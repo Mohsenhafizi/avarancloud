@@ -1,7 +1,7 @@
 <template>
     <div class="rtl fixed w-full z-40 md:hidden p-2" :style="containerStyle" role="region" aria-label="ناوبری موبایل سایت ابرآوران">  
     <!-- Overlay -->
-    <div class=" fixed inset-0 bg-black/60 bg-opacity-75 z-10 transition-opacity duration-500 ease-in-out" :class="{ 'opacity-0 invisible': !overlayVisible, 'opacity-100 visible': overlayVisible }" @click="closeOverlay" aria-hidden="true"></div>
+    <div class="fixed inset-0 bg-black/60 bg-opacity-75 z-10 transition-opacity duration-500 ease-in-out" :class="{ 'opacity-0 invisible': !overlayVisible, 'opacity-100 visible': overlayVisible }" @click="closeOverlay" aria-hidden="true"></div>
     <!-- nav Icon -->
     <div class="flex justify-between m-2">
     <div class="nav-icon inline-block p-2" @click="openNav" aria-label="باز کردن منو">
@@ -140,6 +140,7 @@ export default defineComponent({
     const openNav = () => {
       navOpen.value = true; // نوار کناری را باز می‌کند
       overlayVisible.value = true; // Overlay را فعال می‌کند
+      document.documentElement.style.overflow = 'hidden';
       
       // Update ARIA attributes for accessibility
       const siteMenu = document.querySelector('.submenu-open-btn[aria-controls="site-submenu"]');
@@ -153,6 +154,7 @@ export default defineComponent({
       setTimeout(() => {
         navOpen.value = false; // نوار کناری را می‌بندد
         overlayVisible.value = false; // Overlay را غیرفعال می‌کند
+        document.documentElement.style.overflow = '';
       }, 100); // Small delay to allow navigation to complete
     };
 
@@ -285,7 +287,7 @@ export default defineComponent({
         WebkitBackdropFilter: 'blur(16px) saturate(150%)'
       },
       panelStyle: {
-        background: 'rgba(15, 23, 42, 0.7)',
+        background: 'rgba(15, 23, 42, 0.85)',
         borderLeft: '1px solid rgba(255, 255, 255, 0.12)',
         backdropFilter: 'blur(16px) saturate(150%)',
         WebkitBackdropFilter: 'blur(16px) saturate(150%)'
