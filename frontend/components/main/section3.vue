@@ -114,18 +114,8 @@
 </template>
 
 <script lang="ts">
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
 export default defineComponent({
-    name: 'Section3',
-    mounted() {
-        AOS.init({
-            duration: 1000,
-            once: true,
-            offset: 100
-        });
-    }
+    name: 'Section3'
 });
 </script>
 

@@ -433,7 +433,12 @@ export default defineNuxtConfig({
     plugins: [
       tailwindcss(),
     ],
+    // Disable sourcemaps to avoid Rollup conflicting sourcemap sources
+    css: {
+      devSourcemap: false
+    },
     build: {
+      sourcemap: false,
       cssCodeSplit: true,
       chunkSizeWarningLimit: 1000,
       rollupOptions: {
