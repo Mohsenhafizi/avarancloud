@@ -10,7 +10,7 @@
         data-aos="fade-up"
       >
       <span class="2xl:flex text-purple-950 2xl:justify-center z-10">
-        <h1 class="">ابرآوران - خدمات حرفه‌ای وب و دیجیتال</h1>
+        <h1 class="mt-10 md:mt-0">ابرآوران - خدمات حرفه‌ای وب و دیجیتال</h1>
         <span class="absolute top-18 sm:top-13 mx-10 flex -z-10">
           <img class="w-80 lcp-image" src="/svg/vector-7.svg" alt="ابرآوران - خدمات وب و دیجیتال" fetchpriority="high" loading="eager" decoding="async">
         </span>

@@ -1,7 +1,7 @@
 <template>
-<div class="z-10 relative top-10 mb-20 hidden lg:block">
-<div class="text-center font-bold text-2xl sm:text-3xl my-6">
-   ابرآوران بهترین انتخاب برای کسب‌وکار شماست، چون:
+<div class="z-10 relative bottom-10 hidden lg:block">
+<div class="text-center font-bold text-2xl sm:text-3xl mb-6">
+   ابرآوران بهترین انتخاب برای کسب‌وکار شماست، چون
 </div>
 
 <div class="flex flex-col lg:flex-row items-center justify-center mb-10 mt-10 gap-18">
