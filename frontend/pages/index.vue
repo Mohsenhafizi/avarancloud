@@ -182,7 +182,7 @@ export default {
         { property: 'og:description', content: 'ابرآوران - تیم متخصص طراحی سایت و سایت ساز حرفه‌ای با بیش از 10 سال تجربه. ارائه خدمات طراحی وب‌سایت شخصی، شرکتی و فروشگاهی با جدیدترین تکنولوژی‌ها' },
         { property: 'og:url', content: 'https://avarancloud.ir/' },
         { property: 'og:type', content: 'website' },
-        { property: 'og:image', content: 'https://avarancloud.ir/assets/photos/abr-avaran-logo.png' },
+        { property: 'og:image', content: 'https://avarancloud.ir/assets/photos/avarancloud-orginal1.png' },
         { property: 'og:locale', content: 'fa_IR' },
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:title', content: 'ابرآوران | طراحی سایت و سایت ساز حرفه‌ای با تیم متخصص' },

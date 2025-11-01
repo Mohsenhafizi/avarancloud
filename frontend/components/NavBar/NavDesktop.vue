@@ -20,7 +20,7 @@
                     <div class="circle mx-2 w-3 h-3 mb-1 shadow-xl rounded-full transition-all duration-300"></div>
                     <li class="flex items-center" itemprop="name">
                         سایت ساز
-                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        <svg xmlns="http://www.w3.org/2000/svg"
                             :class="['h-4 w-4 mr-1 transform transition-transform duration-300', {'rotate-180': isMenuOpen}]" 
                             fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -102,9 +102,9 @@
             </NuxtLink>
         </ul>
     </nav>
-        <div class="relative bottom-0.5 right-4">
+        <div class="relative left-2">
           <NuxtLink to="/">
-            <img class="w-[290px] h-[74px]" src="../../assets/photos/abr-avaran-logo.png" alt="ابرآوران - طراحی سایت و فروشگاه اینترنتی" itemprop="image">
+            <img class="w-[190px] h-[90px]" src="../../assets/photos/avarancloud-orginal1.png" alt="ابرآوران - طراحی سایت و فروشگاه اینترنتی" itemprop="image">
           </NuxtLink>
         </div>
     </div>

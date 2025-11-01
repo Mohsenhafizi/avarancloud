@@ -119,7 +119,7 @@ export function optimizeImageElement(imgElement) {
     const isLCP = 
       imgElement.src.includes('mobile-screen') || 
       imgElement.src.includes('sample-screen') || 
-      imgElement.src.includes('abr-avaran-logo') ||
+      imgElement.src.includes('avarancloud-orginal1.png') ||
       imgElement.classList.contains('lcp-image');
     
     imgElement.loading = isLCP ? 'eager' : 'lazy';

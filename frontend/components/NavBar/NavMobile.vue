@@ -3,15 +3,15 @@
     <!-- Overlay -->
     <div class="fixed inset-0 bg-black/60 bg-opacity-75 z-10 transition-opacity duration-500 ease-in-out" :class="{ 'opacity-0 invisible': !overlayVisible, 'opacity-100 visible': overlayVisible }" @click="closeOverlay" aria-hidden="true"></div>
     <!-- nav Icon -->
-    <div class="flex justify-between m-2">
+    <div class="flex justify-between m-2 mx-4">
     <div class="nav-icon inline-block p-2" @click="openNav" aria-label="باز کردن منو">
         <svg class="relative left-1.5 w-6 h-6 text-zinc-700" aria-hidden="true">
             <use href="#bars-3"></use>
         </svg>
     </div>
-    <div class="font-bold absolute top-0.5 left-0.5">
+    <div class="font-bold absolute left-4">
       <NuxtLink to="/" aria-label="صفحه اصلی">
-        <img class="relative right-1 w-[240px] h-[64px]" src="../../assets/photos/abr-avaran-logo.png" alt="ابرآوران - طراحی سایت و فروشگاه اینترنتی">
+        <img class="relative bottom-4 right-1 w-[150px] h-[70px]" src="../../assets/photos/avarancloud-orginal1.png" alt="ابرآوران - طراحی سایت و فروشگاه اینترنتی">
       </NuxtLink>
     </div>
     </div>
@@ -28,13 +28,13 @@
         <meta itemprop="mainContentOfPage" content="true">
         <meta itemprop="headline" content="منو و ناوبری ابرآوران">
         
-        <div class="flex items-center justify-between pb-7 mb-4 border-b border-b-gray-100">
+        <div class="flex items-center justify-between pb-10 mb-4 border-b border-b-gray-100">
             <div class="mb-2">
-              <div class="absolute top-2 left-6">
-                <img class="relative left-6.5 w-[200px] h-[56px]" src="../../assets/photos/abr-avaran-logo.png" alt="ابرآوران - طراحی سایت و فروشگاه اینترنتی" itemprop="image">
+              <div class="absolute top-0.5 left-3.5">
+                <img class="relative left-21 w-[150px] h-[70px]" src="../../assets/photos/avarancloud-orginal1.png" alt="ابرآوران - طراحی سایت و فروشگاه اینترنتی" itemprop="image">
               </div>
             </div>
-            <div class="relative top-3 nav-Close-Btn" @click="closeNav" aria-label="بستن منو">
+            <div class="relative top-4 nav-Close-Btn" @click="closeNav" aria-label="بستن منو">
                 <svg class="w-6 h-6 text-zinc-600" aria-hidden="true">
                     <use href="#x-mark-mini"></use>
                 </svg>
