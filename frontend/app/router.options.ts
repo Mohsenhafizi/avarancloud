@@ -1,8 +1,28 @@
 import type { RouterConfig } from '@nuxt/schema'
 
+// Static asset patterns that should not be routed
+const staticAssetPatterns = [
+  /^\/_nuxt\//,
+  /^\/assets\//,
+  /^\/icons\//,
+  /^\/svg\//,
+  /^\/public\//,
+  /\.(woff2?|png|jpg|jpeg|gif|svg|webp|avif|ico|css|js|json|xml|txt)$/i
+]
+
+// Check if a path is a static asset
+function isStaticAsset(path: string): boolean {
+  return staticAssetPatterns.some(pattern => pattern.test(path))
+}
+
 // https://router.vuejs.org/api/#routeroptions
 export default <RouterConfig>{
   scrollBehavior(to, from, savedPosition) {
+    // Skip routing for static assets
+    if (isStaticAsset(to.path)) {
+      return false
+    }
+    
     // If the user is navigating back in history, restore their previous scroll position
     if (savedPosition) {
       return savedPosition

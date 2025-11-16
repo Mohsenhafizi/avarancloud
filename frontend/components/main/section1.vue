@@ -12,7 +12,7 @@
       <span class="2xl:flex text-purple-950 2xl:justify-center z-10">
         <h1 class="mt-10 md:mt-0">ابرآوران - خدمات حرفه‌ای وب و دیجیتال</h1>
         <span class="absolute top-18 sm:top-13 mx-10 flex -z-10">
-          <img class="w-80 lcp-image" src="/svg/vector-7.svg" alt="ابرآوران - خدمات وب و دیجیتال" fetchpriority="high" loading="eager" decoding="async">
+          <img class="w-80 lcp-image" src="/svg/vector-7.svg" alt="ابرآوران - خدمات وب و دیجیتال" fetchpriority="high" decoding="async">
         </span>
       </span>
       </h1>
@@ -22,7 +22,7 @@
       </h2>
       </div>
 <div class="relative bottom-19 flex justify-center mb-6 2xl:mb-10">
-<svg class="absolute" xmlns="http://www.w3.org/2000/svg" height="200" width="200" loading="lazy">
+<svg class="absolute" xmlns="http://www.w3.org/2000/svg" height="200" width="200">
   <g style="order: -1;">
     <polygon
       transform="rotate(45 100 100)"
@@ -224,7 +224,6 @@
                 src="../../assets/photos/ghahve.png"
                 alt="نمونه کار ابرآوران"
                 fetchpriority="high"
-                loading="eager"
                 width="700"
                 height="450"
               />
@@ -234,7 +233,6 @@
               src="../../assets/photos/mobile-screen.png"
               alt="نمونه کار ابرآوران"
               fetchpriority="high"
-              loading="eager"
               width="350"
               height="225"
             />
@@ -253,10 +251,10 @@
           <div class="relative cursor-pointer group z-10 hidden md:inline-block button rounded-2xl float-right bottom-30 lg:bottom-65 left-20">
           <div class="button-wrapper rounded-2xl">
             <div class="text rounded-2xl">
-              <img src="../../assets/photos/sample-screen.png" alt="نمونه محصولات ابرآوران" loading="lazy" width="180" height="270">
+              <img src="../../assets/photos/sample-screen.png" alt="نمونه محصولات ابرآوران" width="180" height="270">
             </div>
             <span class="icon rounded-2xl">
-              <img src="../../assets/photos/sample-screen2.png" alt="نمونه محصولات ابرآوران" loading="lazy" width="180" height="270">
+              <img src="../../assets/photos/sample-screen2.png" alt="نمونه محصولات ابرآوران" width="180" height="270">
             </span>
             </div>
             <div

@@ -70,27 +70,6 @@ export default defineNuxtPlugin((nuxtApp) => {
         document.documentElement.classList.add('no-animation');
       }
 
-      // بهینه‌سازی نمایش تصاویر با IntersectionObserver
-      const lazyImages = document.querySelectorAll('img[loading="lazy"]');
-      const imageObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            const img = entry.target as HTMLImageElement;
-            
-            // اگر data-src وجود داشته باشد، آن را به src تبدیل کنید
-            if (img.dataset.src) {
-              img.src = img.dataset.src;
-              delete img.dataset.src;
-            }
-            
-            imageObserver.unobserve(img);
-          }
-        });
-      });
-      
-      lazyImages.forEach(img => {
-        imageObserver.observe(img);
-      });
     });
   }
 }); 
