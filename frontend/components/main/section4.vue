@@ -2,7 +2,7 @@
   <div class="relative top-20 lg:top-60">
     <div class="rtl mb-16 lg:mb-0 lg:mx-20" data-aos="fade-up">
             <div class="flex flex-col md:flex-row items-center">
-              <img src="../../assets/photos/support.webp" class="w-[296px] relative bottom-10 animate-float" alt="سایت سفارشی با ابرآورن">
+              <img src="../../assets/photos/support.webp" class="w-[296px] relative bottom-3 md:bottom-10 animate-float" alt="سایت سفارشی با ابرآورن">
                 <div class="text-zinc-700 md:mr-10 mx-4 md:mx-0 lg:mx-10 xl:mx-14">
                     <h3 class="text-2xl py-6 md:text-4xl mb-0.5 md:mb-1.5 text-purple-950 animate-slide-in">سایت رو سفارشی براتون می‌سازیم!</h3>
                     <p class="text-lg animate-fade-in">
@@ -74,7 +74,7 @@
                 <img src="../../assets/photos/seo.webp" class="hidden lg:inline-block mr-10 xl:ml-10 w-[340px] animate-float" alt="ساخت سایت">
 
             </div>
-            <div class="hidden lg:flex justify-center relative bottom-10 left-60 -z-10">
+            <div class="hidden lg:flex justify-center relative bottom-7 left-60 -z-10">
                 <img class="w-80 h-80 -scale-x-120 rotate-16" src="../../assets/photos/arrrow3.png" alt="ساخت سایت حرفه ای" data-aos="fade-up">
             </div>
         </div>

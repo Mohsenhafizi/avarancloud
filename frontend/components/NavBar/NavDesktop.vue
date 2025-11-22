@@ -104,7 +104,7 @@
     </nav>
         <div class="relative left-2">
           <NuxtLink to="/">
-            <img class="w-[190px] h-[90px]" src="../../assets/photos/avarancloud-orginal1.png" alt="ابرآوران - طراحی سایت و فروشگاه اینترنتی" itemprop="image">
+            <img class="w-[190px] h-[90px]" src="../../assets/photos/avarancloud-orginalLogo.png" alt="ابرآوران - طراحی سایت و فروشگاه اینترنتی" itemprop="image">
           </NuxtLink>
         </div>
     </div>

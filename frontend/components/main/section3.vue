@@ -1,5 +1,5 @@
 <template>
-<div class="relative z-10 top-20 top-20 mb-24">
+<div class="relative z-10 top-10 lg:top-20 mb-24">
     <div class="text-center text-2xl md:text-3xl font-bold" data-aos="fade-down">
         چطور می‌تونید با ابرآوران، یک سایت فروشگاهی بسازید؟
     </div>

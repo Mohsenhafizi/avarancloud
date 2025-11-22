@@ -18,7 +18,7 @@
       </h1>
       <h2 class="text-lg md:text-xl 2xl:text-2xl pb-10 px-10 critical-path">
         <strong>ابرآوران</strong> ارائه دهنده خدمات جامع طراحی سایت، فروشگاه آنلاین و سئو با پشتیبانی کامل از مدیریت محتوا، پرداخت آنلاین، سیستم ارسال و ابزارهای پیشرفته بازاریابی دیجیتال<br />
-        <span class="relative top-4 font-bold">ابرآوران، همراه کسب و کار شما</span>
+        <span class="relative top-4 font-bold">ابرآوران</span>
       </h2>
       </div>
 <div class="relative bottom-19 flex justify-center mb-6 2xl:mb-10">

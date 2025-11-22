@@ -8,13 +8,7 @@
 
     <div class="bronze">
     <div class="card__border"></div>
-    <div class="card_title__container">
-        <span class="card_title">پکیج برنزی </span>
-        <p class="card_paragraph">
-            3 تا 12 تومان و پشتیبانی اختصاصی ماهانه 400 تا 2 تومان:
-            مخصوص سایت های کوچک با صفحات استاتیک
-        </p>
-    </div>
+      <img src="../../assets/photos/package-bronze.jpg" alt="پکیج برنزی" class="rounded-3xl">
     <hr class="line" />
     <ul class="card__list text-start">
         <li class="card__list_item">
@@ -87,15 +81,10 @@
         </li>
     </ul>
     <NuxtLink to="/about-us#contact-us" @click="setSource('بسته برنزی')" class="click-to-call"> تماس بگیرید </NuxtLink>
-    <div class="hidden lg:flex justify-center items-center relative top-36">
+    <div class="hidden lg:flex justify-center items-center relative top-50">
     <div class="costom">
     <div class="card__border"></div>
-    <div class="card_title__container">
-        <span class="card_title">پکیج سفارشی</span>
-        <p class="card_paragraph">
-            مخصوص سایت هایی با ویژگی خاص
-        </p>
-    </div>
+    <img src="../../assets/photos/package-custom.jpg" alt="پکیج سفارشی" class="rounded-3xl">
     <hr class="line" />
     <ul class="card__list text-start">
         <li class="card__list_item">
@@ -122,13 +111,7 @@
     </div>
     <div class="silver my-8 lg:my-0 lg:mx-12">
     <div class="card__border"></div>
-    <div class="card_title__container">
-        <span class="card_title">پکیج نقره ای</span>
-        <p class="card_paragraph">
-            12 تا 60 تومان و پشتیبانی اختصاصی ماهانه 2 تا 4 تومن:
-            مخصوص سایت های خدماتی متوسط
-        </p>
-    </div>
+    <img src="../../assets/photos/package-silver.jpg" alt="پکیج نقره ای" class="rounded-3xl">
     <hr class="line" />
     <ul class="card__list text-start">
         <li class="card__list_item">
@@ -272,13 +255,7 @@
     </div>
     <div class="golden mb-8 lg:mb-0">
     <div class="card__border"></div>
-    <div class="card_title__container">
-        <span class="card_title">پکیج طلایی</span>
-        <p class="card_paragraph">
-            بالای 60 تومان و پشتیبانی اختصاصی ماهانه 4 تا 7 تومان:
-            مخصوص کسب و کار های فروشگاهی متوسط به بالا 
-        </p>
-    </div>
+    <img src="../../assets/photos/package-golden.jpg" alt="پکیج طلایی" class="rounded-3xl">
     <hr class="line" />
     <ul class="card__list text-start">
         <li class="card__list_item">
@@ -437,15 +414,10 @@
     </ul>
     <NuxtLink to="/about-us#contact-us" @click="setSource('بسته طلایی')" class="click-to-call"> تماس بگیرید </NuxtLink>
     </div>
-    <div class="lg:hidden flex justify-center">
+    <div class="lg:hidden flex justify-center mb-30">
     <div class="costom">
     <div class="card__border"></div>
-    <div class="card_title__container">
-        <span class="card_title">پکیج سفارشی</span>
-        <p class="card_paragraph">
-            مخصوص سایت هایی با ویژگی خاص
-        </p>
-    </div>
+    <img src="../../assets/photos/package-custom.jpg" alt="پکیج سفارشی" class="rounded-3xl">
     <hr class="line" />
     <ul class="card__list text-start">
         <li class="card__list_item">

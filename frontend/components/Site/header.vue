@@ -22,8 +22,8 @@
             </div>
           </div>
           
-          <div class="md:w-1/2 flex md:justify-end justify-center mx-5" data-aos="fade-left" data-aos-delay="1000">
-            <img class="w-full max-w-lg floating-image" src="../../assets/svg/shopping.svg" alt="طراحی سایت با سایت ساز ابرآوران">
+          <div class="md:w-1/2 flex md:justify-end justify-center md:relative md:left-10" data-aos="fade-left" data-aos-delay="1000">
+            <img class="w-full max-w-lg floating-image" src="../../assets/photos/website-builder.png" alt="طراحی سایت با سایت ساز ابرآوران">
           </div>
         </div>
       </div>

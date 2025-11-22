@@ -23,7 +23,7 @@
           </div>
           
           <div class="md:w-1/2 flex md:justify-end justify-center mx-5" data-aos="fade-left" data-aos-delay="1000">
-            <img class="w-full max-w-lg relative md:left-10 floating-image" src="../../assets/svg/cloud-builder.svg" alt="ساخت سایت فروشگاهی با افزایش فروش">
+            <img class="w-full max-w-lg relative md:left-10 floating-image" src="../../assets/photos/cloud-maker2.png" alt="ساخت سایت فروشگاهی با افزایش فروش">
           </div>
         </div>
       </div>

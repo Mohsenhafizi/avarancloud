@@ -1,30 +1,30 @@
 <template>
-<div class="z-10 relative bottom-10 hidden lg:block">
+<div class="mt-20 z-10 relative bottom-10 hidden lg:block">
 <div class="text-center font-bold text-2xl sm:text-3xl mb-6">
-   ابرآوران بهترین انتخاب برای کسب‌وکار شماست، چون
+   ابرآوران بهترین انتخاب برای کسب‌وکار شماست، چون:
 </div>
 
 <div class="flex flex-col lg:flex-row items-center justify-center mb-10 mt-10 gap-18">
   <div class="cart">
-          <div class="flex justify-center my-5">
-            <img class="w-60 h-36 px-8 border-2 border-slate-200 rounded-3xl" src="../../assets/svg/icon2.svg" alt="پشتبانی سایت">
+          <div class="flex justify-center my-2.5 mx-4">
+            <img class="" src="../../assets/photos/mirdata-laptop2.png" alt="پشتیبانی سایت">
           </div>
           <div class="px-4.5">
-            <p class="font-bold pb-5 text-lg">
+            <p class="font-bold pb-3 text-lg">
                 پشتیبانی اول تا آخر راه
             </p>
-            <p class="pb-3">
+            <p class="pb-2">
               از اولین گفت و گوی ما با شما تا راه اندازی کامل سایت و فروش محصولاتتان,پشتیبانی فنی و غیرفنی در دسترس شماست
             </p>
           </div>
   </div>
 
   <div class="cart">
-          <div class="flex justify-center my-6">
-            <img class="w-60 h-36 px-8 border-2 border-slate-200 rounded-3xl" src="../../assets/svg/icon.svg" alt="دسترسی سایت">
+          <div class="flex justify-center my-4 mx-5">
+            <img class="" src="../../assets/photos/mirdata-invitation.jpg" alt="دسترسی سایت">
           </div>
           <div class="px-4.5">
-            <p class="font-bold pb-5 text-lg">
+            <p class="font-bold pb-3 text-lg">
                 در دسترسه
             </p>
             <p class="pb-8">
@@ -34,14 +34,14 @@
   </div>
 
   <div class="cart">
-          <div class="w-60 h-30 my-12">
-            <img class="mx-4.5 px-8 border-2 border-slate-200 rounded-3xl" src="../../assets/photos/card.png" alt="قابل توسعه سایت">
+          <div class="flex justify-center my-4 mx-5">
+            <img class="" src="../../assets/photos/mirdata-standup.jpg" alt="قابل توسعه سایت">
           </div>
           <div class="px-4.5">
-            <p class="font-bold pb-3 text-lg">
+            <p class="font-bold pb-2.5 text-lg">
               قابل توسعه‌ست
             </p>
-            <p class="pb-5">
+            <p class="pb-2">
               با بسته‌های سایت ساز و ابر ساز ابرآوران می‌تونید کسب‌وکار آنلاین خودتون رو مرحله به مرحله، رشد و توسعه بدید
             </p>
           </div>

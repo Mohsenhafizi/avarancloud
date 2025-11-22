@@ -11,7 +11,7 @@
     </div>
     <div class="font-bold absolute left-4">
       <NuxtLink to="/" aria-label="صفحه اصلی">
-        <img class="relative bottom-4 right-1 w-[150px] h-[70px]" src="../../assets/photos/avarancloud-orginal1.png" alt="ابرآوران - طراحی سایت و فروشگاه اینترنتی">
+        <img class="relative bottom-4 right-1 w-[150px] h-[70px]" src="../../assets/photos/avarancloud-orginalLogo.png" alt="ابرآوران - طراحی سایت و فروشگاه اینترنتی">
       </NuxtLink>
     </div>
     </div>
@@ -31,7 +31,7 @@
         <div class="flex items-center justify-between pb-10 mb-4 border-b border-b-gray-100">
             <div class="mb-2">
               <div class="absolute top-0.5 left-3.5">
-                <img class="relative left-21 w-[150px] h-[70px]" src="../../assets/photos/avarancloud-orginal1.png" alt="ابرآوران - طراحی سایت و فروشگاه اینترنتی" itemprop="image">
+                <img class="relative left-21 w-[150px] h-[70px]" src="../../assets/photos/avarancloud-orginalLogo.png" alt="ابرآوران - طراحی سایت و فروشگاه اینترنتی" itemprop="image">
               </div>
             </div>
             <div class="relative top-4 nav-Close-Btn" @click="closeNav" aria-label="بستن منو">

@@ -8,14 +8,7 @@
 
     <div class="tem">
     <div class="card__border"></div>
-    <div class="card_title__container">
-        <span class="card_title">ابر کوچک</span>
-        <p class="card_paragraph">
-          5 تا 15 تومان به همراه پشتیبانی فنی سطح پایه (2 تا 5 تومان ماهانه):
-          <br>
-          مناسب برای برنامه‌ها و پروژه‌های کوچک یا آزمایشی با نیازهای زیرساختی پایه و افزایش تدریجی منابع
-        </p>
-    </div>
+    <img src="../../assets/photos/cloud-small.jpg" alt="پکیج ابر کوچک" class="rounded-3xl">
     <hr class="line" />
     <ul class="card__list text-start">
         <li class="card__list_item">
@@ -106,29 +99,17 @@
     </ul>
     <NuxtLink to="/about-us#contact-us" @click="setSource('بسته ابر کوچک')" class="click-to-call"> تماس بگیرید </NuxtLink>
     <div>
-      <div class="hidden lg:flex justify-center items-center relative top-31">
+      <div class="hidden lg:flex justify-center items-center relative top-42">
     <div class="afzar-abr">
     <div class="card__border"></div>
-    <div class="card_title__container">
-      <span class="card_title">بسته نرم افزار ابری</span>
-        <p class="card_paragraph">
-          راهکار جامع برای توسعه و میزبانی برنامه‌های ابری با معماری microservices
-          <br>
-          مناسب برای PaaS و SaaS با قابلیت‌های پیشرفته DevOps
-        </p>
-    </div>
+    <img src="../../assets/photos/cloud-software.jpg" alt="پکیج ابر نرم افزار" class="rounded-3xl">
     <NuxtLink to="/about-us#contact-us" @click="setSource('بسته نرم افزار ابری')" class="click-to-call"> تماس بگیرید </NuxtLink>
     </div>
     </div>
-    <div class="hidden lg:flex justify-center items-center relative top-76">
+    <div class="hidden lg:flex justify-center items-center relative top-113">
     <div class="hosh-abr">
     <div class="card__border"></div>
-    <div class="card_title__container">
-        <span class="card_title">بسته ابر هوشمند</span>
-        <p class="card_paragraph">
-          زیرساخت ابری پیشرفته برای برنامه‌های هوش مصنوعی و یادگیری ماشین با قابلیت‌های MLOps و مقیاس‌پذیری خودکار
-        </p>
-    </div>
+    <img src="../../assets/photos/cloud-smart.jpg" alt="پکیج ابر هوشمند" class="rounded-3xl">
     <NuxtLink to="/about-us#contact-us" @click="setSource('بسته ابر هوشمند')" class="click-to-call"> تماس بگیرید </NuxtLink>
     </div>
   </div>
@@ -136,12 +117,7 @@
     </div>
     <div class="silver-abr my-6 lg:my-0 lg:mx-12">
     <div class="card__border"></div>
-    <div class="card_title__container">
-        <span class="card_title">بسته ابر روان</span>
-        <p class="card_paragraph">
-          راهکار ابری مقرون به صرفه برای کسب و کارهای متوسط با پشتیبانی فنی پیشرفته و قابلیت‌های نظارتی
-        </p>
-    </div>
+    <img src="../../assets/photos/cloud-smooth.jpg" alt="پکیج ابر روان" class="rounded-3xl">
     <hr class="line" />
     <ul class="card__list text-start">
         <li class="card__list_item">
@@ -268,14 +244,7 @@
     </div>
     <div class="golden-abr mb-8 lg:mb-0">
     <div class="card__border"></div>
-    <div class="card_title__container">
-        <span class="card_title">بسته ابر بارور</span>
-        <p class="card_paragraph">
-          بالاتر از 38 تومان به همراه پشتیبانی فنی سطح ویژه (10 تا 20 تومان ماهانه):
-          <br>
-          مناسب برای کسب و کارها و برنامه‌های با ترافیک بالا که نیاز به زیرساخت توزیع‌شده و نظارت جامع دارند
-        </p>
-    </div>
+    <img src="../../assets/photos/cloud-fertil.jpg" alt="پکیج ابر بارور" class="rounded-3xl">
     <hr class="line" />
     <ul class="card__list text-start">
         <li class="card__list_item">
@@ -382,26 +351,16 @@
         </li>
     </ul>
     <NuxtLink to="/about-us#contact-us" @click="setSource('بسته ابر بارور')" class="click-to-call"> تماس بگیرید </NuxtLink>
-    <div class="teke-abr left-[1px] top-160">
+    <div class="teke-abr left-[1px] top-180">
     <div class="card__border"></div>
-    <div class="card_title__container">
-        <span class="card_title">بسته تکه ابر</span>
-        <p class="card_paragraph">
-          خدمات ابری سفارشی برای نیازهای خاص کسب و کار شما با امکان انتخاب و ترکیب سرویس‌های مورد نیاز
-        </p>
-    </div>
+    <img src="../../assets/photos/cloud-piece.jpg" alt="پکیج ابر تکه" class="rounded-3xl">
     <NuxtLink to="/about-us#contact-us" @click="setSource('بسته تکه ابر')" class="click-to-call"> تماس بگیرید </NuxtLink>
     </div>
     </div>
     <div class="">
     <div class="abr-sefareshi bottom-2 lg:bottom-10">
     <div class="card__border"></div>
-    <div class="card_title__container">
-        <span class="card_title">بسته ابر سفارشی</span>
-        <p class="card_paragraph">
-          پروژه‌های دارای نیازها و ویژگی‌های منحصربه‌فرد که امکان تنظیم و تعیین دقیق منابع، امکانات زیرساختی و استک تکنولوژی برایشان ضروری است
-        </p>
-    </div>
+    <img src="../../assets/photos/cloud-custom.jpg" alt="پکیج ابر سفارشی" class="rounded-3xl">
     <hr class="line" />
     <ul class="card__list text-start">
         <li class="card__list_item">
@@ -462,38 +421,22 @@
     <div class="lg:hidden flex justify-center mt-4 mb-36">
       <div class="teke-abr">
     <div class="card__border"></div>
-    <div class="card_title__container">
-        <span class="card_title">بسته تکه ابر</span>
-        <p class="card_paragraph">
-          خدمات ابری سفارشی برای نیازهای خاص کسب و کار شما با امکان انتخاب و ترکیب سرویس‌های مورد نیاز
-        </p>
-    </div>
+    <img src="../../assets/photos/cloud-piece.jpg" alt="پکیج ابر تکه" class="rounded-3xl">
+
     <NuxtLink to="/about-us#contact-us" @click="setSource('بسته تکه ابر')" class="click-to-call"> تماس بگیرید </NuxtLink>
     </div>
     </div>
-    <div class="lg:hidden flex justify-center mt-6 mb-36">
+    <div class="lg:hidden flex justify-center mt-36 mb-36">
       <div class="hosh-abr">
     <div class="card__border"></div>
-    <div class="card_title__container">
-        <span class="card_title">بسته ابر هوشمند</span>
-        <p class="card_paragraph">
-          زیرساخت ابری پیشرفته برای برنامه‌های هوش مصنوعی و یادگیری ماشین با قابلیت‌های MLOps و مقیاس‌پذیری خودکار
-        </p>
-    </div>
+    <img src="../../assets/photos/cloud-smart.jpg" alt="پکیج ابر هوشمند" class="rounded-3xl">
     <NuxtLink to="/about-us#contact-us" @click="setSource('بسته ابر هوشمند')" class="click-to-call"> تماس بگیرید </NuxtLink>
     </div>
     </div>
-    <div class="lg:hidden flex justify-center mt-6">
+    <div class="lg:hidden flex justify-center mt-36 mb-40">
       <div class="afzar-abr">
     <div class="card__border"></div>
-    <div class="card_title__container">
-      <span class="card_title">بسته نرم افزار ابری</span>
-        <p class="card_paragraph">
-          راهکار جامع برای توسعه و میزبانی برنامه‌های ابری با معماری microservices
-          <br>
-          مناسب برای PaaS و SaaS با قابلیت‌های پیشرفته DevOps
-        </p>
-    </div>
+    <img src="../../assets/photos/cloud-software.jpg" alt="پکیج ابر نرم افزار" class="rounded-3xl">
     <hr class="line" />
     <ul class="card__list text-start">
         <li class="card__list_item">
