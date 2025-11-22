@@ -74,11 +74,11 @@
                 <img src="../../assets/photos/seo.webp" class="hidden lg:inline-block mr-10 xl:ml-10 w-[340px] animate-float" alt="ساخت سایت">
 
             </div>
-            <div class="hidden lg:flex justify-center relative bottom-7 left-60 -z-10">
+            <div class="hidden lg:flex justify-center relative bottom-5 left-60 -z-10">
                 <img class="w-80 h-80 -scale-x-120 rotate-16" src="../../assets/photos/arrrow3.png" alt="ساخت سایت حرفه ای" data-aos="fade-up">
             </div>
         </div>
-        <div class="rtl mb-24 lg:mb-0 lg:relative lg:bottom-62 lg:z-10 lg:mx-20" data-aos="fade-up">
+        <div class="rtl mb-36 lg:mb-0 lg:relative lg:bottom-62 lg:z-10 lg:mx-20" data-aos="fade-up">
             <div class="flex flex-col md:flex-row items-center">
               <img src="../../assets/photos/site.webp" class="w-[296px] relative bottom-10 animate-float" alt="ساخت سایت تخصصی">
                 <div class="text-zinc-700 md:mr-10 mx-4 md:mx-0 lg:mx-10 xl:mx-16">

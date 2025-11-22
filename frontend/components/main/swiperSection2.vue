@@ -20,7 +20,7 @@
               <img class="w-50 h-36 md:w-60 md:h-44 border-2 border-slate-200 rounded-3xl" src="../../assets/photos/mirdata-laptop2.png" alt="قابل توسعه سایت با ابرآوران">
             </div>
             <div class="px-4.5">
-              <p class="font-bold py-2 text-md md:text-lg">قابل توسعه‌ست</p>
+              <p class="font-bold py-2 relative top-1 text-md md:text-lg">قابل توسعه‌ست</p>
               <p class="py-2 md:pb-2 text-sm md:text-[16px]">
                 با بسته‌های سایت ساز و ابر ساز ابرآوران می‌تونید کسب‌وکار آنلاین خودتون رو مرحله به مرحله، رشد و توسعه بدید
               </p>
