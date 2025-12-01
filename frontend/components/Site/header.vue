@@ -5,14 +5,13 @@
           <div class="md:w-1/2 mx-10 md:mx-20 relative">
             <div class="md:mt-10">
               <h1 class="text-center text-purple-950 md:text-right text-3xl md:text-5xl 2xl:text-6xl font-bold block animate-title" data-aos="fade-up" data-aos-delay="200">
-                  سایت‌ساز حرفه‌ای ابرآوران | طراحی سایت شخصی و شرکتی
+                طراحی سایت حرفه‌ای برای برندهایی که سطحی کار نمی‌کنند
               </h1>    
               <span class="absolute top-26 sm:top-18 mx-10 flex -z-10" data-aos="fade-up">
-                <img class="w-80" src="/svg/vector-7.svg" alt="سایت ساز حرفه‌ای ابرآوران">
+                <img class="w-80" src="/svg/vector-7.svg" alt="طراحی سایت حرفه‌ای ابرآوران">
               </span>
               <h2 class="text-center md:text-right text-lg md:text-xl 2xl:text-2xl pt-8 pb-4 md:py-10 animate-text" data-aos="fade-up" data-aos-delay="600">
-                طراحی سایت حرفه‌ای با سایت ساز ابرآوران - تمام امکانات مورد نیاز برای مدیریت محتوا، 
-                بهینه‌سازی SEO، طراحی واکنش‌گرا و پشتیبانی فنی 24/7 برای موفقیت کسب و کار آنلاین شما
+                سایتی می‌سازیم که فقط «ظاهر خوب» نیست؛ سریع، امن، مقیاس‌پذیر و آماده رشد کسب‌وکارت.
               </h2>
               <div class="mb-3 flex justify-center md:justify-start" data-aos="zoom-in" data-aos-delay="800"> 
                 <NuxtLink to="/about-us#contact-us" class="shadow__btn flex justify-center w-40 pulse-button">
@@ -23,7 +22,7 @@
           </div>
           
           <div class="md:w-1/2 flex md:justify-end justify-center md:relative md:left-10" data-aos="fade-left" data-aos-delay="1000">
-            <img class="w-full max-w-lg floating-image" src="../../assets/photos/website-builder.png" alt="طراحی سایت با سایت ساز ابرآوران">
+            <img class="w-full max-w-lg floating-image" src="../../assets/photos/website-builder.png" alt="طراحی سایت با طراحی سایت ابرآوران">
           </div>
         </div>
       </div>

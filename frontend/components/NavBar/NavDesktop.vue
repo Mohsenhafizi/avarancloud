@@ -8,7 +8,7 @@
     
     <div class="flex items-center w-full justify-between">
     <nav class="flex items-center gap-x-3 lg:gap-x-6 h-14" aria-label="منوی اصلی" role="navigation">
-        <ul class="flex gap-x-2 items-center lg:gap-x-6 h-full text-lg 2xl:text-xl text-gray-800 tracking-tighest child:leading-[56px] whitespace-nowrap" role="menubar" aria-orientation="horizontal">
+        <ul class="flex items-center lg:gap-x-6 h-full text-lg 2xl:text-xl text-gray-800 tracking-tighest child:leading-[56px]" role="menubar" aria-orientation="horizontal">
             <NuxtLink to="/" prefetch class="hover:bg-emerald-300 rounded-2xl p-3 transition-all flex items-center" active-class="active-link" itemprop="url" role="menuitem" aria-label="صفحه اصلی">
                 <div class="circle mx-2 w-3 h-3 mb-1 shadow-xl rounded-full transition-all duration-300"></div>
                 <li class="text-white" itemprop="name">
@@ -16,10 +16,10 @@
                 </li>
             </NuxtLink>
             <div class="dropdown-container relative" ref="menuContainer" role="presentation">
-                <NuxtLink to="/site-builder" prefetch class="hover:bg-emerald-300 cursor-pointer rounded-2xl p-3 transition-all flex items-center" @mouseenter="menuMouseEnter" active-class="active-link" itemprop="url" role="menuitem" aria-haspopup="true" :aria-expanded="isMenuOpen.toString()" aria-label="سایت ساز">
+                <NuxtLink to="/site-builder" prefetch class="hover:bg-emerald-300 cursor-pointer rounded-2xl p-3 transition-all flex items-center" @mouseenter="menuMouseEnter" active-class="active-link" itemprop="url" role="menuitem" aria-haspopup="true" :aria-expanded="isMenuOpen.toString()" aria-label="طراحی سایت">
                     <div class="circle mx-2 w-3 h-3 mb-1 shadow-xl rounded-full transition-all duration-300"></div>
                     <li class="flex items-center" itemprop="name">
-                        سایت ساز
+                        طراحی سایت
                         <svg xmlns="http://www.w3.org/2000/svg"
                             :class="['h-4 w-4 mr-1 transform transition-transform duration-300', {'rotate-180': isMenuOpen}]" 
                             fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -327,7 +327,7 @@ onBeforeUnmount(() => {
     opacity: 1;
 }
 
-/* استایل برای منوی سایت ساز */
+/* استایل برای منوی طراحی سایت */
 [href^="/site-builder"] {
     color: #059669; /* رنگ سبز emerald-600 */
 }
@@ -349,7 +349,7 @@ onBeforeUnmount(() => {
     border-color: #059669;
 }
 
-/* استایل برای زیرمنوی سایت ساز */
+/* استایل برای زیرمنوی طراحی سایت */
 [href^="/site-builder#"] {
     color: #064e3b; /* رنگ سبز emerald-900 */
 }

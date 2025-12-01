@@ -393,7 +393,7 @@ export default {
               {
                 "@type": "ListItem",
                 "position": 2,
-                "name": "سایت ساز",
+                "name": "طراحی سایت",
                 "item": "https://avarancloud.ir/site-builder"
               }
             ]

@@ -1,7 +1,7 @@
 <template>
     <div class="relative top-10 lg:hidden">   
-      <div class="text-center font-bold text-2xl sm:text-3xl mx-2 mt-6">
-       ابرآوران بهترین انتخاب برای کسب‌وکار شماست، چون:
+      <div class="text-center font-bold text-3xl sm:text-4xl mx-2 mt-6">
+        چرا ابرآوران؟
       </div> 
         <ClientOnly>
           <div class="button-container pt-0.5 absolute z-10">
@@ -16,43 +16,43 @@
       <swiper-container class="z-0" ref="containerRef">
         <swiper-slide class="flex justify-center mb-14 mt-10">
           <div class="cart">
-            <div class="flex justify-center md:my-1">
-              <img class="w-50 h-36 md:w-60 md:h-44 border-2 border-slate-200 rounded-3xl" src="../../assets/photos/mirdata-laptop2.png" alt="قابل توسعه سایت با ابرآوران">
+            <div class="flex justify-center">
+              <img class="w-50 h-36 md:w-60 md:h-44 rounded-3xl" src="../../assets/photos/mirdata-laptop2.png" alt="قابل توسعه سایت با ابرآوران">
             </div>
             <div class="px-4.5">
-              <p class="font-bold py-2 relative top-1 text-md md:text-lg">قابل توسعه‌ست</p>
-              <p class="py-2 md:pb-2 text-sm md:text-[16px]">
-                با بسته‌های سایت ساز و ابر ساز ابرآوران می‌تونید کسب‌وکار آنلاین خودتون رو مرحله به مرحله، رشد و توسعه بدید
+              <p class="font-bold py-1 relative top-1 md:top-0 md:py-3 text-md md:text-lg">طراحی واقعی، نه قالب تکراری</p>
+              <p class="py-1 md:pb-3 text-sm md:text-[16px]">
+                هر صفحه با توجه به نیاز و نوع فعالیتت ساخته می‌شود. هدف ما ساخت یک تجربه کاربری روان و قابل‌اعتماد است.
               </p>
             </div>
         </div>
         </swiper-slide>
         <swiper-slide class="flex justify-center mb-14 mt-10">
           <div class="cart">
-          <div class="pb-3">
-            <img class="mx-2 md:mx-5 w-50 h-36 md:w-60 md:h-44 border-2 border-slate-200 rounded-3xl" src="../../assets/photos/mirdata-invitation.jpg" alt="دسترسی سایت با ابرآوران">
+          <div class="pb-4 md:pb-5.5">
+            <img class="mx-2 md:mx-5 w-50 h-36 md:w-60 md:h-44 rounded-3xl" src="../../assets/photos/mirdata-invitation.jpg" alt="دسترسی سایت با ابرآوران">
           </div>
           <div class="px-4.5">
-            <p class="font-bold relative bottom-2 py-2 text-md md:text-lg">
-                در دسترسه
+            <p class="font-bold relative pb-4 text-md md:text-lg">
+              امنیت و نگهداری مداوم
             </p>
-            <p class="pb-6 text-sm md:text-[16px]">
-                از هر جایی و در هر زمانی از شبانه‌روز به سایتتون دسترسی دارید و می‌تونید مدیریتش کنید
+            <p class="pb-7 text-sm md:text-[16px]">
+              از به‌روزرسانی سیستم تا جلوگیری از حملات _ ما مراقب هستیم تا تو فقط روی کار خودت تمرکز کنی.
             </p>
           </div>
           </div>
         </swiper-slide>
         <swiper-slide class="flex justify-center mb-14 mt-10">
           <div class="cart">
-          <div class="flex justify-center py-2">
-            <img class="w-50 h-36 md:w-60 md:h-44 border-2 border-slate-200 rounded-3xl" src="../../assets/photos/mirdata-standup.jpg" alt="پشتیبانی سایت با ابرآوران">
+          <div class="flex justify-center py-4 md:py-6">
+            <img class="w-50 h-36 md:w-60 md:h-44 rounded-3xl" src="../../assets/photos/mirdata-standup.jpg" alt="پشتیبانی سایت با ابرآوران">
           </div>
           <div class="px-4.5">
-            <p class="font-bold py-1 text-md md:text-lg">
-              پشتیبانی اول تا آخر راه
+            <p class="font-bold pb-4 text-md md:text-lg">
+              پشتیبانی واقعی
             </p>
-            <p class="py-2 text-sm md:text-[16px]">
-              از اولین گفت و گوی ما با شما تا راه اندازی کامل سایت و فروش محصولاتتان,پشتیبانی فنی و غیرفنی در دسترس شماست
+            <p class="pb-7 text-sm md:text-[16px]">
+              نه تیکت ساختگی، نه ربات. هر زمان مشکل یا نیاز جدیدی داشته باشی، پاسخ واقعی می‌گیری.
             </p>
           </div>
           </div>
@@ -68,10 +68,10 @@
         </button>
         </div>
     </ClientOnly>
-    <div class="flex justify-center relative bottom-24 z-20">
-  <NuxtLink to="/site-builder" class="div">
-    <div class="state" id="moon">شروع کنید</div>
-    <div class="state" id="sun">شروع کنید</div>
+    <div class="flex justify-center relative bottom-24 z-10">
+  <NuxtLink to="/site-builder" class="create-site-button-mobile">
+    <div class="state" id="moon">ساخت سایت جدید</div>
+    <div class="state" id="sun">ساخت سایت جدید</div>
     <span class="lightRotation"></span>
     <span class="lightRotation2"></span>
     <span class="lightRotation3"></span>
@@ -158,6 +158,26 @@ onBeforeUnmount(() => {
 </script>
 
 <style>
+.create-site-button-mobile {
+  --sunGradient: linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%);
+  --moonGradient: linear-gradient(to top, #cc208e 0%, #6713d2 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  width: 155px;
+  height: 65px;
+  color: white;
+  font-size: 0.9em;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 15px;
+  background-color: transparent;
+  transition: 0.5s;
+  overflow: hidden;
+  border: 4px solid black;
+}
 swiper-slide{
   direction: rtl;
 }

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="ltr color relative md:top-0 md:mx-38 md:h-[890px] lg:h-[970px] 2xl:h-[1000px] md:mt-30 flex items-center justify-center min-h-screen bg-blue-50 md:rounded-3xl"
+    class="ltr color relative md:top-0 xl:mx-38 md:h-[890px] lg:h-[970px] 2xl:h-[1000px] md:mt-30 flex items-center justify-center min-h-screen bg-blue-50 md:rounded-3xl"
   >
     <div class="text-center p-8">
       <div class="mx-30 md:mt-40 lg:mt-60 sm:mx-20 md:mx-52 xl:mx-40 2xl:mx-34">
@@ -10,14 +10,14 @@
         data-aos="fade-up"
       >
       <span class="2xl:flex text-purple-950 2xl:justify-center z-10">
-        <h1 class="mt-10 md:mt-0">ابرآوران - خدمات حرفه‌ای وب و دیجیتال</h1>
-        <span class="absolute top-18 sm:top-13 mx-10 flex -z-10">
-          <img class="w-80 lcp-image" src="/svg/vector-7.svg" alt="ابرآوران - خدمات وب و دیجیتال" fetchpriority="high" decoding="async">
+        <h1 class="mt-10">ابرآوران _ زیرساخت، طراحی و ساخت سایت حرفه‌ای برای رشد واقعی</h1>
+        <span class="absolute top-22 sm:top-25 mx-10 flex -z-10">
+          <img class="w-80 lcp-image" src="/svg/vector-7.svg" alt="ابرآوران - خدمات وب و زیرساخت برای رشد واقعی" fetchpriority="high" decoding="async">
         </span>
       </span>
       </h1>
       <h2 class="text-lg md:text-xl 2xl:text-2xl pb-10 px-10 critical-path">
-        <strong>ابرآوران</strong> ارائه دهنده خدمات جامع طراحی سایت، فروشگاه آنلاین و سئو با پشتیبانی کامل از مدیریت محتوا، پرداخت آنلاین، سیستم ارسال و ابزارهای پیشرفته بازاریابی دیجیتال<br />
+        <span class=""> در <strong>ابرآوران</strong> وب‌سایت را فقط «تحویل» نمی‌دهیم؛ استانداردهای سرعت، امنیت، ساختار درست را از روز اول پیاده می‌کنیم تا سایت برای تو یک ابزار واقعی باشد، نه یک باری اضافه <br /></span>
         <span class="relative top-4 font-bold">ابرآوران</span>
       </h2>
       </div>

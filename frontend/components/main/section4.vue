@@ -4,9 +4,14 @@
             <div class="flex flex-col md:flex-row items-center">
               <img src="../../assets/photos/support.webp" class="w-[296px] relative bottom-3 md:bottom-10 animate-float" alt="سایت سفارشی با ابرآورن">
                 <div class="text-zinc-700 md:mr-10 mx-4 md:mx-0 lg:mx-10 xl:mx-14">
-                    <h3 class="text-2xl py-6 md:text-4xl mb-0.5 md:mb-1.5 text-purple-950 animate-slide-in">سایت رو سفارشی براتون می‌سازیم!</h3>
-                    <p class="text-lg animate-fade-in">
-                      پکیج ساخت سایت سفارشی، راهکار ویژه‌ای برای افرادیه که دنبال داشتن یه سایت اختصاصی هستن و می‌خوان طعم یه دارایی جدید و متفاوتی رو بچشن. ابرآوران اینجا به پشتوانه‌ی خدمات افراد متخصص، پکیج ساخت سایت سفارشی برای شما در نظر گرفته که می‌تونین هر ویژگی که می‌خواین رو روی سایتتون داشته باشین.
+                    <h3 class="text-2xl py-6 md:text-4xl mb-0.5 md:mb-1.5 text-purple-950 animate-slide-in">ساخت سایت شرکتی</h3>
+                    <p class="text-lg lg:text-xl animate-fade-in">
+                      یک وب‌سایت شرکتی باید اعتبار بسازه، نه فقط چند صفحه خالی کنار هم.
+ما ساختاری برات طراحی می‌کنیم که هویت برندت، خدماتت، مزیت‌هات و پیام اصلی کسب‌وکارت رو واضح منتقل کنه.
+<br>
+<br>
+نتیجه:
+یک سایت تمیز، حرفه‌ای و قابل اعتماد _ مناسب کسب‌وکارهایی که می‌خوان جدی دیده بشن.
                     </p>
                     <div class="flex justify-center">
                       <NuxtLink to="/site-builder#features" type="klid" class="klid p-4" @click="scrollToFeatures">
@@ -42,9 +47,14 @@
             <div class="flex flex-col md:flex-row items-center">
               <img src="../../assets/svg/card1.svg" class="lg:hidden w-[340px] animate-float" alt="سئو سایت">
                 <div class="text-zinc-700 mx-4 md:mx-0">
-                    <h3 class="text-2xl py-6 md:text-4xl mb-0.5 md:mb-1.5 text-purple-950">رتبه‌ی بالا در جستجوی گوگل هم با ابرآوران!</h3>
-                    <p class="text-lg">
-                      یکی از مهم‌ترین کارهایی که باید برای سایتتون انجام بدیم، اینه که سئو یا بهینه‌سازی برای موتورهای جستجو رو توی دستور کار قرار بدیم. اینطوری وقتی یه کاربر یه سری واژه‌ی خاص رو توی گوگل سرچ می‌کنه، سایت شما جزو اولین نتایج جستجو نمایش داده می‌شه و احتمال اینکه وارد سایتتون بشه و ازتون خرید کنه، خیلی بیشتر می‌شه. ابرآوران اینجا هم کنارتونه و از بهترین روش های مختلف سئو براتون آماده کرده تا بتونید توی نتایج جستجوی گوگل بدرخشید!
+                    <h3 class="text-2xl py-6 md:text-4xl mb-0.5 md:mb-1.5 text-purple-950">ساخت سایت فروشگاهی</h3>
+                    <p class="text-lg lg:text-xl">
+                      فروشگاه آنلاین یعنی یک سیستم واقعی فروش، نه فقط صفحه محصول.
+تمرکز ما روی ساخت یک فروشگاه پایدار، سریع و قابل مدیریته که بتونه درآمد بسازه.
+<br>
+<br>
+نتیجه:
+یک فروشگاه کامل، آماده فروش واقعی.
                     </p>
                     <div class="flex justify-center">
                       <NuxtLink to="/site-builder#packages" type="klid" class="klid p-4" @click="scrollToPackages">
@@ -65,7 +75,7 @@
             </div>
 
             <span class="inner">
-                مشاهده بسته های سایت ساز
+                مشاهده بسته های طراحی سایت
             </span>
           </NuxtLink>
 
@@ -78,13 +88,16 @@
                 <img class="w-80 h-80 -scale-x-120 rotate-16" src="../../assets/photos/arrrow3.png" alt="ساخت سایت حرفه ای" data-aos="fade-up">
             </div>
         </div>
-        <div class="rtl mb-36 lg:mb-0 lg:relative lg:bottom-62 lg:z-10 lg:mx-20" data-aos="fade-up">
+        <div class="rtl mb-36 lg:mb-0 lg:relative lg:bottom-58 lg:z-10 lg:mx-20" data-aos="fade-up">
             <div class="flex flex-col md:flex-row items-center">
               <img src="../../assets/photos/site.webp" class="w-[296px] relative bottom-10 animate-float" alt="ساخت سایت تخصصی">
                 <div class="text-zinc-700 md:mr-10 mx-4 md:mx-0 lg:mx-10 xl:mx-16">
-                    <h3 class="text-2xl py-6 md:text-4xl mb-0.5 md:mb-1.5 text-purple-950">کارها را به متخصص بسپارید!</h3>
-                    <p class="text-lg">
-                      اگر برای تکمیل و راه‌اندازی سایت خود نیاز به کمک دارید، کار را به ابرآوران بسپارید. ابرآوران یا پشتیبان اختصاصی، یک اکانت منیجر حرفه‌ای و آموزش‌دیده است که به‌صورت ویژه و اختصاصی کنارتان است و راه‌اندازی سایت را برایتان انجام می‌دهد. با خرید این بسته، یک سایت کامل به شما تحویل داده می‌شود که آماده‌ی فروش حرفه‌ای است.
+                    <h3 class="text-2xl py-6 md:text-4xl mb-0.5 md:mb-1.5 text-purple-950">زیرساخت ابری و هاست اختصاصی</h3>
+                    <p class="text-lg lg:text-xl">
+                      اگر می‌خوای سایتت همیشه پایدار و سریع بماند، زیرساخت حرفه‌ای ضروریه.
+ابرآوران بهت محیطی ارائه می‌دهد که برای رشد آماده است.
+
+سایتی که همیشه آنلاین است _ حتی وقتی فشار ترافیک بالا می‌رود.
                     </p>
                     <div class="flex justify-center">
                       <NuxtLink to="/cloud-builder#packages" type="klid" class="klid p-4" @click="scrollToPackages">

@@ -51,10 +51,10 @@
         <ul class="text-zinc-600" role="menu" aria-label="منوی اصلی موبایل">
     
             <li class="mb-1" role="presentation">
-                <div class="flex items-center justify-between submenu-open-btn" @click="toggleSubmenu" :aria-expanded="submenuOpen" aria-controls="site-submenu" aria-label="سایت ساز">
+                <div class="flex items-center justify-between submenu-open-btn" @click="toggleSubmenu" :aria-expanded="submenuOpen" aria-controls="site-submenu" aria-label="طراحی سایت">
                     <NuxtLink to="/site-builder" prefetch class="flex items-center gap-x-2 pr-1" active-class="active-link" itemprop="url" @click="setActiveMenuItem('/site-builder')" role="menuitem">
                         <div class="w-3 h-3 rounded-full border-2 border-green-500" :class="{'bg-green-500': activeMenuItem === '/site-builder'}"></div>
-                        <span itemprop="name">سایت ساز</span>
+                        <span itemprop="name">طراحی سایت</span>
                     </NuxtLink>
                     <span class="">
                         <svg class="w-4 h-4" aria-hidden="true">

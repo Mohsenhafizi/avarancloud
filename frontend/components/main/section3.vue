@@ -1,80 +1,88 @@
 <template>
 <div class="relative z-10 top-10 lg:top-20 mb-24">
-    <div class="text-center text-2xl md:text-3xl font-bold" data-aos="fade-down">
-        چطور می‌تونید با ابرآوران، یک سایت فروشگاهی بسازید؟
+    <div class="text-purple-950 text-center text-3xl md:text-4xl font-bold" data-aos="fade-down">
+      رویکرد ما کاملاً شفاف و مرحله‌به‌مرحله است:
     </div>
     <div class="flex justify-center lg:mr-10">
-        <div class="mx-2 md:mx-60 grid grid-cols-12 gap-0 md:gap-x-16 gap-y-6 my-5">
+        <div class="mx-2 lg:mx-15 xl:mx-50 2xl:mx-60 grid grid-cols-12 gap-0 md:gap-x-16 gap-y-6 md:gap-y-0 my-5">
             <div class="col-span-12 sm:col-span-6 md:col-span-4 hover:border-1 hover:border-gray-400 rounded-2xl transition-all" data-aos="fade-right" data-aos-delay="100">
-                <div class="relative lg:p-3">                  
-                    <img class="w-12 ml-0.5 inline-block" src="../../assets/photos/formm.png" alt="بسته های ابرآوران">
-                    <span class="text-lg md:text-xl font-bold text-purple-900">
-                        انتخاب بسته
+                <div class="relative lg:p-3"> 
+                  <div class="md:flex md:justify-center md:mt-2 2xl:inline-flex">
+                    <img class="w-12 md:w-12.5 md:h-12.5 ml-0.5 inline-block" src="../../assets/photos/formm.png" alt="بسته های ابرآوران">
+                    <span class="text-lg md:text-xl font-bold text-purple-900 md:pb-2">
+                      تحلیل نیاز و انتخاب مسیر
                     </span>
+                  </div>
                     <span class="flex text-sm md:text-lg p-1 md:px-2">
                         <span class="absolute inline-block -top-[16px] md:top[3px] lg:top-[1px] 2xl:-top-[14px] right-50 md:right-20 2xl:right-40 -z-10 text-gray-300 font-bold text-[100px] md:text-[140px]">
                         1
                         </span>
-                         وارد صفحه بسته ها شوید و یکی از بسته های ساخت سایت یا ساخت زیرساخت ابریتان را انتخاب کنید.
+                        اهداف، نوع فعالیت و سطح موردنیاز را مشخص می‌کنیم.
                     </span>
                 </div>
             </div>
             <div class="col-span-12 sm:col-span-6 md:col-span-4 hover:border-1 hover:border-gray-400 rounded-2xl transition-all" data-aos="fade-right" data-aos-delay="200">
                 <div class="relative lg:p-3">
-                    <img class="w-12 ml-0.5 inline-block rotate-170" src="../../assets/photos/tel.png" alt="تماس باابرآوران">
-                    <span class="text-lg md:text-xl font-bold text-purple-900">  
-                      تماس با ما                      
+                  <div class="md:flex md:justify-center md:mt-2 2xl:inline-flex">
+                    <img class="w-12 md:w-12.5 md:h-12.5 ml-0.5 inline-block rotate-170" src="../../assets/photos/tel.png" alt="تماس باابرآوران">
+                    <span class="text-lg md:text-xl font-bold text-purple-900 md:pb-2">  
+                      طراحی ساختار و ظاهر صفحات                   
                     </span>
+                  </div>
                     <span class="flex text-sm md:text-lg p-1 md:px-2">
                         <span class="absolute inline-block -top-[16px] md:top[3px] lg:top-[1px] 2xl:-top-[14px] right-50 md:right-20 2xl:right-40 -z-10 text-gray-300 font-bold text-[100px] md:text-[140px]">
                         2
                         </span>
-                        روی تماس با ما برنید و از اطلاعات مورد نیاز و راهنمایی های ما مطلع شوید.
+                        چیدمان استاندارد + تجربه کاربری حرفه‌ای
                     </span>
                 </div>
             </div>
             <div class="col-span-12 sm:col-span-6 md:col-span-4 hover:border-1 hover:border-gray-400 rounded-2xl transition-all" data-aos="fade-right" data-aos-delay="300">
                 <div class="relative lg:p-2 lg:mt-2">
-                    <img class="w-12 ml-0.5 inline-block" src="../../assets/photos/website.png" alt="پیش نیاز ابرآوران">
-                    <span class="text-lg md:text-xl font-bold text-purple-900">       
-                        پیش‌نیازها          
+                  <div class="md:flex md:justify-center md:mt-2 2xl:inline-flex">
+                    <img class="w-12 md:w-12.5 md:h-12.5 ml-0.5 inline-block" src="../../assets/photos/website.png" alt="پیش نیاز ابرآوران">
+                    <span class="text-lg md:text-xl font-bold text-purple-900 md:pb-2">       
+                      توسعه، امنیت و ساختار اصولی
                     </span>
+                  </div>
                     <span class="flex text-sm md:text-lg p-1 md:px-2">
                         <span class="absolute inline-block -top-[16px] md:top[3px] lg:top-[1px] 2xl:-top-[14px] right-50 md:right-20 2xl:right-40 -z-10 text-gray-300 font-bold text-[100px] md:text-[140px]">
                         3
                         </span>
-                         کار های عملیاتی مثل انتخاب نام دامنه، دریافت اینماد، دریافت پنل پیامک و درگاه پرداخت را پیش ببرید.
+                        همه چیز از پایه درست ساخته می‌شود.
                     </span>
                 </div>
             </div>
             <div class="col-span-12 sm:col-span-6 md:col-span-4 hover:border-1 hover:border-gray-400 rounded-2xl transition-all" data-aos="fade-right" data-aos-delay="400">
                 <div class="relative lg:p-2">
-                    <span class="flex text-lg md:text-xl font-bold text-purple-900">
-                    <img class="w-12 inline-block" src="../../assets/photos/compelete.png" alt="شروع توسعه با ابرآوران">
-                    <span class="mt-3.5 md:mt-2 xl:mt-3.5 xl:mx-1">
-                      شروع توسعه
+                  <div class="md:flex md:justify-center md:mt-2 2xl:inline-flex">
+                    <img class="w-12 md:w-12.5 md:h-12.5 ml-0.5 md:ml-1.5 inline-block" src="../../assets/photos/compelete.png" alt="شروع توسعه با ابرآوران">
+                    <span class="text-lg md:text-xl font-bold text-purple-900 md:pb-2">
+                      تحویل نسخه نهایی آماده استفاده
                     </span>
-                    </span>
+                  </div>
                     <span class="flex text-sm md:text-lg p-1 md:px-2">
-                        <span class="absolute inline-block -top-[16px] md:top[3px] lg:top-[1px] 2xl:-top-[14px] right-50 md:right-20 2xl:right-40 -z-10 text-gray-300 font-bold text-[100px] md:text-[140px]">
+                        <span class="absolute inline-block -top-[16px] md:-top-[1px] lg:top-[1px] 2xl:-top-[14px] right-50 md:right-20 2xl:right-40 -z-10 text-gray-300 font-bold text-[100px] md:text-[140px]">
                         4
                         </span>
-                         با انجام مراحل تا به اینجا سایت شما به تیم توسعه سایت سپرده میشود.
+                        قابل مدیریت، پایدار و قابل توسعه.
                     </span>
                 </div>
             </div>
             <div class="col-span-12 sm:col-span-6 md:col-span-4 hover:border-1 hover:border-gray-400 rounded-2xl transition-all" data-aos="fade-right" data-aos-delay="500">
                 <div class="relative">
-                    <div class="pt-3">
-                    <img class="w-12 inline-block" src="../../assets/photos/shop.png" alt="رونمایی سایت با ابرآوران">
-                    <span class="text-lg md:text-xl font-bold text-purple-900">
-                    رونمایی از سایت
+                    <div class="">
+                      <div class="md:flex md:justify-center md:mt-4 2xl:inline-flex">
+                    <img class="w-12 md:w-12.5 md:h-12.5 ml-0.5 md:ml-1.5 inline-block" src="../../assets/photos/shop.png" alt="رونمایی سایت با ابرآوران">
+                    <span class="text-lg md:text-xl font-bold text-purple-900 md:pb-2">
+                      پشتیبانی و آپدیت‌های دوره‌ای
                     </span>
+                  </div>
                     <span class="flex text-sm md:text-lg p-1 md:px-2">
-                        <span class="absolute -top-[10px] md:top[3px] lg:top-[1px] 2xl:-top-[14px] right-50 md:right-20 2xl:right-40 -z-10 text-gray-300 font-bold text-[100px] md:text-[140px]">
+                        <span class="absolute -top-[10px] md:top[3px] lg:-top-[20px] 2xl:-top-[30px] right-50 md:right-20 2xl:right-40 -z-10 text-gray-300 font-bold text-[100px] md:text-[140px]">
                         5
                         </span>
-                        سایتتون آماده است؛ فقط باید به همه بگید که از طریق سایت ازتون خرید کنن.
+                        برای عملکرد بهتر و امنیت بیشتر.
                     </span>
                     </div>
                 </div>
@@ -98,9 +106,9 @@
          </div>
     </div>
     <div class="mt-10 flex justify-center">
-  <NuxtLink to="/site-builder" class="div">
-    <div class="state" id="moon">سایت بسازید</div>
-    <div class="state" id="sun">سایت بسازید</div>
+  <NuxtLink to="/site-builder" class="div2 w-39 h-17 lg:w-43 lg:h-19 text-sm lg:text-[16px]">
+    <div class="state" id="moon">همین الان شروع کن</div>
+    <div class="state" id="sun">همین الان شروع کن</div>
     <span class="lightRotation"></span>
     <span class="lightRotation2"></span>
     <span class="lightRotation3"></span>
@@ -120,6 +128,123 @@ export default defineComponent({
 </script>
 
 <style>
+
+.div2 {
+  --sunGradient: linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%);
+  --moonGradient: linear-gradient(to top, #cc208e 0%, #6713d2 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 15px;
+  background-color: transparent;
+  transition: 0.5s;
+  overflow: hidden;
+  border: 4px solid black;
+}
+
+.div2:hover {
+  box-shadow: -15px -15px 500px white;
+  transition: 0.2s;
+}
+
+.div2:hover span {
+  background: var(--sunGradient);
+}
+
+.state {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: inherit;
+  transition: 0.4s;
+  width: 95%;
+  height: 92%;
+  border: 4px solid black;
+}
+
+#sun {
+  display: none;
+  background-color: #212121;
+  opacity: 0.85;
+}
+
+#moon {
+  background-color: #212121;
+  opacity: 0.85;
+}
+
+.div2:hover #sun {
+  display: flex;
+}
+
+.div2:hover #moon {
+  display: none;
+}
+
+.div2:hover .lightRotation {
+  animation: 1s linear reverse infinite rotation413;
+}
+
+.div2:hover .lightRotation2 {
+  animation: 2s linear infinite rotation_413;
+}
+
+.div2:hover .lightRotation3 {
+  animation: 10s linear reverse infinite rotation_413;
+}
+
+.div2:hover .lightRotation4 {
+  animation: 3s linear infinite rotation_413;
+}
+
+.lightRotation {
+  position: absolute;
+  transition: 0.4s;
+  z-index: -1;
+  width: 60px;
+  height: 500px;
+  transform: rotate(50deg);
+  border-radius: inherit;
+  background: var(--moonGradient);
+}
+
+.lightRotation2 {
+  position: absolute;
+  transition: 0.4s;
+  z-index: -1;
+  width: 75px;
+  height: 500px;
+  transform: rotate(110deg);
+  border-radius: inherit;
+  background: var(--moonGradient);
+}
+
+.lightRotation3 {
+  position: absolute;
+  transition: 0.4s;
+  z-index: -1;
+  width: 40px;
+  height: 260px;
+  border-radius: inherit;
+  background: var(--moonGradient);
+}
+
+.lightRotation4 {
+  position: absolute;
+  transition: 0.4s;
+  z-index: -1;
+  width: 24px;
+  height: 220px;
+  transform: rotate(100deg);
+  border-radius: inherit;
+  background: var(--moonGradient);
+}
 .mb-24{
    direction: rtl;
 }

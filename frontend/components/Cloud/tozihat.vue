@@ -41,7 +41,7 @@
                 <div class="cloud-corner-4"></div>
                 
                 <div class="flex justify-center md:order-2 md:ml-4 mb-4 md:mb-0">
-                    <img src="../../assets/svg/shop.svg" class="w-40" alt="ابر ساز حرفه‌ای">
+                    <img src="../../assets/svg/shop.svg" class="w-30 lg:w-56" alt="ابر ساز حرفه‌ای">
                 </div>
                 <div class="md:order-1 px-8 pt-7">
                     <h2 class="text-lg lg:text-2xl text-right font-bold mb-6 text-purple-800">ساخت زیرساخت ابری، با ابرساز حرفه‌ای ابرآوران</h2>
@@ -98,7 +98,7 @@
                     </p>
                 </div>
                 <div class="flex justify-center mt-2 md:mb-0">
-                    <img src="../../assets/svg/zerotoone.svg" class="w-30 md:w-50" alt="ساخت سایت از صفر تا صد">
+                    <img src="../../assets/svg/zerotoone.svg" class="w-26 md:w-46 ml-10" alt="ساخت سایت از صفر تا صد">
                 </div>
             </div>
         </div>
@@ -143,7 +143,7 @@
                 <div class="cloud-corner-4"></div>
                 
                 <div class="relative bottom-4 flex justify-center md:order-2">
-                    <img src="../../assets/svg/companion.svg" class="w-34 md:w-60 2xl:w-40" alt="سایت ساز">
+                    <img src="../../assets/svg/companion.svg" class="w-34 md:w-60 2xl:w-50" alt="طراحی سایت">
                 </div>
                 <div class="px-8 pt-7 md:order-1">
                     <h2 class="text-lg lg:text-2xl text-right font-bold mb-6 text-purple-800">امنیت و پشتیبانی ۲۴/۷</h2>

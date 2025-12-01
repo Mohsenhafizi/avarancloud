@@ -3,13 +3,14 @@
         <img class="absulote inline-block w-90 h-60 rotate-12" src="../../assets/photos/arrrow4.png" data-aos="fade-up" alt="راه اندازی سایت">
     </div>
     <div class="gradient w-full h-66 lg:h-80">
-        <div class="relative block text-center top-10 lg:top-4 text-3xl" data-aos="fade-up">
-            آیا برای راه اندازی سایت خودتان آماده اید؟
+        <div class="text-purple-950 relative block text-center top-6 lg:top-5 text-xl lg:text-3xl md:mx-50" data-aos="fade-up">
+          می‌خوای یک سایت داشته باشی که واقعاً برای کارت کار کند؟
+          همین حالا شروع کن. ساخت سایت تو کمتر از چیزی که فکر می‌کنی آغاز می‌شود.
         </div>
         <div class="flex justify-center mt-15" data-aos="fade-up">
         <NuxtLink to="/site-builder" class="uiverse">
           <div class="wrapper">
-                <span>شروع کنید</span>
+                <span>درخواست مشاوره</span>
                 <div class="circle circle-12"></div>
                 <div class="circle circle-11"></div>
                 <div class="circle circle-10"></div>
@@ -92,7 +93,7 @@
   overflow: hidden;
   border-radius: 24px;
   min-width: 132px;
-  padding: 12px 0;
+  padding: 14px 0;
 }
 
 .uiverse .wrapper span {

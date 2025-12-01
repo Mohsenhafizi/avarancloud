@@ -8,7 +8,7 @@ export default defineNuxtPlugin(() => {
         '@type': 'WebSite',
         name: 'ابرآوران',
         url: 'https://avarancloud.ir',
-        description: 'ابرآوران ارائه دهنده خدمات طراحی سایت و سایت ساز حرفه‌ای با امکانات کامل مدیریتی',
+        description: 'ابرآوران ارائه دهنده خدمات طراحی سایت و طراحی سایت حرفه‌ای با امکانات کامل مدیریتی',
         inLanguage: 'fa-IR',
         potentialAction: {
           '@type': 'SearchAction',
@@ -24,7 +24,7 @@ export default defineNuxtPlugin(() => {
         '@context': 'https://schema.org',
         '@type': 'Organization',
         name: 'ابرآوران',
-        alternateName: ['Avaran Cloud', 'ابر آوران', 'آوران کلاود', 'طراحی سایت ابرآوران', 'سایت ساز ابرآوران'],
+        alternateName: ['Avaran Cloud', 'ابر آوران', 'آوران کلاود', 'طراحی سایت ابرآوران', 'طراحی سایت ابرآوران'],
         url: 'https://avarancloud.ir',
         logo: {
           '@type': 'ImageObject',
@@ -81,7 +81,7 @@ export default defineNuxtPlugin(() => {
               '@type': 'Offer',
               itemOffered: {
                 '@type': 'Service',
-                name: 'سایت ساز حرفه‌ای'
+                name: 'طراحی سایت حرفه‌ای'
               }
             },
             {
@@ -101,8 +101,8 @@ export default defineNuxtPlugin(() => {
       return {
         '@context': 'https://schema.org',
         '@type': 'WebPage',
-        name: title || 'ابرآوران | طراحی سایت و سایت ساز حرفه‌ای',
-        description: description || 'ابرآوران ارائه دهنده خدمات طراحی سایت و سایت ساز حرفه‌ای با امکانات کامل مدیریتی',
+        name: title || 'ابرآوران | طراحی سایت و طراحی سایت حرفه‌ای',
+        description: description || 'ابرآوران ارائه دهنده خدمات طراحی سایت و طراحی سایت حرفه‌ای با امکانات کامل مدیریتی',
         url: url,
         inLanguage: 'fa-IR',
         lastReviewed: new Date().toISOString(),
@@ -132,7 +132,7 @@ export default defineNuxtPlugin(() => {
           {
             '@type': 'ListItem',
             position: 2,
-            name: 'سایت ساز',
+            name: 'طراحی سایت',
             item: 'https://avarancloud.ir/site-builder'
           }
         ]
@@ -181,7 +181,7 @@ export default defineNuxtPlugin(() => {
             position: 2,
             item: {
               '@type': 'SiteNavigationElement',
-              name: 'سایت ساز',
+              name: 'طراحی سایت',
               url: 'https://avarancloud.ir/site-builder',
               potentialAction: {
                 '@type': 'Action',
@@ -190,22 +190,22 @@ export default defineNuxtPlugin(() => {
               hasPart: [
                 {
                   '@type': 'SiteNavigationElement',
-                  name: 'توضیحات سایت ساز',
+                  name: 'توضیحات طراحی سایت',
                   url: 'https://avarancloud.ir/site-builder#tozihat'
                 },
                 {
                   '@type': 'SiteNavigationElement',
-                  name: 'ویژگی های سایت ساز',
+                  name: 'ویژگی های طراحی سایت',
                   url: 'https://avarancloud.ir/site-builder#features'
                 },
                 {
                   '@type': 'SiteNavigationElement',
-                  name: 'بسته های سایت ساز',
+                  name: 'بسته های طراحی سایت',
                   url: 'https://avarancloud.ir/site-builder#packages'
                 },
                 {
                   '@type': 'SiteNavigationElement',
-                  name: 'سوالات متداول سایت ساز',
+                  name: 'سوالات متداول طراحی سایت',
                   url: 'https://avarancloud.ir/site-builder#submenu'
                 }
               ]

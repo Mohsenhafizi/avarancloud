@@ -109,7 +109,7 @@ const hoveredIndex = ref<number | null>(null);
 // Nav items
 const navItems = props.items || [
   { id: 'home', label: 'صفحه اصلی', icon: Home, path: '/' },
-  { id: 'site-builder', label: 'سایت ساز', icon: Wand2, path: '/site-builder' },
+  { id: 'site-builder', label: 'طراحی سایت', icon: Wand2, path: '/site-builder' },
   { id: 'cloud-builder', label: 'ابرساز', icon: Cloud, path: '/cloud-builder' },
   { id: 'about', label: 'درباره ما', icon: Info, path: '/about-us' },
   { id: 'contact', label: 'ارتباط با ما', icon: MessageCircle, path: '/about-us#contact-us' },

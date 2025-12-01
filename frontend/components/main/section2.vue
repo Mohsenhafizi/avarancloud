@@ -1,20 +1,20 @@
 <template>
 <div class="mt-20 z-10 relative bottom-10 hidden lg:block">
-<div class="text-center font-bold text-2xl sm:text-3xl mb-6">
-   ابرآوران بهترین انتخاب برای کسب‌وکار شماست، چون:
+<div class="text-purple-950 text-center font-bold text-4xl sm:text-5xl mb-6">
+  چرا ابرآوران؟
 </div>
 
 <div class="flex flex-col lg:flex-row items-center justify-center mb-10 mt-10 gap-18">
   <div class="cart">
-          <div class="flex justify-center my-2.5 mx-4">
+          <div class="flex justify-center my-4 mx-6">
             <img class="" src="../../assets/photos/mirdata-laptop2.png" alt="پشتیبانی سایت">
           </div>
           <div class="px-4.5">
-            <p class="font-bold pb-3 text-lg">
-                پشتیبانی اول تا آخر راه
+            <p class="font-bold pb-4 text-lg">
+              طراحی واقعی، نه قالب تکراری
             </p>
-            <p class="pb-2">
-              از اولین گفت و گوی ما با شما تا راه اندازی کامل سایت و فروش محصولاتتان,پشتیبانی فنی و غیرفنی در دسترس شماست
+            <p class="pb-3">
+              هر صفحه با توجه به نیاز و نوع فعالیتت ساخته می‌شود. هدف ما ساخت یک تجربه کاربری روان و قابل‌اعتماد است.
             </p>
           </div>
   </div>
@@ -24,11 +24,11 @@
             <img class="" src="../../assets/photos/mirdata-invitation.jpg" alt="دسترسی سایت">
           </div>
           <div class="px-4.5">
-            <p class="font-bold pb-3 text-lg">
-                در دسترسه
+            <p class="font-bold pb-5 text-lg">
+              امنیت و نگهداری مداوم
             </p>
-            <p class="pb-8">
-                از هر جایی و در هر زمانی از شبانه‌روز به سایتتون دسترسی دارید و می‌تونید مدیریتش کنید
+            <p class="pb-7">
+              از به‌روزرسانی سیستم تا جلوگیری از حملات _ ما مراقب هستیم تا تو فقط روی کار خودت تمرکز کنی.
             </p>
           </div>
   </div>
@@ -38,11 +38,11 @@
             <img class="" src="../../assets/photos/mirdata-standup.jpg" alt="قابل توسعه سایت">
           </div>
           <div class="px-4.5">
-            <p class="font-bold pb-2.5 text-lg">
-              قابل توسعه‌ست
+            <p class="font-bold pb-4.5 text-lg">
+              پشتیبانی واقعی
             </p>
-            <p class="pb-2">
-              با بسته‌های سایت ساز و ابر ساز ابرآوران می‌تونید کسب‌وکار آنلاین خودتون رو مرحله به مرحله، رشد و توسعه بدید
+            <p class="pb-7">
+              نه تیکت ساختگی، نه ربات. هر زمان مشکل یا نیاز جدیدی داشته باشی، پاسخ واقعی می‌گیری.
             </p>
           </div>
   </div>
@@ -50,9 +50,9 @@
 </div>
 
 <div class="flex justify-center">
-  <NuxtLink to="/site-builder" class="div">
-    <div class="state" id="moon">شروع کنید</div>
-    <div class="state" id="sun">شروع کنید</div>
+  <NuxtLink to="/site-builder" class="create-site-button">
+    <div class="state" id="moon">ساخت سایت جدید</div>
+    <div class="state" id="sun">ساخت سایت جدید</div>
     <span class="lightRotation"></span>
     <span class="lightRotation2"></span>
     <span class="lightRotation3"></span>
@@ -138,7 +138,7 @@ position: relative;
 .swiper-pagination-bullet {
 background: #4f46e5;
 }
-.div {
+.create-site-button {
   --sunGradient: linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%);
   --moonGradient: linear-gradient(to top, #cc208e 0%, #6713d2 100%);
   display: flex;
@@ -146,8 +146,8 @@ background: #4f46e5;
   align-items: center;
   position: relative;
   cursor: pointer;
-  width: 140px;
-  height: 60px;
+  width: 170px;
+  height: 70px;
   color: white;
   font-size: 1em;
   font-weight: bold;
@@ -159,12 +159,12 @@ background: #4f46e5;
   border: 4px solid black;
 }
 
-.div:hover {
+.create-site-button:hover {
   box-shadow: -15px -15px 500px white;
   transition: 0.2s;
 }
 
-.div:hover span {
+.create-site-button:hover span {
   background: var(--sunGradient);
 }
 
@@ -175,8 +175,8 @@ background: #4f46e5;
   align-items: center;
   border-radius: inherit;
   transition: 0.4s;
-  width: 85%;
-  height: 82%;
+  width: 95%;
+  height: 92%;
   border: 4px solid black;
 }
 
@@ -191,15 +191,15 @@ background: #4f46e5;
   opacity: 0.85;
 }
 
-.div:hover #sun {
+.create-site-button:hover #sun {
   display: flex;
 }
 
-.div:hover #moon {
+.create-site-button:hover #moon {
   display: none;
 }
 
-.div:hover .lightRotation {
+.create-site-button:hover .lightRotation {
   animation: 1s linear reverse infinite rotation413;
 }
 

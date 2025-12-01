@@ -3,10 +3,10 @@
     <div class="mx-auto w-full max-w-screen-xl">
       <div class="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mx-10 xl:mx-0 gap-6 lg:gap-28 px-4 py-10 lg:py-0 bottom-4 lg:pt-20">
         <div class="">
-            <h2 class="mb-8 text-lg font-semibold uppercase text-white">ابرآوران | سوپرسرویس آنلاین</h2>
+            <h2 class="mb-3 text-lg font-semibold uppercase text-white">ابرآوران | حضور آنلاین لوکس شما</h2>
             <ul class="text-gray-400 lg:w-70">
                 <li class="mb-10">
-                  <span class="font-bold">ابرآوران</span> پلتفرمی یکپارچه برای ساختن وب‌سایت و وب اپلیکیشن است. با استفاده از <span class="font-bold">ابرآوران</span> همه می‌توانند با هر سطحی از دانش فنی، برای کسب‌وکارشان یک سایت حرفه‌ای بسازند و فقط با استفاده از پنل <span class="font-bold">ابرآوران</span>، سفارشات خود را از مرحله‌ی پرداخت تا ارسال و وفادارسازی مشتری مدیریت کنند. از بسته‌های ابرساز <span class="font-bold">ابرآوران</span> برای ساخت و بهبود زیرساخت‌های مانیتورینگ و افزایش مقیاس بهره‌مند شوید.
+                  ابرآوران، شریک دیجیتال شما در خلق وب‌سایت‌های حرفه‌ای، امن و مدرن است. ما با طراحی اختصاصی و زیرساخت‌های پایدار، حضوری لوکس و قابل اعتماد برای کسب‌وکار شما در فضای آنلاین ایجاد می‌کنیم.
                 </li>
                 <li class="mb-4 p-3 bg-gray-700 rounded-md border-r-4 border-blue-500">
                   <div class="flex items-center mb-2">
@@ -26,7 +26,7 @@
             <h2 class="mb-10 text-md font-semibold uppercase text-white">ارتباط با ابرآوران</h2>
             <ul class="text-gray-400">
                 <li class="mb-4">
-                خیابان شاهزاده قاسم میثاق ششم
+                آران بیدگل, بلوار امام خمینی, ولایت 23
             </li>
             <a href="tel:+989200587282" class="flex gap-1 mb-4">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 -scale-x-96">
@@ -92,7 +92,7 @@
             <h2 class="mb-10 text-md font-semibold uppercase text-white">سرویس های ابرآوران</h2>
             <ul class="text-gray-400">
                 <NuxtLink to="/site-builder" class="relative inline-block mb-4">
-                    سایت ساز ابرآوران
+                    طراحی سایت ابرآوران
                 </NuxtLink>
                 <NuxtLink to="/site-builder#packages" class="relative inline-block mb-4">
                   بسته‌های جذب بازدیدکننده ابرآوران  
@@ -120,6 +120,10 @@
             <NuxtLink to="/about-us" class="mb-4 inline-block">درباره ابرآوران</NuxtLink>
             </ul>
         </div>
+    </div>
+    <div class="flex justify-center border-t-2 border-t-blue-400 text-blue-200 text-bold text-md py-4">
+       تمام حقوق محفوظ است. 
+      AvaranCloud - 2025 ©
     </div>
     </div>
 </footer>
